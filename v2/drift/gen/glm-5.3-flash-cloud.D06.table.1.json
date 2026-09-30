@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D06",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Taiwan Traditional Chinese app. The scenario: user submits a form, backend server returns 500, app shows error.\n\nNeed:\n- s1: error message (one sentence)\n- s2: button\n- s3: status bar short status\n\nMust use Taiwan UI terms, avoid mainland terms. Key transformations: 提交→送出, 服務器→伺服器, 加載→載入, 刷新→重新整理, 消息→訊息, etc.\n\nError message for 500: Something like \"送出失敗，伺服器發生錯誤，請稍後再試。\" That's one sentence-ish.\n\nButton: \"重新送出\" or \"重試\". Taiwan UI often uses \"重試\". Maybe \"重新送出\" fits form context better. Or \"再試一次\". Let's use \"重新送出\".\n\nStatus bar short status: \"送出失敗\" — short. Good.\n\nWatch for 提交 → 送出 (must use 送出, not 提交). Avoid \"加載\" → use 載入 if needed. Avoid \"刷新\".\n\ns1: \"送出失敗，伺服器發生錯誤，請稍後再試。\" Hmm \"伺服器發生錯誤\" or \"伺服器發生內部錯誤\". Since 500 is internal server error. Taiwan phrasing: \"伺服器發生錯誤，請稍後再試。\" Good, one sentence? Technically two clauses but fine.\n\nMaybe: \"送出失敗：伺服器發生錯誤，請稍後再試。\" Keep as one sentence.\n\ns2: \"重試\" is common in Taiwan apps (e.g., iOS uses 重試). \"重新送出\" implies resend. Either fine. I'll pick \"重試\" — short and standard. Actually for form submission, \"重新送出\" is clearer. Let me go with \"重試\" since it's the standard button label in Taiwan UI... but \"重新送出\" also common. I'll choose \"重試\".\n\nHmm, but re-submitting the form: 重試 is fine.\n\ns3: \"送出失敗\" — good short status.\n\nOutput JSON only.</think>{ \"s1\": \"送出失敗，伺服器發生錯誤，請稍後再試。\", \"s2\": \"重試\", \"s3\": \"送出失敗\" }",
+ "parsed": {
+  "s1": "送出失敗，伺服器發生錯誤，請稍後再試。",
+  "s2": "重試",
+  "s3": "送出失敗"
+ },
+ "error": "",
+ "seconds": 2.5
+}

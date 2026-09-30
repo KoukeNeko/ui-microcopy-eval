@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The task: write UI strings for a desktop app detecting a new version available to install. Traditional Chinese (Taiwan) UI conventions.\n\nRequirements:\n- s1: notification title\n- s2: notification body (one sentence)\n- s3: button to install now\n\nTaiwan Traditional Chinese conventions:\n- \"立即更新\" or \"立即安裝\" for install now button\n- Title: \"有新版本可用\" or \"發現新版本\" — common patterns: \"新版本可用\"、\"有可用的更新\"\n- Body: \"偵測到新版本，是否立即安裝？\" but \"一句\" — one sentence. Maybe \"應用程式已有新版本，建議立即更新以獲得最佳體驗。\" Hmm, keep simple.\n\nCommon Microsoft/Apple style: \"新版本已就緒，可安裝\" etc.\n\nLet me write:\n- s1: \"有新版本可用\"\n- s2: \"偵測到新版本，是否立即安裝？\" — but the button handles install, so body could be informational: \"目前已偵測到新版本，隨時可安裝更新。\" Or \"我們偵測到有新的版本可以安裝。\" In Taiwan style: \"偵測到應用程式有新版本，建議立即更新以獲得最佳體驗。\" That's one sentence.\n\nActually since the notification is about a new version available to install, body: \"偵測到新的版本可以安裝。\" That's a direct translation of the scenario. More natural Taiwan phrasing: \"偵測到有新版本可供安裝。\" Good.\n\n- s3: \"立即安裝\" (Taiwan uses 立即 for \"now\"). Could also be \"立即更新\". Since prompt says install now button, \"立即安裝\" works.\n\nShould mention app name? Generic. Use generic strings.\n\nOne sentence constraint for s2: \"偵測到有新版本可供安裝。\" is one sentence.\n\nAlternatively \"已有新版本可供安裝。\" Fine.\n\nOutput only JSON.{\"s1\": \"有新版本可用\", \"s2\": \"偵測到有新版本可供安裝。\", \"s3\": \"立即安裝\"}",
+ "parsed": {
+  "s1": "有新版本可用",
+  "s2": "偵測到有新版本可供安裝。",
+  "s3": "立即安裝"
+ },
+ "error": "",
+ "seconds": 2.1
+}

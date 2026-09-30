@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The user wants UI strings for an app settings screen in Traditional Chinese (Taiwan style). The strings needed:\n\n- s1: a button that completely removes an app from the device (uninstall button)\n- s2: confirmation dialog title\n- s3: status text after completion\n\nUsing Taiwan terminology:\n- 卸載 → 解除安裝\n\ns1: \"解除安裝\" — the button to remove the app. Could be \"解除安裝\" which is the standard Taiwan term for uninstall.\n\ns2: confirmation dialog title: \"確認解除安裝？\" or \"要解除安裝此應用程式嗎？\" A typical title: \"解除安裝應用程式\" or \"確認解除安裝\". Windows uses \"解除安裝\" for uninstall. A confirmation dialog title in Taiwan style: \"確認要解除安裝嗎？\" Actually more natural: \"要解除安裝這個應用程式嗎？\" as title, or \"解除安裝確認\". Let me think about typical Taiwan UI conventions.\n\nAndroid in Traditional Chinese: \"解除安裝\" for uninstall button. Confirmation dialog: \"要解除安裝這個應用程式嗎？\" Windows: \"解除安裝程式\"...\n\ns2: \"要解除安裝此應用程式嗎？\" — clear and natural.\n\ns3: status text after completion: \"已解除安裝\" — standard Taiwan style (已完成: 已 + verb).\n\nPer the first layer table: 卸載→解除安裝. The removal is \"completely remove from device\" — could also mention \"從裝置移除\" but the key term is 解除安裝.\n\ns1: \"解除安裝\"\ns2: \"要解除安裝此應用程式嗎？\"\ns3: \"已解除安裝\"\n\nOutput only a JSON object.```json\n{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"要解除安裝此應用程式嗎？\",\n  \"s3\": \"已解除安裝\"\n}\n```",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "要解除安裝此應用程式嗎？",
+  "s3": "已解除安裝"
+ },
+ "error": "",
+ "seconds": 1.8
+}

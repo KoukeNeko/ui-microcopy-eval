@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The task is to write app UI strings in Traditional Chinese (Taiwan usage) for a system settings screen showing an app list, with a button to completely remove an app from the device.\n\nRequirements:\n- s1: the button (to completely remove the app from the device)\n- s2: confirmation dialog title\n- s3: status text after completion\n\nTaiwan usage: use 解除安裝 instead of 卸載.\n\nLet me think about what Taiwan Android/system settings typically use:\n- Uninstall button: \"解除安裝\"\n- Confirmation dialog title: \"解除安裝應用程式？\" or \"要解除安裝這個應用程式嗎？\"\n- Status after completion: \"已解除安裝\"\n\nTaiwan UI conventions:\n- \"應用程式\" for app\n- Confirmation dialogs often phrased as \"要...嗎？\" or \"是否...\"\n- Status text: \"已解除安裝\" is standard.\n\ns1 could be just \"解除安裝\" (button labels are usually short). The description says \"把它從裝置上完全移除的按鈕\" — the button to completely remove it from the device. That's uninstall. So \"解除安裝\".\n\ns2: \"解除安裝應用程式？\" — a common title format. Or \"要解除安裝這個應用程式嗎？\" Taiwan Android system dialogs sometimes say \"要解除安裝這個應用程式嗎？\" Actually in Android Taiwan Chinese, the uninstall confirmation is \"要解除安裝這個應用程式嗎？\" Hmm. Both work. For a title, concise: \"解除安裝應用程式？\"\n\ns3: \"已解除安裝\" — status text after completion.\n\nThe user said only output a JSON object, keys s1, s2, s3, values strings, no other text.\n\nOutput:\n{\"s1\": \"解除安裝\", \"s2\": \"解除安裝應用程式？\", \"s3\": \"已解除安裝\"}\n\nShould I use full-width question mark? Taiwan UI typically uses \"？\" full-width. Yes.\n\nJSON with Traditional Chinese characters is fine.</think>{\"s1\": \"解除安裝\", \"s2\": \"解除安裝應用程式？\", \"s3\": \"已解除安裝\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.3
+}

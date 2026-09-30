@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user wants UI strings for a browser extension store page in Traditional Chinese (Taiwan usage).\n\n- s1: store page title - something like 「附加元件市集」or「擴充功能商店」. In Taiwan Microsoft Edge/Chrome terminology, browser extensions are called 「擴充功能」(Chrome uses 擴充功能) or 「附加元件」(Firefox/Edge). The prompt says \"第三方做的附加功能來擴充瀏覽器\" - the store page title. Common: 「擴充功能商店」or「線上應用程式商店」. I'd go with 「擴充功能市集」or「擴充功能商店」. Chrome Web Store in Taiwan: 「Chrome 線上應用程式商店」. A generic title: 「瀏覽器擴充功能商店」or「擴充功能市集」. Let me pick 「擴充功能商店」.\n\n- s2: install button - 「安裝」\n\n- s3: installed status - 「已安裝」\n\nNote the terminology: avoid 插件→外掛. Here it's 擴充功能 which is fine (Chrome Taiwan uses 擴充功能; Firefox uses 附加元件). Both acceptable. I'll use 擴充功能.\n\nOutput JSON only.</think>{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}",
+ "parsed": {
+  "s1": "擴充功能商店",
+  "s2": "安裝",
+  "s3": "已安裝"
+ },
+ "error": "",
+ "seconds": 2.0
+}

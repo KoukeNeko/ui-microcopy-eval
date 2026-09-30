@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings for a computer peripherals settings page in Traditional Chinese (Taiwan usage). The page adjusts pointer device movement speed and display brightness.\n\n- s1: label for pointer device speed → \"滑鼠速度\" (using Taiwan term 滑鼠, not 鼠標). Pointer device could be \"指標裝置\" but in Taiwan common usage it's \"滑鼠速度\". The description says 指標裝置的移動速度. Common Windows Taiwan Chinese: \"滑鼠速度\". Could also be \"指標速度\". But the instruction table says use 滑鼠 not 鼠標. So \"滑鼠速度\" is fine. Maybe \"滑鼠移動速度\" — Windows uses \"指標速度\" but common label \"滑鼠速度\". Let me pick \"滑鼠速度\".\n\n- s2: display brightness label → \"螢幕亮度\" (using 螢幕, not 屏幕).\n\n- s3: title of settings page → \"滑鼠與顯示器設定\" or \"周邊設定\". The page is about peripherals: pointer speed and display brightness. Title could be \"滑鼠與螢幕設定\" or \"電腦周邊設定\". Common: \"周邊裝置設定\". I'd choose \"滑鼠與顯示器設定\" — but display device in Taiwan often \"顯示器\" for monitor, 螢幕 for screen. Label s2 uses 螢幕亮度. Title could be \"滑鼠與螢幕設定\". That's consistent. Or \"周邊裝置設定\". I'll go with \"滑鼠與螢幕設定\".\n\nOutput only JSON object.</think>```json\n{\n  \"s1\": \"滑鼠速度\",\n  \"s2\": \"螢幕亮度\",\n  \"s3\": \"滑鼠與螢幕設定\"\n}\n```",
+ "parsed": {
+  "s1": "滑鼠速度",
+  "s2": "螢幕亮度",
+  "s3": "滑鼠與螢幕設定"
+ },
+ "error": "",
+ "seconds": 2.4
+}

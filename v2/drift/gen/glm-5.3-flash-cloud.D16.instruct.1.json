@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D16",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for:\n- s1: submit button for a feedback form (send content to team)\n- s2: settings page button to write/save changes\n- s3: status text after changes are written\n\nTaiwan UI conventions:\n- Submit button for feedback form: 意見回饋 → 送出意見 or 提交 is more mainland; Taiwan uses \"送出\". So \"送出意見\" or just \"送出\". The description says \"把內容送給團隊\" so \"送出意見\" fits.\n- Settings save button: Taiwan commonly uses \"儲存變更\" or \"儲存設定\". \"儲存\" not \"保存\".\n- Status text after changes saved: \"變更已儲存\" or \"設定已儲存\". Common: \"變更已儲存\" or \"設定已更新\". Status text after writing changes: \"變更已儲存\".\n\nAvoid mainland terms: 提交 (mainland) → 送出; 保存 → 儲存.\n\nOutput only JSON object with keys s1, s2, s3.\n\ns1: \"送出意見\"\ns2: \"儲存變更\"\ns3: \"變更已儲存\"\n\nCould s3 be \"變更已儲存\" — yes, that's natural Taiwan UI.\n\nOutput JSON only.</think>```json\n{\n  \"s1\": \"送出意見\",\n  \"s2\": \"儲存變更\",\n  \"s3\": \"變更已儲存\"\n}\n```",
+ "parsed": {
+  "s1": "送出意見",
+  "s2": "儲存變更",
+  "s3": "變更已儲存"
+ },
+ "error": "",
+ "seconds": 1.4
+}

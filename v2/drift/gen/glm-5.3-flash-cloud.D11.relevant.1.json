@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage).\n\nScreen: mobile app list page, pull down to refresh (fetch latest data from backend).\n\n- s1: hint text when pulling down (下拉時的提示文字)\n- s2: status text after fetching completes (取完後的狀態文字)\n- s3: text when list is empty (清單為空時的文字)\n\nTaiwan terminology: avoid 刷新, use 重新整理.\n\nSo:\n- s1: \"下拉即可重新整理\" or \"下拉重新整理\" — pull down hint. Common in Taiwan apps: \"下拉以更新\" or \"下拉即可更新資料\". Given the constraint table says use 重新整理 instead of 刷新. So s1: \"下拉即可重新整理\" or \"下拉重新整理\".\n\n- s2: after fetching done: \"已更新\" or \"已重新整理\" — status text. \"已重新整理\" fits.\n\n- s3: empty list: \"目前沒有任何項目\" or \"尚無資料\" — Taiwan usage: \"尚無資料\" or \"沒有資料\". Common: \"查無資料\" (used in Taiwan government sites), \"尚無資料\". For a list empty state: \"目前沒有資料\" or \"尚無任何項目\". I'll use \"尚無資料\" or maybe \"目前沒有任何項目\".\n\nLet me pick:\n- s1: \"下拉即可重新整理\"\n- s2: \"已重新整理\"\n- s3: \"尚無資料\"\n\nOutput only JSON object with keys s1, s2, s3.</think>{\n  \"s1\": \"下拉即可重新整理\",\n  \"s2\": \"已重新整理\",\n  \"s3\": \"尚無資料\"\n}",
+ "parsed": {
+  "s1": "下拉即可重新整理",
+  "s2": "已重新整理",
+  "s3": "尚無資料"
+ },
+ "error": "",
+ "seconds": 1.6
+}

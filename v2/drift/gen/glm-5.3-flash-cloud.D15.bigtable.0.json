@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The task: UI strings for Traditional Chinese (Taiwan) app settings, applications list, with a button to completely remove an app from the device.\n\nKey constraint: \"卸載\" must be \"解除安裝\". The button removes the app completely from the device.\n\ns1: button — something like \"解除安裝\". Maybe \"解除安裝\" alone. Since it completely removes from device, maybe \"解除安裝\" is fine. Could add app context, but generic string. s1: \"解除安裝\"\n\ns2: confirmation dialog title — \"要解除安裝這個應用程式嗎？\" Taiwan usage: \"應用程式\" (not 應用/程序). Could be \"解除安裝應用程式\" or \"確定要解除安裝嗎？\". Typical Android Chinese (Taiwan): \"要解除安裝這個應用程式嗎？\" That's good.\n\ns3: status text after completion — \"已解除安裝\" is typical toast. Maybe \"應用程式已解除安裝\". Status text: \"已解除安裝\".\n\nNote \"點擊→點選\" not needed here.\n\nOutput JSON only.{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"要解除安裝這個應用程式嗎？\",\n  \"s3\": \"應用程式已解除安裝\"\n}",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "要解除安裝這個應用程式嗎？",
+  "s3": "應用程式已解除安裝"
+ },
+ "error": "",
+ "seconds": 1.9
+}

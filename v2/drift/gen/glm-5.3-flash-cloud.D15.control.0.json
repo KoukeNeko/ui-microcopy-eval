@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "control",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese for an app uninstall button, confirmation dialog title, and post-completion status text.\n\n- s1: Button that completely removes the app from device → 解除安裝 (uninstall in Traditional Chinese, Taiwan usage)\n- s2: Confirmation dialog title → something like \"要解除安裝這個應用程式嗎？\" or \"解除安裝應用程式\"\n- s3: Status text after completion → something like \"已解除安裝\" or \"應用程式已從裝置移除\"\n\nOnly output a JSON object with keys s1, s2, s3. No other text.\n\nTraditional Chinese (Taiwan style): 解除安裝 is the standard term for uninstall.\n\ns1: \"解除安裝\" — button label\ns2: \"要解除安裝此應用程式嗎？\" — title... Actually dialog title could be \"解除安裝應用程式\" (shorter) or question form. Confirmation titles often are questions: \"確定要解除安裝嗎？\"\ns3: \"已解除安裝\" or \"應用程式已移除\"\n\nOutput only JSON.</think>```json\n{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"要解除安裝此應用程式嗎？\",\n  \"s3\": \"已從裝置移除\"\n}\n```",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "要解除安裝此應用程式嗎？",
+  "s3": "已從裝置移除"
+ },
+ "error": "",
+ "seconds": 1.6
+}

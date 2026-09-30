@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D03",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The task: write UI strings in Traditional Chinese (Taiwan usage) for a storage settings page. There's a feature to delete app-cached data that was stored on the device to speed up loading. After deletion, functionality is unaffected (it's just cache).\n\n- s1: name of the feature (list item) — e.g., 「清除快取資料」or「清除快取」\n- s2: status text after execution — e.g., 「快取資料已清除」\n- s3: explanation sentence before execution — e.g., 「清除 App 暫存在裝置上的資料以釋放儲存空間，清除後不會影響功能或刪除你的個人資料。」Something like that.\n\nKey terminology: 緩存 → 快取. 加載 → 載入. 數據 → 資料. 保存 → 儲存. Storage: 儲存空間.\n\ns1: 「清除快取資料」— common in Taiwan Android settings: 「清除快取」. As a list item: 「清除快取資料」.\n\ns2: after execution status: 「快取資料已清除」or「已清除快取資料」. Google's usage: 「已清除快取資料」? Actually Android shows 「已清除快取」? Let me think — in Taiwan Android, \"Cache cleared\" might be 「已清除快取」. I'll use 「快取資料已清除」or「已清除快取資料」. Both fine. I'll pick 「已清除快取資料」.\n\nActually a status text after execution — could be like a toast: 「快取已清除」. I'll go with 「已清除快取資料」.\n\ns3: explanation before execution: describe that the app temporarily stores data on the device to speed up loading; deleting it frees storage; features won't be affected.\n\nDraft: 「系統會暫存部分資料在裝置上，以加快載入速度。清除這些快取資料可釋放儲存空間，且不會影響 App 功能或刪除你的個人內容。」\n\nKeep it concise: 「為加快載入速度，App 會將部分資料暫存在裝置上。清除快取資料可釋放儲存空間，不會影響任何功能。」\n\nAvoid \"點擊\" etc. Avoid mainland terms. Use 「應用程式」or \"App\"? App is fine, or 應用程式. I'll use 「應用程式」 maybe. Taiwan UI often uses 「App」too. Use 「應用程式」 to be safe? Either is fine. Let me write: 「為加快載入速度，應用程式會將部分資料暫存在裝置上。清除這些快取資料可釋放儲存空間，且不會影響任何功能。」\n\ns2: 「已清除快取資料」\n\ns1: 「清除快取資料」\n\nOutput only JSON.</think>```json\n{\n  \"s1\": \"清除快取資料\",\n  \"s2\": \"已清除快取資料\",\n  \"s3\": \"為加快載入速度，應用程式會將部分資料暫存在裝置上。清除這些快取資料可釋放儲存空間，且不會影響任何功能。\"\n}\n```",
+ "parsed": {
+  "s1": "清除快取資料",
+  "s2": "已清除快取資料",
+  "s3": "為加快載入速度，應用程式會將部分資料暫存在裝置上。清除這些快取資料可釋放儲存空間，且不會影響任何功能。"
+ },
+ "error": "",
+ "seconds": 2.7
+}

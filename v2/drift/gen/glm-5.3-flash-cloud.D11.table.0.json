@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants UI strings for a mobile app list page in Traditional Chinese (Taiwan usage). Pull-to-refresh.\n\n- s1: hint when pulling down\n- s2: status text after fetching completed\n- s3: empty list text\n\nAvoid mainland terms. Avoid 刷新 → use 重新整理. Avoid 加載 → 載入. Avoid 數據 → 資料. Avoid 提交 → 送出. Avoid 當前 → 目前.\n\nCommon Taiwan pull-to-refresh wording:\n- s1: \"下拉即可更新\" or \"向下拉動以更新\" or \"下拉更新清單\". Actually Taiwan usage: \"下拉以重新整理\" — but 重新整理 is the approved term. Note: \"下拉\" vs \"往下拉\". The instruction says 往下拉可以重新向後端取最新資料. So s1: \"往下拉以重新整理\" or \"下拉以重新整理清單\". Maybe \"鬆手後重新整理\" is typical mainland style (\"鬆開刷新\"). Taiwan style: \"放開後重新整理\".\n\nLet me craft:\n\n- s1: \"往下拉，放開後重新整理\" — hmm, but s1 is hint while pulling. Maybe \"放開即可重新整理\" when pulled enough, and \"往下拉以重新整理\" while pulling. But we only have one s1. Use \"往下拉以重新整理\".\n- s2: after fetch complete: \"已更新至最新資料\" or \"資料已更新\". Avoid 數據. \"資料已更新\" is good. Or \"已重新整理\". Maybe \"上次更新：...\"? The spec says 取完後的狀態文字, so \"資料已更新\" works. Could be \"已更新到最新資料\". Taiwan: \"已更新至最新資料\".\n- s3: empty list: \"目前沒有任何項目\" or \"尚無資料\". Taiwan style: \"目前沒有資料\" or \"清單是空的\". Avoid 當前. Use \"目前\". Maybe \"目前沒有項目\" plus maybe hint. Keep simple: \"目前沒有任何資料\".\n\nCheck banned words: none used. 下拉 is fine in Taiwan. \"鬆手\" is mainland-ish; avoid.\n\nOutput only JSON object with s1, s2, s3.\n\n{\"s1\": \"往下拉以重新整理\", \"s2\": \"資料已更新\", \"s3\": \"目前沒有任何資料\"}\n\nMaybe s2 could include time: \"已更新至最新資料\". Fine.\n\nConsider \"後端\" — no need. s2 status after fetching: \"已更新\" might be enough but \"資料已更新\" is clearer.\n\ns3: \"目前沒有資料\" — some apps say \"這裡空空如也\". Keep professional: \"目前沒有任何項目\". Since it's a list, \"項目\" is fine. I'll go \"目前沒有任何資料\".</think>{\"s1\": \"往下拉以重新整理\", \"s2\": \"資料已更新\", \"s3\": \"目前沒有任何資料\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.9
+}

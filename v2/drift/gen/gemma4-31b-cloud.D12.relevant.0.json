@@ -1,0 +1,14 @@
+{
+ "model": "gemma4:31b-cloud",
+ "probe": "D12",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "```json\n{\n  \"s1\": \"外掛商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}\n```",
+ "parsed": {
+  "s1": "外掛商店",
+  "s2": "安裝",
+  "s3": "已安裝"
+ },
+ "error": "",
+ "seconds": 0.9
+}

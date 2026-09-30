@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D01",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for:\n- s1: Button text that resets all options back to installation defaults (in the settings page, at the bottom)\n- s2: Confirmation dialog title after pressing\n- s3: Confirmation dialog description sentence\n\nThey want Taiwan Mandarin UI conventions, using 預設 instead of 默認.\n\nCommon Taiwan UI phrasing:\n- s1: \"重設為預設值\" or \"還原預設值\" or \"恢復預設設定\". In Taiwan, \"重設\" and \"還原\" are common. e.g., \"還原為預設值\". The action resets all options to installation original values. \"重設所有設定\" is also common (Windows uses \"重設\"). Android Taiwan uses \"重設為預設值\". Let me pick \"還原預設值\" or \"重設為預設值\".\n\nCommon patterns:\n- \"重設為預設值\" — used in Android/Chrome\n- \"還原成預設值\" — used in Windows Taiwan? Windows uses \"還原成預設值\" sometimes \"回復預設定\".\n\nI'll go with \"還原為預設值\" for the button.\n\n- s2: Title of confirmation dialog: \"還原預設值\" or \"確定要還原嗎？\" Something like \"還原所有設定？\" or \"確認還原預設值\". A common title: \"還原預設設定\".\n\n- s3: Description: \"所有設定將還原為安裝時的預設值，且無法復原。\" or \"系統會將所有選項重設為安裝時的預設值，此操作無法復原。\"\n\nThe instruction says the reset changes all options back to installation original values. So description: \"所有設定將重設為安裝時的預設值，且無法復原。\" Including \"無法復原\" may be an assumption about irreversibility — the prompt didn't say irreversible. Maybe safer: \"所有選項將還原為安裝時的預設值。\" Could add confirmation prompt element. Keep it simple and accurate: \"系統會將所有選項還原為安裝時的預設值。\" That's accurate without inventing irreversibility.\n\nTitles commonly: \"還原預設值\" or \"確認還原\". Let me write:\n\ns1: \"還原為預設值\"\ns2: \"確認還原預設值\"\ns3: \"所有選項將還原為安裝時的預設值，確定要繼續嗎？\"\n\nThat's a good description with a question. Output JSON only.</think>```json\n{\n  \"s1\": \"還原為預設值\",\n  \"s2\": \"確認還原預設值\",\n  \"s3\": \"所有選項將還原為安裝時的預設值，確定要繼續嗎？\"\n}\n```",
+ "parsed": {
+  "s1": "還原為預設值",
+  "s2": "確認還原預設值",
+  "s3": "所有選項將還原為安裝時的預設值，確定要繼續嗎？"
+ },
+ "error": "",
+ "seconds": 2.7
+}

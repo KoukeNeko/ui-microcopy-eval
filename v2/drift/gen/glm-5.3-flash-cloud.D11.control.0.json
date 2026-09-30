@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "control",
+ "sample": 0,
+ "raw": "The user wants UI strings for a mobile app in Traditional Chinese. The screen is a list page with pull-to-refresh functionality.\n\nThey need:\n- s1: hint text when pulling down (e.g., \"Pull down to refresh\")\n- s2: status text after refresh completes (e.g., \"Refreshed\" or \"Updated\")\n- s3: text when list is empty (e.g., \"No data yet\")\n\nOutput only a JSON object with keys s1, s2, s3 and string values, no other text.\n\nTypical pull-to-refresh states:\n- Pulling down: \"下拉即可更新\" / \"下拉更新最新資料\" — actually the hint when pulling down. Common iOS string: \"下拉可以更新\" \n- After refresh: \"更新完成\" or \"已更新為最新資料\"\n- Empty list: \"目前沒有任何資料\" / \"清單是空的\" / \"尚無資料\"\n\nLet me write natural Traditional Chinese:\n\ns1: \"下拉即可更新最新資料\" — hint while pulling down. Could also be \"繼續下拉以更新\" but as the hint when pulling down, \"下拉即可重新整理\" or \"下拉更新最新資料\".\n\ns2: \"已更新為最新資料\" — after fetching completes.\n\ns3: \"目前尚無任何資料\" — empty list. Maybe \"這裡還沒有內容\" or \"清單目前是空的，下拉即可重新載入\". Keep it simple: \"目前沒有任何資料\".\n\nOnly output JSON, no other text. Should I use double quotes and valid JSON. No code fences? The instruction says \"只輸出一個 JSON 物件\" — output one JSON object only, no other text. I'll output raw JSON without markdown fences to be safe.\n\nValues:\n- s1: \"下拉即可更新最新資料\"\n- s2: \"已更新為最新資料\"\n- s3: \"目前沒有任何資料\"{\"s1\": \"下拉即可更新最新資料\", \"s2\": \"已更新為最新資料\", \"s3\": \"目前沒有任何資料\"}",
+ "parsed": {
+  "s1": "下拉即可更新最新資料",
+  "s2": "已更新為最新資料",
+  "s3": "目前沒有任何資料"
+ },
+ "error": "",
+ "seconds": 2.4
+}

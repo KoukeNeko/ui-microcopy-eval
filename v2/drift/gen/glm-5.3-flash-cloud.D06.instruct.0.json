@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D06",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app interface. Scenario: user submits a form, backend returns 500, app shows error.\n\nThey want:\n- s1: error message (one sentence)\n- s2: button\n- s3: short status for status bar\n\nMust use Taiwan Traditional Chinese UI conventions, not mainland China terms. Output only a JSON object with keys s1, s2, s3, values are strings, no other text.\n\nTaiwan UI conventions: 伺服器 (not 服务器), 網路, 錯誤, 發生問題, 請稍後再試, 重試, 送出, 失敗.\n\nMainland terms to avoid: 提交 → 送出 (mainland uses 提交, Taiwan uses 送出), 服务器 → 伺服器, 鼠标 etc. Also punctuation: Taiwan uses full-width punctuation 「，」「。」.\n\ns1: something like 「系統發生錯誤，請稍後再試。」 or 「伺服器發生錯誤，請稍後再試。」 For 500 error, saying 伺服器 is okay. One sentence: 「伺服器發生錯誤，請稍後再試。」 That's technically one sentence with a comma. Fine.\n\ns2: 按鈕 — likely retry button: 「重試」.\n\ns3: short status in status bar: 「連線失敗」? or 「發生錯誤」. Status bar short status — maybe 「伺服器錯誤」 or 「傳送失敗」. Since form submission failed: 「送出失敗」 is nice and short. Or 「伺服器異常」 — mainland-like? 異常 is used in both. Taiwan often says 「發生錯誤」. Short: 「送出失敗」.\n\nHmm, but 500 is server error; status could be 「伺服器錯誤」. I'll go with 「送出失敗」 for the status bar since it relates to the form submission.\n\nActually s1 could be more specific: 「無法完成送出，請稍後再試。」 Hmm. A 500 means server error. Common Taiwan phrasing: 「系統發生錯誤，請稍後再試。」 That's generic and standard. Or 「伺服器發生錯誤，請稍後再試。」\n\nLet me pick:\ns1: 「伺服器發生錯誤，請稍後再試。」\ns2: 「重試」\ns3: 「送出失敗」\n\nPunctuation: use full-width. Inside JSON strings it's fine.\n\nOutput only JSON object.{\n  \"s1\": \"伺服器發生錯誤，請稍後再試。\",\n  \"s2\": \"重試\",\n  \"s3\": \"送出失敗\"\n}",
+ "parsed": {
+  "s1": "伺服器發生錯誤，請稍後再試。",
+  "s2": "重試",
+  "s3": "送出失敗"
+ },
+ "error": "",
+ "seconds": 3.5
+}

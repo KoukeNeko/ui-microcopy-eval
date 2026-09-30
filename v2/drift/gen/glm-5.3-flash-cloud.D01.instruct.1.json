@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D01",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants strings for an app UI in Traditional Chinese (Taiwan usage). The button at the bottom of the Settings page resets all options to their default (factory/install-time) values.\n\ns1: button text\ns2: confirmation dialog title\ns3: confirmation dialog description\n\nTaiwan UI conventions: \"重設\" or \"還原\" or \"回復預設值\". Common Taiwan usage: \"還原預設值\", \"重設為預設值\", \"回復原廠設定\" (more for factory reset). Since it's resetting all options to installation defaults, something like \"還原預設設定\" or \"重設所有設定\".\n\nCommon in Taiwan: 設定 → 系統 → 重設. \"重設\" is common. Microsoft Taiwan uses \"重設\". Android Traditional Chinese uses \"重設\" (e.g., 重設應用程式偏好設定). iOS uses \"重置\" — iOS Traditional Chinese uses \"重置\" (e.g., \"重置所有設定\"). Hmm. iOS zh-TW uses \"重置\". Android zh-TW uses \"重設\". Both acceptable; maybe pick \"還原預設值\" or \"重設所有設定\".\n\ns1: \"還原預設設定\" or \"重設所有設定\" — good.\ns2: \"還原預設設定\" as title, or \"確認還原預設值\" or \"確認重設\".\ns3: \"這項操作會將所有選項恢復為安裝時的預設值，且無法復原。確定要繼續嗎?\" \n\nTaiwan style: punctuation with 「」, and question mark full width \"？\" . Dialog description: \"系統會將所有選項還原為安裝時的預設值，此操作無法復原。\" plus maybe \"確定要繼續嗎？\".\n\nAvoid mainland terms: \"恢复\" → \"恢復\", \"无法\" → \"無法\". Use \"還原\" or \"重設\". \"恢復\" is fine in Taiwan. Actually Taiwan often uses \"回復\" (e.g., 回復原廠設定 on Android? Android zh-TW uses \"回復原廠設定\"). Yes, Android zh-TW: \"回復原廠設定\". Microsoft: \"重設\". iOS: \"重置\".\n\nI'll go with:\n\ns1: \"重設所有設定\" — clear.\nAlternatively \"還原為預設值\". Let me choose \"還原預設設定\" — hmm, that could be confusing. \"重設為預設值\" is clear. Button text should be concise: \"回復預設值\" or \"重設所有設定\".\n\nI'll pick:\ns1: \"重設所有設定\"\ns2: \"確認重設\"\ns3: \"所有選項將回復為安裝時的預設值，此操作無法復原。確定要繼續嗎？\"\n\nWait, \"重設\" in s1 but \"回復\" in s3 — consistent enough. Or use \"還原\" throughout:\n\ns1: \"還原預設設定\"\ns2: \"還原預設設定\" (title same as button is fine) or \"確認還原\"\ns3: \"系統會將所有選項還原為安裝時的預設值，且無法復原。確定要繼續嗎？\"\n\nI think using \"還原\" consistently is good Taiwan usage (Windows zh-TW uses \"還原\", e.g., \"還原預設值\"). Actually Android uses \"還原\" too in some places (\"還原設定\").\n\nFinal:\ns1: \"還原預設設定\"\ns2: \"確認還原預設值\"\ns3: \"所有選項將還原為安裝時的預設值，此操作無法復原。確定要繼續嗎？\"\n\nOnly output JSON. Ensure proper escaping—no special chars needed. Output just the JSON object.{\n  \"s1\": \"還原預設設定\",\n  \"s2\": \"確認還原預設值\",\n  \"s3\": \"所有選項將還原為安裝時的預設值，此操作無法復原。確定要繼續嗎？\"\n}",
+ "parsed": {
+  "s1": "還原預設設定",
+  "s2": "確認還原預設值",
+  "s3": "所有選項將還原為安裝時的預設值，此操作無法復原。確定要繼續嗎？"
+ },
+ "error": "",
+ "seconds": 3.5
+}

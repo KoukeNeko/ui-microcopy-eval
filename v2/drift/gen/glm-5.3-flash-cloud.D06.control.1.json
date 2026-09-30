@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D06",
+ "arm": "control",
+ "sample": 1,
+ "raw": "The user wants UI strings in Traditional Chinese for an app error state when the backend returns a 500 error after form submission. They need:\n- s1: error message (one sentence)\n- s2: button (likely a retry button)\n- s3: short status for status bar\n\nOutput only a JSON object with keys s1, s2, s3, no other text.\n\nTraditional Chinese (繁體中文). Error message should be user-friendly, one sentence. For a 500 error, common phrasing: \"伺服器發生錯誤，請稍後再試。\" Button: \"重試\". Status bar short: \"伺服器錯誤\" or \"連線失敗\".\n\nLet me craft:\n- s1: \"伺服器發生錯誤，請稍後再試一次。\" — one sentence.\n- s2: \"重試\"\n- s3: \"伺服器錯誤\" — short status.\n\nKeep JSON only, no code fences? They said only output a JSON object, no other text. I'll output raw JSON without markdown fences. Ensure valid JSON, use double quotes, Traditional Chinese characters.\n\nCheck punctuation: Chinese full-width comma and period are fine inside JSON strings.</think>{\"s1\": \"伺服器發生錯誤，請稍後再試一次。\", \"s2\": \"重試\", \"s3\": \"伺服器錯誤\"}",
+ "parsed": {
+  "s1": "伺服器發生錯誤，請稍後再試一次。",
+  "s2": "重試",
+  "s3": "伺服器錯誤"
+ },
+ "error": "",
+ "seconds": 2.4
+}

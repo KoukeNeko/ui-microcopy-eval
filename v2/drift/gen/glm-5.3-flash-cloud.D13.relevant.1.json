@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D13",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan usage) for a website's top-right corner toggle between mobile/tablet layout and desktop layout.\n\n- s1: option to switch to mobile/tablet layout\n- s2: option to switch to desktop layout\n- s3: status text after switching\n\nTaiwan UI conventions:\n- 行動裝置 (not 移動端)\n- 版面配置, 檢視, 桌面版 vs 行動版\n- Common Taiwan terms: 電腦版, 行動版 (for websites), 手機版\n- \"切換至行動裝置版面\" or \"行動裝置版\"\n\nLet me draft:\n- s1: \"切換為行動裝置版面\" — could also be \"行動裝置版面\"\n- s2: \"切換為電腦版面\"\n- s3: \"已切換至行動裝置版面\" — but s3 is \"切換後的狀態文字\" (status text after switching). It might need to reflect whichever switched. Ambiguous. Probably a generic one like \"已切換版面\" or perhaps it should reflect the mobile version since s1 leads... Actually s3 likely appears after switching; a common pattern is a toast: \"已切換為行動裝置版面\". But if they switch back to desktop, s3 would need different text. The request only has one s3, so maybe a generic status: \"版面已切換\" or \"已切換版面配置\".\n\nGiven ambiguity, I'll produce generic: \"已切換版面\" — but that's a bit bland. Alternatively \"版面已切換\" reads naturally in Taiwan. Hmm.\n\nCommon Taiwanese app toasts: \"已切換至行動版\" etc. Since only one s3, generic \"已切換版面\" works. Or \"版面切換完成\". I think \"已切換版面\" is fine and concise.\n\nMaybe better: s1: \"切換至行動裝置版面\", s2: \"切換至電腦版面\", s3: \"已切換版面\".\n\nOutput JSON only.</think>```json\n{\n  \"s1\": \"切換至行動裝置版面\",\n  \"s2\": \"切換至電腦版面\",\n  \"s3\": \"已切換版面\"\n}\n```",
+ "parsed": {
+  "s1": "切換至行動裝置版面",
+  "s2": "切換至電腦版面",
+  "s3": "已切換版面"
+ },
+ "error": "",
+ "seconds": 2.4
+}

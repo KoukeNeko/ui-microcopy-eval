@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D16",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The user wants UI strings for an app in Traditional Chinese (Taiwan usage).\n\n- s1: feedback form submit button. In Taiwan UI, \"提交\" → \"送出\". Button text should be short: \"送出\". Maybe \"送出意見\"? The instruction says feedback form's submit button that sends content to team. Common Taiwan UI: \"送出\". Could be \"送出意見\" to be more specific. But button labels are usually short. The layer 2 mapping says 提交→送出. So \"送出\" or \"送出意見\".\n\n- s2: settings page button that writes changes. \"儲存變更\" (保存→儲存, 設置→設定). \"儲存變更\" is standard. Or \"套用變更\"? Writing changes to disk: \"儲存變更\" is typical. But the description says \"把變更寫入\" — save changes. \"儲存變更\" fits.\n\n- s3: status text after changes are written. e.g., \"變更已儲存\" or \"已儲存變更\". Common: \"變更已儲存\" or \"設定已儲存\". Since it's settings page: \"變更已儲存\".\n\nOutput only JSON object with keys s1, s2, s3.\n\ns1: \"送出\" — but perhaps more descriptive \"送出意見\" to convey sending to team. Button labels in feedback forms: Taiwan apps often use \"送出\". I'll use \"送出\" for s1? Actually the description: \"填寫後有一個按鈕把內容送給團隊\" — send to team. \"送出\" is fine. Could also be \"送出意見回饋\". Keep simple: \"送出\". Hmm, maybe \"送出意見\" gives context. I'll go with \"送出\" as the generic button. But to be safe and informative, \"送出意見\" might be better UX. Either works. I'll choose \"送出\" since the form is for feedback; typical label is just \"送出\".\n\nActually consider \"反饋\" would map to \"回饋\", but we don't need it in the button.\n\ns2: \"儲存變更\"\ns3: \"變更已儲存\"\n\nOutput JSON only.</think>{\"s1\":\"送出\",\"s2\":\"儲存變更\",\"s3\":\"變更已儲存\"}",
+ "parsed": {
+  "s1": "送出",
+  "s2": "儲存變更",
+  "s3": "變更已儲存"
+ },
+ "error": "",
+ "seconds": 2.2
+}

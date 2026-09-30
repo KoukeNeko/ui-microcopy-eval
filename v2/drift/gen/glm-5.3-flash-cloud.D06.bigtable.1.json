@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D06",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage) for an error scenario: user submits a form, backend server returns 500, app shows error.\n\nThey need:\n- s1: error message (one sentence)\n- s2: button\n- s3: short status in status bar\n\nKey rules from their vocabulary:\n- 服務器 → 伺服器\n- 提交 → 送出\n- 加載 → 載入\n- 消息 → 訊息\n- 刷新 → 重新整理\n\nFor a 500 error, typical Taiwan UI phrasing:\n- s1: something like 「伺服器發生錯誤，請稍後再試。」— mention that submission failed. Since it's after submitting a form: 「送出失敗：伺服器暫時無法處理，請稍後再試。」One sentence. Keep it one sentence. Maybe 「送出失敗，伺服器發生錯誤，請稍後再試。」That's arguably one sentence with commas. Or 「無法送出表單，請稍後再試。」\n- s2: button — likely a retry button: 「重試」or 「重新送出」. For 500 after submission, \"重試\" is common. Taiwan UI often uses 「重試」. Could be 「重新送出」.\n- s3: short status in status bar: 「發生錯誤」or 「伺服器錯誤」— status bars are short; \"500 錯誤\" maybe. Something like 「伺服器發生錯誤」 might be a bit long but okay. Short status: 「錯誤 500」 or 「送出失敗」. I'd go 「伺服器錯誤」.\n\nCheck for any mainland terms: avoid 提交 (use 送出), avoid 服務器 (use 伺服器), 錯誤 fine, 請稍後再試 fine.\n\nOutput only a JSON object with keys s1, s2, s3.\n\ns1: 「送出失敗，伺服器發生錯誤，請稍後再試。」— one sentence.\ns2: 「重試」— or 「重新送出」. Button to retry the submission: 「重新送出」 is clearer. Actually for 500, retry makes sense: 「重試」. I'll use 「重試」.\ns3: 「伺服器錯誤」 or 「發生錯誤」. Status bar short: 「錯誤：伺服器無回應」no. Keep 「伺服器錯誤」.\n\nOutput JSON only.</think>```json\n{\n  \"s1\": \"送出失敗，伺服器發生錯誤，請稍後再試。\",\n  \"s2\": \"重試\",\n  \"s3\": \"伺服器錯誤\"\n}\n```",
+ "parsed": {
+  "s1": "送出失敗，伺服器發生錯誤，請稍後再試。",
+  "s2": "重試",
+  "s3": "伺服器錯誤"
+ },
+ "error": "",
+ "seconds": 2.8
+}

@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for a computer peripherals settings page: adjusting pointer device movement speed and display brightness.\n\nThey need:\n- s1: label for pointer device speed\n- s2: label for display brightness\n- s3: title of this settings page\n\nTaiwan terminology: 指標裝置 speed — in Windows Taiwan settings it's often \"滑鼠\" but the page says 指標裝置. Common label: \"指標速度\" or \"指標移動速度\". Windows uses \"滑鼠指標速度\" but since it's 指標裝置, \"指標裝置速度\" or \"指標速度\". Better: \"指標移動速度\" — natural for adjusting pointer device movement speed.\n\ns2: display brightness label: \"亮度\" or \"顯示亮度\". Since s3 is the page title maybe \"顯示器亮度\"? Display device = 顯示裝置. Label could be \"亮度\". To differentiate: s2: \"顯示器亮度\" or just \"亮度\". Given \"顯示裝置的亮度\" — label \"亮度\" is typical in settings with context. But to be safe: \"顯示器亮度\" — hmm, but the page says 顯示裝置. I'd use \"亮度\" for s2 since s1 is \"指標移動速度\" and page title covers context. Actually to be more explicit and parallel: s1 \"指標移動速度\", s2 \"螢幕亮度\" or \"顯示器亮度\". The screen label uses 螢幕 (from the conversion table, 屏幕→螢幕). But 顯示裝置 is broader. Taiwan: \"顯示器\" is common for monitor. I'll go with \"顯示器亮度\".\n\ns3: title of settings page: \"周邊設定\"? The page is 電腦周邊設定頁. Title something like \"裝置設定\" or \"周邊裝置\" or \"滑鼠與顯示\". A good title: \"裝置設定\" or \"周邊裝置設定\". I'll use \"裝置設定\" — covers pointer and display. Or \"周邊裝置\". Hmm. The page adjusts pointer speed and brightness — like Windows \"裝置\" settings. I'll pick \"裝置設定\" or \"周邊裝置\". Let me choose \"周邊裝置\" as page title? Titles usually noun. \"滑鼠與顯示器\"? Since they want generic, \"裝置設定\" seems good. I'll go with \"裝置設定\".\n\nAvoid mainland terms: 指標 is fine (Taiwan uses 指標 for pointer/cursor). Use 螢幕 not 屏幕. Avoid 設置 (use 設定) — that's second layer linter; my strings don't use it.\n\nOutput only JSON.{\n  \"s1\": \"指標移動速度\",\n  \"s2\": \"顯示器亮度\",\n  \"s3\": \"裝置設定\"\n}",
+ "parsed": {
+  "s1": "指標移動速度",
+  "s2": "顯示器亮度",
+  "s3": "裝置設定"
+ },
+ "error": "",
+ "seconds": 3.3
+}

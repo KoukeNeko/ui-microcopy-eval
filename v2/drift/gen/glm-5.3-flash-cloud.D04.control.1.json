@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D04",
+ "arm": "control",
+ "sample": 1,
+ "raw": "The user wants UI strings for an app in Traditional Chinese. The scenario: when the app sends a request but the device has no network connection, so the request fails.\n\n- s1: error message (one sentence)\n- s2: retry button\n- s3: status text after connection is restored\n\nOutput only a JSON object with keys s1, s2, s3, values are strings; no other text.\n\nLet me write natural Traditional Chinese UI strings:\n\ns1: \"網路連線失效，無法送出請求，請檢查您的網路設定。\" — one sentence. Or \"目前沒有網路連線，請求無法送出。\" Should be one sentence (一句). Let me keep it concise but complete: \"網路連線失效，無法送出請求。\" Hmm, \"一句\" means one sentence. Something like \"目前裝置未連上網路，請求無法送出。\" That's one sentence arguably.\n\ns2: \"重試\" — retry button. Could be \"重試\". Simple.\n\ns3: \"連線已恢復\" — status text after connection restored. Could be \"網路已恢復連線\" or \"連線已恢復，正在重新送出請求\"? The spec says \"連線恢復後的狀態文字\" — status text after connection is restored. Something like \"網路連線已恢復\" is fine.\n\nOutput only JSON:\n\n{\"s1\": \"目前沒有網路連線，請求無法送出。\", \"s2\": \"重試\", \"s3\": \"網路連線已恢復\"}\n\nShould I use fullwidth punctuation? Yes, Traditional Chinese typically uses ，。 The JSON string can contain those fine.\n\nMake sure valid JSON, no trailing text. Keys: s1, s2, s3.</think>{\"s1\": \"目前沒有網路連線，請求無法送出。\", \"s2\": \"重試\", \"s3\": \"網路連線已恢復\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 1.8
+}

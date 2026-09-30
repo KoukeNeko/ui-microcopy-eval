@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The task: write app UI strings in Traditional Chinese (Taiwan usage). Context: app detects that the device's available temporary/cache storage space is insufficient, some functions may slow down.\n\nNeed:\n- s1: warning title\n- s2: warning body (one sentence)\n- s3: button to dismiss warning\n\nKey vocabulary mapping: 暫存運算空間 — \"temp computing space\"? Actually \"暫存運算空間\" likely refers to temporary working storage — like cache/temp storage. In Taiwan terms: 快取 (cache), 硬碟空間 (disk space). The scenario: device's available storage space insufficient — could use \"可用儲存空間\" (available storage space). Taiwan UI: \"儲存空間\" for storage space.\n\nStrings:\n- s1: \"儲存空間不足\" or \"暫存空間不足\". The prompt says \"裝置可用的暫存運算空間不足\" — device's available temporary computing space insufficient. Perhaps \"暫存空間不足\" is fine. Title: \"儲存空間不足\" or \"暫存空間不足\".\n\n- s2: one sentence: \"偵測到裝置可用的暫存空間不足，部分功能可能會變慢。\" Use 部分 (Taiwan) not 部分... \"部分\" is fine in both; Taiwan uses \"部分\". Avoid \"某些\"? Both fine. \"偵測到裝置的可用暫存空間不足，部分功能可能會變慢。\"\n\n- s3: dismiss button: \"關閉\" or \"知道了\" — Taiwan UI commonly \"關閉\" or \"好\". I'll use \"關閉\".\n\nEnsure no mainland terms. Output only JSON.\n\nJSON:\n{\n  \"s1\": \"暫存空間不足\",\n  \"s2\": \"偵測到裝置可用的暫存空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}\n\nMaybe s1 could be \"儲存空間不足\". The scenario mentions \"暫存運算空間\" — I'd keep \"暫存空間\". Good.</think>{\n  \"s1\": \"暫存空間不足\",\n  \"s2\": \"偵測到裝置可用的暫存空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.1
+}

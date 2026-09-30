@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The task: write UI strings in Traditional Chinese (Taiwan) for a desktop app detecting a new version available for install.\n\n- s1: notification title\n- s2: notification body (one sentence)\n- s3: \"Install Now\" button\n\nTaiwan UI conventions:\n- 立即安裝 is fine in Taiwan too. \"立即安裝\" is used. Or \"立刻安裝\". Microsoft uses \"立即安裝\". So \"立即安裝\" works.\n- Title: \"有新版本可用\" or \"偵測到新版本\" or \"新版本已可安裝\". Common Taiwan phrasing: \"有可用的更新\" / \"新版本通知\". Let's think: notification title for desktop app detecting new version: \"有新版本可用\" is natural Taiwan style. Or \"發現新版本\". Microsoft: \"有可用的更新\". \n\ns2: one sentence body: \"建議立即更新至最新版本，以獲得最佳體驗。\" or \"新版本 v1.2.3 已可安裝，建議盡快更新。\" Keep it one sentence. Avoid mainland terms. \"體驗\" is fine in Taiwan. \"取得\" is Taiwan style for \"get\" — \"以取得最新功能與修正\". \n\nSomething like: \"新版本已可安裝，建議更新以取得最新功能與修正項目。\" One sentence.\n\nOr simpler: \"我們偵測到新版本，建議立即更新以取得最佳體驗。\" \"偵測到\" is fine.\n\ns3: \"立即安裝\"\n\nLet me finalize:\n\ns1: \"有新版本可用\"\ns2: \"建議立即更新至最新版本，以取得最新功能與改善項目。\" — hmm \"改善項目\" or \"修正項目\". \"修正\" is fine in Taiwan (Microsoft uses 修正). One sentence.\n\nMaybe: \"新版本已可供安裝，建議立即更新以獲得最佳使用體驗。\" That's one sentence.\n\nKeep simple: \ns1: \"有新版本可用\"\ns2: \"新版本已可安裝，建議立即更新以取得最新功能與修正。\"\ns3: \"立即安裝\"\n\nJSON only.{\n  \"s1\": \"有新版本可用\",\n  \"s2\": \"新版本已可安裝，建議立即更新以取得最新功能與修正。\",\n  \"s3\": \"立即安裝\"\n}",
+ "parsed": {
+  "s1": "有新版本可用",
+  "s2": "新版本已可安裝，建議立即更新以取得最新功能與修正。",
+  "s3": "立即安裝"
+ },
+ "error": "",
+ "seconds": 3.8
+}

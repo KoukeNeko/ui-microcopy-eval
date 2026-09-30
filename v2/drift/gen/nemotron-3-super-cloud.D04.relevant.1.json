@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D04",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"無法連線至網路\",\n  \"s2\": \"重試\",\n  \"s3\": \"網路已恢復\"\n}",
+ "parsed": {
+  "s1": "無法連線至網路",
+  "s2": "重試",
+  "s3": "網路已恢復"
+ },
+ "error": "",
+ "seconds": 2.6
+}

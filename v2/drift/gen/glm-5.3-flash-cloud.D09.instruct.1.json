@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan style) for a computer peripherals settings page: adjusting pointer device movement speed, and display device brightness.\n\n- s1: label for pointer device speed → In Taiwan Windows terminology, \"指標裝置\" is used for pointing device. Speed → \"速度\". So \"指標速度\" or \"指標裝置速度\". Windows uses \"滑鼠速度\" perhaps. For pointer device speed: \"指標速度\" is common. Given the description uses \"指標裝置\", I could use \"指標裝置速度\". But Taiwan Windows uses \"指標速度\" under mouse settings. Either works. Maybe \"指標速度\" is more natural. However to match \"指標裝置的移動速度\", \"指標速度\" is fine. Let me go with \"指標速度\".\n\n- s2: display brightness → \"螢幕亮度\" (Taiwan uses 螢幕 for screen, not 屏幕). \"顯示裝置亮度\" or \"螢幕亮度\". Taiwan standard: \"螢幕亮度\". Could also be \"顯示亮度\" (Windows uses \"顯示器亮度\"?). Windows 10 Traditional Chinese uses \"螢幕\" for display in settings (\"螢幕\" section), and brightness is \"亮度\" under \"螢幕\". \"螢幕亮度\" is natural and Taiwan-appropriate.\n\n- s3: title of this settings page → \"周邊裝置設定\" or \"周邊設定\". The page is about peripherals: pointer device speed and display brightness. Title could be \"周邊設定\" or \"電腦周邊設定\". Taiwan uses \"週邊\" or \"周邊\"? Actually \"周邊\" and \"週邊\" both appear; Taiwan commonly uses \"週邊\" for peripheral (\"周邊設備\" also common). Education Ministry standard: \"周邊\" is the standard form (週邊 is variant). Microsoft uses \"週邊\"? Windows Traditional Chinese uses \"裝置\", e.g., \"藍牙與裝置\". Hmm. The user's prompt says \"電腦周邊設定頁\". Title: \"周邊設定\" or \"裝置設定\". I'll use \"周邊設定\" — wait, should distinguish. Could use \"周邊裝置設定\".\n\nThe user specified the page is about pointer device speed and display brightness. Title maybe \"裝置與顯示\" or \"周邊設定\". Simplest: \"周邊設定\".\n\nTaiwan style: avoid \"屏\", use \"螢幕\"; \"滑鼠\" not \"鼠標\"; \"速度\" fine.\n\nOutput only JSON object with keys s1, s2, s3.\n\ns1: \"指標速度\" — but maybe to be more explicit: \"指標裝置速度\". Hmm, labels should be concise. \"指標速度\" is the Windows label. I'll use \"指標速度\".\n\nActually let me reconsider: the description says \"調整指標裝置的移動速度\". So the label for pointer device speed could be \"指標裝置速度\" to be explicit. But UI labels tend to be short. \"指標速度\" is standard. I'll go with \"指標速度\".\n\ns2: \"螢幕亮度\".\n\ns3: \"周邊設定\" or \"裝置設定\". Since it includes display brightness (which is a display device, not exactly a peripheral in some definitions, but per the prompt it's the peripherals page). I'll use \"周邊設定\". Hmm, could also be \"周邊裝置設定\". \"周邊設定\" is concise and matches \"電腦周邊設定頁\".\n\nOutput JSON only.</think>```json\n{\n  \"s1\": \"指標速度\",\n  \"s2\": \"螢幕亮度\",\n  \"s3\": \"周邊設定\"\n}\n```",
+ "parsed": {
+  "s1": "指標速度",
+  "s2": "螢幕亮度",
+  "s3": "周邊設定"
+ },
+ "error": "",
+ "seconds": 3.4
+}

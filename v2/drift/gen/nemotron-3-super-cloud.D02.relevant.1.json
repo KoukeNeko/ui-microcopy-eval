@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D02",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"此影片檔案格式不支援播放\",\n  \"s2\": \"確定\",\n  \"s3\": \"影片播放\"\n}",
+ "parsed": {
+  "s1": "此影片檔案格式不支援播放",
+  "s2": "確定",
+  "s3": "影片播放"
+ },
+ "error": "",
+ "seconds": 1.1
+}

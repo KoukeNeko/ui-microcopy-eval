@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D02",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "Let me analyze this task. I need to write UI strings for a player app in Traditional Chinese (Taiwan style):\n\n- s1: Error message (one sentence) - the file format is not supported when trying to play recorded video content\n- s2: Button on the error screen\n- s3: Name of the functional area at the top of the screen\n\nKey considerations:\n- Use Taiwan Traditional Chinese UI terminology\n- 視頻 → 影片\n- 文件 → 檔案\n- 格式 is fine\n- 不支援 is the Taiwan way (not 不支持)\n\ns1: Error message about unsupported file format. Something like:\n- 「此影片檔案格式不支援，無法播放。」\n- 「不支援此檔案格式，無法播放此影片。」\n- 「影片格式不支援，無法播放。」\n\nA typical Taiwan UI style: 「不支援此影片檔案格式，因此無法播放。」or「影片檔案格式不受支援，無法播放。」\n\nCommon patterns: 「無法播放影片：不支援的檔案格式。」\n\nLet me keep it one sentence: 「此影片的檔案格式不支援，無法播放。」\n\ns2: Button on error screen. Common options:\n- 「瞭解更多」\n- 「返回」\n- 「重試」\n- 「確定」\n- 「查看支援的格式」\n- 「選擇其他檔案」\n- 「回到媒體庫」\n\nWhat would be a sensible button on an error screen for unsupported format? Possibly 「確定」 or 「返回」 or 「瞭解支援的格式」. A common app pattern: a button to go back, like 「返回」 or 「回到上一頁」. Or 「重試」— but retry won't help for unsupported format. Maybe 「確定」 or 「知道了」.\n\nActually for a player app, the screen top functional area is likely 「媒體庫」 or 「播放器」 or 「影片」. The top area name — like a navigation bar title. Could be 「媒體庫」 (media library).\n\ns3: 「媒體庫」 seems reasonable for a player app's top functional area.\n\nLet me finalize:\n\ns1: 「不支援此影片檔案格式，無法播放。」— one sentence, natural Taiwan phrasing.\n\nActually, more natural: 「此影片的檔案格式不支援，無法播放。」or「影片檔案格式不受支援，因此無法播放。」\n\nTaiwan style often: 「不支援的檔案格式」. Error message: 「無法播放此影片：檔案格式不支援。」\n\nI'll go with 「此影片的檔案格式不支援，無法播放。」\n\ns2: 「返回」 or 「確定」. Hmm, but maybe a more helpful button: 「查看支援的格式」. For a simple error screen, 「確定」 is typical. But 「返回」 makes sense to leave the screen. I'll pick 「返回」— actually many apps use 「確定」. Given it's an error screen for unplayable content, the button likely dismisses/goes back. I'll use 「返回」.\n\nAlternatively 「知道了」 is common in Taiwan apps. Hmm. iOS style would be 「好」 or 「確定」. For a full error screen with a button, 「返回」 or 「重試」. Since format unsupported, retry is useless, so 「返回」.\n\ns3: 「媒體庫」\n\nOutput JSON only.{\n  \"s1\": \"此影片的檔案格式不支援，無法播放。\",\n  \"s2\": \"返回\",\n  \"s3\": \"媒體庫\"\n}",
+ "parsed": {
+  "s1": "此影片的檔案格式不支援，無法播放。",
+  "s2": "返回",
+  "s3": "媒體庫"
+ },
+ "error": "",
+ "seconds": 4.2
+}

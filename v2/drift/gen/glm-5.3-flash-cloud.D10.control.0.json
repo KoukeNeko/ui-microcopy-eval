@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "control",
+ "sample": 0,
+ "raw": "The user wants me to write UI strings for an app in Traditional Chinese. The screen: a list page is fetching data from the backend, not yet complete.\n\nThey need:\n- s1: status text shown while waiting\n- s2: error message when fetching fails\n- s3: button after failure (retry button)\n\nOutput only a JSON object with keys s1, s2, s3, values as strings, no other text.\n\nTraditional Chinese:\n- s1: 「載入中…」 or 「正在載入清單…」\n- s2: 「載入失敗，請稍後再試。」 or 「無法取得資料，請檢查網路連線後再試。」\n- s3: 「重試」\n\nLet me make them consistent. s1: \"載入中…\" — maybe more descriptive: \"正在載入清單…\" Since the screen is a list page. s2: \"載入失敗，請檢查網路連線後再試。\" s3: \"重試\"\n\nOutput only JSON, no code fences? They said only output one JSON object. I'll output the JSON without markdown fences.{\n  \"s1\": \"載入中…\",\n  \"s2\": \"載入失敗，請檢查網路連線後再試。\",\n  \"s3\": \"重試\"\n}",
+ "parsed": {
+  "s1": "載入中…",
+  "s2": "載入失敗，請檢查網路連線後再試。",
+  "s3": "重試"
+ },
+ "error": "",
+ "seconds": 1.9
+}

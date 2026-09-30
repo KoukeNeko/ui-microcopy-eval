@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D15",
+ "arm": "table",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"確認移除\",\n  \"s3\": \"已移除應用程式\"\n}",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "確認移除",
+  "s3": "已移除應用程式"
+ },
+ "error": "",
+ "seconds": 1.2
+}

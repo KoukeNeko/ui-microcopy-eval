@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D08",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for a file management app in Traditional Chinese (Taiwan usage). They need:\n\n- s1: Button for creating a new container (容器) to organize things\n- s2: Status text after creation\n- s3: Dialog title for moving an item into it\n\nTaiwan UI conventions: 「新增」 is commonly used for \"create new\" in Taiwan interfaces (e.g., 新增資料夾). \"容器\" — the user says \"容器\" which could mean folder-like container. Maybe use 「新增容器」. Status text after creation: 「已建立容器」or「容器已建立」. Move dialog title: 「移動項目」or「移至容器」— since the action is moving an item into the container, the title could be 「移動項目至容器」or simply 「移動項目」. Taiwan usage: 「移動」 vs 「移至」. Common in Taiwan: 「移動到…」. For dialog title when moving an item: 「移動項目」or「移至容器」.\n\nAvoid China terms like 「新建」, 「文件夹」, 「移动...至」is fine actually. China would use 「新建」and 「窗口」etc. Taiwan uses 「新增」. So:\n\ns1: \"新增容器\"\ns2: \"容器已建立\" or \"已建立容器\" — Taiwan style: 「已建立容器」seems fine. Maybe \"已成功建立容器\" is too verbose. \"容器已建立\" is concise.\ns3: \"移動項目至容器\" or \"將項目移動至容器\". Dialog title typically short: \"移動項目\".\n\nI'll output:\n{\n  \"s1\": \"新增容器\",\n  \"s2\": \"已建立容器\",\n  \"s3\": \"移動項目至容器\"\n}\n\nOnly JSON, no other text. Should I use 「」? No, plain strings.</think>{\n  \"s1\": \"新增容器\",\n  \"s2\": \"已建立容器\",\n  \"s3\": \"移動項目至容器\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 1.8
+}

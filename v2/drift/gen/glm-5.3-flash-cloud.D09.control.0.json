@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "control",
+ "sample": 0,
+ "raw": "The user wants UI strings for a settings page in Traditional Chinese. The page: computer peripherals settings: adjust pointer device movement speed, and display device brightness.\n\nThey need:\n- s1: label for pointer device speed\n- s2: label for display device brightness\n- s3: title of this settings page\n\nOutput only a JSON object with keys s1, s2, s3, values as strings, no other text.\n\nTraditional Chinese strings:\n- s1: \"指標移動速度\" or \"指標裝置速度\" — typical UI label like \"Pointer speed\" → \"指標速度\" or \"指標移動速度\"\n- s2: \"顯示器亮度\" or \"螢幕亮度\" — display brightness → \"顯示器亮度\"\n- s3: \"滑鼠與顯示器\" or \"週邊裝置設定\" — the page title. The page is about peripherals settings: pointer speed and brightness. Could be \"週邊裝置\" or \"滑鼠與顯示器設定\". \n\nLet me pick:\n- s1: \"指標移動速度\"\n- s2: \"顯示器亮度\"\n- s3: \"滑鼠與顯示器\"\n\nOr s3: \"週邊裝置設定\". Since it's a peripherals settings page covering pointer and display, \"滑鼠與顯示器\" is a common macOS-like naming. But display is not peripheral... Actually the prompt says \"電腦周邊設定頁：調整指標裝置的移動速度，以及顯示裝置的亮度\" — so the page title could be \"周邊裝置\" or \"電腦周邊\". I'll go with \"周邊裝置\" or \"裝置設定\".\n\nI'll output:\n{\n  \"s1\": \"指標移動速度\",\n  \"s2\": \"顯示器亮度\",\n  \"s3\": \"周邊裝置設定\"\n}{\"s1\": \"指標移動速度\", \"s2\": \"顯示器亮度\", \"s3\": \"周邊裝置設定\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 3.8
+}

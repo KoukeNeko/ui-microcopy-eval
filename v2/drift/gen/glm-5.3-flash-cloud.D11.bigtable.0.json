@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The user wants UI strings for a mobile app list page with pull-to-refresh functionality, in Traditional Chinese (Taiwan usage).\n\ns1: hint text when pulling down (pull-to-refresh)\ns2: status text after fetching completes\ns3: empty list text\n\nKey considerations:\n- Taiwan UI conventions: \"下拉\" is fine, but the instruction says avoid 刷新 → use 重新整理. Actually for pull-to-refresh, common Taiwan phrasing: 「下拉即可更新」or「下拉以重新整理」. The linter says 刷新 → 重新整理. So avoid 刷新.\n- s2: after loading completes. Common patterns: 「已更新」/「更新完成」/「資料已更新」. Since refresh is the trigger, s2 could be 「更新完成」or「已重新整理」. Hmm. Note also the second-layer word 保存→儲存, 數據→資料. So avoid 數據; use 資料.\n- s3: empty list: 「目前沒有任何項目」... wait, 項目 → 專案 per the list? The mapping 項目→專案 is in the \"其他兩岸用語\" table. But 項目 in the sense of list items in UI... Actually in Taiwan UI, list items are usually 「項目」 too. The table says 項目→專案, but that's for project context. In a list-empty state, Taiwan UI often says 「沒有資料」or「目前沒有內容」. To be safe, avoid 項目 to not trigger the linter ambiguity; use 「目前沒有任何資料」or「清單是空的」. Common Taiwan empty-state text: 「這裡空空如也」but simpler: 「目前沒有資料」. Or 「沒有更多內容」. Let's choose 「目前沒有任何資料」.\n\ns1 options: 「下拉以重新整理」or 「下拉更新」— many Taiwan apps say 「下拉可以更新」/「鬆開立即更新」. The ask: hint when pulling down. So 「下拉即可重新整理」or「繼續下拉以重新整理」. Simple: 「下拉即可重新整理」.\n\nWait — if s2 says 更新完成, that's fine; 更新 isn't forbidden. Or s2: 「已更新至最新資料」. Keep it short: 「更新完成」.\n\ns3: 「目前沒有任何資料」— also could add 「下拉重新整理再試試」but keep simple.\n\nAvoid: 加載 (use 載入), 刷新 (use 重新整理), 數據 (use 資料), 服務器 etc. My strings avoid those.\n\ns1: 「下拉即可重新整理」\ns2: 「更新完成」or 「資料已更新」. Hmm \"取完後的狀態文字\" = after fetch finished. 「已更新」is typical. I'll use 「已更新至最新資料」? Might be long. Taiwan apps: 「更新時間：...」. I'll go 「資料已更新」.\ns3: 「目前沒有任何資料」or 「沒有資料，下拉即可重新整理」. Keep clean: 「目前沒有任何資料」.\n\nOutput only JSON object with keys s1, s2, s3.{\"s1\": \"下拉即可重新整理\", \"s2\": \"資料已更新\", \"s3\": \"目前沒有任何資料\"}",
+ "parsed": {
+  "s1": "下拉即可重新整理",
+  "s2": "資料已更新",
+  "s3": "目前沒有任何資料"
+ },
+ "error": "",
+ "seconds": 4.0
+}

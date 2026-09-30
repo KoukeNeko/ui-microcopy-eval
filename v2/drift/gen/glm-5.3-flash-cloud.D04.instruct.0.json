@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D04",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app. The scenario: app sends a request but the device has no network connection, so it fails.\n\nNeed:\n- s1: error message (one sentence)\n- s2: retry button\n- s3: status text after connection restored\n\nTaiwan Traditional Chinese UI conventions:\n- Avoid mainland terms: 使用「網路」not「網絡」, 「伺服器」not「服務器」, 「連線」not「连接」, 「重試」is fine in Taiwan too (常用「重試」), 「無法」etc.\n\ns1: Something like「無法連上網路，請檢查網路連線後再試。」— one sentence? It says one sentence (一句). Could be「目前沒有網路連線，請求無法送出。」Actually error message should indicate failure due to no network. Common Taiwan UI: 「網路連線失敗，請確認裝置已連上網路。」\n\nOne sentence: 「目前無法連上網路，請求傳送失敗。」Hmm, that's arguably one sentence with a comma.\n\ns2: 「重試」— Taiwan uses 「重試」. Could also be 「重新嘗試」but 「重試」 is standard.\n\ns3: status text after connection restored: 「連線已恢復」or 「網路連線已恢復」. Something like 「已重新連上網路」.\n\nOutput only JSON object with keys s1, s2, s3.\n\nLet me craft:\n\ns1: \"目前沒有網路連線，請求無法送出。\" — one sentence.\ns2: \"重試\"\ns3: \"網路連線已恢復\"\n\nEnsure Traditional characters. All good. Only JSON, no extra text.</think>```json\n{\n  \"s1\": \"目前沒有網路連線，請求無法送出。\",\n  \"s2\": \"重試\",\n  \"s3\": \"網路連線已恢復\"\n}\n```",
+ "parsed": {
+  "s1": "目前沒有網路連線，請求無法送出。",
+  "s2": "重試",
+  "s3": "網路連線已恢復"
+ },
+ "error": "",
+ "seconds": 3.1
+}

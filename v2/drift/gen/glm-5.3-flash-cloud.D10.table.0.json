@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for a list page loading state:\n\n- s1: waiting status text while loading data\n- s2: error message when fetching fails\n- s3: button after failure (retry button)\n\nKey terminology:\n- 加載 → 載入\n- 數據 → 資料\n- 重試 — common in Taiwan UI\n- 失敗 — fine\n- 網絡 → 網路\n- 服務器 → 伺服器\n\nCommon Taiwan UI phrasing:\n- s1: \"載入中…\" or \"正在載入…\" — Taiwan often uses \"載入中\" without 正在. Both fine. \"資料載入中…\" is good since it's fetching data for the list.\n- s2: \"資料載入失敗，請稍後再試\" or \"無法載入資料，請檢查網路連線後重試\"\n- s3: \"重試\" or \"重新載入\" — \"重試\" is common. Maybe \"重新載入\" to avoid 重啟 issues? 重試 is fine in Taiwan UI. Button label often \"重試\".\n\nOutput only JSON object with keys s1, s2, s3.\n\nLet me choose:\n- s1: \"資料載入中，請稍候…\"\n- s2: \"資料載入失敗，請檢查網路連線後再試\" — mentions 網路 (correct term). Or simpler \"載入失敗，請稍後再試\".\n- s3: \"重試\"\n\nEllipsis: use \"…\" single character. Fine.\n\nOutput only JSON.</think>{\n  \"s1\": \"資料載入中，請稍候…\",\n  \"s2\": \"資料載入失敗，請檢查網路連線後再試\",\n  \"s3\": \"重試\"\n}",
+ "parsed": {
+  "s1": "資料載入中，請稍候…",
+  "s2": "資料載入失敗，請檢查網路連線後再試",
+  "s3": "重試"
+ },
+ "error": "",
+ "seconds": 1.9
+}

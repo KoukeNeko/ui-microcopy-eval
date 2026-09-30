@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage). The screen: app detects insufficient available temporary storage/compute space on the device, some functions might slow down.\n\nKey terms: \"暫存\" = cache/temp storage; \"運算\" = compute. Need Taiwan-style terms: 快取 (cache), 記憶體 (memory). The scenario: \"裝置可用的暫存運算空間不足\" — available transient compute storage insufficient — this sounds like RAM / temporary working space. But we should phrase naturally in Taiwan UI language: 「可用的暫存空間不足」.\n\ns1: warning title — e.g., 「暫存空間不足」\ns2: warning body one sentence — e.g., 「裝置可用的暫存運算空間不足，部分功能可能會變慢。」\ns3: close button — 「關閉」\n\nCheck Taiwan usage: 部分 vs 部份 — Taiwan often uses 「部分」. Avoid 大陸 terms. 「可能會變慢」 or 「可能變慢」. One sentence.\n\nOutput JSON only.```json\n{\n  \"s1\": \"暫存空間不足\",\n  \"s2\": \"您的裝置可用的暫存運算空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}\n```",
+ "parsed": {
+  "s1": "暫存空間不足",
+  "s2": "您的裝置可用的暫存運算空間不足，部分功能可能會變慢。",
+  "s3": "關閉"
+ },
+ "error": "",
+ "seconds": 2.6
+}

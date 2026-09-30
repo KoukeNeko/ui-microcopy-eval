@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "control",
+ "sample": 1,
+ "raw": "The user is asking me to write UI strings for a desktop app in Traditional Chinese. The screen is when a desktop application detects a new version available for installation.\n\nThey want:\n- \"s1\": notification title\n- \"s2\": notification body (one sentence)\n- \"s3\": \"install now\" button\n\nThey only want a JSON object with keys s1, s2, s3, values as strings, no other text.\n\nLet me write good Traditional Chinese strings:\n\ns1: Something like \"有新版本可用\" or \"發現新版本\" — notification title\ns2: One sentence body, like \"新版本 v1.2.3 已準備好，立即安裝以獲得最新功能與修正。\" But they said one sentence, keep it concise. Maybe \"目前使用的是舊版本，立即更新以享有最新功能與安全性修正。\" Or simpler: \"偵測到新版本，建議盡快安裝以獲得最佳體驗。\"\ns3: \"立即安裝\" — button for install now\n\nTraditional Chinese (Taiwan style) — \"立即安裝\" is appropriate. Title could be \"有新版本可用\" or \"新版本已推出\".\n\nLet me finalize:\ns1: \"有可用的新版本\"\ns2: \"偵測到新版本，立即更新即可享有最新功能與修正。\"\ns3: \"立即安裝\"\n\nActually for s2, one sentence is fine. Output only JSON, no markdown code fences? They said \"只輸出一個 JSON 物件...不要其他文字\" — best to output raw JSON without code fences to comply strictly. Though code fences might be considered other text. I'll output pure JSON.\n\nJSON with Traditional Chinese strings:\n\n{\"s1\": \"有可用的新版本\", \"s2\": \"偵測到新版本，立即更新即可享有最新功能與錯誤修正。\", \"s3\": \"立即安裝\"}\n\nHmm, \"錯誤修正\" vs \"問題修正\" — \"bug 修正\" is common but mixing English. \"修正\" alone works. Let me use: \"偵測到新版本，立即更新以獲得最新功能與改善。\"\n\nKeep s2 as one sentence: \"偵測到新版本，立即更新即可體驗最新功能與改進。\"{\"s1\": \"有可用的新版本\", \"s2\": \"偵測到新版本，立即更新即可享受最新功能與改善。\", \"s3\": \"立即安裝\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.1
+}

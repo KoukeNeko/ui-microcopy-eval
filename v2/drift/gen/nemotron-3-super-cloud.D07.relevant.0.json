@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D07",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"密碼\",\n  \"s2\": \"建立新帳號\",\n  \"s3\": \"密碼錯誤\"\n}",
+ "parsed": {
+  "s1": "密碼",
+  "s2": "建立新帳號",
+  "s3": "密碼錯誤"
+ },
+ "error": "",
+ "seconds": 1.6
+}

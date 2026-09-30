@@ -1,0 +1,14 @@
+{
+ "model": "gemma4:31b-cloud",
+ "probe": "D16",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "```json\n{\n  \"s1\": \"提交\",\n  \"s2\": \"儲存變更\",\n  \"s3\": \"已儲存變更\"\n}\n```",
+ "parsed": {
+  "s1": "提交",
+  "s2": "儲存變更",
+  "s3": "已儲存變更"
+ },
+ "error": "",
+ "seconds": 0.8
+}

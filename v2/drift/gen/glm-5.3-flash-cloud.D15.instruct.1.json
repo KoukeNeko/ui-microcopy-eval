@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Taiwan Traditional Chinese app. The screen is a system settings app list, with a button next to each app to completely remove it from the device.\n\ns1: the button label — in Taiwan UI conventions, uninstalling an app is usually 「解除安裝」 (this is the standard term used in Android Taiwan settings). \"移除\" is also used, but for a system settings app list, 「解除安裝」 is the canonical Taiwan term (vs mainland 「卸载」). Since it says \"把它從裝置上完全移除\" — completely remove from the device — 解除安裝 is the standard.\n\ns2: confirmation dialog title. Taiwan style: 「要解除安裝「App 名稱」嗎？」or something like 「解除安裝應用程式？」. Typically titles like 「要解除安裝這個應用程式嗎？」. Taiwan uses 「應用程式」 not 「应用程序」. A common pattern: 「解除安裝應用程式」 as title. Or 「要解除安裝嗎？」. Let me pick something natural: 「要解除安裝這個應用程式嗎？」\n\nActually, given it's a dialog title, maybe include a placeholder for app name. But the spec says strings only; could include a placeholder like {app_name}. But instructions say output JSON with s1, s2, s3 as string values. Including a placeholder might be fine, but simpler to be generic. However, the context \"每個 app 旁\" — the dialog probably confirms removal of that app. A title like 「解除安裝應用程式」 is safe. Or 「要解除安裝「{app_name}」嗎？」 Hmm, placeholders weren't requested; I'll keep generic but natural.\n\ns3: status text after completion — e.g., 「已解除安裝」 or toast 「應用程式已解除安裝」. Common Android toast: 「已解除安裝 'app'」. I'll use 「已解除安裝」.\n\nOutput only JSON object.</think>```json\n{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"要解除安裝這個應用程式嗎？\",\n  \"s3\": \"已解除安裝\"\n}\n```",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.6
+}

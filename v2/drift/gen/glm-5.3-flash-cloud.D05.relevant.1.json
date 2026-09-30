@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants UI strings for a desktop app detecting a new version available for installation. Traditional Chinese (Taiwan) terminology.\n\ns1: notification title - something like \"有新版本可用\" or \"發現新版本\"\ns2: notification body (one sentence) - \"目前版本 X.Y.Z 已可更新至新版，是否立即安裝？\" - but should be one sentence. Maybe \"偵測到新版本，安裝後即可享受最新功能與修正。\" Hmm, keep simple.\ns3: install now button - \"立即安裝\"\n\nAvoid mainland terms. Use 軟體 if needed. Should be natural Taiwan UI language.\n\ns1: \"有新版本可用\" — common. Or \"新版本已推出\". Microsoft uses \"有可用的更新\". Let's do \"有新版本可用\".\n\ns2: \"您的應用程式已有新版本，立即安裝即可開始使用最新功能。\" One sentence. Or simpler: \"新版本已可安裝，安裝後即可體驗最新功能與修正。\" Keep to one sentence.\n\nMaybe include app context: \"偵測到新版本，建議立即更新以獲得最佳體驗。\" That's one sentence.\n\ns3: \"立即安裝\"\n\nOutput only JSON.</think>{ \"s1\": \"有新版本可用\", \"s2\": \"偵測到新版本，安裝後即可使用最新功能與修正。\", \"s3\": \"立即安裝\" }",
+ "parsed": {
+  "s1": "有新版本可用",
+  "s2": "偵測到新版本，安裝後即可使用最新功能與修正。",
+  "s3": "立即安裝"
+ },
+ "error": "",
+ "seconds": 1.8
+}

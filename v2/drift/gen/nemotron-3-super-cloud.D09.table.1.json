@@ -1,0 +1,10 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D09",
+ "arm": "table",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"滑鼠移動速度\",\n  \"s2螢幕亮度\",\n  \"s3滑鼠與螢幕設定\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 3.6
+}

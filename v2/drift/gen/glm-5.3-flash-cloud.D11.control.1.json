@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "control",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Traditional Chinese app. The screen is a list page with pull-to-refresh functionality.\n\n- s1: prompt text when pulling down (before release to refresh) — typically \"下拉即可重新整理\" or \"下拉更新\" — the hint shown while pulling down before triggering refresh. Common patterns: \"下拉可以更新\" / \"放開立即更新\" — but s1 specifically is \"往下拉時的提示文字\" = text shown when pulling down. Usually \"下拉重新整理\" or \"下拉以更新\".\n\n- s2: status text after fetching completes — \"更新完成\" or \"已更新\" or \"資料已更新\".\n\n- s3: empty list text — \"目前沒有任何項目\" or \"清單目前沒有內容\" / \"這裡空空如也\".\n\nOutput only a JSON object with keys s1, s2, s3, values strings, no other text. Use Traditional Chinese.\n\nLet me write natural strings:\n- s1: \"下拉以更新內容\" — hmm, when pulling down, common iOS style: \"下拉以重新整理\" then \"放開以更新\". Since only one string, \"下拉即可更新資料\" or \"繼續下拉以更新\". I'll pick \"下拉以更新內容\" or \"下拉即可重新整理\". Keep it simple: \"下拉更新\" is minimal. Maybe \"下拉即可重新整理\".\n\n- s2: \"資料已更新\" — good.\n\n- s3: \"目前沒有任何資料\" or \"清單是空的\" — friendly: \"這裡還沒有任何項目\". I'll use \"目前沒有任何項目\".\n\nJSON only:\n{\"s1\": \"下拉即可重新整理\", \"s2\": \"資料已更新\", \"s3\": \"目前沒有任何項目\"}</think>{\"s1\":\"下拉即可重新整理\",\"s2\":\"資料已更新\",\"s3\":\"目前沒有任何項目\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 6.4
+}

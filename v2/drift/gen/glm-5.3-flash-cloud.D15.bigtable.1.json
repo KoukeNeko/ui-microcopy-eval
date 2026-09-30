@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user is asking me to write UI strings for a system settings app in Traditional Chinese (Taiwan). The screen: an app list in system settings, each app has a button to completely remove it from the device.\n\nKey consideration: \"完全移除\" — the button removes the app from the device. In Android, this is \"解除安裝\" (uninstall). The linter table says 卸載 → 解除安裝. But note the button is to \"把它從裝置上完全移除\" — completely remove it from the device. This maps to uninstalling the app: 解除安裝.\n\nWait — \"完全移除\" could also suggest \"刪除\" (delete). But in system settings context for apps, the standard Taiwanese term is 解除安裝 (uninstall). The table explicitly says 卸載 → 解除安裝, hinting that uninstall is the intended action.\n\ns1: the button label — \"解除安裝\" (Uninstall)\n\ns2: confirmation dialog title — \"解除安裝此應用程式？\" or \"要解除安裝這個應用程式嗎？\" In Taiwan UI conventions, app = 應用程式 (in Android Traditional Chinese it's \"應用程式\"). A typical confirmation dialog title: \"解除安裝這個應用程式嗎？\" Hmm, Android style: \"要解除安裝這個應用程式嗎？\" Actually Android strings often use \"要解除安裝這個應用程式嗎？\" or \"解除安裝應用程式\". For a dialog title in system settings, \"解除安裝「<App 名稱>」？\" with placeholder. Since we don't have an app name placeholder spec, simpler: \"要解除安裝這個應用程式嗎？\" But dialog titles are often short phrases without question marks in Taiwan UI: \"解除安裝應用程式\". Hmm. Both possible. A common pattern: title \"解除安裝應用程式\" with body text. Or a question form. I'll go with \"要解除安裝這個應用程式嗎？\" — that's more like Android's style. Actually Android's uninstall dialog title is \"要解除安裝這個應用程式嗎？\" Yes, Android uses \"要解除安裝 %s 嗎?\" style. Let me recall: Android uninstaller shows \"要解除安裝這個應用程式嗎？\" I think that's right.\n\ns3: status text after completion — \"已解除安裝\" (Uninstalled). Could be \"應用程式已解除安裝\". For a status/snackbar text, \"已解除安裝\" is concise and appropriate.\n\nCheck terminology: 用戶→使用者 not needed. 設置→設定 not needed here since screen name is \"系統設定\" already given. Avoid 點擊 etc.\n\nAlso avoid 移動端 etc. No mainland terms used.\n\nOutput only JSON object with keys s1, s2, s3, values strings, no other text.\n\ns1: \"解除安裝\"\ns2: \"要解除安裝這個應用程式嗎？\"\ns3: \"已解除安裝\"\n\nJSON output.</think>{\"s1\":\"解除安裝\",\"s2\":\"要解除安裝這個應用程式嗎？\",\"s3\":\"已解除安裝\"}",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "要解除安裝這個應用程式嗎？",
+  "s3": "已解除安裝"
+ },
+ "error": "",
+ "seconds": 4.1
+}

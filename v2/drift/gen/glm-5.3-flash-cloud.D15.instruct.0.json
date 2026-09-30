@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants Traditional Chinese (Taiwan style) UI strings for a system settings app list, where each app has a button to completely remove it from the device.\n\ns1: the button label — in Taiwan UI conventions, uninstall an app is usually「解除安裝」(this is the standard Microsoft/Taiwan convention) or「移除」. On Android Taiwan, it's「解除安裝」. Since it says \"completely remove from device\" — the standard Taiwan term for uninstalling an app is「解除安裝」. So s1: \"解除安裝\".\n\ns2: confirmation dialog title — something like「要解除安裝這個應用程式嗎？」or「確認解除安裝」. Common style: 「要解除安裝 %s 嗎？」but we don't know if placeholders allowed. The instruction just says values are strings. I'll write「確定要解除安裝此應用程式嗎？」or simpler「解除安裝應用程式」. Taiwan UI conventions: dialog title often a question: 「要解除安裝「App 名稱」嗎？」. Without placeholder, maybe「確定要解除安裝嗎？」. I'll go with「確定要解除安裝這個應用程式嗎？」Hmm, that's long. Perhaps「要解除安裝此應用程式嗎？」.\n\ns3: status text after completion — e.g.「已解除安裝」or「應用程式已解除安裝」. Taiwan style:「已解除安裝」.\n\nUse 應用程式 (Taiwan) not 应用/應用軟體. Terms: 解除安裝 is Microsoft style; Android Taiwan uses 「解除安裝」 too (Google uses 解除安裝 in zh-TW). Yes.\n\nOutput only JSON object.</think>{\"s1\": \"解除安裝\", \"s2\": \"要解除安裝此應用程式嗎？\", \"s3\": \"已解除安裝\"}",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "要解除安裝此應用程式嗎？",
+  "s3": "已解除安裝"
+ },
+ "error": "",
+ "seconds": 3.3
+}

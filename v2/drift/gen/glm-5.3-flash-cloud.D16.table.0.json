@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D16",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage). Three strings:\n\n- s1: feedback form submit button — sends content to the team\n- s2: settings page button to write/save changes\n- s3: status text after changes are written/saved\n\nGuidelines: Taiwan terms. 提交→送出, 保存→儲存. So s1 should be like「送出意見」or「送出」。The button sends content to the team — maybe「送出意見」.\n\ns2: settings save button —「儲存變更」or「儲存設定」. Since it writes changes (寫入變更), Taiwan usage typically「儲存變更」.\n\ns3: status text after changes written —「變更已儲存」or「您的變更已儲存」. Status text: 「變更已儲存」。\n\nOutput only a JSON object.{\"s1\": \"送出意見\", \"s2\": \"儲存變更\", \"s3\": \"變更已儲存\"}",
+ "parsed": {
+  "s1": "送出意見",
+  "s2": "儲存變更",
+  "s3": "變更已儲存"
+ },
+ "error": "",
+ "seconds": 1.7
+}

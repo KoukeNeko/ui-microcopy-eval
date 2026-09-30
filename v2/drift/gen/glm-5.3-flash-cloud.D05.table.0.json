@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants me to write UI strings in Traditional Chinese (Taiwan style) for a desktop app that detected a new version available for installation.\n\nI need to write:\n- \"s1\": notification title\n- \"s2\": notification body (one sentence)\n- \"s3\": \"Install Now\" button\n\nAll strings should use Taiwan Traditional Chinese UI terminology, not Mainland China terms.\n\nTaiwan style conventions:\n- \"新版本\" is fine\n- Common Taiwan UI patterns:\n  - Title: \"有可用的更新\" or \"發現新版本\"\n  - Body: \"新版本 X.X.X 已可供安裝\" or \"有新版本可用，是否立即安裝？\"\n  - Button: \"立即安裝\" or \"立刻安裝\"\n\nLet me think about typical Taiwan desktop app update notifications:\n\nTitle options:\n- \"有可用的新版本\"\n- \"發現新版本\"\n- \"新版本可用\"\n- \"有新版本可安裝\"\n\nCommon Taiwan phrasing: \"已有新版本\" or \"新版本已推出\"\n\nBody (one sentence):\n- \"新版已可安裝，立即更新以獲得最佳體驗。\"\n- \"我們偵測到新版本，建議立即安裝以享用最新功能與修正。\"\n\nActually the prompt says the screen: desktop app detected a new version that can be installed. So body one sentence.\n\nButton: \"立即安裝\" — very standard Taiwan UI.\n\nLet me draft:\n\ns1: \"有可用的新版本\"\ns2: \"新版本已可安裝，立即更新即可享用最新功能與修正。\"\n\nWait, \"立即更新\" vs \"立即安裝\" — the button is 立即安裝, so body could mention 新版本. Let me keep it as one sentence.\n\ns2: \"新版本已可安裝，立刻更新即可享用最新功能與錯誤修正。\" Hmm, \"錯誤修正\" vs \"bug 修正\". Taiwan UI often uses \"修正程式錯誤\" or \"修正問題\". Simple: \"新版本已可供安裝，立即更新即可享用最新功能與修正。\"\n\nActually \"立即\" in body and button could be repetitive. Fine either way, but let me vary:\n\ns2: \"新版本已可安裝，更新後即可享用最新功能與修正。\"\n\nCheck layer 1 and layer 2 terms: none of the forbidden terms appear. \"偵測\" is fine (Taiwan uses 偵測). Avoid \"檢測\"? 偵測 is Taiwan style, yes.\n\ns1: \"有新版本可安裝\" — or \"新版本已可安裝\". Common Windows/macOS Taiwan notifications: \"已有可用更新\" / \"發現新版本\". Let me pick \"發現新版本\" — natural for detection. But \"發現\" sometimes feels Mainland-ish? No, \"發現新版本\" is used in Taiwan too. Alternatively \"有可用的新版本\" — that's Microsoft Taiwan style (\"有可用的更新\").\n\nI'll go:\n\ns1: \"發現新版本\"\ns2: \"新版本已可安裝，立即更新即可享用最新功能與修正。\"\ns3: \"立即安裝\"\n\nHmm, s2 contains \"立即更新\" and s3 \"立即安裝\" — repetition of 立即. Could change s2 to \"更新後即可...\" Let me finalize:\n\ns1: \"發現新版本\"\ns2: \"新版本已可安裝，更新後即可享用最新功能與各項修正。\"\ns3: \"立即安裝\"\n\nSlightly wordy. One sentence requirement satisfied. Keep it concise:\n\ns2: \"新版本已可安裝，更新後即可享用最新功能與修正。\"\n\nThat's clean. Output only JSON.{\"s1\": \"發現新版本\", \"s2\": \"新版本已可安裝，更新後即可享用最新功能與修正。\", \"s3\": \"立即安裝\"}",
+ "parsed": {
+  "s1": "發現新版本",
+  "s2": "新版本已可安裝，更新後即可享用最新功能與修正。",
+  "s3": "立即安裝"
+ },
+ "error": "",
+ "seconds": 3.7
+}

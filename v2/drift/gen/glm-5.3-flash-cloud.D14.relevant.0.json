@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The task is writing UI strings in Traditional Chinese (Taiwan usage) for an app detecting insufficient available cache/temporary computing space on the device, and some features may slow down.\n\nKey terminology notes: \"內存\" should be \"記憶體\". The prompt says \"暫存運算空間\" — temporary computing space. Actually in Taiwan, \"內存\" (mainland term for RAM) maps to \"記憶體\". The screen is about insufficient available temporary storage space for computation — this could be cache space or memory. The instruction says \"裝置可用的暫存運算空間不足\" — device's available temporary computing space insufficient.\n\nHmm, in Taiwan, \"暫存\" often means cache (快取) or temp storage. \"暫存運算空間\" could be temporary working memory. Given the terminology mapping only mentions 記憶體, likely the intended term is 記憶體 (RAM). The description \"暫存運算空間\" = temporary operational space = memory (RAM). So the warning title could be \"可用記憶體不足\" — insufficient available memory.\n\nActually let me think: mainland \"内存\" = RAM = Taiwan \"記憶體\". The app detects insufficient available \"暫存運算空間\" — this is a paraphrase to avoid giving away the term directly; the intended translation using Taiwan terms would use 記憶體. So:\n\ns1: \"可用記憶體不足\" (Available memory insufficient)\ns2: \"裝置可用的暫存運算空間不足\" → one sentence: \"裝置的可用記憶體不足，部分功能可能會變慢。\"\ns3: \"關閉\" or \"確定\" — close button. \"關閉\" is fine.\n\nBut wait — maybe they want to keep \"暫存運算空間\" wording but replace 內存 with 記憶體 if it appears? The source description uses \"暫存運算空間\" as a description; the actual strings should use Taiwan terminology. Since the mapping says 內存→記憶體, and the scene description says \"暫存運算空間\", the natural Taiwan UI term for this is \"記憶體\" or maybe \"可用記憶體\". \n\nAlternatively, could be \"暫存空間\" (cache/temp storage). But \"運算\" suggests computing = RAM. RAM is temporary working memory used for computation. Cache would be 快取 in Taiwan. Since map only lists 內存→記憶體, and the description mentions \"暫存運算空間\" which is a way to say RAM without saying it, I'll use 記憶體.\n\nStrings:\n\ns1: \"可用記憶體不足\"\ns2: \"裝置可用的記憶體空間不足，部分功能可能會變慢。\"\ns3: \"關閉\"\n\nOne sentence for s2. Also \"暫存\" could be included: \"裝置可用的暫存記憶體不足\"? Hmm, that's odd. Keep it simple: \"裝置可用記憶體不足，部分功能可能會變慢。\" That references both insufficient space and slowdown.\n\nActually to reflect \"暫存運算空間\": \"裝置可供運算的記憶體不足，部分功能可能會變慢。\" That's decent. Or \"裝置的可用記憶體空間不足，部分功能可能會受到影響而變慢。\" Keep one sentence.\n\nI'll go with:\ns1: \"可用記憶體不足\"\ns2: \"裝置可用的記憶體空間不足，部分功能可能會變慢。\"\ns3: \"關閉\"\n\nOutput JSON only.</think>{\n  \"s1\": \"可用記憶體不足\",\n  \"s2\": \"裝置可用的記憶體空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}",
+ "parsed": {
+  "s1": "可用記憶體不足",
+  "s2": "裝置可用的記憶體空間不足，部分功能可能會變慢。",
+  "s3": "關閉"
+ },
+ "error": "",
+ "seconds": 3.3
+}

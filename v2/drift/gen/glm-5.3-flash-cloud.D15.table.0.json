@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants UI strings for a system settings app list, with a button to completely remove an app from the device.\n\nKey requirements:\n- Traditional Chinese, Taiwan UI conventions\n- Avoid PRC terms, use Taiwan terms\n- \"卸載\" must be \"解除安裝\"\n- s1: the button that completely removes an app from the device\n- s2: confirmation dialog title\n- s3: status text after completion\n\ns1: The button. Taiwan UI typically: 「解除安裝」or 「解除安裝應用程式」. Since it's a button next to each app in the app list, \"解除安裝\" is appropriate. The task says \"完全移除\" (completely remove), so maybe \"解除安裝\" is fine. Could be \"解除安裝應用程式\" but for a compact button, \"解除安裝\" works.\n\ns2: Confirmation dialog title. Taiwan style: 「要解除安裝此應用程式嗎？」or 「確定要解除安裝嗎？」. Common Android Taiwan phrasing: 「要解除安裝這個應用程式嗎？」. In Taiwan, \"app\" is often 應用程式 or 程式. Let me use 「要解除安裝這個應用程式嗎？」\n\ns3: Status text after completion. Something like 「已解除安裝」or 「應用程式已解除安裝」. Taiwan style: 「已解除安裝」.\n\nCheck forbidden words: no 卸載, no 當前, etc. Use 應用程式 (Taiwan) not 應用. Fine.\n\nOutput only JSON object with keys s1, s2, s3.\n\nLet me consider whether \"completely remove\" implies removal of app + data. Could phrase s1 as 「解除安裝」. The button per app. Keep concise.\n\ns2: 「要解除安裝這個應用程式嗎？」— matches Android Taiwan convention. Alternatively 「確定要解除安裝嗎？」. Either fine.\n\ns3: 「已解除安裝」。Maybe 「應用程式已解除安裝」. Status text after completion — \"已解除安裝\" is concise.\n\nFinal JSON:\n{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"要解除安裝這個應用程式嗎？\",\n  \"s3\": \"已解除安裝\"\n}</think>{  \"s1\": \"解除安裝\",  \"s2\": \"要解除安裝這個應用程式嗎？\",  \"s3\": \"已解除安裝\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 3.1
+}

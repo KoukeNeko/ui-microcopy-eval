@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app interface:\n- s1: Loading state text shown while fetching data from backend\n- s2: Error message when data fetching fails\n- s3: Button after failure (retry button)\n\nTaiwanese Traditional Chinese UI conventions:\n- Loading: \"載入中…\" or \"載入中\" - common in Taiwan UI\n- Error: \"無法載入資料\" or \"載入失敗，請稍後再試\" - avoid mainland terms like \"数据\" (use 資料), avoid \"网络\" (use 網路)\n- Retry button: \"重試\" or \"重新載入\" — Taiwan UI commonly uses \"重試\" or \"重新嘗試\". \"重試\" is common.\n\nLet me write:\n- s1: \"載入中…\" (with proper ellipsis or just \"載入中…\")\n- s2: \"無法載入資料，請檢查網路連線後再試。\" or simpler \"載入失敗，請稍後再試。\"\n- s3: \"重試\"\n\nUsing ellipsis \"…\" is common in Traditional Chinese UI.\n\nOutput only JSON object.{\"s1\": \"載入中…\", \"s2\": \"無法載入資料，請檢查網路連線後再試。\", \"s3\": \"重試\"}",
+ "parsed": {
+  "s1": "載入中…",
+  "s2": "無法載入資料，請檢查網路連線後再試。",
+  "s3": "重試"
+ },
+ "error": "",
+ "seconds": 1.6
+}

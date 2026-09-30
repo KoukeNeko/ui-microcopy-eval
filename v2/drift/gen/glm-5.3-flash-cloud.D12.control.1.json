@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "control",
+ "sample": 1,
+ "raw": "The user wants UI strings for a browser extension/add-on store page in Traditional Chinese (繁體中文).\n\nRequirements:\n- s1: Store page title\n- s2: Install button\n- s3: Installation completed status text\n\nOutput only a JSON object with keys s1, s2, s3.\n\nLet me think about appropriate Traditional Chinese UI strings:\n\n- s1: A store page title for browser extensions. Something like \"附加元件商店\" or \"擴充功能商店\". In Traditional Chinese, browsers like Firefox use \"附加元件\" (add-ons) and Chrome uses \"擴充功能\" (extensions). A store page title could be \"擴充功能商店\" or \"附加功能商店\". The description says \"第三方做的附加功能來擴充瀏覽器\" - third-party add-ons to extend the browser. So maybe \"瀏覽器擴充功能商店\" or just \"附加功能商店\". A common title might be \"擴充功能商店\" or \"取得擴充功能\".\n\nActually, since the description mentions \"第三方做的附加功能\" (third-party add-ons), the title could be something like \"第三方擴充功能商店\" but more natural would be \"擴充功能商店\" or \"附加元件市集\". Let me go with \"擴充功能商店\".\n\n- s2: Install button: \"安裝\" is the standard. Could be \"安裝\" or \"新增至瀏覽器\" (Chrome uses this). The simplest: \"安裝\".\n\n- s3: Installation complete status: \"安裝完成\" or \"已安裝\". For a status text after installation completes: \"安裝完成\" is good. Could also be \"已成功安裝\".\n\nThe output should be only a JSON object, no other text. Should I use traditional Chinese characters properly: 擴充功能, 安裝, 完成.\n\nJSON:\n{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"安裝完成\"\n}\n\nThe user said \"只輸出一個 JSON 物件\" - only output a JSON object. So I should not wrap it in markdown code fences? Typically for such requests, outputting raw JSON is best. I'll output just the JSON without code fences... Actually code fences might be acceptable, but the instruction says \"不要其他文字\" (no other text). A code fence is formatting, not really \"text\", but to be safe, output raw JSON only.</think>{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"安裝完成\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.1
+}

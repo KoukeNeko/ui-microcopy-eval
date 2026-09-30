@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage):\n- s1: status text shown while loading list data\n- s2: error message when loading fails\n- s3: button after failure\n\nKey terms: 加載 → 載入, 刷新 → 重新整理, 網絡 → 網路, 服務器 → 伺服器, 消息 → 訊息.\n\ns1: Something like 「載入中…」 or 「資料載入中，請稍候…」\ns2: 「資料載入失敗，請檢查網路連線後再試。」\ns3: Button: 「重試」 or 「重新載入」\n\nThey said only output a JSON object with keys s1, s2, s3, no other text.\n\nLet me craft:\n- s1: \"載入中，請稍候…\"\n- s2: \"載入失敗，請檢查網路連線後再試。\"\n- s3: \"重新載入\"\n\nThat's clean. Use Taiwan style: 載入 (not 加載), 網路 (not 網絡). Good.\n\nOutput JSON only.</think>{\n  \"s1\": \"載入中，請稍候…\",\n  \"s2\": \"載入失敗，請檢查網路連線後再試。\",\n  \"s3\": \"重新載入\"\n}",
+ "parsed": {
+  "s1": "載入中，請稍候…",
+  "s2": "載入失敗，請檢查網路連線後再試。",
+  "s3": "重新載入"
+ },
+ "error": "",
+ "seconds": 1.6
+}

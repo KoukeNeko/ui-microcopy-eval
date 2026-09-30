@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D15",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan) for an app settings screen with an uninstall button.\n\n- s1: the button that completely removes an app from the device → \"解除安裝\" (uninstall). Taiwan usage: 解除安裝, not 卸載. Maybe \"解除安裝\" alone is fine for a button.\n- s2: confirmation dialog title → \"解除安裝這個應用程式？\" or \"確認解除安裝\". Taiwan UI conventions: 「要解除安裝這個應用程式嗎？」 or \"解除安裝確認\". Common Android Taiwanese: \"要解除安裝這個應用程式嗎？\" Let me use \"要解除安裝「%s」嗎？\" but no placeholders specified; keep generic. Title: \"解除安裝應用程式\" or \"要解除安裝應用程式嗎？\". A title typically is a question in TW style: \"要解除安裝這個應用程式嗎？\"\n- s3: status text after completion → \"已解除安裝\" (completed state). Could be \"應用程式已解除安裝\" or \"已解除安裝「%s」\". Keep simple: \"已解除安裝\".\n\nApp in Taiwan: 應用程式.\n\nOutput only JSON.```json\n{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"要解除安裝這個應用程式嗎？\",\n  \"s3\": \"應用程式已解除安裝\"\n}\n```",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "要解除安裝這個應用程式嗎？",
+  "s3": "應用程式已解除安裝"
+ },
+ "error": "",
+ "seconds": 2.2
+}

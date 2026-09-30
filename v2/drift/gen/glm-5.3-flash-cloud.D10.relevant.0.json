@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app interface. The screen: a list page fetching data from backend, not yet complete.\n\n- s1: waiting/loading status text\n- s2: error message when fetching fails\n- s3: button after failure\n\nTaiwan terminology: 載入 not 加載.\n\nCommon Taiwan UI strings:\n- s1: \"載入中…\" or \"正在載入…\" — Taiwan often uses \"載入中…\"\n- s2: \"載入失敗，請稍後再試。\" or \"無法載入資料，請檢查網路連線後再試。\"\n- s3: \"重試\" or \"重新載入\"\n\nOutput only a JSON object with keys s1, s2, s3.{\n  \"s1\": \"載入中…\",\n  \"s2\": \"載入失敗，請稍後再試。\",\n  \"s3\": \"重新載入\"\n}",
+ "parsed": {
+  "s1": "載入中…",
+  "s2": "載入失敗，請稍後再試。",
+  "s3": "重新載入"
+ },
+ "error": "",
+ "seconds": 1.5
+}

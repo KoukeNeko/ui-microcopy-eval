@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D16",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants Taiwan Traditional Chinese UI strings for an app:\n- s1: submit button for feedback form (送出意見)\n- s2: settings page button to save changes (儲存變更)\n- s3: status text after changes saved (變更已儲存)\n\nTaiwan UI conventions:\n- \"送出\" for submit\n- \"儲存變更\" for save changes (Taiwan uses 儲存, not 保存)\n- Status: \"變更已儲存\" or \"已完成儲存變更\" — common Taiwan phrasing: \"變更已儲存\" or \"設定已儲存\"\n\nOutput only JSON object with keys s1, s2, s3.</think>{\"s1\": \"送出意見\", \"s2\": \"儲存變更\", \"s3\": \"變更已儲存\"}",
+ "parsed": {
+  "s1": "送出意見",
+  "s2": "儲存變更",
+  "s3": "變更已儲存"
+ },
+ "error": "",
+ "seconds": 1.7
+}

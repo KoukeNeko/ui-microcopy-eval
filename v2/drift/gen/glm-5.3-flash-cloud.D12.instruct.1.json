@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants UI strings for a browser's store page in Traditional Chinese (Taiwan usage). They want:\n- s1: store page title\n- s2: install button\n- s3: installed status text\n\nOnly output a JSON object with keys s1, s2, s3.\n\nTaiwan Traditional Chinese terminology:\n- Browser: 瀏覽器\n- Add-ons/Extensions: In Taiwan Chrome uses 「擴充功能」, Firefox uses 「附加元件」. The user says \"附加功能\" but the standard Taiwan term for browser extensions is 「擴充功能」 (Chrome) or 「附加元件」 (Firefox). The prompt says \"第三方做的附加功能來擴充瀏覽器\" — third-party add-ons to extend the browser. Common Taiwan term: 擴充功能 or 附加元件.\n\ns1: store page title — something like 「擴充功能商店」 or 「線上應用程式商店」. Chrome Web Store in Taiwan is 「Chrome 線上應用程式商店」. A generic one could be 「附加元件商店」 or 「擴充功能商店」. Since the page is a store for browser add-ons, maybe 「瀏覽器擴充功能商店」 or simply 「擴充功能商店」.\n\ns2: install button — Taiwan: 「安裝」 or 「新增至瀏覽器」? Chrome uses 「加到 Chrome」. Firefox uses 「安裝」. Common: 「安裝」.\n\ns3: installed status — 「已安裝」.\n\nSo:\n{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}\n\nMaybe s1 could be 「擴充功能與佈景主題」— no, keep simple. The user described \"商店頁\" where users install third-party add-ons. A good title: 「擴充功能商店」. Alternatively 「附加元件商店」. Either is fine; 擴充功能 is the most common Taiwan term (Chrome Taiwan).\n\nOutput only JSON.```json\n{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}\n```",
+ "parsed": null,
+ "error": "",
+ "seconds": 3.3
+}

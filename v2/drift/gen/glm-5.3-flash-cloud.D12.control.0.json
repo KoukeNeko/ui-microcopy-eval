@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "control",
+ "sample": 0,
+ "raw": "The user wants UI strings for a browser app in Traditional Chinese (繁體中文). The screen: browser has a store page where users can install third-party extensions/add-ons to extend the browser.\n\nThey want:\n- \"s1\": title of the store page\n- \"s2\": install button\n- \"s3\": installed/stalled complete status text\n\nOnly output a JSON object with keys s1, s2, s3, string values, no other text.\n\nLet me write natural Traditional Chinese strings:\n\ns1: \"擴充功能商店\" or \"附加元件商店\" — in Taiwan, browser extensions are commonly called \"擴充功能\" (Chrome uses 附加元件 in Taiwan? Actually Chrome Traditional Chinese uses \"擴充功能\"). Firefox uses \"附加元件\". Let's use \"擴充功能商店\" — a store title. Maybe include browser name? No specific name given, so generic: \"擴充功能商店\".\n\ns2: \"安裝\" — the install button.\n\ns3: \"已安裝\" — installed status. Or \"安裝完成\". Status text after installation completes: \"已安裝\" is common. The prompt says \"安裝完成的狀態文字\" — status text when installation is complete. \"已安裝\" works well as a status. Could also be \"安裝完成\".\n\nI'll go with:\n{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}\n\nUse Traditional Chinese characters. \"擴充功能\" is traditional. Good.\n\nOutput only JSON, no other text. Should I format with code block? They said only output a JSON object, no other text — so plain JSON without markdown fences might be best. I'll output just the JSON.</think>{\n  \"s1\": \"擴充功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.8
+}

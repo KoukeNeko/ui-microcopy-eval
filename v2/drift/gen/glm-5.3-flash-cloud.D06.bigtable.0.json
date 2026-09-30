@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D06",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The user wants UI strings for a Taiwan Traditional Chinese app. Context: user submits a form, backend returns 500 error. Need:\n\n- s1: error message (one sentence)\n- s2: button\n- s3: short status for status bar\n\nTaiwan UI conventions:\n- 提交 → 送出\n- 伺服器 (not 服務器)\n- 訊息 (not 消息/信息)\n- 請稍後再試 / 請再試一次\n\ns1: Something like「送出失敗，伺服器發生錯誤，請稍後再試。」— one sentence. Maybe \"送出時發生錯誤，請稍後再試。\" Should mention server error since backend returned 500? A user-facing message usually avoids technical details, but mentioning 伺服器 is fine: 「伺服器發生錯誤，送出失敗，請稍後再試。」Hmm, one sentence requirement. Let's make it concise: 「送出失敗：伺服器發生錯誤，請稍後再試。」Or「系統發生錯誤，送出失敗，請稍後再試。」Actually typical Taiwan app: 「伺服器忙碌中，請稍後再試。」But 500 = internal server error. 「發生伺服器錯誤，送出失敗，請稍後再試。」One sentence, fine.\n\ns2: button — likely「重試」or「再試一次」. Taiwan usage: 「重試」common. Or「重新送出」. I'll go with「重試」.\n\ns3: status bar short status — like「送出失敗」or「連線錯誤」. Short: 「送出失敗」. Or 「伺服器錯誤」. Status bar short — 「送出失敗」works.\n\nCheck vocabulary rules: no 提交 (used 送出), no 服務器, no 消息. Good.\n\nOutput only JSON object with keys s1, s2, s3.</think>{\"s1\": \"伺服器發生錯誤，送出失敗，請稍後再試。\", \"s2\": \"重試\", \"s3\": \"送出失敗\"}",
+ "parsed": {
+  "s1": "伺服器發生錯誤，送出失敗，請稍後再試。",
+  "s2": "重試",
+  "s3": "送出失敗"
+ },
+ "error": "",
+ "seconds": 2.0
+}

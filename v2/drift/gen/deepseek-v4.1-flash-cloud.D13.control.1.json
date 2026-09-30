@@ -1,0 +1,14 @@
+{
+ "model": "deepseek-v4.1-flash:cloud",
+ "probe": "D13",
+ "arm": "control",
+ "sample": 1,
+ "raw": "{\"s1\":\"手機平板版\",\"s2\":\"電腦版\",\"s3\":\"已切換至%s\"}",
+ "parsed": {
+  "s1": "手機平板版",
+  "s2": "電腦版",
+  "s3": "已切換至%s"
+ },
+ "error": "",
+ "seconds": 1.1
+}

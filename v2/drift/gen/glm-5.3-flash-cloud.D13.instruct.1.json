@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D13",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan usage) for a website's top-right corner toggle between mobile/tablet layout and desktop layout.\n\n- s1: option to switch to mobile/tablet layout\n- s2: option to switch to desktop layout\n- s3: status text after switching\n\nTaiwan UI conventions:\n- 手機平板版面 or 行動裝置版面 — \"行動裝置\" is common in Taiwan for mobile devices. \"行動版\" is common too. \"電腦版\" for desktop.\n- Common phrasing: 切換至行動裝置版面 / 切換至電腦版面\n- Status text: 目前顯示行動裝置版面 / 已切換至電腦版面 — but s3 is \"切換後的狀態文字\" — probably a single status string like \"已切換至行動裝置版面\" or maybe generic. Since there's one s3, perhaps something like \"版面已切換\" or \"目前版面：行動裝置\". Hmm. It says \"切換後的狀態文字\" — the status text after switching. Could be like \"已切換版面\" or maybe showing current mode. Given only one s3, maybe it's a generic \"已切換至新版面\" or \"版面切換完成\". But could be ambiguous. I think a reasonable choice: s3 = \"已切換版面\" — but maybe better to be more informative. Perhaps the app shows the current state: \"目前使用行動裝置版面\" — but that depends on which switch. Since only one string, a generic confirmation like \"版面已切換\" works.\n\nAlternatively, maybe they intend s3 to be like \"顯示模式已更新\". Let me pick \"版面已切換\" — simple and neutral Taiwan UI style.\n\nFor s1: \"切換至行動裝置版面\" — or \"改用行動裝置版面\". Taiwan: \"行動版\" is common (e.g., YouTube 切換… no). \"版面\" vs \"版面配置\" vs \"版面\". I'll use \"切換至行動裝置版面\".\n\ns2: \"切換至電腦版面\".\n\ns3: \"已切換至行動裝置版面\"? But that's specific. If the status shows after either switch, generic: \"版面已切換\". I'll go with \"版面已切換\".\n\nOutput only JSON.{\"s1\": \"切換至行動裝置版面\", \"s2\": \"切換至電腦版面\", \"s3\": \"版面已切換\"}",
+ "parsed": {
+  "s1": "切換至行動裝置版面",
+  "s2": "切換至電腦版面",
+  "s3": "版面已切換"
+ },
+ "error": "",
+ "seconds": 2.2
+}

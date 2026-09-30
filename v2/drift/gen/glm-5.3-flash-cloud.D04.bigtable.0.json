@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D04",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan usage) for an app:\n- s1: error message when device has no network connection (one sentence)\n- s2: retry button\n- s3: status text after connection restored\n\nThey provided terminology guidelines. Need Taiwan UI phrasing. Avoid mainland terms like 網絡→網路, 提交→送出, etc.\n\ns1 should be one sentence error message: something like 「目前沒有網路連線，請求送出失敗。」 or more natural: 「無法送出請求：裝置目前尚未連接任何網路。」 Taiwan UI style: 「網路連線中斷，無法送出請求。」 Actually the scenario: app sends a request but device has no network, so it fails. One sentence error message.\n\nCommon Taiwan phrasing: 「未連線至網路」 or 「沒有網路連線」. Google style: 「 你目前處於離線狀態」. Let me write: 「目前沒有可用的網路連線，無法送出請求。」 That's one sentence.\n\nOr simpler: 「網路連線失敗，請求尚未送出。」\n\ns2: 「重試」 - standard.\n\ns3: status text after connection restored: 「網路已恢復連線」 or 「連線已恢復，正在重試…」 Hmm, \"連線恢復後的狀態文字\" — status text shown after connection is restored. Could be 「網路連線已恢復」 perhaps with the app resending: 「連線已恢復，正在重新送出請求…」 But maybe just 「網路連線已恢復」。 The user said 「連線恢復後的狀態文字」 - status text after connection restored. Something like 「網路已恢復連線，請求已重新送出。」\n\nKeep simple: s3 = 「網路連線已恢復」.\n\nAvoid using 提交 (use 送出), 網路 not 網絡, 訊息 not 消息.\n\nNote 「連接」 vs 「連線」: Taiwan uses 連線 for network connection. \"尚未連接任何網路\" — could be 「未連線至任何網路」.\n\ns1 options:\n- 「目前沒有網路連線，無法送出請求。」\nThat's one sentence, natural Taiwan UI.\n\nOutput only JSON object.</think>{\"s1\":\"目前沒有網路連線，無法送出請求。\",\"s2\":\"重試\",\"s3\":\"網路連線已恢復\"}",
+ "parsed": {
+  "s1": "目前沒有網路連線，無法送出請求。",
+  "s2": "重試",
+  "s3": "網路連線已恢復"
+ },
+ "error": "",
+ "seconds": 3.4
+}

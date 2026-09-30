@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D01",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The task: write Traditional Chinese (Taiwan) UI strings for a settings page button that resets all options to factory/install defaults.\n\n- s1: button text\n- s2: confirmation dialog title\n- s3: confirmation dialog description\n\nCommon phrasing: 「還原預設值」or「重設為預設值」. Confirmation dialog: 「還原預設設定」 title, description like 「系統會將所有設定還原為安裝時的預設值,此操作無法復原。確定要繼續嗎?」\n\nAvoid mainland terms. Use 「設定」 not 「設置」, 「預設」 not 「默認」, 「復原」 (Taiwan usage) — actually China uses 「恢复」, Taiwan uses 「還原」. Description: use full-width punctuation 「、」.\n\ns1: 「還原預設值」\ns2: 「還原預設設定」\ns3: 「所有設定將還原為安裝時的預設值,且無法復原。確定要繼續嗎?」\n\nOutput only JSON.</think>```json\n{\n  \"s1\": \"還原預設值\",\n  \"s2\": \"還原預設設定\",\n  \"s3\": \"所有設定將還原為安裝時的預設值，且無法復原。確定要繼續嗎？\"\n}\n```",
+ "parsed": {
+  "s1": "還原預設值",
+  "s2": "還原預設設定",
+  "s3": "所有設定將還原為安裝時的預設值，且無法復原。確定要繼續嗎？"
+ },
+ "error": "",
+ "seconds": 2.4
+}

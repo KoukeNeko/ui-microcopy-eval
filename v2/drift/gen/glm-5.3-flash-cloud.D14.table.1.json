@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The task: write UI strings in Traditional Chinese (Taiwan usage) for an app detecting insufficient available scratch/storage space, some features may slow down.\n\ns1: warning title\ns2: warning body (one sentence)\ns3: dismiss button\n\nNote the context: \"暫存運算空間\" - temporary computing space? Actually \"暫存運算空間不足\" — the device's available temporary working space. In Taiwan usage, cache = 快取, memory = 記憶體. \"暫存運算空間\" could be like scratch space... The device's available temporary storage for computation is insufficient.\n\nLet me think: the scenario says \"app 偵測到裝置可用的暫存運算空間不足，某些功能可能變慢。\" So the app detected that the device's available scratch/temporary working space is insufficient; some features may slow down.\n\nThis sounds like \"可用儲存空間不足\" or \"可用記憶體不足\"? But \"暫存運算空間\" suggests something like a temp working space. Could translate as \"暫存空間\" (temp space) — in Taiwan, \"暫存\" is commonly used for temp/cache. Actually 快取 is cache; 暫存 is temporary storage. \"暫存運算空間\" perhaps \"可用的暫存運算空間\".\n\nTitle options:\n- s1: \"暫存空間不足\" or \"可用暫存空間不足\"\n- s2: \"裝置可用的暫存運算空間不足，部分功能可能會變慢。\" One sentence.\n- s3: \"關閉\" or \"知道了\" — common Taiwan UI: \"知道了\" or \"關閉\" or \"確定\". Dismiss warning button: \"知道了\" is friendly; \"關閉\" is literal. I'd pick \"知道了\" or \"關閉\". Perhaps \"關閉\" is safe. Many Taiwan UIs use \"知道了\" for dismiss alerts. I'll use \"知道了\".\n\nLinter words: avoid 當前, 默認... none likely. Use 部分 instead of 某些? Taiwan usage: \"部分功能\". \"某些功能\" is okay in both but \"部分功能\" more Taiwan-ish. Also \"可能會變慢\" vs \"可能變慢\".\n\ns2 must be one sentence: \"由於裝置可用的暫存運算空間不足，部分功能可能會變慢。\" That's one sentence.\n\nAlternatively: \"裝置可用的暫存運算空間不足，部分功能可能會變慢。\"\n\nEnsure Traditional Chinese characters, Taiwan terms.\n\ns1: \"可用暫存空間不足\" — but is 快取 needed? 暫存 is fine as Taiwan term for temp. Actually the mapping says 緩存→快取. Since the source uses \"暫存運算空間\", not 緩存, we keep 暫存. Could say \"暫存運算空間不足\".\n\nJSON only output.</think>{\"s1\":\"暫存運算空間不足\",\"s2\":\"裝置可用的暫存運算空間不足，部分功能可能會變慢。\",\"s3\":\"知道了\"}",
+ "parsed": {
+  "s1": "暫存運算空間不足",
+  "s2": "裝置可用的暫存運算空間不足，部分功能可能會變慢。",
+  "s3": "知道了"
+ },
+ "error": "",
+ "seconds": 4.2
+}

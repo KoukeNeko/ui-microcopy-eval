@@ -1,0 +1,14 @@
+{
+ "model": "deepseek-v4.1-flash:cloud",
+ "probe": "D15",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "{\"s1\":\"卸載\",\"s2\":\"確定要卸載嗎？\",\"s3\":\"已卸載\"}",
+ "parsed": {
+  "s1": "卸載",
+  "s2": "確定要卸載嗎？",
+  "s3": "已卸載"
+ },
+ "error": "",
+ "seconds": 0.8
+}

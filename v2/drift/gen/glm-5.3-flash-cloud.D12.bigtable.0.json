@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The user wants me to write app interface strings in Traditional Chinese (Taiwan usage) for a browser store page where users can install third-party add-ons/extensions to extend the browser.\n\nStrings needed:\n- s1: Store page title\n- s2: Install button\n- s3: Installed status text\n\nTaiwan browser terminology:\n- Third-party add-ons in browsers (like Chrome extensions) are typically called「附加元件」in Taiwan (Firefox uses 附加元件, Chrome Taiwan uses 擴充功能). Actually Chrome Traditional Chinese uses「擴充功能」for extensions. Edge uses「延伸模組」. Firefox uses「附加元件」.\n\nThe store page title could be「線上應用程式商店」or「附加元件商店」. For a browser store page: 「附加元件商店」or「擴充功能商店」. Let me pick something common: Chrome Web Store is「Chrome 線上應用程式商店」. \n\nThe prompt says \"商店頁\" where users can install \"第三方做的附加功能來擴充瀏覽器\" - third-party add-ons to extend the browser. So a common title: 「附加元件商店」or「擴充功能商店」.\n\ns1: 「附加元件商店」or「瀏覽器擴充功能商店」. I'll use「附加元件商店」— Firefox Taiwan style. Or maybe safer: 「擴充功能商店」(Chrome style). Either is fine. Let me use「附加元件商店」since the prompt says「附加功能」... actually it says 附加功能, but the standard Taiwan term is 附加元件 (add-ons) or 擴充功能 (extensions). I'll go with「附加元件商店」.\n\ns2: Install button: 「安裝」\n\ns3: Installed status text: 「已安裝」\n\nAvoid mainland terms: fine.\n\nOutput only JSON object with keys s1, s2, s3.</think>{\"s1\": \"附加元件商店\", \"s2\": \"安裝\", \"s3\": \"已安裝\"}",
+ "parsed": {
+  "s1": "附加元件商店",
+  "s2": "安裝",
+  "s3": "已安裝"
+ },
+ "error": "",
+ "seconds": 3.2
+}

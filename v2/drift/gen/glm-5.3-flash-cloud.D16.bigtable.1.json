@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D16",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Taiwan Traditional Chinese app.\n\n- s1: feedback form submit button. Taiwan convention: 「送出意見」or「送出」. The instructions say 提交→送出. So s1 should be something like「送出意見」.\n- s2: settings page button to write/save changes. 保存→儲存, 設置→設定. So something like「儲存變更」or「儲存設定」. The description: 設定頁改完後有一個按鈕把變更寫入 — a button that writes/saves changes. Common Taiwan UI: 「儲存變更」.\n- s3: status text after changes are written. Something like「變更已儲存」or「設定已儲存」. Status text: 「變更已儲存」.\n\nOutput only a JSON object with keys s1, s2, s3.\n\nMaybe s1: 「送出意見」 since it's a feedback form (意見表單). Could also be 「送出」but adding context is better: 「送出意見」.\n\ns2: 「儲存變更」.\n\ns3: 「變更已儲存」or「已儲存變更」. Taiwan style often「變更已儲存」. I'll pick「變更已儲存」.\n\nOutput JSON only.</think>{\"s1\": \"送出意見\", \"s2\": \"儲存變更\", \"s3\": \"變更已儲存\"}",
+ "parsed": {
+  "s1": "送出意見",
+  "s2": "儲存變更",
+  "s3": "變更已儲存"
+ },
+ "error": "",
+ "seconds": 1.4
+}

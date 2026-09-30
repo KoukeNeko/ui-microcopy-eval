@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D07",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage). Need:\n- s1: label above password field\n- s2: link text for creating a new account (sign up)\n- s3: error message for login failure (wrong password)\n\nTaiwan UI conventions:\n- 密碼 (password)\n- 建立新帳號 / 註冊新帳號 / 建立帳號 — Taiwan commonly uses 「帳號」not 「帳戶」or 「账户」. Common: 「還沒有帳號？建立新帳號」or 「註冊新帳號」.\n- Error: 「密碼錯誤，請再試一次。」or 「密碼不正確，請重新輸入。」\n\nAvoid mainland terms like 账户, 软件, 登錄 (mainland uses 登录; Taiwan uses 登入).\n\ns1: 「密碼」 — simple label. Could be 「密碼」.\n\ns2: 「建立新帳號」 or 「還沒有帳號？建立新帳號」. The requirement says link text for people who don't have login identity yet to create new one. \"建立新身分\" — the prompt says \"建立新的登入身分\". Maybe use 「建立新帳號」which is natural. Or 「註冊新帳號」. I'll go with 「還沒有帳號？建立新帳號」? But link text should be concise. Maybe just 「建立新帳號」. Hmm, but including context may be better UX. The instruction: \"連結給還沒有登入身分的人建立新的登入身分\" — the link text. I'd say 「還沒有帳號？建立新帳號」is a common pattern but the link itself is 「建立新帳號」. Since s2 is the link text, 「建立新帳號」 is fine. Could also be 「註冊新帳號」.\n\ns3: login failure wrong password: 「密碼錯誤，請重新輸入。」 or 「密碼不正確，請再試一次。」 Taiwan style: 「密碼錯誤，請再試一次。」 I'll use that.\n\nOutput only JSON object.</think>```json\n{\n  \"s1\": \"密碼\",\n  \"s2\": \"還沒有帳號？建立新帳號\",\n  \"s3\": \"密碼錯誤，請再試一次。\"\n}\n```",
+ "parsed": {
+  "s1": "密碼",
+  "s2": "還沒有帳號？建立新帳號",
+  "s3": "密碼錯誤，請再試一次。"
+ },
+ "error": "",
+ "seconds": 2.2
+}

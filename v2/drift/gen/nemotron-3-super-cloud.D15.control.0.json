@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D15",
+ "arm": "control",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"完全移除\",\n  \"s2\": \"確認移除應用程式\",\n  \"s3\": \"已成功移除\"\n}",
+ "parsed": {
+  "s1": "完全移除",
+  "s2": "確認移除應用程式",
+  "s3": "已成功移除"
+ },
+ "error": "",
+ "seconds": 0.8
+}

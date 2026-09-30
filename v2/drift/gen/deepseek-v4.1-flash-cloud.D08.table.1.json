@@ -1,0 +1,14 @@
+{
+ "model": "deepseek-v4.1-flash:cloud",
+ "probe": "D08",
+ "arm": "table",
+ "sample": 1,
+ "raw": "```json\n{\n  \"s1\": \"建立新容器\",\n  \"s2\": \"已建立新容器\",\n  \"s3\": \"移動項目\"\n}\n```",
+ "parsed": {
+  "s1": "建立新容器",
+  "s2": "已建立新容器",
+  "s3": "移動項目"
+ },
+ "error": "",
+ "seconds": 1.4
+}

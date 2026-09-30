@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants app UI strings in Traditional Chinese (Taiwan usage). The context: a browser store page where users can install third-party add-ons to extend the browser.\n\nKey terminology note: don't use 插件 (mainland term); use 外掛? Wait, but in Taiwan browser terminology, \"add-on\" is often 附加元件 (as used in Firefox Taiwan), \"extension\" is 擴充功能 (Chrome Taiwan uses 擴充功能). The user said third-party add-ons to extend the browser — \"附加功能\" in the prompt, but the terminology table says: 不用 插件, 用 外掛. So they want \"外掛\" for the add-on concept.\n\nSo s1: store page title — something like \"瀏覽器外掛商店\" or \"外掛商店\". Let's craft: \"瀏覽器外掛商店\".\n\ns2: install button — \"安裝\".\n\ns3: installed status text — \"已安裝\".\n\nOutput only JSON object with keys s1, s2, s3.\n\nMake sure Traditional Chinese Taiwan usage. Avoid mainland terms like 應用商店? \"商店\" is fine. Use \"外掛商城\"? Common Taiwan usage: \"商店\" fine.\n\nMaybe s1: \"外掛商店\" or \"瀏覽器外掛商店\". I'll go with \"瀏覽器外掛商店\".\n\ns2: \"安裝\".\n\ns3: \"已安裝\" — status text after installation complete. Could be \"安裝完成\" too. The prompt says \"安裝完成的狀態文字\" — status text for install completed. So \"已安裝\" conveys installed state. Either works; \"已安裝\" is typical UI state. I'll use \"已安裝\".\n\nOutput JSON only.</think>{\n  \"s1\": \"瀏覽器外掛商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}",
+ "parsed": {
+  "s1": "瀏覽器外掛商店",
+  "s2": "安裝",
+  "s3": "已安裝"
+ },
+ "error": "",
+ "seconds": 2.5
+}

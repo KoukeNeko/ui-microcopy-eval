@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The task: write UI strings in Traditional Chinese (Taiwan) for an app detecting insufficient temporary/cache computing space, some functions may be slow.\n\nNeed:\n- s1: warning title\n- s2: warning content (one sentence)\n- s3: dismiss button\n\nUse Taiwan UI terms. Avoid 緩存→快取, 內存→記憶體. The context: 「暫存運算空間」— could use 快取/暫存空間. The device's available temporary computing space is insufficient — could be \"暫存空間\" or \"快取空間\". Perhaps \"可用儲存空間不足\" but specifically \"暫存運算空間\" — maybe refer to 快取/暫存空間. Let me write:\n\ns1: 「暫存空間不足」\ns2: 「您的裝置可用暫存空間不足，部分功能可能會變慢。」\ns3: 「關閉」\n\nUse 您 or 你? Taiwan UI often uses 您 for formal warnings. Fine.\n\nEnsure terms: 裝置 (not 設備? 設備 is fine but 裝置 is Taiwan term), 部分功能 (部分 not 部分? \"部分\" is Chinese mainland usage some say \"部分\" vs \"部分\"; Taiwan uses \"部分\" too — actually Taiwan uses \"部分\" with 讀作 bùfen? Taiwan often writes 「部分」. Hmm, mainland uses 部分 too. Taiwan commonly uses 「部分」. Fine.\n\nOutput only JSON.```json\n{\n  \"s1\": \"暫存空間不足\",\n  \"s2\": \"偵測到您的裝置可用暫存空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}\n```",
+ "parsed": {
+  "s1": "暫存空間不足",
+  "s2": "偵測到您的裝置可用暫存空間不足，部分功能可能會變慢。",
+  "s3": "關閉"
+ },
+ "error": "",
+ "seconds": 2.0
+}

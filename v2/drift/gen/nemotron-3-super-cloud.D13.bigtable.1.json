@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D13",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"切換到行動裝置版面\",\n  \"s2\": \"切換到電腦版面\",\n  \"s3\": \"已切換至 {version} 版面\"\n}",
+ "parsed": {
+  "s1": "切換到行動裝置版面",
+  "s2": "切換到電腦版面",
+  "s3": "已切換至 {version} 版面"
+ },
+ "error": "",
+ "seconds": 5.1
+}

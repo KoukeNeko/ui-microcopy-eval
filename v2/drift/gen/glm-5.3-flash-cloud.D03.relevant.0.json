@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D03",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings for a storage settings page, in Traditional Chinese (Taiwan usage). The feature deletes app data cached on the device to speed up loading; after deletion, functionality is unaffected.\n\nKey strings:\n- s1: Feature name (list item) — \"清除快取\" is the standard Taiwan term. Could also be \"清除快取資料\".\n- s2: Status text after execution — \"快取已清除\" or \"已清除快取\".\n- s3: Explanation sentence before execution — something like \"刪除應用程式為加快載入速度而暫存在裝置上的資料，刪除後應用程式仍可正常運作。\"\n\nAvoid mainland terms like 緩存. Use 快取. Also \"應用程式\" instead of \"应用/软件\" (Taiwan usage: 應用程式). Avoid \"數據\" for data in this context? In Taiwan, \"資料\" is common. \"裝置\" for device. \"載入速度\" fine.\n\ns3: \"這項操作會刪除應用程式為加快載入速度而儲存在裝置上的暫存資料（快取），刪除後並不會影響應用程式功能。\" Maybe simpler: \"刪除應用程式暫存在裝置上以加快載入速度的資料，刪除後不會影響其功能。\"\n\nLet me craft:\n\n- s1: \"清除快取\"\n- s2: \"已清除快取\"\n- s3: \"系統會刪除應用程式為加快載入速度而暫存在裝置上的資料，刪除後應用程式功能不受影響。\"\n\nJSON only. Ensure valid JSON with proper quotes.</think>```json\n{\n  \"s1\": \"清除快取\",\n  \"s2\": \"已清除快取\",\n  \"s3\": \"系統會刪除應用程式為加快載入速度而暫存在裝置上的資料，刪除後不會影響應用程式功能。\"\n}\n```",
+ "parsed": {
+  "s1": "清除快取",
+  "s2": "已清除快取",
+  "s3": "系統會刪除應用程式為加快載入速度而暫存在裝置上的資料，刪除後不會影響應用程式功能。"
+ },
+ "error": "",
+ "seconds": 2.8
+}

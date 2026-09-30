@@ -1,0 +1,14 @@
+{
+ "model": "deepseek-v4.1-flash:cloud",
+ "probe": "D12",
+ "arm": "control",
+ "sample": 1,
+ "raw": "{\"s1\":\"擴充功能商店\",\"s2\":\"安裝\",\"s3\":\"已安裝\"}",
+ "parsed": {
+  "s1": "擴充功能商店",
+  "s2": "安裝",
+  "s3": "已安裝"
+ },
+ "error": "",
+ "seconds": 1.2
+}

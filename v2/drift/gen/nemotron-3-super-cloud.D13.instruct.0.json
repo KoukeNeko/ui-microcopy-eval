@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D13",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"切換為行動版面\",\n  \"s2\": \"切換為桌面版面\",\n  \"s3\": \"已切換為{version}版面\"\n}",
+ "parsed": {
+  "s1": "切換為行動版面",
+  "s2": "切換為桌面版面",
+  "s3": "已切換為{version}版面"
+ },
+ "error": "",
+ "seconds": 1.3
+}

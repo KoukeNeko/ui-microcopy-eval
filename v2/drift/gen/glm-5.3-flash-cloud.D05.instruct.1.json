@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user wants UI strings for a desktop app update notification in Traditional Chinese (Taiwan usage).\n\n- s1: notification title\n- s2: notification body (one sentence)\n- s3: \"Install Now\" button\n\nTaiwan UI conventions:\n- \"更新\" for update, \"新版本\" or \"新版\" for new version\n- \"立即安裝\" for install now\n- Avoid mainland terms like \"软件\" (should be 軟體), \"安装\" (安裝 is fine in traditional)\n\nCommon phrasing: Title: \"有新版本可安裝\" or \"發現新版本\" — Taiwan style often \"有可用的更新\" or \"新版本 available\". Typical: \"偵測到新版本\" but the screen says app detected new version. Title could be \"有新版本可用\" or \"新版軟體可用\".\n\nBody one sentence: \"目前使用的是舊版，建議立即更新以獲得最新功能與修正。\" Or \"新版本 X.Y.Z 現已推出，是否立即安裝？\" But it's a sentence. Something like: \"新版本現已推出，安裝後即可使用最新功能與修正程式。\"\n\nKeep simple:\n- s1: \"有新版本可用\"\n- s2: \"偵測到新版本已可安裝，建議立即更新以獲得最佳體驗。\" — one sentence. Or \"新版本已經推出，您可以立即安裝以取得最新功能與修正。\"\n- s3: \"立即安裝\"\n\nNote \"偵測到\" is fine in Taiwan usage. Avoid \"检测\". \"信息\" should be \"資訊\". Not needed here.\n\nOne sentence for s2: \"新版本現已推出，立即安裝即可享受最新功能與修正內容。\" Hmm \"享受\" maybe odd. Better: \"新版本現已推出，包含最新功能與問題修正，建議您立即安裝。\" That's one sentence in Chinese with commas ending in one period.\n\nTaiwan punctuation uses full-width. Fine.\n\nOutput only JSON object.</think>{\"s1\": \"有新版本可用\", \"s2\": \"新版本現已推出，建議立即更新以取得最新功能與修正。\", \"s3\": \"立即安裝\"}",
+ "parsed": {
+  "s1": "有新版本可用",
+  "s2": "新版本現已推出，建議立即更新以取得最新功能與修正。",
+  "s3": "立即安裝"
+ },
+ "error": "",
+ "seconds": 2.7
+}

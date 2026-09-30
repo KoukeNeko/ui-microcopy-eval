@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for a computer peripherals settings page in Traditional Chinese (Taiwan usage). They want:\n- s1: label for pointer device speed\n- s2: label for display device brightness\n- s3: title of the settings page\n\nTaiwan UI conventions: \n- Pointer device = 指標裝置, mouse speed settings often called 「滑鼠」or「指標速度」. In Windows Taiwan, it's 「滑鼠速度」 or 「指標速度」. The page says 調整指標裝置的移動速度 — so \"指標速度\" or \"指標移動速度\". Microsoft Taiwan uses 「指標速度」 in mouse settings. Could use 「指標裝置速度」 too. I'd go with 「指標移動速度」 or 「指標速度」.\n\n- Brightness: 「亮度」 or 「顯示器亮度」. In Taiwan, display = 顯示器 (not 显示器 is same actually, but China uses 显示器 too; Taiwan also uses 螢幕). Windows Taiwan: 「亮度」 under 「亮度與色彩」. I'd use 「顯示器亮度」.\n\n- Title: 「滑鼠與顯示器設定」 or 「周邊裝置設定」? The page adjusts pointer device speed and display brightness. A suitable title: 「輸入與顯示設定」 or 「指標與顯示設定」or 「電腦周邊設定」. Since it covers pointer device and display: 「周邊裝置設定」 seems fine. Or 「滑鼠與顯示器」. The spec says 指標裝置 (pointer device), so maybe 「指標與顯示設定」.\n\nTaiwan terminology check: 滑鼠, 亮度, 設定, 顯示器. Avoid mainland terms like 鼠标, 设置, 显示器 brightness... 亮度 is same. Mainland would be 鼠标, 设置. Taiwan: 滑鼠, 設定.\n\ns1: 「指標速度」 — Windows Taiwan uses 「指標速度」 to adjust mouse movement speed. Good.\n\ns2: 「顯示器亮度」.\n\ns3: 「滑鼠與顯示器設定」? But the page refers to 指標裝置, could include touchpads. 「指標與顯示器設定」 works too. I'll pick 「周邊裝置設定」? Hmm, the described page is specifically about pointer speed and brightness. A title like 「滑鼠與顯示器」 is Windows-like. I'll use 「滑鼠與顯示器設定」.\n\nActually, to be safe and generic (指標裝置 could be mouse or trackpad), 「指標與顯示設定」 is good. I'll output:\n\n{\n  \"s1\": \"指標速度\",\n  \"s2\": \"顯示器亮度\",\n  \"s3\": \"滑鼠與顯示器設定\"\n}\n\nOr s3: \"指標與顯示器設定\". I'll go with that to match 指標裝置.</think>{\n  \"s1\": \"指標速度\",\n  \"s2\": \"顯示器亮度\",\n  \"s3\": \"滑鼠與顯示器設定\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 4.3
+}

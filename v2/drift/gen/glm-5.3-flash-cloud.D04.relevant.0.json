@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D04",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app interface. The scenario: app sends a request but device has no network connection, so it fails.\n\n- s1: error message (one sentence) - should mention network, use 網路 not 網絡\n- s2: retry button - 重試\n- s3: status text after connection restored - something like \"連線已恢復\" or \"已重新連上網路\"\n\nLet me write:\n\ns1: \"無法連上網路，請求送出失敗。\" or \"裝置目前沒有網路連線，請檢查後再試。\" - one sentence. Something like \"目前沒有網路連線，無法送出請求。\"\n\nCommon Taiwan UI phrasing: \"連線失敗，請檢查網路連線後再試一次。\" But requirement says one sentence. Let me keep it concise: \"目前沒有網路連線，無法送出請求。\"\n\ns2: \"重試\"\n\ns3: \"網路連線已恢復\" or \"連線已恢復，可以繼續操作。\" Just status text: \"網路連線已恢復。\"\n\nOutput only JSON.{\"s1\": \"目前沒有網路連線，無法送出請求。\", \"s2\": \"重試\", \"s3\": \"網路連線已恢復\"}",
+ "parsed": {
+  "s1": "目前沒有網路連線，無法送出請求。",
+  "s2": "重試",
+  "s3": "網路連線已恢復"
+ },
+ "error": "",
+ "seconds": 21.9
+}

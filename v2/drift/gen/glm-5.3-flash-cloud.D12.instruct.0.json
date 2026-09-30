@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for a browser extension store page. They said:\n- s1: store page title\n- s2: install button\n- s3: installed status text\n\nTaiwan uses \"附加元件\" for extensions/add-ons (Firefox in Taiwan uses 附加元件), Chrome uses \"擴充功能\" in Taiwan. The user said \"第三方做的附加功能來擴充瀏覽器\" — they call it 附加功能. The store page title could be something like \"附加功能商店\" or \"擴充功能商店\".\n\nThe user asked for Taiwan Traditional Chinese UI terms, not mainland China terms. So avoid \"插件\", \"扩展\", \"应用商店\" etc.\n\ns1: store page title — something like 「附加功能商店」 or 「擴充功能商店」. Chrome Taiwan calls them 「擴充功能」. The user's own wording says \"附加功能\", so maybe \"附加功能商店\" is safest. But Taiwan common usage: Chrome = 擴充功能, Firefox = 附加元件. Given the user used \"附加功能\", I could use that. However, they want standard Taiwan UI terms. Chrome's is \"擴充功能商店\" in Chrome Web Store localization? Chrome Web Store in Traditional Chinese Taiwan is 「Chrome 線上應用程式商店」. Hmm. That's the actual store name. But generic: 「附加功能商店」.\n\nI think \"擴充功能商店\" aligns with mainstream Taiwan browser terminology (Chrome). But the user explicitly wrote \"第三方做的附加功能\". They may accept either. To be safe, maybe use \"附加功能商店\"? The instruction: \"所有字串使用台灣的正體中文介面用語\" — use Taiwan terms. \"擴充功能\" is the Taiwan de facto term for browser extensions. I'll go with \"擴充功能商店\".\n\ns2: install button — 「安裝」\n\ns3: installed status — 「已安裝」\n\nOnly output JSON object, no other text. Keys s1, s2, s3.\n\nSo:\n{\"s1\": \"擴充功能商店\", \"s2\": \"安裝\", \"s3\": \"已安裝\"}\n\nFormat: plain JSON, no markdown? They said don't output other text. So just the JSON object. Keep it minimal.</think>{\"s1\": \"擴充功能商店\", \"s2\": \"安裝\", \"s3\": \"已安裝\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.8
+}

@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D16",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for an app in Traditional Chinese (Taiwan usage).\n\n- s1: Submit button for a feedback form (sends content to the team)\n- s2: Settings page button to write/save changes\n- s3: Status text after changes are saved\n\nTaiwan UI conventions:\n- 送出 for submit\n- 儲存變更 / 儲存 for save changes (Taiwan uses 儲存, not 保存)\n- Status text: 變更已儲存 or 已儲存變更\n\nLet me write:\n- s1: \"送出意見\" or \"送出\" — since it sends to the team, maybe \"送出意見\" is clearer. Simple \"送出\" also works. The form is a feedback form, button sends content to team. \"送出\" is standard. Maybe \"送出意見\" is better context.\n- s2: \"儲存變更\"\n- s3: \"變更已儲存\"\n\nNote: In Taiwan, 正體中文. Avoid mainland terms like 保存, 提交.\n\nOutput only JSON object. Values as strings.\n\nJSON:\n{\n  \"s1\": \"送出意見\",\n  \"s2\": \"儲存變更\",\n  \"s3\": \"變更已儲存\"\n}</think>```json\n{\n  \"s1\": \"送出意見\",\n  \"s2\": \"儲存變更\",\n  \"s3\": \"變更已儲存\"\n}\n```",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.0
+}

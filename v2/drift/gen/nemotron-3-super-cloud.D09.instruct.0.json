@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D09",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"滑鼠速度\",\n  \"s2\": \"螢幕亮度\",\n  \"s3\": \"電腦周邊設定\"\n}",
+ "parsed": {
+  "s1": "滑鼠速度",
+  "s2": "螢幕亮度",
+  "s3": "電腦周邊設定"
+ },
+ "error": "",
+ "seconds": 3.4
+}

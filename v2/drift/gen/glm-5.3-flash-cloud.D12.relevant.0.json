@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants app interface strings in Traditional Chinese (Taiwan). Context: browser store page where users can install third-party extensions/add-ons to extend the browser.\n\nStrings needed:\n- s1: Store page title\n- s2: Install button\n- s3: Status text after installation complete\n\nNote: Taiwan terminology mapping says use 外掛 instead of 插件. So \"add-on\" = 外掛 or 附加元件. In Taiwan, browser extensions are often called 附加元件 (like in Firefox Taiwan version) or 擴充功能 (Chrome Taiwan uses 擴充功能). The mapping table only specifies 外掛 instead of 插件.\n\nSo s1 could be \"附加元件商店\" or \"外掛商店\". The context says \"第三方做的附加功能來擴充瀏覽器\" — the page title for the store. Given the mapping, use 外掛. So s1: \"外掛商店\" or \"瀏覽器外掛商店\".\n\ns2: Install button: \"安裝\" or \"安裝外掛\". Just \"安裝\" is common.\n\ns3: Status text after installation complete: \"已安裝\" or \"安裝完成\". Common: Chrome shows the extension installed notification. \"已安裝\" is a status text.\n\nJSON output only.```json\n{\n  \"s1\": \"瀏覽器外掛商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"已安裝\"\n}\n```",
+ "parsed": {
+  "s1": "瀏覽器外掛商店",
+  "s2": "安裝",
+  "s3": "已安裝"
+ },
+ "error": "",
+ "seconds": 2.6
+}

@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D01",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for a settings page:\n\n- s1: Button text for resetting all options to installation defaults (\"restore defaults\" style button)\n- s2: Confirmation dialog title\n- s3: Confirmation dialog description text\n\nTaiwan Traditional Chinese UI conventions:\n- 按鈕: 「回復預設值」or「還原預設值」— In Taiwan Microsoft terminology, \"還原\" is common (還原預設值), Google uses 「重設」, Apple uses 「重設」. Common Taiwan UI: 「恢復預設值」「還原預設設定」「重設為預設值」.\n\nMicrosoft Taiwan glossary: \"reset\" = 重設; \"restore defaults\" = 還原預設值. Android/Google: 重設. For a settings button, 「還原預設設定」or「還原預設值」 is typical Taiwan usage. \"恢復原廠設定\" is more for factory reset of device. Since it's about options in an app, 「還原預設值」 fits well.\n\n- s2: Confirmation dialog title: 「還原預設設定？」or 「確認還原預設值？」or 「還原所有設定？」. A natural title: 「要還原預設設定嗎？」(question style, Google style) or 「確認還原」. Microsoft style: 「還原預設值」. I'll go with 「要還原預設設定嗎？」 — Google Taiwan style uses questions. Or simpler: 「還原預設設定」.\n\n- s3: Description: 「此操作會將所有設定還原為安裝時的預設值，且無法復原。」 Wait—can it be undone? The user says resets all options to installation defaults. Typically these resets are immediate and can't be undone. Description: 「所有選項將恢復為安裝時的預設值，此操作無法復原。」 Taiwan usage: 「無法復原」 is standard (Microsoft/Google Taiwan use 無法復原 / 無法還原). Actually Google Taiwan uses 「這項操作無法復原」. Microsoft uses 「無法復原」.\n\nAlso Taiwan terms: 「應用程式」(not 應用/软件), 「設定」(not 设置), 「選項」, 「預設」(not 默認).\n\ns1: 「還原預設值」 — good.\ns2: 「要還原預設設定嗎？」 or 「確認還原預設值？」. I'll pick 「要還原所有設定嗎？」 Hmm, the title should indicate reset. Google style: 「要重設設定嗎？」. I'll use 「要還原預設設定嗎？」.\n\ns3: 「此操作會將所有選項還原為安裝時的預設值，且無法復原。」 Taiwan writing: 「作業」 vs 「操作」— Microsoft Taiwan uses 作業 for \"operation\" in some contexts, but 操作 is fine and common. Google: 「這項操作」. I'll use 「這個動作會...」? Keep it simple: 「所有選項將會還原為安裝時的預設值，此操作無法復原。」\n\nOutput only a JSON object.</think>{\n  \"s1\": \"還原預設值\",\n  \"s2\": \"要還原預設設定嗎？\",\n  \"s3\": \"所有選項將會還原為安裝時的預設值，此操作無法復原。\"\n}",
+ "parsed": {
+  "s1": "還原預設值",
+  "s2": "要還原預設設定嗎？",
+  "s3": "所有選項將會還原為安裝時的預設值，此操作無法復原。"
+ },
+ "error": "",
+ "seconds": 4.3
+}

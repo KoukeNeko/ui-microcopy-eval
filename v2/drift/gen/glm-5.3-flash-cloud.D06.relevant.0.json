@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D06",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app interface. The scenario: user submits a form, backend server returns 500, app shows error.\n\nThey want:\n- s1: error message (one sentence)\n- s2: button\n- s3: status bar short status\n\nUse Taiwan Traditional Chinese UI terms, avoid Mainland China terms. The relevant mapping: 服務器 → 伺服器.\n\nOutput only one JSON object with keys s1, s2, s3, values are strings, nothing else.\n\nLet me write:\n\ns1: Something like \"伺服器發生錯誤，請稍後再試。\" — one sentence. Taiwan usage: 「伺服器發生錯誤，請稍後再試。」 Good.\n\ns2: Button — likely \"重試\" (retry). That's common Taiwan UI term.\n\ns3: Short status — \"伺服器錯誤\" or \"連線錯誤\"? Since 500 is server error: \"伺服器錯誤\". Short status in status bar could be \"發生錯誤\" but more specific: \"伺服器錯誤\".\n\nJSON output only:\n\n{\"s1\": \"伺服器發生錯誤，請稍後再試。\", \"s2\": \"重試\", \"s3\": \"伺服器錯誤\"}\n\nMake sure punctuation uses full-width Chinese punctuation. Use 「，」 and 「。」. Good.{\"s1\": \"伺服器發生錯誤，請稍後再試。\", \"s2\": \"重試\", \"s3\": \"伺服器錯誤\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.3
+}

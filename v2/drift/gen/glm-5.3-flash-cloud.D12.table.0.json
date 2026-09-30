@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D12",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants UI strings for a browser store page where users can install third-party extensions (附加功能/擴充功能). Language: Traditional Chinese (Taiwan conventions).\n\nLet me think about appropriate Taiwan-style terminology:\n- Browser store page: 應用商店 or 線上應用程式商店. In browser context, \"附加功能\" is what Firefox uses in Taiwan (\"附加元件\" actually). Chrome uses \"擴充功能\". The user said \"第三方做的附加功能來擴充瀏覽器\" — so third-party extensions/add-ons.\n- s1: Store page title. Something like \"附加功能商店\" or \"擴充功能商店\". Chrome Taiwan uses \"線上應用程式商店\" (Chrome Web Store). Firefox uses \"附加元件站\" (Add-ons Manager). Since user says \"附加功能\", I could use \"附加功能商店\" or \"瀏覽器附加功能商店\". Let me go with \"附加功能商店\" or maybe \"擴充功能商店\". The user's wording: \"商店頁的標題\" — title of the store page. Something like \"附加功能商店\". Taiwan Mozilla uses \"附加元件\". Chrome uses \"擴充功能\". Since the user said \"附加功能\", I'll honor their term: \"附加功能商店\". Maybe add a subtitle? Just a title string. \"附加功能商店\" is fine. Could also be \"探索附加功能\" style. I'll go \"附加功能商店\" — simple and clear.\n\n- s2: Install button. Taiwan UI: \"安裝\". Could be \"安裝此附加功能\" but button should be concise: \"安裝\". Chrome uses \"加至 Chrome\" but generic: \"安裝\". I'll use \"安裝\".\n\n- s3: Installation complete status text. \"安裝完成\" or \"已安裝\". Status text after install completes: \"安裝完成\". Firefox uses \"已安裝\". The prompt says \"安裝完成的狀態文字\" — status text showing install completed. \"安裝完成\" is good. Could be \"附加功能已安裝\". I'll use \"安裝完成\".\n\nCheck for prohibited terms: none used. Use 台灣 terms, avoid 當前, 默認, etc. All fine.\n\nOutput only one JSON object with keys s1, s2, s3. No other text.```json\n{\n  \"s1\": \"附加功能商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"安裝完成\"\n}\n```",
+ "parsed": {
+  "s1": "附加功能商店",
+  "s2": "安裝",
+  "s3": "安裝完成"
+ },
+ "error": "",
+ "seconds": 2.6
+}

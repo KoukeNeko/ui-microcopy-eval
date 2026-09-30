@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D01",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The task: write UI strings in Traditional Chinese (Taiwan style) for a settings page button that resets all options to original installation values.\n\n- s1: button text\n- s2: confirmation dialog title\n- s3: confirmation dialog description sentence\n\nTaiwan UI conventions: \"還原\" or \"重設\" or \"恢復預設值\". Common Taiwan usage: \"還原預設值\" / \"還原為預設設定\" / \"重設為預設值\". Microsoft Windows uses \"重設\" (Reset). Settings reset button often \"還原預設值\". The instruction says avoid terms like 默認 → 預設. Also avoid 重啟 etc.\n\ns1: \"還原為預設值\" or \"還原所有設定\". Since it resets all options to original installation values: \"還原所有設定\" or \"重設所有選項\". Taiwan convention often \"還原預設值\". Let me pick \"還原所有設定\" — clear that it resets all options. Or \"還原為預設值\". Hmm, the button at bottom of settings page that resets everything: Apple uses \"重置所有設定\" (Reset All Settings) in Taiwan? Apple Taiwan uses \"重置\" actually: \"重置所有設定\" (Reset All Settings). Microsoft uses \"重設\". Common Taiwan usage: both 還原 and 重設. For app UI, \"還原預設值\" is very common. I'll go with \"還原所有設定\" — clear. Or \"還原為預設值\".\n\nGiven \"把所有選項改回安裝時的原始值\" — resetting to defaults. s1 could be \"還原所有設定\". s2 title: \"還原所有設定？\" or \"確認還原設定\". s3: \"所有設定將還原為預設值，且無法復原。此操作無法復原\" — mention irrevocable and maybe app restart? Keep it simple: \"所有設定將被還原為安裝時的預設值，此操作無法復原。\" Wait avoid 被字? It's fine but Taiwan style often omits 被. \"所有設定將還原為預設值，且無法復原。\" Could add \"您確定要繼續嗎？\" Actually s3 is the explanation sentence; a question could be part of it or separate. Typically: 說明句: \"此操作會將所有選項還原為預設值，且無法復原。\" Then dialog would have confirm buttons \"還原\" / \"取消\" but we only need s1-s3.\n\nLet me produce:\n\ns1: \"還原所有設定\"\ns2: \"還原所有設定？\"\ns3: \"所有選項將還原為安裝時的預設值，且無法復原。\"\n\nCheck glossary: no 大陸 terms. 預設 used. Good. Output only JSON.{\"s1\": \"還原所有設定\", \"s2\": \"還原所有設定？\", \"s3\": \"所有選項將還原為安裝時的預設值，且無法復原。\"}",
+ "parsed": {
+  "s1": "還原所有設定",
+  "s2": "還原所有設定？",
+  "s3": "所有選項將還原為安裝時的預設值，且無法復原。"
+ },
+ "error": "",
+ "seconds": 5.4
+}

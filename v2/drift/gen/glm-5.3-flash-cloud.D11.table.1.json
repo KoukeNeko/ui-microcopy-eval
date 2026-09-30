@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app. The screen: a list page in a mobile app, pull down to refresh (fetch latest data from backend).\n\nNeed:\n- s1: hint text when pulling down (pull-to-refresh hint)\n- s2: status text after fetching completes\n- s3: text when list is empty\n\nMust avoid mainland China terms, use Taiwan terms. Note \"刷新\" → \"重新整理\" per layer 1. But \"重新整理\" as a status... Let's craft natural Taiwan UI strings.\n\nCommon Taiwan pull-to-refresh strings:\n- s1: 「下拉即可更新」or 「鬆開立即更新」... The prompt says s1 is the hint while pulling down. So something like 「下拉以更新」or 「繼續下拉即可更新」. Actually pull-to-refresh typically has states: pull to refresh (下拉更新), release to refresh (放開更新), refreshing (更新中...), completed. Here only three strings: s1 hint while pulling, s2 status after fetch done, s3 empty list.\n\nBut wait — s2 is \"取完後的狀態文字\" (status after fetching). Could be 「已更新」or 「更新完成」. Using 「重新整理」? \"已重新整理\" sounds a bit odd; Taiwan apps often use 「更新完成」/「已更新」. But the linter says 刷新→重新整理. 更新 is fine and not flagged. \"下拉更新\" is common in Taiwan (e.g., \"下拉以更新\"). Hmm, but \"重新整理\" is the required replacement for 刷新. We could use 「下拉鬆手即可重新整理」... Actually keep natural:\n\n- s1: 「下拉以重新整理」or 「繼續下拉，放開後即可重新整理」. Simpler: 「下拉即可重新整理」\n- s2: 「已重新整理」or 「重新整理完成」\n- s3: 「目前沒有任何資料」— use 目前 (not 當前), 資料 not 數據. Something like 「目前沒有項目」or 「清單是空的」. Taiwan style: 「目前沒有資料」or 「尚無任何項目」. Maybe 「這裡空空如也」too casual. Use 「目前沒有任何項目」.\n\nEmpty list could also invite refresh: 「目前沒有資料，下拉即可重新整理」— but s3 just empty text. Keep simple: 「目前沒有任何項目」.\n\nOutput only JSON object with keys s1, s2, s3. No other text.\n\nJSON values with commas? Use full-width punctuation or none. Strings like \"下拉即可重新整理\" fine.\n\ns2: 「重新整理完成」— status after fetch. Or 「已更新為最新資料」. I'll use 「重新整理完成」.\n\ns1: 「下拉即可重新整理」.\n\ns3: 「目前沒有任何項目」.\n\nEnsure no banned terms: 當前 no, 默認 no, 加載 no, 刷新 no, 數據 no. Good.\n\nOutput pure JSON.</think>{\n  \"s1\": \"下拉即可重新整理\",\n  \"s2\": \"重新整理完成\",\n  \"s3\": \"目前沒有任何項目\"\n}",
+ "parsed": {
+  "s1": "下拉即可重新整理",
+  "s2": "重新整理完成",
+  "s3": "目前沒有任何項目"
+ },
+ "error": "",
+ "seconds": 3.4
+}

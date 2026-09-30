@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D07",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan) for a login screen.\n\n- s1: label above password field — \"密碼\"\n- s2: link text for creating a new account — something like \"還沒有帳號？建立新帳號\" or \"尚未註冊？申請新帳號\". The spec says \"還沒有登入身分的人建立新的登入身分\" — so link for creating a new login credential/account. Common Taiwan phrasing: 「還沒有帳號？註冊新帳號」. Avoid mainland terms like \"账号\" — in Traditional Chinese it's 帳號. \"登入身分\" could be \"帳號\". So s2: 「還沒有帳號？建立新帳號」\n- s3: login failure (wrong password) error message — 「密碼錯誤，請重新輸入。」or 「登入失敗：密碼不正確，請再試一次。」\n\nTaiwan UI conventions: 「登入」, 「密碼」, 「電子郵件」, 「帳號」.\n\ns1: 密碼\ns2: 還沒有帳號？建立新帳號\ns3: 密碼錯誤，請重新輸入。\n\nOutput only JSON.</think>{\n  \"s1\": \"密碼\",\n  \"s2\": \"還沒有帳號？建立新帳號\",\n  \"s3\": \"登入失敗：密碼錯誤，請重新輸入。\"\n}",
+ "parsed": {
+  "s1": "密碼",
+  "s2": "還沒有帳號？建立新帳號",
+  "s3": "登入失敗：密碼錯誤，請重新輸入。"
+ },
+ "error": "",
+ "seconds": 1.4
+}

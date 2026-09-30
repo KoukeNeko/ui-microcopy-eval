@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D11",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"往下拉重新整理\",\n  \"s2\": \"重新整理完成\",\n  \"s3\": \"目前無資料\"\n}",
+ "parsed": {
+  "s1": "往下拉重新整理",
+  "s2": "重新整理完成",
+  "s3": "目前無資料"
+ },
+ "error": "",
+ "seconds": 1.3
+}

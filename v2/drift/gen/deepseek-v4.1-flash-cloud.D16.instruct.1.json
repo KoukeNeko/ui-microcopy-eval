@@ -1,0 +1,14 @@
+{
+ "model": "deepseek-v4.1-flash:cloud",
+ "probe": "D16",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "{\"s1\":\"送出意見\",\"s2\":\"儲存變更\",\"s3\":\"已儲存變更\"}",
+ "parsed": {
+  "s1": "送出意見",
+  "s2": "儲存變更",
+  "s3": "已儲存變更"
+ },
+ "error": "",
+ "seconds": 0.5
+}

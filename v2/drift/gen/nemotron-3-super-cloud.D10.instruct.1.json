@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D10",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"載入中\",\n  \"s2\": \"資料取得失敗\",\n  \"s3\": \"重新整理\"\n}",
+ "parsed": {
+  "s1": "載入中",
+  "s2": "資料取得失敗",
+  "s3": "重新整理"
+ },
+ "error": "",
+ "seconds": 0.9
+}

@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D08",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings for a file management app in Traditional Chinese (Taiwan).\n\nScreen: File management app, user can create a new container to organize things, and can move an item into it.\n\nWait — \"container\" here is translated as \"容器\" literally, but the terminology mapping says 文件夾 → 資料夾. So the \"container\" is a folder (資料夾).\n\nSo:\n- s1: Button for creating a new folder → In Taiwan UI conventions: \"新增資料夾\" (typical pattern: 新增 + noun). Common in Taiwan Android/iOS: \"新增資料夾\".\n- s2: Status text after creation. Something like \"資料夾已建立\" — status after creating. e.g., \"已建立資料夾\" or \"資料夾已建立\". Taiwan UI typically: \"資料夾已建立\" (past tense completion). Could also be \"已新增資料夾\". Hmm, \"status text\" — like a toast/snackbar. Common patterns: \"已建立「XXX」\" or \"資料夾已建立\". I'll use \"資料夾已建立\".\n- s3: Dialog title for moving an item → \"移動項目\" or \"移動至資料夾\". Common: \"移動項目\" — but \"項目\" vs \"項目\"? Taiwan UI for \"item\" is 項目. Move item dialog title: \"移動項目\" or \"移至資料夾\" or \"選擇資料夾\". The dialog is for moving the item into the folder. A common title: \"移動項目\" (like Google Drive: \"移動\" or \"移動至\"). I'd say \"移動項目\" is fine, but maybe \"移動至...\" Let me think: The dialog asks where to move. Taiwan conventions: Google Drive uses \"移動\" as title. But \"移動項目\" is clearer. I'll use \"移動項目\".\n\nActually, could also consider \"移至資料夾\". But instruction says dialog title for moving an item. \"移動項目\" is the most direct translation of \"Move item\" and sounds natural in Taiwan UI.\n\nJSON output only.{\n  \"s1\": \"新增資料夾\",\n  \"s2\": \"資料夾已建立\",\n  \"s3\": \"移動項目\"\n}",
+ "parsed": {
+  "s1": "新增資料夾",
+  "s2": "資料夾已建立",
+  "s3": "移動項目"
+ },
+ "error": "",
+ "seconds": 2.1
+}

@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D04",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants Taiwan Traditional Chinese UI strings for an app scenario: a request fails because the device has no network connection.\n\n- s1: error message (one sentence)\n- s2: retry button\n- s3: status text after connection restored\n\nNeed Taiwan UI terminology. Avoid mainland terms. Follow the glossaries.\n\ns1: Something like「無法送出請求，您的裝置目前沒有連上任何網路。」— use 送出 not 提交, 目前 not 當前, 網路 not 網絡. One sentence. Maybe「無法連線至網路，請求未能送出。」Better natural: 「裝置未連上任何網路，無法送出請求。」That's one sentence.\n\ns2: 重試 — Taiwan UI commonly \"重試\" or \"再試一次\". \"重試\" is fine and common in iOS/Android Traditional Chinese.\n\ns3: Connection restored status: 「網路已恢復連線」or 「已重新連上網路」. Common: 「連線已恢復」. Maybe「網路連線已恢復」. \"恢復\" is fine in Taiwan usage. Could also say「已恢復網路連線」. I'll use「網路連線已恢復」.\n\nAvoid 在線; use 線上 if needed — not needed.\n\nOutput only JSON object with keys s1, s2, s3.</think>{\n  \"s1\": \"裝置目前未連上任何網路，無法送出請求。\",\n  \"s2\": \"重試\",\n  \"s3\": \"網路連線已恢復\"\n}",
+ "parsed": {
+  "s1": "裝置目前未連上任何網路，無法送出請求。",
+  "s2": "重試",
+  "s3": "網路連線已恢復"
+ },
+ "error": "",
+ "seconds": 1.6
+}

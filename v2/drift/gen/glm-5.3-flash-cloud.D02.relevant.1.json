@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D02",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The user wants Traditional Chinese (Taiwan) UI strings for a player app scenario: user opens a recorded video content, cannot play because file format is not supported.\n\n- s1: error message (one sentence) — something like \"此影片格式不支援，無法播放。\" or \"不支援的檔案格式，無法播放此影片。\"\n- s2: button on error screen — common options: \"確定\", \"返回\", \"選擇其他檔案\", \"重試\". Likely \"確定\" or \"返回\". Perhaps \"知道了\" is used but more Taiwan style: \"確定\" or \"返回\". Let me pick \"確定\" or \"返回上一頁\". A reasonable button: \"返回\".\n- s3: name of the function area at the top of the screen — this is like the top bar/section name. For a player app top area maybe \"媒體庫\" or \"我的影片\" — \"畫面頂端這個功能區的名稱\" — could be a tab/navigation like \"影片\" (Videos). Given the glossary mentions 影片/音訊, the top functional area could be \"影片\" (Videos tab). Hmm.\n\nThe scenario: user taps a recorded video content — so the top functional area might be \"錄影\" or \"錄製內容\"? Actually \"一段錄好的畫面內容\" — a recorded video. The top section could be \"我的影片\" or \"影片庫\". Or the screen top area name might be the player's top bar? \"畫面頂端這個功能區\" suggests a section/tab at the top of the app, like \"媒體庫\" or \"影片\".\n\nConsidering typical localization exercises, s3 might be \"影片\" (the Videos tab in a media player app). The glossary hint about 影片/音訊 suggests they want us to use \"影片\" somewhere — s1 uses 影片, and s3 could be \"影片\" too if it's the Videos section.\n\nI'll output:\ns1: \"此影片格式不支援，無法播放。\"\ns2: \"確定\" — or \"返回\"? A button on error screen commonly \"確定\" (OK). But maybe \"選擇其他檔案\"? Simple: \"確定\".\ns3: \"影片\"\n\nActually maybe s3 should be \"媒體庫\"? The instruction says \"畫面頂端這個功能區的名稱\" — the name of the function area at the top of the screen. In a player app, top tabs: \"影片\" / \"音訊\" / \"播放清單\". Given \"點開一段錄好的畫面內容\", the top area is probably \"影片\". I'll go with \"影片\".\n\ns1 must be one sentence: \"檔案格式不支援，無法播放此影片。\"\n\nOutput JSON only.</think>{\"s1\": \"此影片的檔案格式不支援，無法播放。\", \"s2\": \"確定\", \"s3\": \"影片\"}",
+ "parsed": {
+  "s1": "此影片的檔案格式不支援，無法播放。",
+  "s2": "確定",
+  "s3": "影片"
+ },
+ "error": "",
+ "seconds": 5.2
+}

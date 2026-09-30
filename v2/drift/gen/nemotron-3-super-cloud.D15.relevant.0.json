@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D15",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"解除安裝\",\n  \"s2\": \"確認解除安裝\",\n  \"s3\": \"已解除安裝\"\n}",
+ "parsed": {
+  "s1": "解除安裝",
+  "s2": "確認解除安裝",
+  "s3": "已解除安裝"
+ },
+ "error": "",
+ "seconds": 1.0
+}

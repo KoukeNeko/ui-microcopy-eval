@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The task: write UI strings for a Traditional Chinese (Taiwan) app interface. The screen: app detects that the device's available temporary computing/storage space is insufficient, some features may slow down.\n\nNeed to consider terminology. \"暫存運算空間\" - this sounds like could be \"cache\" or \"scratch space\" / temporary working space. Possibly referring to free disk space used for temporary operations, or could be RAM-like. The prompt says \"裝置可用的暫存運算空間不足\" - device's available temporary computing space insufficient. In Taiwan terms: \"暫存空間\" is common for temporary storage/cache. Avoid \"內存\", use \"記憶體\" if needed. But maybe just say \"暫存運算空間\" as given.\n\ns1: warning title - short, e.g., \"暫存運算空間不足\" or \"可用暫存空間不足\".\n\ns2: warning content, one sentence: \"裝置可用的暫存運算空間不足，部分功能可能會變慢。\" That's one sentence (with comma). In Traditional Chinese UI, \"部分功能\" is standard; \"某些功能\" also fine. Use \"部分功能可能會變慢\" or \"可能導致部分功能效能下降\".\n\ns3: close button: \"關閉\" or \"知道了\". The prompt says \"關閉警告的按鈕\" - a button that closes the warning. \"確定\"? Typically \"知道了\" or \"關閉\". I'll use \"關閉\" or \"知道了\". Safe: \"關閉\".\n\nEnsure Taiwanese terms: use \"記憶體\" if mentioning memory; but maybe not needed. \"暫存運算空間\" fine.\n\nOne sentence for s2. Output single JSON object only.\n\nJSON:\n\n{\"s1\":\"暫存運算空間不足\",\"s2\":\"裝置可用的暫存運算空間不足，部分功能可能會變慢。\",\"s3\":\"關閉\"}\n\nThat's a title plus content repeating; acceptable. Could make title \"可用暫存空間不足\". Fine.\n\nEnsure no extra text. Output raw JSON.</think>{\"s1\":\"暫存運算空間不足\",\"s2\":\"裝置可用的暫存運算空間不足，部分功能可能會變慢。\",\"s3\":\"關閉\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 3.0
+}

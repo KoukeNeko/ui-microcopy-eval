@@ -1,0 +1,14 @@
+{
+ "model": "deepseek-v4.1-flash:cloud",
+ "probe": "D11",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "{\"s1\":\"放開以重新整理\",\"s2\":\"已更新\",\"s3\":\"目前沒有資料\"}",
+ "parsed": {
+  "s1": "放開以重新整理",
+  "s2": "已更新",
+  "s3": "目前沒有資料"
+ },
+ "error": "",
+ "seconds": 1.4
+}

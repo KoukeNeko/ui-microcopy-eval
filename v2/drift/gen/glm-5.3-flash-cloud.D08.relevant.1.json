@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D08",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "The task: File management app, Traditional Chinese (Taiwan). Strings:\n- s1: button to create a new container (folder) → in Taiwan UI terms, \"新增資料夾\" (not 文件夾, not 新建文件夹)\n- s2: status text after creation → e.g., \"資料夾已建立\" or \"已建立資料夾\"\n- s3: dialog title for moving an item → e.g., \"移動項目\" or \"移動到此資料夾\". The context: user can move an item into the folder. Dialog title could be \"移動項目\" or \"移動項目至資料夾\". Taiwan usage: \"移動\" or \"搬移\". Common: \"移動項目\" fine. Could also be \"移至資料夾\".\n\nOutput JSON only.\n\ns1: \"新增資料夾\"\ns2: \"資料夾已建立\"\ns3: \"移動項目\"\n\nMaybe s2 could be \"已建立「xxx」資料夾\" but we don't have variable placeholders. Keep simple: \"資料夾已建立\"。\n\ns3: moving item into container → \"移動項目\" is fine; could be \"將項目移至資料夾\". Dialog title typically \"移動項目\". I'll use \"移動項目\".</think>{\n  \"s1\": \"新增資料夾\",\n  \"s2\": \"資料夾已建立\",\n  \"s3\": \"移動項目\"\n}",
+ "parsed": {
+  "s1": "新增資料夾",
+  "s2": "資料夾已建立",
+  "s3": "移動項目"
+ },
+ "error": "",
+ "seconds": 2.4
+}

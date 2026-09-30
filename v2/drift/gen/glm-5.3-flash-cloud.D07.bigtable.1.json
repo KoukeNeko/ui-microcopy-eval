@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D07",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The user wants UI strings for a login screen in Traditional Chinese (Taiwan usage).\n\n- s1: label above password field → 密碼\n- s2: link text for creating new account → words: 建立, 登入, 註冊... \"建立新身分\" phrasing. Typically \"還沒有帳號？建立新帳號\" or \"建立新的登入身分\". The user said 還沒有登入身分的人建立新的登入身分. So s2 could be \"沒有帳號？建立新身分\" or \"建立新的登入身分\". Common Taiwan UI: \"尚未註冊？立即建立帳號\" but user used \"登入身分\" terminology. I'll use \"還沒有帳號嗎？建立新帳號\" — hmm but they said \"登入身分\". To be safe: \"還沒有登入身分？建立新帳號\" — but 身分證 mapping suggests 身份→身分. I'll keep \"身分\". Maybe s2: \"建立新的登入身分\". Simple and matches request.\n\n- s3: login failed (wrong password) error message → \"密碼錯誤，請再試一次。\" or \"密碼不正確，請重新輸入。\" Taiwan usage: 重試 is fine. Common: \"密碼錯誤，請重新輸入。\"\n\nAvoid 大陸用語: none present. Use 密碼 (fine), 電子郵件 (fine, Taiwan uses 電子郵件 or 電郵 is HK; Taiwan \"電子郵件\" correct).\n\nOutput JSON only.</think>{\n  \"s1\": \"密碼\",\n  \"s2\": \"還沒有登入身分？建立新身分\",\n  \"s3\": \"密碼錯誤，請重新輸入。\"\n}",
+ "parsed": {
+  "s1": "密碼",
+  "s2": "還沒有登入身分？建立新身分",
+  "s3": "密碼錯誤，請重新輸入。"
+ },
+ "error": "",
+ "seconds": 3.8
+}

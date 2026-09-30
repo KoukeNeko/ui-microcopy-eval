@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D08",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"建立新容器\",\n  \"s2\": \"已建立新容器\",\n  \"s3\": \"移動項目\"\n}",
+ "parsed": {
+  "s1": "建立新容器",
+  "s2": "已建立新容器",
+  "s3": "移動項目"
+ },
+ "error": "",
+ "seconds": 4.2
+}

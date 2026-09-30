@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D13",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan) for a website interface that switches between mobile/tablet layout and desktop layout.\n\ns1: Option to switch to mobile/tablet layout\ns2: Option to switch to desktop layout\ns3: Status text after switching\n\nTaiwan terminology: 行動裝置 instead of 移動端.\n\nCommon Taiwan UI terms:\n- 切換至行動裝置版面 / 行動裝置版\n- 切換至電腦版面 / 電腦版\n- s3: 已切換至行動裝置版面 or 目前顯示行動裝置版面\n\nLet me write natural Taiwan Traditional Chinese:\n\ns1: \"切換至行動裝置版面\" — could also be \"行動裝置版\"\ns2: \"切換至電腦版面\" — \"電腦版\"\ns3: \"已切換至行動裝置版面\"? But s3 might need to be generic covering both switches. Perhaps \"版面已切換\" or \"已切換版面\". Since s3 is \"切換後的狀態文字\" — status text after switching. It should probably be generic: \"版面已切換\" or \"已切換版面\".\n\nAlternatively s3 could mention current mode generically: \"目前已切換版面\". I'll go with \"版面已切換\".\n\nOutput only JSON object.```json\n{\n  \"s1\": \"切換至行動裝置版面\",\n  \"s2\": \"切換至電腦版面\",\n  \"s3\": \"版面已切換\"\n}\n```",
+ "parsed": {
+  "s1": "切換至行動裝置版面",
+  "s2": "切換至電腦版面",
+  "s3": "版面已切換"
+ },
+ "error": "",
+ "seconds": 1.7
+}

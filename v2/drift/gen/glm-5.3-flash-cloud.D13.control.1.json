@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D13",
+ "arm": "control",
+ "sample": 1,
+ "raw": "The user wants UI strings in Traditional Chinese for a website. The scenario: top-right corner of a website has a toggle to switch to a mobile/tablet-friendly layout, or switch back to desktop layout.\n\n- s1: option to switch to mobile/tablet layout\n- s2: option to switch to desktop layout\n- s3: status text after switching\n\nOnly output a JSON object with keys s1, s2, s3, values are strings, no other text.\n\nLet me write appropriate Traditional Chinese strings:\n\n- s1: \"切換至手機平板版面\"\n- s2: \"切換至電腦版面\"\n- s3: \"已切換版面\" — but maybe better to indicate which mode. Perhaps \"已切換至手機平板版面\" or a generic \"版面已切換\". The s3 is \"切換後的狀態文字\" — status text after switching. It could be generic like \"已切換\" or show target. Maybe best to be generic: \"已切換版面\" or \"版面已切換\". Hmm, could also be \"已切換至行動裝置版面\" but s3 is singular, so generic makes sense.\n\nIn Taiwan, \"平板\" is tablet, \"行動裝置\" is mobile device. \"手機平板\" as given. Common UI terms: \"切換為行動版\" / \"切換為電腦版\". Actually common phrasing: \"行動版網站\" and \"電腦版網站\". The user says \"適合手機平板的版面\" so maybe \"手機平板版\" or \"行動裝置版面\".\n\nI'll go with:\n- s1: \"切換至手機平板版面\"\n- s2: \"切換至電腦版面\"\n- s3: \"已切換版面\"\n\nOr s3 could include target: \"已切換至手機平板版面\"/\"已切換至電腦版面\" — but there's only one s3. Generic: \"版面已切換\" sounds natural. I'll use \"已切換版面\"? \"版面已切換\" is more natural as a status. Let me pick \"版面已切換\".\n\nOutput only JSON.</think>{\n  \"s1\": \"切換至手機平板版面\",\n  \"s2\": \"切換至電腦版面\",\n  \"s3\": \"版面已切換\"\n}",
+ "parsed": {
+  "s1": "切換至手機平板版面",
+  "s2": "切換至電腦版面",
+  "s3": "版面已切換"
+ },
+ "error": "",
+ "seconds": 2.6
+}

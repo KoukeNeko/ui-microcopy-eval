@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for a list page loading data from backend.\n\n- s1: status text shown while waiting (loading)\n- s2: error message when fetching fails\n- s3: button after failure (retry)\n\nTaiwan Traditional Chinese UI conventions:\n- s1: \"載入中…\" is common. Taiwan uses \"載入\" for loading. Could be \"讀取中…\" too. Common in Taiwan UI: \"載入中…\". For list data fetching, \"讀取中…\"? Both acceptable. Taiwan Microsoft style: \"載入中\". I'll use \"載入中…\" (ellipsis \"…\" is appropriate).\n- s2: error message Taiwan style: \"無法連線到伺服器\" or \"資料載入失敗\". Taiwan uses \"連線\" not \"连接\". Something like \"無法載入資料，請確認網路連線是否正常。\" Or \"資料讀取失敗，請稍後再試。\" Taiwan uses \"稍後\" not \"稍候\"? Both used; \"稍後再試\" is common. Actually \"稍候再試\" also common in Taiwan. Microsoft Taiwan style uses \"稍後再試\".\n- s3: button: \"重試\" is standard in Taiwan UI (e.g., Windows uses \"重試\"). Could be \"重新載入\" too, but \"重試\" is concise common.\n\ns2 should reflect failure to fetch list data: \"無法載入資料，請檢查網路連線後重試。\" Hmm, but s3 is the button. Message could be \"資料載入失敗，請確認網路連線是否正常。\" Avoid \"後端\" jargon. Keep simple.\n\nOutput only JSON.{\n  \"s1\": \"載入中…\",\n  \"s2\": \"無法載入資料，請確認網路連線是否正常。\",\n  \"s3\": \"重試\"\n}",
+ "parsed": {
+  "s1": "載入中…",
+  "s2": "無法載入資料，請確認網路連線是否正常。",
+  "s3": "重試"
+ },
+ "error": "",
+ "seconds": 2.5
+}

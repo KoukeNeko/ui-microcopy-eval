@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D07",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The task: write app UI strings in Traditional Chinese (Taiwan usage). Login screen: email and password fields; a link for people without an account to create a new one.\n\n- s1: label above password field → 「密碼」\n- s2: link text for creating new identity → 「建立新帳號」or 「還沒有帳號？建立新帳號」— the spec says \"建立新的登入身分\". Common Taiwan UI: 「建立新帳號」. Note 賬號→帳號. Use 帳號.\n- s3: login failure (wrong password) error message → 「密碼錯誤，請重新輸入。」 or 「密碼不正確，請再試一次。」\n\nAvoid mainland terms. 重新輸入 is fine. Taiwan style: 「密碼錯誤，請重新輸入。」 That's natural.\n\ns2: could be 「還沒有帳號？建立新帳號」or simply 「建立新帳號」. The description: \"有一個連結給還沒有登入身分的人建立新的登入身分\" — link text to create a new login identity. Common: 「建立新帳號」. But note \"登入身分\" — maybe they mean 帳號. In Taiwan UI, 帳號 is standard. Could use 「建立新帳號」.\n\nOutput only JSON.{\"s1\": \"密碼\", \"s2\": \"還沒有帳號？建立新帳號\", \"s3\": \"密碼錯誤，請重新輸入。\"}",
+ "parsed": {
+  "s1": "密碼",
+  "s2": "還沒有帳號？建立新帳號",
+  "s3": "密碼錯誤，請重新輸入。"
+ },
+ "error": "",
+ "seconds": 1.9
+}

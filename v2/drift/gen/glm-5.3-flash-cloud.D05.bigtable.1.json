@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D05",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The task: Write UI strings in Traditional Chinese (Taiwan usage) for a desktop app detecting a new version available.\n\n- s1: notification title\n- s2: notification body (one sentence)\n- s3: button for \"install now\"\n\nTaiwan UI conventions: 更新, 新版本, 立即安裝 /立即更新.\n\nCommon phrasing:\n- s1: 「有可用的更新」or「發現新版本」\n- s2: 「新版本已可安裝，立即更新以獲得最佳體驗。」— one sentence.\n- s3: 「立即安裝」or「立即更新」\n\nCheck the word lists: no forbidden terms. Avoid 大陆用语. 「發現」fine. Use 「新版本」.\n\nMaybe s1: 「有新版本可用」. s2: 「偵測到新版本，建議立即安裝以獲得最新功能與修正。」One sentence.\n\ns3: 「立即安裝」.\n\nOutput JSON only.</think>{\n  \"s1\": \"有新版本可用\",\n  \"s2\": \"偵測到新版本，建議立即安裝以獲得最新功能與修正。\",\n  \"s3\": \"立即安裝\"\n}",
+ "parsed": {
+  "s1": "有新版本可用",
+  "s2": "偵測到新版本，建議立即安裝以獲得最新功能與修正。",
+  "s3": "立即安裝"
+ },
+ "error": "",
+ "seconds": 1.3
+}

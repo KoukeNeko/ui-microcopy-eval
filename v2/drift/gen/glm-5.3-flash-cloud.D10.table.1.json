@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The user wants UI strings for a Traditional Chinese (Taiwan) app interface. Context: a list page is fetching data from the backend, not yet complete.\n\n- s1: status text shown while waiting (loading)\n- s2: error message when fetching fails\n- s3: button after failure (e.g., \"retry\")\n\nKey terminology: 加載 → 載入, 數據 → 資料, 刷新 → 重新整理, 重試 → 重試 (this is fine in Taiwan), 服務器 → 伺服器.\n\ns1: Something like \"載入中…\" or \"正在載入資料…\" — In Taiwan UI, \"載入中\" is very common. Could be \"資料載入中…\".\n\ns2: Error message: \"無法載入資料，請稍後再試\" or \"資料載入失敗，請檢查網路連線後重試\". Using 網路 not 網路 connections... 網路 is correct Taiwan term. Something like \"資料載入失敗，請檢查網路連線後再試\".\n\ns3: Button: \"重試\" is fine, or \"重新載入\". \"重試\" is standard Taiwan UI. Could also be \"再試一次\". \"重試\" is common in Taiwan UI (e.g., Google, Apple use 重試). Let me use \"重試\".\n\nOutput only a JSON object with keys s1, s2, s3.{\n  \"s1\": \"資料載入中，請稍候…\",\n  \"s2\": \"資料載入失敗，請檢查網路連線後再試。\",\n  \"s3\": \"重試\"\n}",
+ "parsed": {
+  "s1": "資料載入中，請稍候…",
+  "s2": "資料載入失敗，請檢查網路連線後再試。",
+  "s3": "重試"
+ },
+ "error": "",
+ "seconds": 2.1
+}

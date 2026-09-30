@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D02",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants UI strings for a player app in Traditional Chinese (Taiwan usage). A recorded video content fails to play due to unsupported file format.\n\n- s1: error message (one sentence) - something like \"此檔案格式不支援，無法播放。\" or \"無法播放此檔案，格式不支援。\"\n- s2: button on the error screen - could be \"確定\" or \"返回\" or \"瞭解\" - Taiwan UI often uses \"確定\" or \"好\". Maybe \"返回\" makes sense. Let me think: on an error screen, typical button would be \"確定\" or \"關閉\". Perhaps \"返回\" to go back. I'll go with \"確定\" or \"返回\". Common Taiwan style: \"確定\".\n\nActually for an error page with a single button, \"確定\" is typical. Could also be \"知道了\" (more mainland/Taiwan both used). Taiwan usage: \"好\" or \"確定\". I'll use \"確定\".\n\n- s3: the name of this feature area at the top of the screen - like the page title. Something like \"播放\" or \"影片播放\" or \"媒體播放器\". The top navigation bar title. Since it's a player app and user opens recorded video content, the top area could be \"播放器\" or \"影片播放\". I'll use \"播放器\" or \"播放頁面\". Hmm, \"功能區名稱\" - the feature section name at top. Could be \"播放\". I'll go with \"播放器\".\n\nTaiwan terminology check: 檔案 (not 文件), 格式, 支援, 影片 (not 视频), 視訊? 影片 is standard Taiwan. \"不支援的檔案格式\" fine.\n\ns1: \"此影片的檔案格式不支援，無法播放。\" — one sentence.\n\nUse Traditional Chinese with Taiwan style. 瞭解/了解 — Taiwan prefers 瞭解. But I'm using 確定 for s2.\n\nJSON only output.</think>{\"s1\": \"此影片的檔案格式不支援，無法播放。\", \"s2\": \"確定\", \"s3\": \"播放器\"}",
+ "parsed": {
+  "s1": "此影片的檔案格式不支援，無法播放。",
+  "s2": "確定",
+  "s3": "播放器"
+ },
+ "error": "",
+ "seconds": 6.3
+}

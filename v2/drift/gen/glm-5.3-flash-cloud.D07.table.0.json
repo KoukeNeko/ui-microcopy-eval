@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D07",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants app interface strings in Traditional Chinese (Taiwan usage). \n\nScreen: Login screen: enter email and password; also a link for people who don't have login credentials yet to create new credentials.\n\nStrings:\n- s1: label above the password field\n- s2: link text for creating a new identity/account\n- s3: error message for login failure (wrong password)\n\nTaiwan UI conventions:\n- s1: \"密碼\" — simple label above password field. Could be \"密碼\" alone.\n- s2: For \"create new account\" — Taiwan typically uses \"註冊新帳號\" or \"建立新帳號\". The prompt says 建立新的登入身分 (create new login identity). Common phrasing: \"還沒有帳號？註冊一個\" or \"沒有帳號？建立新帳號\". Avoid 大陸用語. \"帳號\" is correct for Taiwan (not 账号). The user's table says 賬號→帳號. Also 用戶→使用者 but here it's about account. Link text could be \"沒有帳號？建立新帳號\" or \"還沒有帳號？點此註冊\". Since it's a link for people who don't have login credentials to create a new login identity. I'd write \"還沒有帳號？建立新帳號\".\n- s3: Error for wrong password: \"密碼錯誤，請再試一次。\" or \"密碼不正確，請重新輸入。\" Taiwan conventions: \"密碼錯誤，請重新輸入。\" Note 重新 is fine.\n\nCheck second-layer terms: 點擊→點選, 提交→送出 — not used here. 賬號→帳號 — I use 帳號 anyway.\n\nAvoid \"登錄\" (大陸用語 for login); Taiwan uses \"登入\". Not needed in strings though.\n\ns1: \"密碼\" is standard label. \n\nOutput only JSON object with keys s1, s2, s3.</think>{\"s1\": \"密碼\", \"s2\": \"還沒有帳號？建立新帳號\", \"s3\": \"密碼錯誤，請重新輸入。\"}",
+ "parsed": {
+  "s1": "密碼",
+  "s2": "還沒有帳號？建立新帳號",
+  "s3": "密碼錯誤，請重新輸入。"
+ },
+ "error": "",
+ "seconds": 4.9
+}

@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "instruct",
+ "sample": 0,
+ "raw": "The user wants me to write UI strings for a mobile app in Traditional Chinese (Taiwan usage). The screen is a list page where pulling down refreshes data from the backend.\n\nStrings needed:\n- s1: hint text when pulling down (pull-to-refresh hint)\n- s2: status text after refresh completed\n- s3: text when list is empty\n\nTaiwan UI conventions:\n- Pull to refresh: 「下拉即可重新整理」or「下拉以更新」— Common iOS wording in Traditional Chinese (Taiwan): \"持續下拉以重新整理\" / \"下拉以重新整理\". After release: \"放開以重新整理\" / \"放開來立即更新\" / \"放開以更新\". Loading: \"更新中...\" or \"正在更新…\". Completed: \"更新完成\" / \"最後更新時間...\".\n\nAvoid mainland terms: 刷新 (mainland usage; Taiwan uses 重新整理 or 更新), 加载 (Taiwan uses 載入), 数据 (Taiwan uses 資料), 信息, 网络, app usage etc.\n\ns1: hint while pulling down — 「下拉即可重新整理」or「持續下拉以重新整理」. Since it's the hint when pulling down, maybe 「下拉以重新整理」works.\n\ns2: status after fetching completed — 「更新完成」. Or 「已更新至最新資料」/「資料已更新」.\n\ns3: list empty — 「目前沒有任何項目」or「尚無資料」. Taiwan UI often uses 「目前沒有資料」「尚无内容」... Taiwan: 「沒有任何項目」. Could be 「清單目前沒有項目」or「目前尚無任何項目」.\n\nOnly output a JSON object with keys s1, s2, s3, no other text.\n\nLet me finalize:\n- s1: \"下拉即可重新整理\"\n- s2: \"資料已更新\"\n- s3: \"目前沒有任何項目\"\n\nJSON:\n{\"s1\": \"下拉即可重新整理\", \"s2\": \"資料已更新\", \"s3\": \"目前沒有任何項目\"}{\"s1\": \"下拉即可重新整理\", \"s2\": \"資料已更新\", \"s3\": \"目前沒有任何項目\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.5
+}

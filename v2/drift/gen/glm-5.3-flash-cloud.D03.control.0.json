@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D03",
+ "arm": "control",
+ "sample": 0,
+ "raw": "App UI strings in Traditional Chinese. Storage settings page, feature to delete app's cached data (cached data for faster loading). Deleting it doesn't affect functionality.\n\ns1: feature name (list item): \"清除快取資料\" or \"清除快取\"\n\ns2: status text after execution: \"快取資料已清除\"\n\ns3: explanation sentence before execution: \"刪除 App 暫存在裝置上以加快載入速度的資料，刪除後不會影響功能運作。\"\n\nLet me refine:\n\ns1: \"清除快取資料\" — common in Android settings: \"清除 快取\" — \"清除快取\".\n\ns2: \"已清除快取資料\" — status text. Could be simpler: \"快取已清除\".\n\ns3: \"清除 App 暫存在裝置上以加快載入速度的資料，不會影響功能。\" Or: \"刪除暫存於裝置上的快取資料以釋放空間，刪除後 App 功能不受影響。\"\n\nOutput JSON only. Use Traditional Chinese. Maybe \"App\" or 「應用程式」. Keep consistent with App usage. Use full-width punctuation.\n\nFinal JSON:\n\n{\n  \"s1\": \"清除快取資料\",\n  \"s2\": \"快取資料已清除\",\n  \"s3\": \"清除 App 暫存在裝置上以加快載入速度的資料，刪除後功能不受影響。\"\n}</think>{ \"s1\": \"清除快取資料\", \"s2\": \"快取資料已清除\", \"s3\": \"刪除 App 為加快載入速度而暫存在裝置上的資料，刪除後 App 功能不受影響。\"}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.0
+}

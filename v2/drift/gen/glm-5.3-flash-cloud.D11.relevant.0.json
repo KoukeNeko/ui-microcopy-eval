@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "The user wants JSON strings for a mobile app list page in Traditional Chinese (Taiwan usage).\n\n- s1: pull-to-refresh hint text (when pulling down) — common Taiwan wording: 「下拉即可重新整理」or 「下拉重新整理」. Avoid 刷新.\n- s2: status text after refresh completed — e.g. 「已重新整理」or 「資料已更新」. Common: 「更新完成」/「已重新整理」.\n- s3: empty list text — e.g. 「目前沒有任何項目」or 「尚無資料」. Taiwan usage: 「目前沒有資料」/「暫無資料」is more mainland style? 「暫無」is common in mainland. Taiwan often uses 「目前尚無資料」or 「沒有事項」.\n\nOutput only JSON object with keys s1, s2, s3.\n\ns1: \"下拉即可重新整理\"\ns2: \"已重新整理\"\ns3: \"目前尚無資料\"{\"s1\":\"下拉即可重新整理\",\"s2\":\"已重新整理\",\"s3\":\"目前尚無資料\"}",
+ "parsed": {
+  "s1": "下拉即可重新整理",
+  "s2": "已重新整理",
+  "s3": "目前尚無資料"
+ },
+ "error": "",
+ "seconds": 1.8
+}

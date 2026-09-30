@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D16",
+ "arm": "table",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"送出意見\",\n  \"s2\": \"寫入變更\",\n  \"s3\": \"變更已寫入\"\n}",
+ "parsed": {
+  "s1": "送出意見",
+  "s2": "寫入變更",
+  "s3": "變更已寫入"
+ },
+ "error": "",
+ "seconds": 2.6
+}

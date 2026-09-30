@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D08",
+ "arm": "relevant",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"新增資料夾\",\n  \"s2\": \"已建立新資料夾\",\n  \"s3\": \"將項目移至\"\n}",
+ "parsed": {
+  "s1": "新增資料夾",
+  "s2": "已建立新資料夾",
+  "s3": "將項目移至"
+ },
+ "error": "",
+ "seconds": 3.9
+}

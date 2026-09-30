@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D11",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "The user is writing UI strings for a mobile app in Traditional Chinese (Taiwan usage). They need:\n- s1: pull-to-refresh hint text\n- s2: status text after refresh completes\n- s3: empty list text\n\nThey want Taiwan-style Traditional Chinese UI terminology, not mainland China terms. Output only a JSON object with keys s1, s2, s3.\n\nCommon Taiwan UI conventions:\n- Pull to refresh: 「下拉以重新整理」or「下拉重新整理」— Taiwan uses 「重新整理」for \"refresh\" (mainland uses 「刷新」or「下拉刷新」). So s1 should be something like 「下拉以重新整理」.\n- After refresh complete: 「更新完成」or 「資料已更新」or 「已重新整理」. Something like 「資料已更新」.\n- Empty list: 「目前沒有任何項目」or 「尚無資料」. Common: 「沒有資料」、「目前沒有內容」. Something friendly like 「目前沒有任何項目」or 「清單目前是空的」. Taiwan apps often use 「目前沒有資料」or 「尚無資料」.\n\nLet me craft:\n- s1: \"下拉以重新整理\"\n- s2: \"資料已更新\"\n- s3: \"目前沒有任何項目\"\n\nAlternatively s3: \"清單目前沒有內容\". I'll go with \"目前沒有任何項目\" which is natural and polite.\n\nOutput only JSON, no other text. Should I use code block? They said \"只輸出一個 JSON 物件...不要其他文字\". So just raw JSON, no markdown fences ideally. But formatting guidance says code blocks for code. JSON is code-ish; but the user explicitly said no other text. A code fence might be acceptable but strictly \"不要其他文字\" — fences could count as extra. I'll output just the JSON object, plain.\n\n{\n  \"s1\": \"下拉以重新整理\",\n  \"s2\": \"資料已更新\",\n  \"s3\": \"目前沒有任何項目\"\n}{\n  \"s1\": \"下拉以重新整理\",\n  \"s2\": \"資料已更新\",\n  \"s3\": \"目前沒有任何項目\"\n}",
+ "parsed": null,
+ "error": "",
+ "seconds": 2.3
+}

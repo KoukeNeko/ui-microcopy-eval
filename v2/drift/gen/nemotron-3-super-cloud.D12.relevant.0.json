@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D12",
+ "arm": "relevant",
+ "sample": 0,
+ "raw": "{\n  \"s1\": \"外掛商店\",\n  \"s2\": \"安裝\",\n  \"s3\": \"安裝完成\"\n}",
+ "parsed": {
+  "s1": "外掛商店",
+  "s2": "安裝",
+  "s3": "安裝完成"
+ },
+ "error": "",
+ "seconds": 1.8
+}

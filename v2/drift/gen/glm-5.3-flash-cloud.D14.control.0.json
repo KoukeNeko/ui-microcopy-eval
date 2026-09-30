@@ -1,0 +1,10 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D14",
+ "arm": "control",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese for an app that detected insufficient scratch/temporary computing space on the device, which may cause some features to slow down.\n\nNeed:\n- s1: warning title\n- s2: warning body (one sentence)\n- s3: dismiss button\n\nOutput only a JSON object with keys s1, s2, s3.\n\nLet me write:\n\ns1: \"暫存空間不足\" (Insufficient scratch space)\ns2: \"偵測到裝置可用的暫存運算空間不足，部分功能可能會變慢。\" — one sentence, mentions detection and slowdown.\ns3: \"關閉\" or \"知道了\" — dismiss button. \"關閉\" is standard for closing/dismissing.\n\nMake sure Traditional Chinese: 裝置, 偵測, 暫存, 部分 (Traditional: 部分 is fine; 部份 also used; use 部分), 變慢.\n\nOnly JSON, no other text.</think>```json\n{\n  \"s1\": \"暫存空間不足\",\n  \"s2\": \"偵測到裝置可用的暫存運算空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}\n```\n\n<br>\n\n（此訊息僅為說明，非 app 字串的一部分：以上即為所求的 JSON 物件。）\n\n<br>\n\n```json\n{\n  \"s1\": \"暫存空間不足\",\n  \"s2\": \"偵測到裝置可用的暫存運算空間不足，部分功能可能會變慢。\",\n  \"s3\": \"關閉\"\n}\n```",
+ "parsed": null,
+ "error": "",
+ "seconds": 1.6
+}

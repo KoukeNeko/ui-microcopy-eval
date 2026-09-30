@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "table",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan usage) for a computer peripherals settings page: adjusting pointer device movement speed, and display device brightness.\n\ns1: label for pointer device speed\ns2: label for display brightness\ns3: title of this settings page\n\nTaiwan UI terminology:\n- 指標裝置 (pointer device) — mouse is 滑鼠, but \"指標裝置\" is the generic term. In Windows Taiwan settings, it's \"滑鼠\" but for pointer devices generally \"指標\" (pointer). \"指標速度\" is fine.\n- Speed: \"速度\". Could be \"指標速度\" or \"指標裝置速度\". Label: \"指標速度\" is common.\n- Brightness: \"亮度\". Display: \"顯示器\" — in Taiwan, display device is 顯示器, not 顯示裝置. \"螢幕亮度\" is very common. Windows uses \"螢幕亮度\" too.\n- Title: \"電腦周邊設定\" or \"周邊裝置設定\". Page adjusts pointer device speed and display brightness. Title could be \"指標與顯示設定\" or \"周邊裝置設定\". \"電腦周邊\" — Taiwan uses \"週邊\" or \"周邊\"? Both used; \"周邊\" and \"週邊\" — for computer peripherals, Taiwan commonly writes \"週邊\" (e.g., 電腦週邊設備), though \"周邊\" is also acceptable. Ministry of Education prefers \"周邊\" as standard? Actually MOE dictionary uses \"周邊\" for surroundings, and \"週邊\" is variant. Common tech usage: \"電腦週邊\". Hmm. Many use \"周邊\" too. I'll go with \"周邊\" as it's the MOE standard... Actually Moje (教育部) — 「周邊」is the standard form; 「週邊」is often seen but 「周邊」is recommended. I'll use \"周邊裝置設定\" or simpler title: \"指標與顯示設定\". The screen is \"電腦周邊設定頁：調整指標裝置的移動速度，以及顯示裝置的亮度.\" So title should reflect the page. Could be \"電腦周邊設定\" as the page title, or more descriptive \"指標裝置與顯示裝置\" — hmm. The title of the settings page... Maybe \"周邊裝置設定\" or \"電腦周邊設定\". I'll pick \"周邊裝置設定\" — but the prompt says 顯示裝置 in Chinese but Taiwan term is 顯示器. For s2: \"螢幕亮度\" or \"顯示器亮度\". \"顯示器亮度\" is precise. s1: \"指標速度\" — Windows Taiwan uses \"指標速度\" in mouse settings? Actually Windows mouse settings: \"滑鼠\" → \"指標速度\" appears in \"滑鼠指標速度\"? There's \"指標速度\" slider in Taiwan Windows. Yes.\n\nLabels should be short: s1 \"指標速度\", s2 \"螢幕亮度\" or \"顯示器亮度\", s3 title \"周邊裝置設定\" — but maybe include 電腦: \"電腦周邊設定\". The description says 這個設定頁的標題, the page is 電腦周邊設定頁. So s3 = \"電腦周邊設定\"? Or better with Taiwan terms: \"周邊裝置設定\". Hmm, the page title could just be \"電腦周邊\". I'll go with \"周邊裝置設定\".\n\nWait — should I use \"周邊\" vs \"週邊\"? Taiwan official standard: 教育部《重編國語辭典修訂本》has 「周邊」. So \"周邊\" is fine.\n\nOutput only JSON.{\n  \"s1\": \"指標速度\",\n  \"s2\": \"螢幕亮度\",\n  \"s3\": \"周邊裝置設定\"\n}",
+ "parsed": {
+  "s1": "指標速度",
+  "s2": "螢幕亮度",
+  "s3": "周邊裝置設定"
+ },
+ "error": "",
+ "seconds": 3.5
+}

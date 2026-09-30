@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D09",
+ "arm": "bigtable",
+ "sample": 1,
+ "raw": "The task: write UI strings in Traditional Chinese (Taiwan usage) for a computer peripherals settings page: adjusting pointer device movement speed, and display device brightness.\n\n- s1: label for pointer device speed → 「滑鼠速度」or「指標速度」. The instruction says 指標裝置 (pointer device). In Taiwan Windows settings, it's \"滑鼠\" for mouse, but \"指標\" for pointer. The screen description says \"調整指標裝置的移動速度\" — pointer device movement speed. Label could be \"指標速度\" or \"滑鼠速度\". Since it says 指標裝置, \"指標速度\" is appropriate. Taiwan Windows uses \"滑鼠速度\" or \"指標速度\". Actually Windows Taiwan: \"滑鼠\" settings with \"指標速度\". Given the description says 指標裝置, I'll use \"指標速度\" or \"指標移動速度\". A label should be concise: \"指標速度\".\n\n- s2: display brightness label → \"螢幕亮度\" (not 屏幕). Taiwan uses 螢幕. Could be \"顯示器亮度\" but 螢幕亮度 is common. Display device = 顯示裝置/顯示器. \"螢幕亮度\" is natural.\n\n- s3: page title → \"周邊設定\" or \"電腦周邊設定\". The page adjusts pointer speed and brightness, so title could be \"裝置設定\" or \"周邊裝置設定\". The screen is 電腦周邊設定頁. Title: \"周邊裝置設定\" or \"電腦周邊設定\". I'll use \"周邊裝置設定\" or simply \"裝置設定\". Hmm, periphery settings page title — I'll go with \"周邊裝置設定\".\n\nAvoid mainland terms. All good: 指標速度, 螢幕亮度, 周邊裝置設定.\n\nOutput JSON only.</think>{\"s1\": \"指標速度\", \"s2\": \"螢幕亮度\", \"s3\": \"周邊裝置設定\"}",
+ "parsed": {
+  "s1": "指標速度",
+  "s2": "螢幕亮度",
+  "s3": "周邊裝置設定"
+ },
+ "error": "",
+ "seconds": 2.5
+}

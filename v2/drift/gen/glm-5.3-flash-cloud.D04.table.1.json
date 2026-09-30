@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D04",
+ "arm": "table",
+ "sample": 1,
+ "raw": "The task: write app UI strings in Traditional Chinese (Taiwan usage). Scenario: app sends a request but device has no network connection, so it fails.\n\n- s1: error message (one sentence)\n- s2: retry button\n- s3: status text after connection restored\n\nGuidelines:\n- Level 1 mandatory replacements: use 目前, 預設, 軟體/硬體, 硬碟, 記憶體, 位元組, 伺服器, 快取, 資料夾, 滑鼠, 螢幕, 影片/音訊, 網路, 訊息, 解除安裝, 載入, 重新整理, 外掛, 行動裝置, 帳號.\n- Level 2 context-dependent: 用戶→使用者, 提交→送出, etc. Relevant here: no mainland terms needed.\n\nTaiwan UI conventions:\n- Error message: \"無法連上網路，請求失敗。\" or \"網路連線失敗，請檢查網路設定後再試。\" But it says device not connected to any network. So \"目前沒有網路連線，無法送出請求。\" Using 目前 instead of 當前. Also \"連線\" is Taiwan usage for network connection.\n- Retry button: \"重試\" or \"再試一次\". Taiwan UI commonly uses \"重試\".\n- s3: after connection restored: \"網路已連線，正在同步資料…\" Hmm, but scenario is status text after connection restore. Could be \"網路連線已恢復\" — actually 恢復 is fine in both. Maybe \"網路已恢復連線\" or \"連線已恢復，將自動重試。\" Let's keep: \"網路連線已恢復\" — status text.\n\nEnsure sentence for s1: one sentence: \"目前沒有網路連線，請求送出失敗。\" That includes 目前 and 送出. Good.\n\nAvoid 網絡 — use 網路. Avoid 提交 — use 送出.\n\ns3: \"網路連線已恢復\" or \"已連線到網路\" — status text after connection restored. Maybe \"網路已恢復連線，準備重新送出。\" But keep short: \"網路連線已恢復。\"\n\nOutput only JSON object with keys s1, s2, s3.</think>{\"s1\": \"目前沒有網路連線，請求送出失敗。\", \"s2\": \"重試\", \"s3\": \"網路連線已恢復\"}",
+ "parsed": {
+  "s1": "目前沒有網路連線，請求送出失敗。",
+  "s2": "重試",
+  "s3": "網路連線已恢復"
+ },
+ "error": "",
+ "seconds": 3.4
+}

@@ -1,0 +1,14 @@
+{
+ "model": "glm-5.3-flash:cloud",
+ "probe": "D10",
+ "arm": "bigtable",
+ "sample": 0,
+ "raw": "The user wants UI strings in Traditional Chinese (Taiwan usage) for a list page that's fetching data from backend:\n- s1: loading status text\n- s2: error message when fetching fails\n- s3: retry button after failure\n\nUsing Taiwan terminology: 載入 (not 加載), 資料 (not 數據), 重新嘗試/重試... For retry button, common Taiwan UI: \"重試\" or \"重新嘗試\" - \"重試\" is fine and used. Also \"重新載入\" is common for retry after load failure. But the button is after failure — could be \"重試\" or \"重新載入\". Since the failure is fetching data, \"重新載入\" or \"重試\" both work. I'll use \"重試\" — it's standard. Actually Taiwan UI often uses \"重試\" (e.g., Google services) or \"重新嘗試\". Let me pick \"重試\".\n\ns1: \"載入中…\" or \"資料載入中…\" — good.\ns2: \"資料載入失敗，請稍後再試。\" or \"無法載入資料，請檢查網路連線後再試。\" Keep simple: \"資料載入失敗，請稍後再試。\"\ns3: \"重試\" or \"重新載入\".\n\nOutput only JSON object.</think>{\n  \"s1\": \"資料載入中…\",\n  \"s2\": \"資料載入失敗，請稍後再試。\",\n  \"s3\": \"重試\"\n}",
+ "parsed": {
+  "s1": "資料載入中…",
+  "s2": "資料載入失敗，請稍後再試。",
+  "s3": "重試"
+ },
+ "error": "",
+ "seconds": 2.7
+}

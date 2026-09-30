@@ -1,0 +1,14 @@
+{
+ "model": "nemotron-3-super:cloud",
+ "probe": "D09",
+ "arm": "instruct",
+ "sample": 1,
+ "raw": "{\n  \"s1\": \"指標裝置速度\",\n  \"s2\": \"顯示裝置亮度\",\n  \"s3\": \"電腦週邊設定\"\n}",
+ "parsed": {
+  "s1": "指標裝置速度",
+  "s2": "顯示裝置亮度",
+  "s3": "電腦週邊設定"
+ },
+ "error": "",
+ "seconds": 3.3
+}
