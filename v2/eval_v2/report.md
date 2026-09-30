@@ -382,7 +382,7 @@ pass = 無多餘且事實齊全。b = control 不過→arm 過，c = control 過
 
 （McNemar χ² > 3.84 對應 p < .05，未校正多重比較；事實齊全差為負表示 arm 掉了必要資訊。）
 
-## 語言正確率（judge 的 lang_ok；zh-TW 題含簡體字或大陸用語即 0）
+## 語言正確率（judge 的 lang_ok；zh-TW 題含簡體字或中國用語即 0）
 
 | lang | channel | arm | n | lang_ok |
 | --- | --- | --- | --- | --- |
