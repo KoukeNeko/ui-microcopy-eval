@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "skill",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 15762,
+ "seconds": 8.9,
+ "raw": "The user wants accessibility labels (for screen readers) in Traditional Chinese for three icon-only buttons in an app toolbar:\n\n1.叉叉圖示 — 關閉目前的面板\n2. 放大鏡圖示 — 開啟搜尋\n3. 三個點的圖示 — 開啟更多選項選單\n\nThey want only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nFollowing the ui-microcopy skill: button role = imperative verb phrase, no person, no question, no full stop. For accessibility labels of icon buttons, the convention is a concise action name describing what the button does.\n\nStandard conventions:\n- Close button: 「關閉」\n- Search button: 「搜尋」\n- More options: 「更多選項」 or 「更多選項選單」\n\nThe user's descriptions:\n1. 關閉目前的面板 → the button closes the current panel. Accessibility label convention: 「關閉」. Some might say the panel name, but we don't know it. 「關閉」 is conventional and sufficient. Adding 「目前的面板」 adds nothing — the button is in the panel being closed; the user knows which panel. Deletion test: 「關閉」 conveys the action. Material guidance: \"Close\" (in the user's language). So 「關閉」.\n\n2. 開啟搜尋 → the button opens search. Accessibility label: 「搜尋」. The verb 開啟 is redundant — a button labeled 搜尋, when activated, opens/does search. Conventional label: 「搜尋」. Some use 「開啟搜尋」 but the shorter conventional form is 「搜尋」. The skill prefers the shortest conventional wording that preserves meaning. 「搜尋」.\n\n3. 開啟更多選項選單 → 「更多選項」 is the standard Android convention (\"More options\"). Google's Taiwan localization uses 「更多選項」. Could be 「更多選項選單」 but 「選單」 is somewhat redundant? Actually the description says it opens a menu of more options. The conventional label per Material: \"More options\" → 「更多選項」. The deletion test: does 「選單」 add anything? Slightly clarifies it opens a menu, but the standard is 「更多選項」. Hmm — for screen readers, describing that it opens a menu can be helpful. But conventional shortest form: 「更多選項」.\n\nActually, wait — considering the verb: should labels be 「關閉面板」「開啟搜尋」「開啟更多選項」? For a11y labels, the convention (e.g., iOS, Android) is typically a noun/verb phrase without 「開啟」 unless disambiguation is needed. E.g., TalkBack reads \"按兩下即可啟用\" after the label. So label = 「搜尋」, announcement: 「搜尋，按鈕」.\n\nI'll go with:\ns1: \"關閉\"\ns2: \"搜尋\"\ns3: \"更多選項\"\n\nThese are the conventional shortest forms. The deletion test passes: each names the action; adding 「目前的面板」「開啟」 adds nothing the user does.\n\nOutput only JSON.{\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

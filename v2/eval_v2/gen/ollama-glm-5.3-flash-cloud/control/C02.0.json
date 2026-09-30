@@ -1,0 +1,15 @@
+{
+ "probe": "C02",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 165,
+ "seconds": 10.5,
+ "raw": "The user wants three pieces of Traditional Chinese (Taiwan e-commerce) checkout page text:\n- s1: status text shown after payment submitted, while waiting for bank response\n- s2: credit card declined by issuing bank error message (state the reason and tell user what to do)\n- s3: order created status text, order number A2026093011\n\nReturn only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nI should write natural Traditional Chinese as used in Taiwan. Common phrasing:\n\ns1: 「付款資料送出中，正在等待銀行授權，請勿關閉或重新整理此頁面…」\nSomething like: 「正在為您連線銀行進行付款授權，請勿關閉此頁面或重複送出，謝謝。」\n\ns2: 「您的信用卡被發卡銀行拒絕（授權失敗），可能原因為餘額不足、卡號輸入錯誤或卡片已停用。請確認卡片資訊後重新嘗試，或改用其他付款方式；若仍有問題，請聯絡您的發卡銀行。」\n\nThe reason: card declined by issuing bank — common reasons: 餘額不足/額度不足, 卡號錯誤, 有效期限錯誤, 卡片逾期/停卡. Should state the reason and tell user what to do.\n\nMaybe: 「付款失敗：發卡銀行拒絕此筆交易（授權失敗），常見原因包括卡片額度不足、卡號或有效期限輸入錯誤、或卡片已停用。請確認卡片資訊後重新付款，或改用其他付款方式；如有疑問請洽詢發卡銀行。」\n\ns3: 「訂單已成立！您的訂單編號為 A2026093011，感謝您的購買，我們將儘速為您處理。」Or include notification of confirmation email: 「訂單明細已寄至您的電子信箱」.\n\nFormat: return only JSON as requested. Keep it valid JSON, no markdown code fences? The user says 只回傳 JSON. So return just the JSON object. Should be valid JSON — use double quotes, escape nothing problematic. Ensure traditional Chinese characters.\n\ns1: \"付款資料已送出，正在等待銀行授權回應，請勿關閉頁面或重複送出…\"\n\ns2: \"付款失敗：信用卡遭發卡銀行拒絕，可能原因為卡片額度不足、卡號或有效期限輸入錯誤，或卡片已停用。請確認卡片資訊後重新付款，或改用其他付款方式；若仍有問題，請聯絡您的發卡銀行。\"\n\ns3: \"訂單已成立！您的訂單編號為 A2026093011，確認信已寄出，感謝您的購買，我們將儘速為您安排出貨。\"\n\nKeep concise. Output pure JSON, no code block? The instruction says 只回傳 JSON. Safer to output raw JSON without markdown fences since it may be parsed. I'll output raw JSON.{\"s1\":\"付款資料已送出，正在等待銀行授權回應，請勿關閉此頁面或重複點擊送出，謝謝。\",\"s2\":\"付款失敗：信用卡遭發卡銀行拒絕，可能原因為卡片額度不足、卡號或有效期限輸入錯誤，或卡片已停用。請確認卡片資訊後重新付款，或改用其他付款方式；若仍有問題，請聯絡您的發卡銀行。\",\"s3\":\"訂單已成立！您的訂單編號為 A2026093011，訂單確認信已寄至您的信箱，感謝您的購買，我們將儘速為您安排出貨。\"}",
+ "parsed": {
+  "s1": "付款資料已送出，正在等待銀行授權回應，請勿關閉此頁面或重複點擊送出，謝謝。",
+  "s2": "付款失敗：信用卡遭發卡銀行拒絕，可能原因為卡片額度不足、卡號或有效期限輸入錯誤，或卡片已停用。請確認卡片資訊後重新付款，或改用其他付款方式；若仍有問題，請聯絡您的發卡銀行。",
+  "s3": "訂單已成立！您的訂單編號為 A2026093011，訂單確認信已寄至您的信箱，感謝您的購買，我們將儘速為您安排出貨。"
+ },
+ "error": ""
+}

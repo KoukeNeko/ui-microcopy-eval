@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G14.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "バージョン 8.4.1 のインストールが完了しました。更新を反映するにはアプリを再起動してください。",
+  "s2": "アプリを再起動"
+ }
+}

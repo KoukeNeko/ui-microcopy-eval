@@ -1,0 +1,30 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C04.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C04.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請留意時間或提前續停",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "計時剩 10 分鐘",
+  "s2": "您在信義停車場的停車計時即將到期，超時每小時加收 NT$60，請留意時間或提前續停。"
+ }
+}

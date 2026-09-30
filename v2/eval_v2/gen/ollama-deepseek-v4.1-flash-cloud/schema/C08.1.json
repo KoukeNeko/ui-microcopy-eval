@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 387,
+ "seconds": 1.1,
+ "raw": "{\"summary\":\"本週重點為降低付款頁錯誤率，並指派後續調查與介面調整工作。\",\"action_items\":[\"小陳查發卡行拒絕原因，週三前報告\",\"小林統一結帳頁三個 loading 樣式\"],\"note\":\"約40秒雜音聽不清楚\"}",
+ "parsed": {
+  "summary": "本週重點為降低付款頁錯誤率，並指派後續調查與介面調整工作。",
+  "action_items": [
+   "小陳查發卡行拒絕原因，週三前報告",
+   "小林統一結帳頁三個 loading 樣式"
+  ],
+  "note": "約40秒雜音聽不清楚"
+ },
+ "error": ""
+}

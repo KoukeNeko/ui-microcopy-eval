@@ -1,0 +1,31 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|exemplar|G13.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|exemplar|G13.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "When enabled, contacts can see when messages have been read"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "已讀回执",
+  "s2": "群組聊天總是發送已讀回执，不受此設定影響"
+ }
+}

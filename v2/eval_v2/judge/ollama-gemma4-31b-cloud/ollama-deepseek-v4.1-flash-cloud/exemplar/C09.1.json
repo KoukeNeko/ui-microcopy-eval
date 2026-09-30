@@ -1,0 +1,21 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C09.1",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "未達目標 7 小時，少了 40 分鐘；入睡 48 分鐘，比過去 7 天平均多 33 分鐘。"
+ }
+}

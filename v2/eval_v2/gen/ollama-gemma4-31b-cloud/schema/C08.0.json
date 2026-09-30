@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 387,
+ "seconds": 1.2,
+ "raw": "```json\n{\n  \"summary\": \"本週重點為降低付款頁錯誤率，並統一結帳頁 Loading 樣式。\",\n  \"action_items\": [\n    \"小陳：查發卡行拒絕原因\",\n    \"小林：統一結帳頁 Loading 樣式\"\n  ],\n  \"note\": \"下週三同一時間開會\"\n}\n```",
+ "parsed": {
+  "summary": "本週重點為降低付款頁錯誤率，並統一結帳頁 Loading 樣式。",
+  "action_items": [
+   "小陳：查發卡行拒絕原因",
+   "小林：統一結帳頁 Loading 樣式"
+  ],
+  "note": "下週三同一時間開會"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20899,
+ "seconds": null,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Group chats always send read receipts regardless of this setting.\"}",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Group chats always send read receipts regardless of this setting."
+ },
+ "error": ""
+}

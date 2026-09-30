@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1536,
+ "seconds": 2.2,
+ "raw": "{\"s1\":\"沒有已儲存的商品\",\"s2\":\"瀏覽商品目錄\"}",
+ "parsed": {
+  "s1": "沒有已儲存的商品",
+  "s2": "瀏覽商品目錄"
+ },
+ "error": ""
+}

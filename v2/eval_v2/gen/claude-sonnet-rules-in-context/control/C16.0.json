@@ -1,0 +1,15 @@
+{
+ "probe": "C16",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 185,
+ "seconds": null,
+ "raw": "{\"s1\":\"匯出中 42%\",\"s2\":\"已匯出至「檔案」app 的「筆記備份」資料夾\",\"s3\":\"匯出失敗：沒有寫入「檔案」app 的權限。請至系統設定開啟。\"}",
+ "parsed": {
+  "s1": "匯出中 42%",
+  "s2": "已匯出至「檔案」app 的「筆記備份」資料夾",
+  "s3": "匯出失敗：沒有寫入「檔案」app 的權限。請至系統設定開啟。"
+ },
+ "error": ""
+}

@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|rules|G14.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|rules|G14.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "バージョン 8.4.1 のインストールが完了しました。再起動して更新を適用してください。",
+  "s2": "アプリを再起動"
+ }
+}

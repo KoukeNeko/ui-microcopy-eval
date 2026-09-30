@@ -1,0 +1,34 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|C15.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|C15.0",
+  "items": {
+   "ingredients": {
+    "facts_present": 0,
+    "missing": [
+     "chicken thighs",
+     "lemon",
+     "broccoli"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "ingredients": "烤雞腿 ／ 檸檬 ／ 青花菜",
+  "note": ""
+ }
+}

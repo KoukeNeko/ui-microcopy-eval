@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 135,
+ "seconds": 0.8,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"實際扣款總額：新台幣 12,515 元\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "實際扣款總額：新台幣 12,515 元"
+ },
+ "error": ""
+}

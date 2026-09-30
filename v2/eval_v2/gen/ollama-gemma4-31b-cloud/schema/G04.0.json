@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 181,
+ "seconds": 6.0,
+ "raw": "```json\n{\"s1\":\"儲存位置資訊\",\"s2\":\"關閉後，新照片將不再記錄位置\"}\n```",
+ "parsed": {
+  "s1": "儲存位置資訊",
+  "s2": "關閉後，新照片將不再記錄位置"
+ },
+ "error": ""
+}

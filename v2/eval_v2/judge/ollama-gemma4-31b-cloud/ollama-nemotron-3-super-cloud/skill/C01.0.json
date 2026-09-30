@@ -1,0 +1,48 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|C01.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|C01.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s4": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "轉帳確認",
+  "s2": "送出",
+  "s3": "放棄",
+  "s4": "將 NT$12,500 轉帳給 王小明，此操作無法取消。"
+ }
+}

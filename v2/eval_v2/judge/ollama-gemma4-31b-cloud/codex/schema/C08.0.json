@@ -1,0 +1,39 @@
+{
+ "record": "codex|schema|C08.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|schema|C08.0",
+  "items": {
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，可能遺漏決議或待辦事項。",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點是降低付款頁錯誤率，下次會議為下週三同一時間。",
+  "action_items": "小陳：查明發卡行拒絕原因，下週三前交報告 ／ 小林：統一結帳頁三個載入狀態的樣式",
+  "note": "約40秒內容聽不清楚，可能遺漏決議或待辦事項。"
+ }
+}

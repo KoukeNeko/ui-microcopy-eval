@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 142,
+ "seconds": 1.5,
+ "raw": "{\n  \"s1\": \"配送中（颱風延遲）\",\n  \"s2\": \"原預計 10 月 3 日送達，因颱風影響，新預計送達日為 10 月 5 日\"\n}",
+ "parsed": {
+  "s1": "配送中（颱風延遲）",
+  "s2": "原預計 10 月 3 日送達，因颱風影響，新預計送達日為 10 月 5 日"
+ },
+ "error": ""
+}

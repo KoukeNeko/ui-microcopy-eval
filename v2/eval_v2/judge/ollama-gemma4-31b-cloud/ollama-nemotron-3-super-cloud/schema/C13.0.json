@@ -1,0 +1,32 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|C13.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|C13.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "settings could not be saved"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "通知がオフになりました",
+  "s2": "サーバーに接続できません。後でもう一度お試しください。"
+ }
+}

@@ -1,0 +1,30 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G03.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "安裝失敗",
+  "s2": "/dev/nvme0n1 目前是唯讀狀態。請解除唯讀後重新執行安裝。"
+ }
+}

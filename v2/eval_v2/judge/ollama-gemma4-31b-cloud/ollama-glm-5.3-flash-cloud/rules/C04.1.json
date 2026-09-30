@@ -1,0 +1,28 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|rules|C04.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|rules|C04.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "信義停車場計時即將到期",
+  "s2": "剩餘 10 分鐘，超時每小時 NT$60"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 739,
+ "seconds": 2.7,
+ "raw": "{\"s1\":\"アップデートが完了しました。再起動してください。\",\"s2\":\"再起動\"}",
+ "parsed": {
+  "s1": "アップデートが完了しました。再起動してください。",
+  "s2": "再起動"
+ },
+ "error": ""
+}

@@ -1,0 +1,10 @@
+{
+ "record": "ollama-gemma4-31b-cloud|rules|G04.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "位置資訊",
+  "s2": "關閉後，新照片將不再包含位置資料，但不會影響現有照片"
+ }
+}

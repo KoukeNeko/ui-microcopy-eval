@@ -1,0 +1,39 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|C02.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill|C02.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "正在等待銀行回應……",
+  "s2": "信用卡被發卡行拒絕，請確認卡號、有效期限與額度，或改用其他付款方式。",
+  "s3": "訂單已成立，編號 A2026093011。"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G05",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1360,
+ "seconds": 1.7,
+ "raw": "{\"s1\":\"包裹已送達\",\"s2\":\"TW482910 已到全家斗六民生店，請於 10 月 4 日 23:59 前取件。\"}",
+ "parsed": {
+  "s1": "包裹已送達",
+  "s2": "TW482910 已到全家斗六民生店，請於 10 月 4 日 23:59 前取件。"
+ },
+ "error": ""
+}

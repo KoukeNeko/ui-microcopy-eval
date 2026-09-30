@@ -1,0 +1,15 @@
+{
+ "probe": "C16",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 779,
+ "seconds": 1.4,
+ "raw": "{\n  \"s1\": \"匯出中\",\n  \"s2\": \"已存到「筆記備份」資料夾\",\n  \"s3\": \"沒有寫入「檔案」app 的權限，請在系統設定中開啟\"\n}",
+ "parsed": {
+  "s1": "匯出中",
+  "s2": "已存到「筆記備份」資料夾",
+  "s3": "沒有寫入「檔案」app 的權限，請在系統設定中開啟"
+ },
+ "error": ""
+}

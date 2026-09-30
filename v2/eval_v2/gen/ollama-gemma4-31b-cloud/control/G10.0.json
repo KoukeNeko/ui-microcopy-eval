@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 225,
+ "seconds": 3.6,
+ "raw": "```json\n{\"kcal\": 510, \"remark\": \"白飯、烤雞胸肉(無皮)、水煮蛋、青花菜\"}\n```",
+ "parsed": {
+  "kcal": 510,
+  "remark": "白飯、烤雞胸肉(無皮)、水煮蛋、青花菜"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 739,
+ "seconds": 8.3,
+ "raw": "The user wants Japanese UI text for a settings app (Japanese language).\n\ns1: Text for a status shown right after the user turned off notifications.\ns2: Error message when settings couldn't be saved to server (cause: can't connect to server; user action: try again later).\n\nRules to follow (applied to Japanese too):\n- No chatty phrasing\n- No apologies or reassurance in error messages\n- No exclamation marks\n- No questions as labels\n- Keep it short\n- No unnecessary politeness padding? Japanese business style is fine but no apologies like 申し訳ありません for errors per the rule \"不要在錯誤訊息裡道歉、安慰\" — so no すみません/申し訳ございません.\n\ns1: A status text shown right after turning off notifications off. Something like 「通知をオフにしました」 — that's a state/status wording. Should not add exclamation. Keep concise. Maybe 「通知はオフになりました」 or 「通知をオフにしました」. For a status line, 「通知をオフにしました」 is fine. Actually \"状態の文言\" - status text. Could be 「通知オフ」. But since it's displayed right after the action, likely a confirmation status: 「通知をオフにしました」. That's standard UI Japanese.\n\ns2: Error message: couldn't save settings to server because can't connect to server. User can retry later. No apology. Something like 「サーバーに接続できないため保存できませんでした。後でもう一度お試しください」. No exclamation. Should avoid 「我们」 equivalents. Keep it concise. Japanese standard: 「サーバーに接続できませんでした。しばらくしてからもう一度お試しください」. The cause is server connection failure; user action: retry later. So: 「サーバーに接続できないため、設定を保存できませんでした。後でもう一度お試しください。」\n\nHmm, \"設定を保存できませんでした\" or just \"保存できませんでした\" — context is settings app, so mentioning 設定 could be redundant? The rule says don't repeat what title already says; we don't know the title. Keep clarity: 「サーバーに接続できないため保存できませんでした。後でもう一度お試しください。」\n\nRules: no period at end of labels and buttons — this is an error message, not a label/button, so periods are fine. Actually \"不要在標籤與按鈕結尾加句號\" applies to labels and buttons. Error messages typically can have 。 in Japanese UI. I'll include proper punctuation.\n\ns1 as status text: 「通知をオフにしました」 — status wording, fine without period? Status text often no period. Keep 「通知をオフにしました」.\n\nReturn JSON only: {\"s1\":\"...\",\"s2\":\"...\"}{\"s1\":\"通知をオフにしました\",\"s2\":\"サーバーに接続できないため保存できませんでした。後でもう一度お試しください。\"}",
+ "parsed": {
+  "s1": "通知をオフにしました",
+  "s2": "サーバーに接続できないため保存できませんでした。後でもう一度お試しください。"
+ },
+ "error": ""
+}

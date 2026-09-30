@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "control",
+ "channel": "codex",
+ "sample": 0,
+ "prompt_chars": 131,
+ "seconds": 11.3,
+ "raw": "{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}\n",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

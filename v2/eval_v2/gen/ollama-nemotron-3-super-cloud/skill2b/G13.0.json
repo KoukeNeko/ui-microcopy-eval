@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18362,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Group chats always send read receipts regardless of this setting\"}",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Group chats always send read receipts regardless of this setting"
+ },
+ "error": ""
+}

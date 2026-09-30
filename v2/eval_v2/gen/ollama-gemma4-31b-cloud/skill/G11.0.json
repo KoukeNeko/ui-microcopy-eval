@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 15926,
+ "seconds": 2.4,
+ "raw": "```json\n{\"s1\":\"沒有儲存的商品\",\"s2\":\"瀏覽商品\"}\n```",
+ "parsed": {
+  "s1": "沒有儲存的商品",
+  "s2": "瀏覽商品"
+ },
+ "error": ""
+}

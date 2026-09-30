@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 184,
+ "seconds": 11.6,
+ "raw": "The user wants a JSON response with:\n- s1: purpose explanation (in Traditional Chinese, Taiwan style) - explaining that location is only used to find nearby parking lots, and won't be stored\n- s2: agree button text\n- s3: disagree button text\n\nThis is for a Taiwan parking app, Traditional Chinese (Taiwan usage, e.g., 停車場, 定位, 位置權限).\n\niOS system dialog shows \"允許App在使用期間取用你的位置嗎？\" the app's purpose string appears as a smaller line. The purpose string should be concise, human, no technical jargon, mention: 只用來找附近停車場、不會儲存你的位置.\n\ns1 something like: 「我們只會在你的位置附近搜尋停車場，不會儲存或追蹤你的所在地。」Or: 「僅用於搜尋附近的停車場，你的位置不會被儲存或分享。」\n\nKeep it under iOS's limit (purpose string can be longish but concise is better).\n\ns2: 同意 / 好 / 允許. Better: 「同意並開啟定位」or just 「同意」. The button before the system dialog - tapping it triggers the system permission request. So \"同意\" or \"好，開啟定位\". Keep short: 「同意」or 「同意開啟定位」.\n\ns3: 「不同意」or 「暫不開放」or 「不用了」. Common pattern: 「暫不」/「不用了」/「稍後再說」. For disagree: 「不同意」is direct. Or 「暫不需要」.\n\nTaiwan phrasing: 定位 (location), 附近停車場. Use 「你的位置」.\n\ns1: 「需要你的定位來找尋附近的停車場。我們只在使用時讀取位置，不會儲存或追蹤。」Maybe shorter: 「我們只用你的位置搜尋附近停車場，不會儲存或追蹤你的行蹤。」\n\nLength consideration: iOS purpose strings get truncated in dialog; keep concise. \n\ns1: 「只用來搜尋附近的停車場，你的位置不會被儲存或追蹤。」\n\ns2: 「同意」— maybe 「同意並繼續」? The button leads to system dialog. Simple 「同意」works. Could be 「好，開啟定位」. I'll go with 「同意」.\n\nHmm, but there may be more context in buttons like 「同意並開啟定位」vs s3 「暫不開啟」. Balanced pair:\n- s2: 「同意開啟定位」\n- s3: 「暫不開啟」\n\nOr simpler:\n- s2: 「同意」\n- s3: 「不同意」\n\nI'll provide s2: 「同意」 and s3: 「暫不開啟」? Mixed formality. Consistency: 「同意」/「不同意」 is cleanest and unambiguous. But UX-wise, \"不同意\" can feel harsh; many Taiwan apps use 「不同意」 still. I'll use 同意 / 暫不開啟? \"暫不開啟\" implies temporary; the user said 不同意的按鈕, so semantics should convey declining. 「暫不開啟」is a softer decline and common. But strictly s3 = disagree button. 「不同意」is faithful. I'll go with 「不同意」.\n\nActually let me reconsider s2: to make clear it triggers location permission: 「同意」fine.\n\ns1 final: 「位置資訊僅用於搜尋附近的停車場，不會被儲存或用於其他用途。」\n\nTaiwan style: 「僅」is fine. Add 定位? 「你的位置只會用來搜尋附近的停車場，不會被儲存或分享。」The user said 不會儲存 only; adding 分享 might overpromise beyond spec but is harmless? Better stick to spec: 不會儲存. Maybe add 「不會儲存你的位置」explicitly.\n\ns1: 「我們只會用你的位置來搜尋附近的停車場，不會儲存你的位置資訊。」\n\nThat's good, natural Taiwan Mandarin. \n\nOutput only JSON. Use escaped quotes normally in JSON.</think>{\"s1\":\"我們只會用你的位置來搜尋附近的停車場，不會儲存或追蹤你的位置資訊。\",\"s2\":\"同意\",\"s3\":\"不同意\"}",
+ "parsed": {
+  "s1": "我們只會用你的位置來搜尋附近的停車場，不會儲存或追蹤你的位置資訊。",
+  "s2": "同意",
+  "s3": "不同意"
+ },
+ "error": ""
+}

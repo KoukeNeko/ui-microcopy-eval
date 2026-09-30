@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 19567,
+ "seconds": 1.3,
+ "raw": "{\"kcal\":510,\"remark\":\"雞肉表面有醬汁\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "雞肉表面有醬汁"
+ },
+ "error": ""
+}

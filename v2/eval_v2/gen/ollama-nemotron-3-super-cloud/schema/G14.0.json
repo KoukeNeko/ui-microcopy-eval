@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 203,
+ "seconds": 6.0,
+ "raw": "{\n  \"s1\": \"バージョン 8.4.1 のインストールが完了しました。再起動が必要です。\",\n  \"s2\": \"再起動\"\n}",
+ "parsed": {
+  "s1": "バージョン 8.4.1 のインストールが完了しました。再起動が必要です。",
+  "s2": "再起動"
+ },
+ "error": ""
+}

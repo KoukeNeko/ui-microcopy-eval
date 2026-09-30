@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 131,
+ "seconds": 0.8,
+ "raw": "{\"s1\":\"關閉面板\",\"s2\":\"開啟搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "開啟搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

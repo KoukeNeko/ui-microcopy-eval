@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 184,
+ "seconds": null,
+ "raw": "{\"s1\":\"位置僅用於尋找附近的停車場，不會儲存。\",\"s2\":\"允許定位\",\"s3\":\"不允許\"}",
+ "parsed": {
+  "s1": "位置僅用於尋找附近的停車場，不會儲存。",
+  "s2": "允許定位",
+  "s3": "不允許"
+ },
+ "error": ""
+}

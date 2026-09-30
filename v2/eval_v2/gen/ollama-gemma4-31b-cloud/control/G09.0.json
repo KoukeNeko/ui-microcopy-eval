@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 321,
+ "seconds": 1.1,
+ "raw": "```json\n{\"case_type\":\"換貨\",\"summary\":\"客戶 ZX-4 鍵盤空白鍵卡住申請換貨，新品將寄至原地址，並備註希望週五之後才送達。\",\"return_deadline\":\"2023-10-06\"}\n```",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "客戶 ZX-4 鍵盤空白鍵卡住申請換貨，新品將寄至原地址，並備註希望週五之後才送達。",
+  "return_deadline": "2023-10-06"
+ },
+ "error": ""
+}

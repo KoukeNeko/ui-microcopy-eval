@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1041,
+ "seconds": 2.4,
+ "raw": "{\"s1\":\"Uninstall\",\"s2\":\"Uninstall\",\"s3\":\"Keep App\",\"s4\":\"Removing files...\",\"s5\":\"Uninstall failed. Quit the app, then try again.\"}",
+ "parsed": {
+  "s1": "Uninstall",
+  "s2": "Uninstall",
+  "s3": "Keep App",
+  "s4": "Removing files...",
+  "s5": "Uninstall failed. Quit the app, then try again."
+ },
+ "error": ""
+}

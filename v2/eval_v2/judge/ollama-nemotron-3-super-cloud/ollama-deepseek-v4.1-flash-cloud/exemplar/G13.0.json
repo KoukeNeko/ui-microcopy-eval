@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G13.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "已讀取回條",
+  "s2": "開啟後，聯絡人可以看到你讀取訊息的時間；群組聊天一律傳送回條。"
+ }
+}

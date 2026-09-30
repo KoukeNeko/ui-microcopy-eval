@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15815,
+ "seconds": 3.6,
+ "raw": "{\n  \"s1\": \"位置只用於搜尋附近停車場，不會收集或儲存\",\n  \"s2\": \"允許\",\n  \"s3\": \"拒絕\"\n}",
+ "parsed": {
+  "s1": "位置只用於搜尋附近停車場，不會收集或儲存",
+  "s2": "允許",
+  "s3": "拒絕"
+ },
+ "error": ""
+}

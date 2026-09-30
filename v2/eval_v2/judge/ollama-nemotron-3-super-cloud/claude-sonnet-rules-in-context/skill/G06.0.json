@@ -1,0 +1,10 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G06.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "建立保管庫",
+  "s2": "繼續"
+ }
+}

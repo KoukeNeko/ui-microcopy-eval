@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 19867,
+ "seconds": 3.5,
+ "raw": "{\n  \"owner\": \"佐藤\",\n  \"review_meeting\": \"10 月 5 日 午前 11 時\",\n  \"note\": \"料金ページ担当は佐藤\"\n}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日 午前 11 時",
+  "note": "料金ページ担当は佐藤"
+ },
+ "error": ""
+}

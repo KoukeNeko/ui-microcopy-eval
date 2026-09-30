@@ -1,0 +1,11 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|C07.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ }
+}

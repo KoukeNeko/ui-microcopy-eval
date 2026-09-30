@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 423,
+ "seconds": 3.3,
+ "raw": "{\n  \"case_type\": \"退換貨處理\",\n  \"summary\": \"客戶申請換貨，請於10月6日前退回故障品\",\n  \"return_deadline\": \"10月6日\"\n}",
+ "parsed": {
+  "case_type": "退換貨處理",
+  "summary": "客戶申請換貨，請於10月6日前退回故障品",
+  "return_deadline": "10月6日"
+ },
+ "error": ""
+}

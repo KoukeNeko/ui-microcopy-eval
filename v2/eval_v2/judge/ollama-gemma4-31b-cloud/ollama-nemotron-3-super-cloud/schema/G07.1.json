@@ -1,0 +1,23 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|G07.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|G07.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The form cannot be submitted until a valid date is entered"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期必須是今天起算前 90 天內的日期"
+ }
+}

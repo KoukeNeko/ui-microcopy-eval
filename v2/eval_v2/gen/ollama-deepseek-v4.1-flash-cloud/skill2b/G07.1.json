@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18204,
+ "seconds": 2.7,
+ "raw": "{\"s1\":\"發票日期超過 90 天：今天是 2026/09/30，僅接受 2026/07/02 之後的日期。\"}",
+ "parsed": {
+  "s1": "發票日期超過 90 天：今天是 2026/09/30，僅接受 2026/07/02 之後的日期。"
+ },
+ "error": ""
+}

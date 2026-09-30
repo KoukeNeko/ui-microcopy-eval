@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 326,
+ "seconds": null,
+ "raw": "{\"owner\":\"佐藤\",\"review_meeting\":\"10 月 5 日 11:00\",\"note\":\"新料金ページの公開は 10 月 8 日の予定。法務レビューが未完了で、10 月 6 日までに承認が取れない場合は公開を延期する。\"}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日 11:00",
+  "note": "新料金ページの公開は 10 月 8 日の予定。法務レビューが未完了で、10 月 6 日までに承認が取れない場合は公開を延期する。"
+ },
+ "error": ""
+}

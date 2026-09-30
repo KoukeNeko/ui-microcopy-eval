@@ -1,0 +1,21 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|rules|C09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|rules|C09.1",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "建議檢視睡前環境",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "入睡需時較平均長，建議檢視睡前環境"
+ }
+}

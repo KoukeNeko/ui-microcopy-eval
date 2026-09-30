@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 128,
+ "seconds": 5.7,
+ "raw": "{\"s1\":\"發票日期不可早於今天前 90 天（2026/07/02），請重新輸入。\"}",
+ "parsed": {
+  "s1": "發票日期不可早於今天前 90 天（2026/07/02），請重新輸入。"
+ },
+ "error": ""
+}

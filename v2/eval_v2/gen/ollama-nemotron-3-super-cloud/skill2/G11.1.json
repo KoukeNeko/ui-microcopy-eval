@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 17376,
+ "seconds": 3.8,
+ "raw": "{\"s1\":\"No saved items\",\"s2\":\"Browse catalog\"}",
+ "parsed": {
+  "s1": "No saved items",
+  "s2": "Browse catalog"
+ },
+ "error": ""
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 214,
+ "seconds": 1.1,
+ "raw": "{\"remark\":\"入睡偏久，未達目標，今晚早點休息\"}",
+ "parsed": {
+  "remark": "入睡偏久，未達目標，今晚早點休息"
+ },
+ "error": ""
+}

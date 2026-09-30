@@ -1,0 +1,41 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|C16.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|C16.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "saved to 檔案 app"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "匯出中... 42%",
+  "s2": "檔案已存至筆記備份資料夾",
+  "s3": "無法寫入：請至系統設定開啟「檔案」app 的寫入權限"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17091,
+ "seconds": 3.6,
+ "raw": "{\"case_type\":\"retail\",\"summary\":\"客戶於昨天收到 ZX-4 鍵盤，空白鍵卡住，申請換貨，新品將寄至原訂單地址，且希望避免週五前送達；故障品需於10月6日前交給超商。\",\"return_deadline\":\"2023-10-06\"}",
+ "parsed": {
+  "case_type": "retail",
+  "summary": "客戶於昨天收到 ZX-4 鍵盤，空白鍵卡住，申請換貨，新品將寄至原訂單地址，且希望避免週五前送達；故障品需於10月6日前交給超商。",
+  "return_deadline": "2023-10-06"
+ },
+ "error": ""
+}

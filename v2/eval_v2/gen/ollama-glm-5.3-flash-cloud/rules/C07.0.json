@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 725,
+ "seconds": 6.2,
+ "raw": "The task: accessibility labels for screen readers, Traditional Chinese, for three icon buttons:\n1. X icon — closes current panel\n2. Magnifying glass icon — opens search\n3. Three dots icon — opens more options menu\n\nOutput only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nRules: no chatty phrasing, no punctuation at end, concise, Traditional Chinese, no mainland terms. Avoid words like 當前, 資訊/信息 issues — use 資訊 instead of 信息 if needed, but not needed.\n\nTypical accessibility labels:\n- 關閉面板 (close panel) — \"關閉面板\" or \"關閉目前的面板\". Keep short: \"關閉面板\"\n- 搜尋 — \"搜尋\" or \"開啟搜尋\". Screen reader label usually just the action: \"搜尋\". But to distinguish opening search, \"開啟搜尋\" is fine but shorter is better. Common convention: \"搜尋\".\n- 更多選項 — \"更多選項\"\n\nSince the instruction describes the buttons' functions: close current panel, open search, open more options menu. Labels should reflect the action. Concise: \"關閉面板\", \"搜尋\", \"更多選項\". \n\nShould I say \"關閉目前的面板\"? \"目前\" is acceptable Traditional Chinese; \"當前\" banned. But brevity is preferred: \"關閉面板\".\n\nJSON only.</think>{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

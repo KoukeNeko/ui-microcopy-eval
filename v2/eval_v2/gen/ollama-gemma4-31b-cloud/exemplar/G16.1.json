@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "exemplar",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 1567,
+ "seconds": 4.1,
+ "raw": "```json\n{\n  \"owner\": \"佐藤\",\n  \"review_meeting\": \"10月5日 11:00\",\n  \"note\": \"10月8日に公開予定。法務レビューが10月6日までに完了しない場合は延期。\"\n}\n```",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10月5日 11:00",
+  "note": "10月8日に公開予定。法務レビューが10月6日までに完了しない場合は延期。"
+ },
+ "error": ""
+}

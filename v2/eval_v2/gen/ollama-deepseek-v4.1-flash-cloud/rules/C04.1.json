@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 698,
+ "seconds": 1.0,
+ "raw": "{\"s1\":\"信義停車場即將到期\",\"s2\":\"計時剩 10 分鐘。超時每小時 NT$60。\"}",
+ "parsed": {
+  "s1": "信義停車場即將到期",
+  "s2": "計時剩 10 分鐘。超時每小時 NT$60。"
+ },
+ "error": ""
+}

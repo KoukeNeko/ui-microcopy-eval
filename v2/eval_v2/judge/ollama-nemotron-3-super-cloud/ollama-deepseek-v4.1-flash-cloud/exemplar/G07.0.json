@@ -1,0 +1,23 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G07.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G07.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The entered invoice date is outside the allowed 90-day range"
+    ],
+    "surplus": 1,
+    "surplus_quote": "請改用 2026 年 7 月 2 日之後的發票。",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期超出可報帳範圍：公司只接受今天往前 90 天內的日期。請改用 2026 年 7 月 2 日之後的發票。"
+ }
+}

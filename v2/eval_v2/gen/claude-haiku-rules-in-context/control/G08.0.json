@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 138,
+ "seconds": null,
+ "raw": "{\"s1\":\"加入喜愛歌曲\",\"s2\":\"播放佇列\",\"s3\":\"靜音\"}\n",
+ "parsed": {
+  "s1": "加入喜愛歌曲",
+  "s2": "播放佇列",
+  "s3": "靜音"
+ },
+ "error": ""
+}

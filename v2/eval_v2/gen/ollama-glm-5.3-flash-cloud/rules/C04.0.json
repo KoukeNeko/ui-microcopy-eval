@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 698,
+ "seconds": 9.4,
+ "raw": "The task: a parking app push notification. User is parked at 信義停車場, timer expires in 10 minutes, overtime costs NT$60 per hour.\n\ns1: push title\ns2: push body\n\nRules:\n- No chatty phrasing for buttons, titles, status\n- No apologizing in error messages, no exclamation marks, no emoji\n- No questions as titles\n- No explaining how numbers are calculated\n- Don't use 約/大概 when number is already an estimate\n- No 我們; avoid 你的/您的 unless needed\n- Don't repeat what title already says; no explaining the obvious\n- No mainland Chinese terms: no 當前、默認、設置、數據、視頻、用戶、緩存、軟件、網絡、信息\n- No periods at end of labels/buttons (push notification... probably treat title as label)\n- Keep it short\n\nWait — is this an error state? The notification warns of imminent expiry. It's a warning/routine state. No exclamation marks.\n\nTitle ideas: 「停車計時即將到期」— but rule says don't repeat title content in body. Also title shouldn't be a question.\n\nTitle: 「計時即將到期」or 「停車計時剩 10 分鐘」. Body: 「信義停車場超時每小時 NT$60」— need to convey parking location and fee.\n\nActually the notification should include: location 信義停車場, 10 minutes remaining, overtime NT$60/hour.\n\nOption:\ns1: \"停車計時即將到期\"\ns2: \"信義停車場尚餘 10 分鐘，超時每小時 NT$60\"\n\nCheck rules: s2 doesn't repeat s1's exact words (s1 says 即將到期, s2 gives specifics). No question, no exclamation, no 約, no 我們/你的. \"尚餘\" is Taiwan usage. \"超時每小時 NT$60\" — fine. Maybe \"逾時\" is more common in Taiwan parking context: 逾時每小時 NT$60. Yes, 逾時 is standard in Taiwan parking lots.\n\nBody: \"信義停車場尚餘 10 分鐘，逾時每小時 NT$60\"\n\nLength ok. No trailing period... it ends with NT$60, no period. Good. The comma inside is fine.\n\nAlternative title: \"計時 10 分鐘後到期\" then body: \"信義停車場逾時每小時 NT$60\". But then title has the number; body gives location and fee. Hmm, either works. But keeping location in body makes sense since user might be at multiple; actually the notification is about one parking. Title could be \"信義停車場計時即將到期\" and body \"尚餘 10 分鐘，逾時每小時 NT$60\". That's cleaner: title carries location, body carries details without repeating \"到期\" info... body says 尚餘10分鐘 which complements 即將到期.\n\ns1: \"信義停車場計時即將到期\"\ns2: \"尚餘 10 分鐘，逾時每小時 NT$60\"\n\nThat's concise. No forbidden words. \"逾時\" not \"超時\" — both fine, but 超時 also used. Taiwan parking signs often say \"逾時收費\". I'll use 逾時.\n\nNumbers: 10 minutes is exact (app knows), NT$60 exact rate. No 約 needed.\n\nReturn only JSON.{\"s1\":\"信義停車場計時即將到期\",\"s2\":\"尚餘 10 分鐘，逾時每小時 NT$60\"}",
+ "parsed": {
+  "s1": "信義停車場計時即將到期",
+  "s2": "尚餘 10 分鐘，逾時每小時 NT$60"
+ },
+ "error": ""
+}

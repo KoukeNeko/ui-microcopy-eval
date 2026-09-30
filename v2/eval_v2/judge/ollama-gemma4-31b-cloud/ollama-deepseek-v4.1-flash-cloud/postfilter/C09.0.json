@@ -1,0 +1,21 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|postfilter|C09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|postfilter|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "醒來3次，睡眠比較淺；...明天早點上床補回來。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "入睡花48分鐘、醒來3次，睡眠比較淺；今晚睡了6小時20分，比目標少40分鐘，明天早點上床補回來。"
+ }
+}

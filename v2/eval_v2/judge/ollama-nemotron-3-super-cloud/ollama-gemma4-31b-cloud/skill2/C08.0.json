@@ -1,0 +1,11 @@
+{
+ "record": "ollama-gemma4-31b-cloud|skill2|C08.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "summary": "降低付款頁錯誤率與統一結帳頁樣式",
+  "action_items": "小陳：調查發卡行拒絕原因並於下週三前提交報告 ／ 小林：將結帳頁三個 loading 狀態改為一致樣式",
+  "note": "約 40 秒錄音聽不清楚"
+ }
+}

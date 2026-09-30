@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "exemplar",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 1410,
+ "seconds": 1.0,
+ "raw": "```json\n{\"remark\":\"未達目標 40 分鐘，且入睡時間比平均長\"}\n```",
+ "parsed": {
+  "remark": "未達目標 40 分鐘，且入睡時間比平均長"
+ },
+ "error": ""
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 16939,
+ "seconds": 3.0,
+ "raw": "{\"remark\":\"目標未達\"}",
+ "parsed": {
+  "remark": "目標未達"
+ },
+ "error": ""
+}

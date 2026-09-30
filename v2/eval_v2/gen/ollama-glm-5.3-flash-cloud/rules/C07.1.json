@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 725,
+ "seconds": 6.7,
+ "raw": "The user wants accessibility labels in Traditional Chinese for three icon-only buttons:\n1. X icon (close current panel)\n2. Magnifying glass icon (open search)\n3. Three dots icon (open more options menu)\n\nRules to follow:\n- No chatty phrasing\n- No question marks\n- No China mainland terms (avoid 當前, 設置, 用戶, 信息 etc.)\n- No periods at the end\n- Keep it short\n- Don't use 「我們」「你的」\n- Don't over-explain\n\nStandard accessibility labels in Traditional Chinese (Taiwan usage):\n1. 關閉面板 or 關閉 (since it closes the current panel — maybe 「關閉面板」 is good, or just 「關閉」). The task says close the current panel. 「關閉面板」 is concise and clear. Avoid 「目前」? That's fine in Taiwan—目前 is used in Taiwan too (the rule prohibits 當前, not 目前).\n2. 搜尋 (Taiwan uses 搜尋, not 搜索 which is more mainland-ish; actually 搜索 is used but 搜尋 is standard Taiwan). \"開啟搜尋\" — the action opens search. Could be 「搜尋」 or 「開啟搜尋」. Standard: just 「搜尋」.\n3. 更多選項 — the action opens the more options menu. 「更多選項」 is standard.\n\nKeep short:\n- s1: \"關閉面板\" or just \"關閉\". Since the panel context might be ambiguous, \"關閉面板\" is clearer. Short length is fine.\n- s2: \"搜尋\" or \"開啟搜尋\". Screen reader labels often just \"搜尋\". The role button plus label \"搜尋\" reads \"搜尋按鈕\". Either works. The task description says 開啟搜尋, but minimal label \"搜尋\" is standard. However, to distinguish action, \"開啟搜尋\" is also fine. I'll go with concise standard labels: 「關閉面板」「搜尋」「更多選項」.\n\nActually maybe s1 should be \"關閉\" alone — for a close button, \"關閉\" is the most common. But given it closes a panel, \"關閉面板\" adds clarity without verbosity. Both acceptable. I'll pick \"關閉面板\".\n\ns2: \"搜尋\" — simple.\ns3: \"更多選項\" — standard.\n\nReturn only JSON.{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

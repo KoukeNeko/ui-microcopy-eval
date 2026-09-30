@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 725,
+ "seconds": 2.0,
+ "raw": "{\"s1\":\"關閉面板\",\"s2\":\"開啟搜尋\",\"s3\":\"開啟更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "開啟搜尋",
+  "s3": "開啟更多選項"
+ },
+ "error": ""
+}

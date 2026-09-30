@@ -1,0 +1,10 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|C04.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "停車計時即將到期",
+  "s2": "您在「信義停車場」的計時還有 10 分鐘到期，超時每小時將收取 NT$60。"
+ }
+}

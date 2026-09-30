@@ -1,0 +1,28 @@
+{
+ "record": "claude-sonnet-rules-in-context|control|G01.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|control|G01.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "確認轉帳",
+  "s2": "NT$12,515"
+ }
+}

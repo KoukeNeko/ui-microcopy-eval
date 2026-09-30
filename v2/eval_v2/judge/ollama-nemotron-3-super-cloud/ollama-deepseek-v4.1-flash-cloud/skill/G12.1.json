@@ -1,0 +1,30 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|G12.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill|G12.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "存款失敗",
+  "s2": "你的銀行以餘額不足為由拒絕了這筆 $2,000 的轉帳。請在帳戶加值後再試，或改用其他付款方式。"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 15917,
+ "seconds": 2.4,
+ "raw": "{\"s1\":\"已讀回執\",\"s2\":\"群組聊天一律傳送\"}",
+ "parsed": {
+  "s1": "已讀回執",
+  "s2": "群組聊天一律傳送"
+ },
+ "error": ""
+}

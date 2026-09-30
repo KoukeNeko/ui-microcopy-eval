@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 16995,
+ "seconds": 3.2,
+ "raw": "{\"kcal\":510,\"remark\":\"醬汁另計\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "醬汁另計"
+ },
+ "error": ""
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 18204,
+ "seconds": 4.6,
+ "raw": "{\"s1\":\"Invalid date: must be within the last 90 days. Please enter a date on or after 2026-07-01.\"}",
+ "parsed": {
+  "s1": "Invalid date: must be within the last 90 days. Please enter a date on or after 2026-07-01."
+ },
+ "error": ""
+}

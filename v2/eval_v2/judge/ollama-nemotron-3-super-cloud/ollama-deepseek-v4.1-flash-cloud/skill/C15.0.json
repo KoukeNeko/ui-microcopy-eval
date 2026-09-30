@@ -1,0 +1,30 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|C15.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill|C15.0",
+  "items": {
+   "ingredients": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "ingredients": "烤雞腿 ／ 檸檬角 ／ 蒸青花菜",
+  "note": ""
+ }
+}

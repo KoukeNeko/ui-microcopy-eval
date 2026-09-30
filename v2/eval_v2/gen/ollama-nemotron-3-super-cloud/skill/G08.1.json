@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15769,
+ "seconds": 1.5,
+ "raw": "{\"s1\":\"加入喜愛歌曲\",\"s2\":\"開啟播放佇列\",\"s3\":\"音量靜音\"}",
+ "parsed": {
+  "s1": "加入喜愛歌曲",
+  "s2": "開啟播放佇列",
+  "s3": "音量靜音"
+ },
+ "error": ""
+}

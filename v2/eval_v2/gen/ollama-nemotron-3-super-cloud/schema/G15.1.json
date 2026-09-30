@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 207,
+ "seconds": 3.6,
+ "raw": "{\"s1\":\"2024-10-02 13:30\",\"s2\":\"デザインレビュー\"}",
+ "parsed": {
+  "s1": "2024-10-02 13:30",
+  "s2": "デザインレビュー"
+ },
+ "error": ""
+}

@@ -1,0 +1,39 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C02.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C02.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請勿關閉此頁面或重複點擊送出，謝謝。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "！, 訂單確認信已寄至您的信箱，感謝您的購買，我們將儘速為您安排出貨。",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "付款資料已送出，正在等待銀行授權回應，請勿關閉此頁面或重複點擊送出，謝謝。",
+  "s2": "付款失敗：信用卡遭發卡銀行拒絕，可能原因為卡片額度不足、卡號或有效期限輸入錯誤，或卡片已停用。請確認卡片資訊後重新付款，或改用其他付款方式；若仍有問題，請聯絡您的發卡銀行。",
+  "s3": "訂單已成立！您的訂單編號為 A2026093011，訂單確認信已寄至您的信箱，感謝您的購買，我們將儘速為您安排出貨。"
+ }
+}

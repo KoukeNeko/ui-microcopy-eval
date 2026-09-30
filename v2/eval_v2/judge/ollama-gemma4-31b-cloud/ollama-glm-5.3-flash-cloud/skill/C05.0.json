@@ -1,0 +1,75 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|skill|C05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|skill|C05.0",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，免逐筆輸入",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，分錯可手動調整",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶",
+  "b1": "交易自動匯入，免逐筆輸入",
+  "t2": "支出自動分類",
+  "b2": "每筆交易歸入對應類別，分錯可手動調整",
+  "t3": "每月預算提醒",
+  "b3": "接近預算上限時通知",
+  "cta": "開始使用"
+ }
+}

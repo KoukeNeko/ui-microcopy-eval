@@ -1,0 +1,12 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|C01.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "確認轉帳",
+  "s2": "確認送出",
+  "s3": "取消",
+  "s4": "您確定要轉帳 NT$12,500 給 王小明 嗎？轉帳送出後將無法取消。"
+ }
+}

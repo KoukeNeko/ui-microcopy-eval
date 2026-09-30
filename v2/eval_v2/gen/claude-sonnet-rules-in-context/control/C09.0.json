@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 169,
+ "seconds": null,
+ "raw": "{\"remark\":\"少於目標 40 分鐘；入睡花了 48 分鐘，近 7 天平均 15 分鐘\"}",
+ "parsed": {
+  "remark": "少於目標 40 分鐘；入睡花了 48 分鐘，近 7 天平均 15 分鐘"
+ },
+ "error": ""
+}

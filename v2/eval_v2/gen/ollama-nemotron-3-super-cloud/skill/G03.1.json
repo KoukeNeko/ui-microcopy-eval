@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15772,
+ "seconds": 2.7,
+ "raw": "{\"s1\":\"安裝失敗：目標磁碟為唯讀\",\"s2\":\"請先解除磁碟唯讀狀態，然後重新執行安裝。\"}",
+ "parsed": {
+  "s1": "安裝失敗：目標磁碟為唯讀",
+  "s2": "請先解除磁碟唯讀狀態，然後重新執行安裝。"
+ },
+ "error": ""
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 19668,
+ "seconds": 2.1,
+ "raw": "```json\n{\"owner\":\"佐藤\",\"review_meeting\":\"10月5日 11:00\",\"note\":\"10月6日までに承認がなければ公開を延期\"}\n```",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10月5日 11:00",
+  "note": "10月6日までに承認がなければ公開を延期"
+ },
+ "error": ""
+}

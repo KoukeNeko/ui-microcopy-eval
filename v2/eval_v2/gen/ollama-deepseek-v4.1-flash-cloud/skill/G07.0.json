@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 15759,
+ "seconds": 1.2,
+ "raw": "{\"s1\":\"發票日期需在最近 90 天內。\"}",
+ "parsed": {
+  "s1": "發票日期需在最近 90 天內。"
+ },
+ "error": ""
+}

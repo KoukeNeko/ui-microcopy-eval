@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 17057,
+ "seconds": 1.2,
+ "raw": "{\"summary\":\"把付款頁錯誤率壓下來。\",\"action_items\":[\"小陳：查發卡行拒絕原因，下週三前交報告\",\"小林：統一結帳頁三個 loading 狀態的樣式\"],\"note\":\"\"}",
+ "parsed": {
+  "summary": "把付款頁錯誤率壓下來。",
+  "action_items": [
+   "小陳：查發卡行拒絕原因，下週三前交報告",
+   "小林：統一結帳頁三個 loading 狀態的樣式"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

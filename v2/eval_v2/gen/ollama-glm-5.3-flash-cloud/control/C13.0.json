@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 145,
+ "seconds": 3.5,
+ "raw": "The user wants Japanese UI text for a settings app:\n- s1: The state text shown right after a user turned off notifications\n- s2: Error message when settings couldn't be saved to the server (cause: can't connect to server. What the user can do: try again later)\n\nThey want JSON only: {\"s1\":\"...\",\"s2\":\"...\"}\n\nFor s1: Something like \"通知をオフにしました\" (Notifications turned off)\n\nFor s2: Japanese error message indicating save failed due to server connection issue, suggest retrying later. Something like \"設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。\"\n\nKeep it concise and natural for UI. JSON only, no other text.\n\ns1: \"通知をオフにしました\" — good, simple confirmation.\n\ns2: \"設定を保存できませんでした。サーバーに接続できません。しばらくしてからもう一度お試しください。\" — that's good.\n\nOutput strictly JSON.</think>{\"s1\":\"通知をオフにしました\",\"s2\":\"設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。\"}",
+ "parsed": {
+  "s1": "通知をオフにしました",
+  "s2": "設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。"
+ },
+ "error": ""
+}

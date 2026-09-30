@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 732,
+ "seconds": 4.4,
+ "raw": "{\n  \"s1\": \"Add to liked songs\",\n  \"s2\": \"Open queue\",\n  \"s3\": \"Mute\"\n}",
+ "parsed": {
+  "s1": "Add to liked songs",
+  "s2": "Open queue",
+  "s3": "Mute"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "skill",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15779,
+ "seconds": null,
+ "raw": "{\"s1\":\"10 月 2 日 13:30\",\"s2\":\"デザインレビュー\"}",
+ "parsed": {
+  "s1": "10 月 2 日 13:30",
+  "s2": "デザインレビュー"
+ },
+ "error": ""
+}

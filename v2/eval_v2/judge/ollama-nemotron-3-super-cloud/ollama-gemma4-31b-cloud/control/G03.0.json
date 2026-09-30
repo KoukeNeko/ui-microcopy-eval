@@ -1,0 +1,30 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|G03.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|control|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "安裝失敗：磁碟為唯讀狀態",
+  "s2": "安裝程式在寫入目標磁碟 /dev/nvme0n1 時失敗，因為該磁碟目前處於唯讀狀態。請檢查硬體鎖定開關或磁碟設定以解除唯讀狀態，然後重新執行安裝。"
+ }
+}

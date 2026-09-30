@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 819,
+ "seconds": 5.2,
+ "raw": "{\"kcal\":510,\"remark\":\"白飯一碗、烤雞胸肉 120 克、半顆水煮蛋、青花菜；雞肉無皮，醬汁種類與用量未知。\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "白飯一碗、烤雞胸肉 120 克、半顆水煮蛋、青花菜；雞肉無皮，醬汁種類與用量未知。"
+ },
+ "error": ""
+}

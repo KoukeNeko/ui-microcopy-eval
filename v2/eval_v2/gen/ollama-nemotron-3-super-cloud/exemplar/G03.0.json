@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1382,
+ "seconds": 2.7,
+ "raw": "{\"s1\":\"磁碟唯讀\",\"s2\":\"磁碟目前是唯讀狀態，必須先解除唯讀才能寫入。\"}",
+ "parsed": {
+  "s1": "磁碟唯讀",
+  "s2": "磁碟目前是唯讀狀態，必須先解除唯讀才能寫入。"
+ },
+ "error": ""
+}

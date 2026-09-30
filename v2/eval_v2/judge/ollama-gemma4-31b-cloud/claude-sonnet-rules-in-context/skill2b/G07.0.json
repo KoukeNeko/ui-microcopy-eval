@@ -1,0 +1,21 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|G07.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill2b|G07.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "不符公司報帳規定",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期超過 90 天，不符公司報帳規定。請輸入 90 天內的日期。"
+ }
+}

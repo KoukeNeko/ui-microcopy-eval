@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1466,
+ "seconds": 3.4,
+ "raw": "{\n  \"kcal\": 510,\n  \"remark\": \"白飯約一碗，烤雞胸肉約120g（無皮），水煮蛋半顆，青花菜小份，醬汁種類與用量無法判斷，另計\"\n}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "白飯約一碗，烤雞胸肉約120g（無皮），水煮蛋半顆，青花菜小份，醬汁種類與用量無法判斷，另計"
+ },
+ "error": ""
+}

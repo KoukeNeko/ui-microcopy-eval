@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15917,
+ "seconds": null,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Always sent in group chats\"}",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Always sent in group chats"
+ },
+ "error": ""
+}

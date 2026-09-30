@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "skill2",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18574,
+ "seconds": 1.2,
+ "raw": "{\"owner\":\"佐藤\",\"review_meeting\":\"10 月 5 日上午 11 時\",\"note\":\"10 月 8 日公開；法務レビュー未完了のため、10 月 6 日までに承認が取れなければ公開を延期\"}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日上午 11 時",
+  "note": "10 月 8 日公開；法務レビュー未完了のため、10 月 6 日までに承認が取れなければ公開を延期"
+ },
+ "error": ""
+}

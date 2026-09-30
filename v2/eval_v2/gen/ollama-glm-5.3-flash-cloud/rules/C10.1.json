@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1041,
+ "seconds": 7.2,
+ "raw": "The user wants uninstaller dialog strings in English. Constraints:\n\n- No chatty phrasing for buttons, titles, status text.\n- Error messages: no apologies, no exclamation marks.\n- No questions as titles.\n- No \"we\"/\"your\" unless necessary.\n- No trailing periods on labels/buttons.\n- Keep concise.\n- s5: error when uninstall fails because app is still running — tell user what to do. No apology, no exclamation. E.g., \"The app is still running. Close it and try again.\"\n\ns1: title of dialog asking whether to uninstall — not a question? \"不要用問句當按鈕或標題\" — no questions as buttons or titles. So \"Uninstall App\"? But it asks whether to uninstall. Title could be \"Confirm Uninstall\" or \"Uninstall\". Something like \"Uninstall App\"? The rule says don't repeat what the title already says... For s1, the title asks whether to uninstall — but can't be a question. So \"Confirm Uninstall\" works.\n\ns2: button performing uninstall: \"Uninstall\"\ns3: button keeping the app (cancel-like): \"Cancel\" — the rule says don't write Cancel as \"算了\" etc. English equivalent fine: \"Cancel\".\ns4: status while files being removed: \"Removing files…\" — ellipsis okay? Probably fine. Or \"Removing files\". Status lines can end without period; ellipsis typical for progress. Keep \"Removing files…\"? The rule \"不要在標籤與按鈕結尾加句號\" — no period at end of labels/buttons; status could have ellipsis. Use \"Removing files…\" or \"Uninstalling…\". Files being removed: \"Removing files…\"\n\ns5: \"The app is still running. Close it and try again.\" — This is an error message, sentences with periods are fine (rule only prohibits periods at end of labels and buttons). No apology, no exclamation. Avoid \"your\". Good.\n\nReturn only JSON.</think>{\"s1\":\"Uninstall App\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\",\"s4\":\"Removing files…\",\"s5\":\"The app is still running. Close it and try again.\"}",
+ "parsed": {
+  "s1": "Uninstall App",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files…",
+  "s5": "The app is still running. Close it and try again."
+ },
+ "error": ""
+}

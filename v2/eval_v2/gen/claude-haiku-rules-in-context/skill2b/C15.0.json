@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 22307,
+ "seconds": null,
+ "raw": "{\"ingredients\":[\"2 chicken thighs, grilled\",\"Lemon wedge\",\"Steamed broccoli\"],\"note\":\"\"}",
+ "parsed": {
+  "ingredients": [
+   "2 chicken thighs, grilled",
+   "Lemon wedge",
+   "Steamed broccoli"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

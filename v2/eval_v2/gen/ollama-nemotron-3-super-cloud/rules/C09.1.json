@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 763,
+ "seconds": 0.9,
+ "raw": "{\"remark\":\"入睡需時較平均長，建議檢視睡前環境\"}",
+ "parsed": {
+  "remark": "入睡需時較平均長，建議檢視睡前環境"
+ },
+ "error": ""
+}

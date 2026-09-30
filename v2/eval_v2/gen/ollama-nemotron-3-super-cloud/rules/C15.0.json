@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 970,
+ "seconds": 1.0,
+ "raw": "{\n  \"ingredients\": [\n    \"grilled chicken thigh\",\n    \"lemon wedge\",\n    \"steamed broccoli\"\n  ],\n  \"note\": \"No sauce visible\"\n}",
+ "parsed": {
+  "ingredients": [
+   "grilled chicken thigh",
+   "lemon wedge",
+   "steamed broccoli"
+  ],
+  "note": "No sauce visible"
+ },
+ "error": ""
+}

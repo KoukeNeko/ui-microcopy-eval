@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 145,
+ "seconds": 7.3,
+ "raw": "The user wants me to generate Japanese text strings for a settings app:\n\n- s1: Text showing the state right after user turns off notifications (indicating notifications are off/paused, likely something like \"Notifications are off\" - a transient status text right after action)\n- s2: Error message when settings couldn't be saved to server (cause: can't connect to server; user action: try again later)\n\nThey want JSON only: {\"s1\":\"...\",\"s2\":\"...\"}\n\nLet me craft appropriate Japanese UX copy.\n\ns1: Right after user turned off notifications, showing a state text. Something like \"通知はオフになっています\" or shorter \"通知はオフです\". Since it's a state shown immediately after the action, maybe \"通知がオフになりました\" (confirmation) or \"通知はオフです\" (state). The prompt says \"state text (文言)\" — state wording. So probably a state description like \"通知はオフです\". Perhaps with a duration? Not specified. Keep simple: \"通知はオフです\" or \"通知オフ\". I'll go with \"通知はオフです\".\n\ns2: Error text: cause = can't connect to server, user action = try again later. Something like \"設定を保存できませんでした。サーバーに接続できません。後でもう一度お試しくたださい。\" Maybe more concise: \"設定を保存できませんでした。ネットワークに接続できません。しばらくしてからもう一度お試しください。\"\n\nThe cause specified is \"can't connect to the server\". So: \"サーバーに接続できなかったため、設定を保存できませんでした。後でもう一度お試しください。\"\n\nReturn only JSON. No markdown. Should be valid JSON with Japanese text.\n\nOutput: {\"s1\":\"通知はオフです\",\"s2\":\"サーバーに接続できなかったため、設定を保存できませんでした。後でもう一度お試しください。\"}</think>{\"s1\":\"通知はオフです\",\"s2\":\"サーバーに接続できなかったため、設定を保存できませんでした。後でもう一度お試しください。\"}",
+ "parsed": {
+  "s1": "通知はオフです",
+  "s2": "サーバーに接続できなかったため、設定を保存できませんでした。後でもう一度お試しください。"
+ },
+ "error": ""
+}

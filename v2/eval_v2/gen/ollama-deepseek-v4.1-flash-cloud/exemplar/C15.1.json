@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1617,
+ "seconds": 1.0,
+ "raw": "{\"ingredients\":[\"烤雞腿 2 塊\",\"檸檬角 1 塊\",\"蒸花椰菜 1 小堆\"],\"note\":\"未見醬汁。\"}",
+ "parsed": {
+  "ingredients": [
+   "烤雞腿 2 塊",
+   "檸檬角 1 塊",
+   "蒸花椰菜 1 小堆"
+  ],
+  "note": "未見醬汁。"
+ },
+ "error": ""
+}

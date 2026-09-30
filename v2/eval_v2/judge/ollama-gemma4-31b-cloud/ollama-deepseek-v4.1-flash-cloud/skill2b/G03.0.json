@@ -1,0 +1,30 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G03.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "無法繼續安裝",
+  "s2": "目標磁碟 /dev/nvme0n1 目前是唯讀狀態，安裝程式無法寫入。請先解除該磁碟的唯讀狀態，再重新執行安裝。"
+ }
+}

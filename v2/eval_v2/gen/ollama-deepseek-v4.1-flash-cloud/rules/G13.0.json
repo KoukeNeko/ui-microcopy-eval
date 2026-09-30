@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 880,
+ "seconds": 2.3,
+ "raw": "{\"s1\":\"已讀回條\",\"s2\":\"群組對話一律傳送已讀回條\"}",
+ "parsed": {
+  "s1": "已讀回條",
+  "s2": "群組對話一律傳送已讀回條"
+ },
+ "error": ""
+}

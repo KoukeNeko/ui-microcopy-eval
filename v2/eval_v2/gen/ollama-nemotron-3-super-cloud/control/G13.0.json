@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 286,
+ "seconds": 2.8,
+ "raw": "{\"s1\":\"Read Receipts\",\"s2\":\"Contacts can see when you read their messages; group chats always show read receipts\"}",
+ "parsed": {
+  "s1": "Read Receipts",
+  "s2": "Contacts can see when you read their messages; group chats always show read receipts"
+ },
+ "error": ""
+}

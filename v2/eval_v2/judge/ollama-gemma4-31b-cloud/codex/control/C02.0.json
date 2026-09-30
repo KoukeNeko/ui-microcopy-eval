@@ -1,0 +1,39 @@
+{
+ "record": "codex|control|C02.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|control|C02.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，請勿重複付款。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "付款處理中，正在等待銀行回應，請勿重複付款。",
+  "s2": "發卡銀行未核准這筆信用卡交易，請改用其他付款方式，或聯絡發卡銀行確認原因。",
+  "s3": "訂單已成立，訂單編號：A2026093011。"
+ }
+}

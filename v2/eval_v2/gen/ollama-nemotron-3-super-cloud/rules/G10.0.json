@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 819,
+ "seconds": 2.6,
+ "raw": "{\"kcal\":510,\"remark\":\"飯大約一碗，雞肉沒有皮\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "飯大約一碗，雞肉沒有皮"
+ },
+ "error": ""
+}

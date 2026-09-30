@@ -1,0 +1,32 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G06.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|G06.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The user is setting up a new vault"
+    ],
+    "surplus": 1,
+    "surplus_quote": "歡迎使用密碼管理器",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "歡迎使用密碼管理器",
+  "s2": "繼續設定"
+ }
+}

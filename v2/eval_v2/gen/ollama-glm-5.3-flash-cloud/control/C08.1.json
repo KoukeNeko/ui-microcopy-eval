@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 287,
+ "seconds": 9.1,
+ "raw": "The user wants me to act as a meeting notes model. The meeting transcript in Traditional Chinese says:\n\nHost: This week's focus is reducing the error rate on the payment page. Xiao Chen, you're responsible for investigating the reasons for issuing bank rejections, report by next Wednesday. Xiao Lin, change the three loading states on the checkout page to a consistent style. (Noise, about 40 seconds inaudible) Okay, that's it, same time next Wednesday.\n\nI need to return JSON only: {\"summary\":\"...\",\"action_items\":[\"...\"],\"note\":\"...\"}\n\nThe summary should capture the meeting focus: this week's priority is reducing payment page error rate.\n\nAction items:\n1. Xiao Chen: investigate issuing bank rejection reasons, provide report by next Wednesday\n2. Xiao Lin: unify the checkout page's three loading states style\n\nNote: There's about 40 seconds of noise/inaudible audio - this could be placed in the note field since the meeting notes app shows it as small text below the list. This is useful to flag that part of the recording was unclear, so some content may be missing.\n\nNote should mention: 錄音中有約 40 秒處聽不清楚（雜音），該段內容可能未完整記錄。\n\nThe instruction says \"逐字稿（繁體中文）\" so the output should be in Traditional Chinese.\n\nJSON only - no markdown, no extra text. The app parses JSON directly.\n\nLet me write:\n\n{\n  \"summary\": \"本週重點為降低付款頁錯誤率；會議中決定由小陳調查發卡行拒絕原因，並由小林統一結帳頁三個 loading 狀態的樣式，下次會議為下週三同一時間。\",\n  \"action_items\": [\n    \"小陳：調查付款頁發卡行拒絕的原因，下週三前提交報告\",\n    \"小林：將結帳頁的三個 loading 狀態改成一致的樣式\"\n  ],\n  \"note\": \"逐字稿中有約 40 秒因雜音無法辨識，該段內容可能遺漏。\"\n}\n\nKeep the note concise. That's good. Only return JSON, no code fences probably — the instruction says \"只回傳 JSON\" so just plain JSON. Actually code blocks might break parsing; better to return raw JSON without backticks.</think>{\"summary\":\"本週重點為降低付款頁的錯誤率。會議中安排由小陳調查發卡行拒絕的原因並在下週三前提交報告，小林則負責將結帳頁的三個 loading 狀態樣式改成一致。下次會議於下週三同一時間舉行。\",\"action_items\":[\"小陳：調查付款頁遭發卡行拒絕的原因，下週三前提交報告\",\"小林：將結帳頁的三個 loading 狀態改成一致的樣式\"],\"note\":\"逐字稿中有約 40 秒因雜音無法辨識，該段會議內容可能遺漏。\"}",
+ "parsed": {
+  "summary": "本週重點為降低付款頁的錯誤率。會議中安排由小陳調查發卡行拒絕的原因並在下週三前提交報告，小林則負責將結帳頁的三個 loading 狀態樣式改成一致。下次會議於下週三同一時間舉行。",
+  "action_items": [
+   "小陳：調查付款頁遭發卡行拒絕的原因，下週三前提交報告",
+   "小林：將結帳頁的三個 loading 狀態改成一致的樣式"
+  ],
+  "note": "逐字稿中有約 40 秒因雜音無法辨識，該段會議內容可能遺漏。"
+ },
+ "error": ""
+}

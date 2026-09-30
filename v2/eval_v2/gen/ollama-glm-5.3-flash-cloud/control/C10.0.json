@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 447,
+ "seconds": 4.4,
+ "raw": "The user wants uninstaller strings for a desktop app in English. They want JSON output only. Let me craft:\n\ns1: title of dialog asking whether to uninstall — e.g., \"Uninstall MyApp?\" or \"Uninstall Application\"\ns2: button performing uninstall — \"Uninstall\"\ns3: button keeping the app — \"Cancel\" or \"Keep App\"\ns4: status line while files being removed — \"Removing files…\" or \"Uninstalling… Please wait.\"\ns5: error when app still running — \"Uninstall failed because [App] is still running. Please close MyApp and try again.\" Should be generic without app name? Could use a placeholder, but better to write self-contained. Since no app name given, I could use \"the application\" or include a placeholder like {app}. The user said \"strings\" — placeholders are common in localization. But safer to keep generic: \"The application could not be uninstalled because it is still running. Please close the application and try again.\"\n\nMaybe use a generic name. I'll go with placeholders? The instruction says English strings for a desktop app's uninstaller. I'll write generic without placeholders to be safe, or use {AppName}? Many localization tasks accept placeholders. But without knowing, generic is safer.\n\nReturn only JSON.{\"s1\":\"Uninstall this application?\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\",\"s4\":\"Removing files… Please wait.\",\"s5\":\"Uninstall failed because the application is still running. Please close the application and click Uninstall again.\"}",
+ "parsed": {
+  "s1": "Uninstall this application?",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files… Please wait.",
+  "s5": "Uninstall failed because the application is still running. Please close the application and click Uninstall again."
+ },
+ "error": ""
+}

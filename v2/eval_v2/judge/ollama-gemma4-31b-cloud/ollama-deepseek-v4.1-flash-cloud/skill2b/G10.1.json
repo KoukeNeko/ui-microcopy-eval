@@ -1,0 +1,32 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G10.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G10.1",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 1,
+    "surplus_quote": "飯約一碗、雞肉去皮",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "醬料種類與用量未確認；飯約一碗、雞肉去皮"
+ }
+}

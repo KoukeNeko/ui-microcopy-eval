@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 941,
+ "seconds": 1.3,
+ "raw": "```json\n{\"s1\":\"120 shares of ACME, value $4,812.00, down $96.20 (−1.96%) today\",\"s2\":\"Cash balance $1,050.33\",\"s3\":\"Estimated dividend $38 next month ($30–$45)\"}\n```",
+ "parsed": {
+  "s1": "120 shares of ACME, value $4,812.00, down $96.20 (−1.96%) today",
+  "s2": "Cash balance $1,050.33",
+  "s3": "Estimated dividend $38 next month ($30–$45)"
+ },
+ "error": ""
+}

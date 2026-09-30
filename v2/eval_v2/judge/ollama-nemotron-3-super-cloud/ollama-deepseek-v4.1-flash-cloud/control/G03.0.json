@@ -1,0 +1,30 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G03.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "磁碟為唯讀狀態",
+  "s2": "安裝程式無法寫入 /dev/nvme0n1，因為該磁碟目前為唯讀。請先解除磁碟的唯讀狀態（例如檢查硬體開關、清除唯讀旗標或重新掛載為可寫入），然後重新執行安裝程式。"
+ }
+}

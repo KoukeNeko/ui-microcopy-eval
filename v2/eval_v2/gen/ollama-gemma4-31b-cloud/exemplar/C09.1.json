@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "exemplar",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 1410,
+ "seconds": 1.1,
+ "raw": "```json\n{\"remark\":\"入睡時間比過去 7 天平均增加 33 分鐘\"}\n```",
+ "parsed": {
+  "remark": "入睡時間比過去 7 天平均增加 33 分鐘"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 19567,
+ "seconds": 3.2,
+ "raw": "{\"kcal\":510,\"remark\":\"醬料種類與用量未確認；飯約一碗、雞肉去皮\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "醬料種類與用量未確認；飯約一碗、雞肉去皮"
+ },
+ "error": ""
+}

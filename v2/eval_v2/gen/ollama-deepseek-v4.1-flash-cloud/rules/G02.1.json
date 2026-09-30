@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 736,
+ "seconds": 3.5,
+ "raw": "{\"s1\":\"配送延誤\",\"s2\":\"原定 10 月 3 日送達，因颱風延誤，預計 10 月 5 日送達\"}",
+ "parsed": {
+  "s1": "配送延誤",
+  "s2": "原定 10 月 3 日送達，因颱風延誤，預計 10 月 5 日送達"
+ },
+ "error": ""
+}

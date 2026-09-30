@@ -1,0 +1,10 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|C15.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "ingredients": "Grilled chicken thighs (2) ／ Lemon wedge ／ Steamed broccoli",
+  "note": ""
+ }
+}

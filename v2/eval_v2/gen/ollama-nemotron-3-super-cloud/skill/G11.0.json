@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 15926,
+ "seconds": 2.9,
+ "raw": "{\n  \"s1\": \"尚未儲存任何商品\",\n  \"s2\": \"前往瀏覽商品\"\n}",
+ "parsed": {
+  "s1": "尚未儲存任何商品",
+  "s2": "前往瀏覽商品"
+ },
+ "error": ""
+}

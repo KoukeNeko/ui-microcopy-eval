@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 321,
+ "seconds": null,
+ "raw": "{\"case_type\":\"換貨\",\"summary\":\"ZX-4 鍵盤空白鍵故障，已同意換貨。新品寄至原訂單地址（週五後送到），故障品 10 月 6 日前交超商。\",\"return_deadline\":\"10 月 6 日\"}\n",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "ZX-4 鍵盤空白鍵故障，已同意換貨。新品寄至原訂單地址（週五後送到），故障品 10 月 6 日前交超商。",
+  "return_deadline": "10 月 6 日"
+ },
+ "error": ""
+}

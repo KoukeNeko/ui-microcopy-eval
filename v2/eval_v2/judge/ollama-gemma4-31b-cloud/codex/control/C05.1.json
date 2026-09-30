@@ -1,0 +1,75 @@
+{
+ "record": "codex|control|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|control|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "省去逐筆輸入的麻煩",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "花費更清楚",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "輕鬆看懂錢都花在哪裡",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "帳戶連結好，交易自動記",
+  "b1": "連結銀行帳戶，自動匯入交易，省去逐筆輸入的麻煩。",
+  "t2": "支出自動分，花費更清楚",
+  "b2": "自動分類每筆支出，輕鬆看懂錢都花在哪裡。",
+  "t3": "預算先設定，每月有提醒",
+  "b3": "設定每月預算，透過提醒掌握支出進度。",
+  "cta": "開始使用"
+ }
+}

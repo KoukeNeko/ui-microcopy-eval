@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 15917,
+ "seconds": 4.0,
+ "raw": "```json\n{\"s1\":\"讀取回條\",\"s2\":\"群組聊天將一律顯示讀取回條\"}\n```",
+ "parsed": {
+  "s1": "讀取回條",
+  "s2": "群組聊天將一律顯示讀取回條"
+ },
+ "error": ""
+}

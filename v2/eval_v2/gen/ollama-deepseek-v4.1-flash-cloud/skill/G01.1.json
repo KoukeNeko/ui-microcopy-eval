@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "skill",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 15766,
+ "seconds": 4.0,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"扣款總額 12,515 元\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "扣款總額 12,515 元"
+ },
+ "error": ""
+}

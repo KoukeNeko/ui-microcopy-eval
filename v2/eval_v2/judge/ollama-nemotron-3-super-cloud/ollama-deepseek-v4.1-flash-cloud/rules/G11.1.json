@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|rules|G11.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "尚未儲存任何商品",
+  "s2": "前往商品目錄"
+ }
+}

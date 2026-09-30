@@ -1,0 +1,33 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2|G14.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2|G14.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "Version 8.4.1 has been installed successfully",
+     "A restart is required for the update to take effect"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "安裝完成",
+  "s2": "重新啟動"
+ }
+}

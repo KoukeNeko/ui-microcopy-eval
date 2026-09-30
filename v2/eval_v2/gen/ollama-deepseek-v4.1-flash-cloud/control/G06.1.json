@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 137,
+ "seconds": 3.1,
+ "raw": "{\"s1\":\"歡迎使用密碼管理器\",\"s2\":\"繼續設定\"}",
+ "parsed": {
+  "s1": "歡迎使用密碼管理器",
+  "s2": "繼續設定"
+ },
+ "error": ""
+}

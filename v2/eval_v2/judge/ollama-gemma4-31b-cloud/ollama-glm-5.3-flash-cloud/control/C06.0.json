@@ -1,0 +1,36 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C06.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C06.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，請輸入有效的電子郵件地址",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，請輸入手機號碼",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "電子郵件格式不正確，請輸入有效的電子郵件地址",
+  "s2": "密碼長度不足，至少需要 8 個字元",
+  "s3": "手機號碼為必填欄位，請輸入手機號碼"
+ }
+}

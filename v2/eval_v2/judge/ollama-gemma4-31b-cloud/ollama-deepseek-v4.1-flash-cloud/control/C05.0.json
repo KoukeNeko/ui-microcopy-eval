@@ -1,0 +1,75 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|C05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|C05.0",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "安全連結你的銀行，不用再手動記帳",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "一眼看清錢都花到哪裡",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "設定每月預算",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶自動匯入交易",
+  "b1": "安全連結你的銀行，交易自動匯入，不用再手動記帳。",
+  "t2": "自動分類支出",
+  "b2": "每筆消費自動歸類，一眼看清錢都花到哪裡。",
+  "t3": "每月預算提醒",
+  "b3": "設定每月預算，接近上限時即時提醒你。",
+  "cta": "開始使用"
+ }
+}

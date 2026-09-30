@@ -1,0 +1,21 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G07.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|G07.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期必須在 90 天內（今天為 2026-09-30，最早可接受 2026-07-02）。"
+ }
+}

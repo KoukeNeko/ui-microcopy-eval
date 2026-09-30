@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 459,
+ "seconds": 0.6,
+ "raw": "```json\n{\"ingredients\":[\"Chicken thighs\",\"Lemon\",\"Broccoli\"],\"note\":\"Grilled and steamed\"}\n```",
+ "parsed": {
+  "ingredients": [
+   "Chicken thighs",
+   "Lemon",
+   "Broccoli"
+  ],
+  "note": "Grilled and steamed"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 122,
+ "seconds": null,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"關閉後，新照片不記錄位置；既有照片的位置資料保留\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後，新照片不記錄位置；既有照片的位置資料保留"
+ },
+ "error": ""
+}

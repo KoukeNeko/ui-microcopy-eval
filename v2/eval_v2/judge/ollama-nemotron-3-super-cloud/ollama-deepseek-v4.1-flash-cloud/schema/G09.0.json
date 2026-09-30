@@ -1,0 +1,41 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 0,
+    "missing": [
+     "October 6"
+    ],
+    "surplus": 1,
+    "surplus_quote": "10 月 6 日前",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "ZX-4 空白鍵卡住，換貨，週五後收件",
+  "return_deadline": "10 月 6 日前"
+ }
+}

@@ -1,0 +1,39 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2|C08.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2|C08.0",
+  "items": {
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "會議指派兩項工作：追查發卡行拒絕原因、統一結帳頁載入樣式",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點為降低付款頁錯誤率，會議指派兩項工作：追查發卡行拒絕原因、統一結帳頁載入樣式，並定下週三同一時間再會。",
+  "action_items": "小陳：查發卡行拒絕原因，下週三前提出報告 ／ 小林：將結帳頁三個 loading 狀態改成一致樣式",
+  "note": "約 40 秒錄音聽不清楚"
+ }
+}

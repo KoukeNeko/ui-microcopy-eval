@@ -1,0 +1,37 @@
+{
+ "record": "codex|schema|C14.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|schema|C14.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "backup finished",
+     "2,314 files",
+     "1.2 GB"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "storage is 95% full",
+     "next step: upgrade or delete files"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

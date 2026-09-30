@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 18204,
+ "seconds": 1.7,
+ "raw": "```json\n{\"s1\":\"發票日期無效：日期必須在 90 天內。請重新選擇日期。\"}\n```",
+ "parsed": {
+  "s1": "發票日期無效：日期必須在 90 天內。請重新選擇日期。"
+ },
+ "error": ""
+}

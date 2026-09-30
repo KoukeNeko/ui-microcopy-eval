@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 19629,
+ "seconds": 2.5,
+ "raw": "{\"summary\":\"本週重點是把付款頁錯誤率壓下來，並由小陳、小林分頭處理發卡行拒絕原因與結帳頁 loading 樣式。\",\"action_items\":[\"小陳：查發卡行拒絕原因，下週三前提交報告\",\"小林：把結帳頁三個 loading 狀態改成一致樣式\"],\"note\":\"約 40 秒錄音聽不清楚\"}",
+ "parsed": {
+  "summary": "本週重點是把付款頁錯誤率壓下來，並由小陳、小林分頭處理發卡行拒絕原因與結帳頁 loading 樣式。",
+  "action_items": [
+   "小陳：查發卡行拒絕原因，下週三前提交報告",
+   "小林：把結帳頁三個 loading 狀態改成一致樣式"
+  ],
+  "note": "約 40 秒錄音聽不清楚"
+ },
+ "error": ""
+}

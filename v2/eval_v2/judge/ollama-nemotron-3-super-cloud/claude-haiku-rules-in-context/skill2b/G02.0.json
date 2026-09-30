@@ -1,0 +1,10 @@
+{
+ "record": "claude-haiku-rules-in-context|skill2b|G02.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "配送延誤",
+  "s2": "因颱風延後，預計 10 月 5 日送達"
+ }
+}

@@ -1,0 +1,34 @@
+{
+ "record": "codex|schema|G06.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|schema|G06.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The user is setting up a new vault"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The action continues vault setup"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

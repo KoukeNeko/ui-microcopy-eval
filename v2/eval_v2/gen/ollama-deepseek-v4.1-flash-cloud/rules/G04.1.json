@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 716,
+ "seconds": 9.3,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"關閉後，新拍攝的照片不寫入位置。既有照片的位置資料保留。\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後，新拍攝的照片不寫入位置。既有照片的位置資料保留。"
+ },
+ "error": ""
+}

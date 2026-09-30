@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 145,
+ "seconds": 3.2,
+ "raw": "{\"s1\":\"通知がオフになりました\",\"s2\":\"サーバーに接続できませんでした。後で再試行してください\"}",
+ "parsed": {
+  "s1": "通知がオフになりました",
+  "s2": "サーバーに接続できませんでした。後で再試行してください"
+ },
+ "error": ""
+}

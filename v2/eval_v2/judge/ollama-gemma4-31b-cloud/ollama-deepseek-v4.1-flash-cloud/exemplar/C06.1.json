@@ -1,0 +1,39 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C06.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C06.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請輸入完整的電子郵件地址，例如 name@example.com。",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請設定至少 8 個字元的密碼。",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請輸入手機號碼。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "電子郵件格式不正確。請輸入完整的電子郵件地址，例如 name@example.com。",
+  "s2": "密碼少於 8 個字元。請設定至少 8 個字元的密碼。",
+  "s3": "手機號碼是必填但空白。請輸入手機號碼。"
+ }
+}

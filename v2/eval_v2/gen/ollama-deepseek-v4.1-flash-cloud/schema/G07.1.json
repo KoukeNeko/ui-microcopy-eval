@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 169,
+ "seconds": 2.5,
+ "raw": "{\"s1\":\"發票日期需在90天內，2026/05/18已超過期限\"}",
+ "parsed": {
+  "s1": "發票日期需在90天內，2026/05/18已超過期限"
+ },
+ "error": ""
+}

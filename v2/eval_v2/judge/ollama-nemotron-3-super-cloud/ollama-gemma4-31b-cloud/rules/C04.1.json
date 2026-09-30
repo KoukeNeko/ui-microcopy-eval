@@ -1,0 +1,30 @@
+{
+ "record": "ollama-gemma4-31b-cloud|rules|C04.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|rules|C04.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "停車計時即將到期",
+  "s2": "信義停車場剩餘 10 分鐘，超時每小時 NT$60"
+ }
+}

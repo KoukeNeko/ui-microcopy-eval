@@ -1,0 +1,10 @@
+{
+ "record": "claude-sonnet-rules-in-context|control|C14.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Backup complete: 2,314 files, 1.2 GB",
+  "s2": "Cloud storage is 95% full. Upgrade or delete files to free up space."
+ }
+}

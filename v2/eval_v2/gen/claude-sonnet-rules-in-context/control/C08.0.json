@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 287,
+ "seconds": null,
+ "raw": "{\"summary\":\"本週重點為降低付款頁錯誤率，下週三同一時間再開會。\",\"action_items\":[\"小陳：查明發卡行拒絕原因，下週三前提交報告\",\"小林：統一結帳頁三個 loading 狀態的樣式\"],\"note\":\"約 40 秒聽不清楚，該段未納入\"}",
+ "parsed": {
+  "summary": "本週重點為降低付款頁錯誤率，下週三同一時間再開會。",
+  "action_items": [
+   "小陳：查明發卡行拒絕原因，下週三前提交報告",
+   "小林：統一結帳頁三個 loading 狀態的樣式"
+  ],
+  "note": "約 40 秒聽不清楚，該段未納入"
+ },
+ "error": ""
+}

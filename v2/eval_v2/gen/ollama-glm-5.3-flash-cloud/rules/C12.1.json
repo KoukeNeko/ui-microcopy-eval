@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 790,
+ "seconds": 9.6,
+ "raw": "The user wants Japanese UI text for an EC app:\n\ns1: Message shown on cart screen when cart is empty (there's already a \"商品を探す\" button at the bottom of the screen)\ns2: Title of confirmation dialog for deleting item from cart\ns3: Button to execute deletion\ns4: Button to cancel deletion\n\nRules:\n- No chatty phrasing\n- No questions as labels/titles\n- Keep it short\n- No unnecessary politeness/explanations\n- Don't repeat what the button already says\n- No periods at end of labels\n- Japanese EC conventions\n\ns1: Empty cart message. Since there's already a \"商品を探す\" button, the message shouldn't repeat \"商品を探しましょう\" etc. Something like 「カートには商品がありません」 or 「カートは空です」. Standard EC phrasing: 「カートに商品が入っていません」. But careful: don't explain obvious things... Actually an empty state message is expected. \"カートに商品がありません\" is standard. Avoid adding \"お探しの商品を見つけてください\" since button exists. Keep simple: 「カートに商品が入っていません」\n\nHmm, \"カートが空です\" vs 「カートに商品がありません」. Either fine. 「カートに商品が入っていません」is common in Japanese EC apps. Period must not end labels/buttons—but s1 is a message, not a label; still, no period needed to be safe. Without punctuation.\n\ns2: Dialog title: 「商品を削除しますか？」— but rule: no question sentences as button or title. So title should not be a question. Titles like 「商品の削除」 or 「削除の確認」. Common non-question title: 「商品を削除します」 sounds like statement. Better: 「商品の削除」. That's clean and standard.\n\ns3: Execute delete button: 「削除する」\n\ns4: Cancel: 「キャンセル」\n\nOutput JSON only: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\"}</think>{\"s1\":\"カートに商品が入っていません\",\"s2\":\"商品の削除\",\"s3\":\"削除する\",\"s4\":\"キャンセル\"}",
+ "parsed": {
+  "s1": "カートに商品が入っていません",
+  "s2": "商品の削除",
+  "s3": "削除する",
+  "s4": "キャンセル"
+ },
+ "error": ""
+}

@@ -1,0 +1,36 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|schema|C02.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|schema|C02.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "可能是額度不足",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "正在向銀行授權，請稍候…",
+  "s2": "信用卡交易被發卡行拒絕，可能是額度不足，請聯絡發卡行或改用其他付款方式。",
+  "s3": "訂單成立！編號 A2026093011"
+ }
+}

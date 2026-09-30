@@ -1,0 +1,49 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|exemplar|C16.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|exemplar|C16.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "export in progress",
+     "a percentage placeholder"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "export finished",
+     "saved to 筆記備份 folder in 檔案 app"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 0,
+    "missing": [
+     "export failed",
+     "cause: no write permission to 檔案",
+     "next step: enable it in system settings"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": "",
+  "s3": ""
+ }
+}

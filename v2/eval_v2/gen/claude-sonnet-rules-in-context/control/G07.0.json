@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 128,
+ "seconds": null,
+ "raw": "{\"s1\":\"發票日期須在 90 天內\"}",
+ "parsed": {
+  "s1": "發票日期須在 90 天內"
+ },
+ "error": ""
+}

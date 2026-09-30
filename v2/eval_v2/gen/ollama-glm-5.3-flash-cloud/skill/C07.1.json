@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "skill",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 15762,
+ "seconds": 29.7,
+ "raw": "The task: provide accessibility labels (for screen readers) in Traditional Chinese for three icon-only buttons in a toolbar:\n1. Cross/X icon (closes the current panel)\n2. Magnifying glass icon (opens search)\n3. Three dots icon (opens more options menu)\n\nThe output must be JSON only: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nNow let me think about what the microcopy skill says about labels for buttons. The role `button`: imperative verb phrase, no person, no question, no full stop. So for accessibility labels:\n\n1. Close current panel → 「關閉」\n2. Open search → 「搜尋」\n3. Open more options menu → 「更多選項」\n\nThese are accessibility labels (aria-label), which describe the action the control performs. Standard conventions:\n- 關閉\n- 搜尋\n- 更多選項\n\nShould I append \"按鈕\" or explain? No — screen readers handle the role announcement themselves (they announce \"button\" via the element's role, not the label). Labels should just name the action.\n\nThe descriptions given: \"叉叉圖示（關閉目前的面板）\" — the function is close current panel. Standard label: 「關閉」. Could be 「關閉面板」 but simple 「關閉」 is conventional and sufficient. Since there's only one close button visible on the panel, 「關閉」 is fine.\n\n\"放大鏡圖示（開啟搜尋）\" — 「搜尋」 is the conventional label. Material/AAPB uses 搜尋. Could be 「開啟搜尋」 but shorter conventional wording: 「搜尋」.\n\n\"三個點的圖示（開啟更多選項選單）\" — Material uses 「更多選項」 (More options). The skill says prefer the shortest conventional wording that preserves meaning. 「更多選項」 is standard.\n\nWait — should s3 be 「更多選項」 or 「更多」? Material Design in zh-TW uses 「更多選項」 for overflow menu. 「更多選項」 is good.\n\nLexicon check: 選單 (not 菜單) — but if I use 「更多選項」 I don't need 選單 at all. \n\nDeletion test: does 「面板」 add anything? The close button is on the panel itself; the visible context shows the panel. 「關閉」 suffices. If there might be ambiguity (e.g., the panel could be confused with something else), 「關閉面板」 could disambiguate, but per skill, prefer shortest conventional wording. Apple HIG for Chinese: 「關閉」.\n\nSo:\n{\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}\n\nJSON only, no other text. The user says \"只回傳 JSON\".{\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

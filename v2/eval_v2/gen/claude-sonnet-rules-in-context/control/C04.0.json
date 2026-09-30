@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 104,
+ "seconds": null,
+ "raw": "{\"s1\":\"停車 10 分鐘後到期\",\"s2\":\"信義停車場，超時每小時 NT$60。\"}",
+ "parsed": {
+  "s1": "停車 10 分鐘後到期",
+  "s2": "信義停車場，超時每小時 NT$60。"
+ },
+ "error": ""
+}

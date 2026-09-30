@@ -1,0 +1,47 @@
+{
+ "record": "codex|postfilter|G09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|postfilter|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 0,
+    "missing": [
+     "The customer chose replacement rather than refund"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "The ZX-4 keyboard spacebar is sticking",
+     "A replacement will be sent to the original order address",
+     "The customer does not want delivery before Friday"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 0,
+    "missing": [
+     "The defective item must be handed to the convenience store by October 6"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "",
+  "summary": "",
+  "return_deadline": ""
+ }
+}

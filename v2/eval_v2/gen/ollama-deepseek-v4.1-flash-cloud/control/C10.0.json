@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 447,
+ "seconds": 1.2,
+ "raw": "{\"s1\":\"Uninstall App\",\"s2\":\"Uninstall\",\"s3\":\"Keep App\",\"s4\":\"Removing files...\",\"s5\":\"Uninstall failed because the app is still running. Please close the app and try again.\"}",
+ "parsed": {
+  "s1": "Uninstall App",
+  "s2": "Uninstall",
+  "s3": "Keep App",
+  "s4": "Removing files...",
+  "s5": "Uninstall failed because the app is still running. Please close the app and try again."
+ },
+ "error": ""
+}

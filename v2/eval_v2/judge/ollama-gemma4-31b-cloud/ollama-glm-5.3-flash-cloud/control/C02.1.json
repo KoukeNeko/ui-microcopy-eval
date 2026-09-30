@@ -1,0 +1,39 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C02.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C02.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請勿關閉或重新整理此頁面。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "可能是卡片狀態異常、額度不足或銀行風控擋件所致。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "！, 確認通知已寄出，可至「訂單查詢」追蹤最新進度。",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "付款資料已送出，正在等待銀行授權，請勿關閉或重新整理此頁面。",
+  "s2": "刷卡授權失敗：發卡銀行拒絕了這筆交易，可能是卡片狀態異常、額度不足或銀行風控擋件所致。請確認卡片資訊後重試，或聯絡發卡銀行、改用其他付款方式。",
+  "s3": "訂單已成立！您的訂單編號為 A2026093011，確認通知已寄出，可至「訂單查詢」追蹤最新進度。"
+ }
+}

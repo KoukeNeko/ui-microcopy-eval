@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 424,
+ "seconds": 0.6,
+ "raw": "```json\n{\"s1\":\"ACME: $4,812.00 (-1.96%)\",\"s2\":\"Cash Balance: $1,050.33\",\"s3\":\"Est. Dividend: $30–$45\"}\n```",
+ "parsed": {
+  "s1": "ACME: $4,812.00 (-1.96%)",
+  "s2": "Cash Balance: $1,050.33",
+  "s3": "Est. Dividend: $30–$45"
+ },
+ "error": ""
+}

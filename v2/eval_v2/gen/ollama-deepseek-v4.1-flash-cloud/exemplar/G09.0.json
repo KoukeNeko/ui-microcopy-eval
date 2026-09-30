@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1562,
+ "seconds": 3.1,
+ "raw": "{\"case_type\":\"換貨\",\"summary\":\"客戶收到 ZX-4 鍵盤後空白鍵卡住，選擇換貨。新品寄到原訂單地址，故障品需在 10 月 6 日前交給超商。客戶週五之後才在家，希望新品不要在週五以前送到，客服已備註。\",\"return_deadline\":\"10 月 6 日\"}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "客戶收到 ZX-4 鍵盤後空白鍵卡住，選擇換貨。新品寄到原訂單地址，故障品需在 10 月 6 日前交給超商。客戶週五之後才在家，希望新品不要在週五以前送到，客服已備註。",
+  "return_deadline": "10 月 6 日"
+ },
+ "error": ""
+}

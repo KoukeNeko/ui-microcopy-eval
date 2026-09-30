@@ -1,0 +1,32 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|postfilter|G10.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|postfilter|G10.1",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 1,
+    "surplus_quote": "一碗白飯、120g烤雞胸肉（無皮）、半顆水煮蛋、少量青花菜",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "一碗白飯、120g烤雞胸肉（無皮）、半顆水煮蛋、少量青花菜，表面有醬汁但種類與用量不明，總熱量估算為510kcal。"
+ }
+}

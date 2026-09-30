@@ -1,0 +1,14 @@
+{
+ "probe": "G05",
+ "arm": "skill2b",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20668,
+ "seconds": null,
+ "raw": "{\"s1\":\"包裹已送達\",\"s2\":\"編號 TW482910，全家便利商店斗六民生店，取件期限 10 月 4 日 23:59。\"}",
+ "parsed": {
+  "s1": "包裹已送達",
+  "s2": "編號 TW482910，全家便利商店斗六民生店，取件期限 10 月 4 日 23:59。"
+ },
+ "error": ""
+}

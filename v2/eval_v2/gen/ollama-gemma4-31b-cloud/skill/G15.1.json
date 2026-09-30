@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 15779,
+ "seconds": 2.5,
+ "raw": "```json\n{\"s1\":\"13:30\",\"s2\":\"設計評論\"}\n```",
+ "parsed": {
+  "s1": "13:30",
+  "s2": "設計評論"
+ },
+ "error": ""
+}

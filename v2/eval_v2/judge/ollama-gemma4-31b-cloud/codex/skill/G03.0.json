@@ -1,0 +1,35 @@
+{
+ "record": "codex|skill|G03.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|skill|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The installation failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The target disk is read-only",
+     "The user must make the disk writable before retrying the installation"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

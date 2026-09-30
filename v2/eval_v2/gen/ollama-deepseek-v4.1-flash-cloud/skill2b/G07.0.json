@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18204,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"發票日期不能早於 2026-07-02：目前距離今天已 135 天，僅接受 90 天內。\"}",
+ "parsed": {
+  "s1": "發票日期不能早於 2026-07-02：目前距離今天已 135 天，僅接受 90 天內。"
+ },
+ "error": ""
+}

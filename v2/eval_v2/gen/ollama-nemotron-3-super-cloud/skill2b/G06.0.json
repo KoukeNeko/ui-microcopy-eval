@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18213,
+ "seconds": 2.1,
+ "raw": "{\"s1\":\"建立保管庫以產生復原金鑰\",\"s2\":\"繼續設定\"}",
+ "parsed": {
+  "s1": "建立保管庫以產生復原金鑰",
+  "s2": "繼續設定"
+ },
+ "error": ""
+}

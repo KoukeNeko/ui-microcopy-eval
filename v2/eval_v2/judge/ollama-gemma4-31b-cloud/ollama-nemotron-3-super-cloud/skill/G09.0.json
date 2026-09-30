@@ -1,0 +1,41 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|G09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 0,
+    "missing": [
+     "The customer chose replacement rather than refund"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "故障品需於10月6日前交給超商。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "retail",
+  "summary": "客戶於昨天收到 ZX-4 鍵盤，空白鍵卡住，申請換貨，新品將寄至原訂單地址，且希望避免週五前送達；故障品需於10月6日前交給超商。",
+  "return_deadline": "2023-10-06"
+ }
+}

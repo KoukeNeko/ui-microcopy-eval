@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18417,
+ "seconds": 2.5,
+ "raw": "{\"remark\":\"睡著時間比目標少 40 分鐘\"}",
+ "parsed": {
+  "remark": "睡著時間比目標少 40 分鐘"
+ },
+ "error": ""
+}

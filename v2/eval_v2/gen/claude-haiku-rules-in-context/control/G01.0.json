@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 135,
+ "seconds": null,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"實際扣款：新台幣 12,515 元\"}\n",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "實際扣款：新台幣 12,515 元"
+ },
+ "error": ""
+}

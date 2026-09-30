@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 18371,
+ "seconds": 3.7,
+ "raw": "```json\n{\"s1\":\"No saved items\",\"s2\":\"Shop products\"}\n```",
+ "parsed": {
+  "s1": "No saved items",
+  "s2": "Shop products"
+ },
+ "error": ""
+}

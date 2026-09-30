@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 104,
+ "seconds": 4.4,
+ "raw": "The user wants a push notification for a parking app in Traditional Chinese (Taiwan context - NT$, 信義停車場). The notification is about: user parked at 信義停車場, timer expires in 10 minutes, overtime costs NT$60 per hour.\n\nFormat: JSON only with s1 (title) and s2 (body).\n\nPush notification best practices: title short, body concise, urgent tone, mention the key facts - 10 minutes left, NT$60/hour overtime charge.\n\nLet me craft:\n\ns1: \"停車計時即將到期\" or \"計時剩 10 分鐘\" - urgent\ns2: \"您在信義停車場的停車時間將於 10 分鐘後到期，超時將加收每小時 NT$60，請留意時間或續停。\"\n\nKeep it concise. Push notifications should be short.\n\ns1: \"計時剩餘 10 分鐘\"\ns2: \"您的信義停車場停車計時即將到期，超時每小時加收 NT$60，請及時續停或移車。\"\n\nOnly return JSON.</think>{\"s1\":\"計時剩 10 分鐘\",\"s2\":\"您在信義停車場的停車計時即將到期，超時每小時加收 NT$60，請留意時間或提前續停。\"}",
+ "parsed": {
+  "s1": "計時剩 10 分鐘",
+  "s2": "您在信義停車場的停車計時即將到期，超時每小時加收 NT$60，請留意時間或提前續停。"
+ },
+ "error": ""
+}

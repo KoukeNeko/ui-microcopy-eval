@@ -1,0 +1,39 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|rules|G16.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|rules|G16.0",
+  "items": {
+   "owner": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "review_meeting": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "次の確認会は 10 月 5 日午前 11 時。",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日 11:00",
+  "note": "新しい料金ページは 10 月 8 日に公開。法務レビューが未完了。10 月 6 日までに承認が取れない場合は公開を延期。次の確認会は 10 月 5 日午前 11 時。"
+ }
+}

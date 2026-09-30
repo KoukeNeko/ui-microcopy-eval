@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G10.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "kcal": "510",
+  "remark": "估算约510 kcal：白饭一碗、烤鸡胸约120克（去皮）、半颗水煮蛋和少量青花菜；鸡胸表面酱汁种类和用量无法从照片判断，热量可能另有增减。"
+ }
+}

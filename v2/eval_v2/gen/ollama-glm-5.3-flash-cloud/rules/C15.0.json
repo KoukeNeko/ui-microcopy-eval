@@ -1,0 +1,11 @@
+{
+ "probe": "C15",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 970,
+ "seconds": 0.0,
+ "raw": "",
+ "parsed": null,
+ "error": "ollama api unreachable: <urlopen error [Errno 61] Connection refused>"
+}

@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C02.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C02.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請稍候",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "可能原因包括額度不足、卡片異常或交易限制。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "我們將盡快為您處理並發出通知。",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "付款已送出，正在等待銀行授權中，請稍候",
+  "s2": "信用卡被發卡行拒絕：可能原因包括額度不足、卡片異常或交易限制。請檢查卡片額度與有效期限，或改用其他付款方式（如第三方支付、銀行轉帳）重試，亦可聯絡發卡行確認卡片狀態。",
+  "s3": "訂單已成功成立！您的訂單編號為：A2026093011，我們將盡快為您處理並發出通知。"
+ }
+}

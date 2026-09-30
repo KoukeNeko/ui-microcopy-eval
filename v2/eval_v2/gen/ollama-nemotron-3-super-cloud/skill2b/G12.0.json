@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18467,
+ "seconds": 3.6,
+ "raw": "{\"s1\":\"Failed Bank Deposit\",\"s2\":\"The bank rejected the transfer because the checking account ending in 1842 has insufficient funds. Add funds to that account or choose another funding source.\"}",
+ "parsed": {
+  "s1": "Failed Bank Deposit",
+  "s2": "The bank rejected the transfer because the checking account ending in 1842 has insufficient funds. Add funds to that account or choose another funding source."
+ },
+ "error": ""
+}

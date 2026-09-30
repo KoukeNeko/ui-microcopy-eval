@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 286,
+ "seconds": null,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Group chats always send read receipts\"}",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Group chats always send read receipts"
+ },
+ "error": ""
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 778,
+ "seconds": 1.1,
+ "raw": "```json\n{\"s1\":\"用於搜尋附近停車場，不會儲存位置紀錄\",\"s2\":\"同意\",\"s3\":\"拒絕\"}\n```",
+ "parsed": {
+  "s1": "用於搜尋附近停車場，不會儲存位置紀錄",
+  "s2": "同意",
+  "s3": "拒絕"
+ },
+ "error": ""
+}

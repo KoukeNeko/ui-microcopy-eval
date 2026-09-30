@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 17209,
+ "seconds": 1.1,
+ "raw": "{\"s1\":\"發票日期不能早於 90 天前。請輸入 2026 年 7 月 2 日以後的日期。\"}",
+ "parsed": {
+  "s1": "發票日期不能早於 90 天前。請輸入 2026 年 7 月 2 日以後的日期。"
+ },
+ "error": ""
+}

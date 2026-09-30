@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18221,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"Installation complete\",\"s2\":\"Restart\"}",
+ "parsed": {
+  "s1": "Installation complete",
+  "s2": "Restart"
+ },
+ "error": ""
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 208,
+ "seconds": 5.3,
+ "raw": "The user wants accessibility labels in Traditional Chinese for three icon buttons:\n1. X icon (close current panel)\n2. Magnifying glass icon (open search)\n3. Three dots icon (open more options menu)\n\nNeed to return JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nConstraints: each string max 12 characters.\n\nTraditional Chinese labels:\n- s1: \"關閉面板\" (4 chars) - close panel. Could also be \"關閉\" but better to be descriptive: \"關閉目前面板\" (6 chars) or \"關閉面板\" (4 chars). Screen reader labels should be concise. \"關閉面板\" is good.\n- s2: \"開啟搜尋\" (4 chars) or just \"搜尋\" (2 chars). \"搜尋\" is common for accessibility labels.\n- s3: \"更多選項\" (4 chars) - more options.\n\nCharacter counts:\n- \"關閉面板\" = 4 characters ✓\n- \"搜尋\" = 2 characters, or \"開啟搜尋\" = 4 characters ✓\n- \"更多選項\" = 4 characters ✓\n\nAll well under 12 characters. Let me choose clear, standard labels:\n- s1: \"關閉面板\"\n- s2: \"搜尋\"\n- s3: \"更多選項\"\n\nThese match common practice (Android/Material: \"Close\", \"Search\", \"More options\" → 關閉, 搜尋, 更多選項).\n\nReturn only JSON.</think>{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

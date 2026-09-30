@@ -1,0 +1,32 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G10.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|G10.0",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "依照片估算；醬汁種類未知"
+ }
+}

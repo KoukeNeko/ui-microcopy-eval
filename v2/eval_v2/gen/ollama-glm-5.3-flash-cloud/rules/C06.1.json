@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 707,
+ "seconds": 7.0,
+ "raw": "The user wants me to return JSON with error messages for a registration form in Traditional Chinese:\n- s1: Email format incorrect\n- s2: Password less than 8 characters\n- s3: Phone number is required but empty\n\nRules to follow:\n- No chatty phrasing\n- No apologies, no exclamation marks\n- No unnecessary politeness\n- No mainland Chinese terms (當前、默認、設置、數據、視頻、用戶、緩存、軟件、網絡、信息)\n- No periods at end of labels\n- Keep it short\n- No 「你的」「您的」\n- Don't explain how things are calculated\n\nError message style in Traditional Chinese, concise:\n\ns1: \"電子郵件格式不正確\" — directly given in the prompt. That's fine.\ns2: \"密碼少於 8 個字元\" — given.\ns3: \"手機號碼是必填但空白\" — could be \"請填寫手機號碼\" or \"手機號碼為必填欄位\". The prompt says s3: phone number is required but empty. A common error message: \"請輸入手機號碼\" or \"手機號碼為必填\". Keep it short. \"手機號碼為必填欄位\" is fine. Or match the given: \"手機號碼是必填但空白\" sounds awkward as UI text. Better: \"請填寫手機號碼\" or \"手機號碼為必填欄位\".\n\nActually the user gave the three error descriptions; I should produce appropriate UI error strings. Let me choose:\n\ns1: \"電子郵件格式不正確\"\ns2: \"密碼至少需要 8 個字元\" or \"密碼少於 8 個字元\"\ns3: \"請填寫手機號碼\"\n\nAvoid periods at end. No exclamation. No mainland terms. Keep short.\n\nOnly return JSON. So output exactly:\n\n{\"s1\":\"電子郵件格式不正確\",\"s2\":\"密碼少於 8 個字元\",\"s3\":\"請填寫手機號碼\"}\n\nFor s3, \"請填寫手機號碼\" is concise and appropriate. Alternatively \"手機號碼為必填欄位\" — both fine. I'll use \"請填寫手機號碼\".\n\nOnly return JSON, no markdown code fences? The instruction says only return JSON. I'll return just the JSON object without code fences to be safe. Actually a code fence could be acceptable but \"只回傳 JSON\" suggests raw JSON. I'll output raw JSON.</think>{\"s1\":\"電子郵件格式不正確\",\"s2\":\"密碼少於 8 個字元\",\"s3\":\"請填寫手機號碼\"}",
+ "parsed": {
+  "s1": "電子郵件格式不正確",
+  "s2": "密碼少於 8 個字元",
+  "s3": "請填寫手機號碼"
+ },
+ "error": ""
+}

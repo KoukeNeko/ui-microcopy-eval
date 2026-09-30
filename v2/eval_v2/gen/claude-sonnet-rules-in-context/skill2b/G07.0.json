@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20677,
+ "seconds": null,
+ "raw": "{\"s1\":\"發票日期超過 90 天，不符公司報帳規定。請輸入 90 天內的日期。\"}",
+ "parsed": {
+  "s1": "發票日期超過 90 天，不符公司報帳規定。請輸入 90 天內的日期。"
+ },
+ "error": ""
+}

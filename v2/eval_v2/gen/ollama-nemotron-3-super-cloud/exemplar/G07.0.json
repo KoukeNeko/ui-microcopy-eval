@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1369,
+ "seconds": 2.5,
+ "raw": "{\"s1\":\"發票日期只能填寫最近 90 天內的日期，請重新選擇日期。\"}",
+ "parsed": {
+  "s1": "發票日期只能填寫最近 90 天內的日期，請重新選擇日期。"
+ },
+ "error": ""
+}

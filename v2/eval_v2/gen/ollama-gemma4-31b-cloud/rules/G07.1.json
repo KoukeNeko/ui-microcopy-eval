@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 722,
+ "seconds": 2.4,
+ "raw": "```json\n{\"s1\":\"發票日期需在 90 天內\"}\n```",
+ "parsed": {
+  "s1": "發票日期需在 90 天內"
+ },
+ "error": ""
+}

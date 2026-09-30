@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 104,
+ "seconds": 9.9,
+ "raw": "The user wants a push notification for a parking app. The user is parked at \"信義停車場\" (Xinyi Parking Lot), and their parking meter time expires in 10 minutes. Overtime costs NT$60 per hour.\n\nThey want:\n- s1: push notification title\n- s2: push notification body\n- Return only JSON: {\"s1\":\"...\",\"s2\":\"...\"}\n\nThe response should be in Traditional Chinese (since the context is Taiwan - NT$, 信義, and the prompt is in Traditional Chinese).\n\nLet me craft a good notification:\n\nTitle options:\n- 「停車計時提醒」\n- 「計時快到期囉」\n- 「停車時間提醒」\n- 「信義停車場計時快到」\n\nBody should include:\n- Parking location: 信義停車場\n- Time remaining: 10 minutes\n- Overtime cost: NT$60/hour\n- Call to action: extend time / add time\n\nGood options:\n\ns1: \"停車計時提醒 ⏰\"\ns2: \"您在信義停車場的計時時間還剩 10 分鐘到期，超時將以每小時 NT$60 計費。需要延長時間嗎？\"\n\nOr:\n\ns1: \"計時剩 10 分鐘！\"\ns2: \"信義停車場的停車計時將於 10 分鐘後到期，超時每小時加收 NT$60，記得及時續停或前往移車。\"\n\nLet me think about length. Push notifications should be concise. iOS title ~ short, body ~ 2 lines.\n\ns1: \"停車計時將到期 ⏰\"\ns2: \"您在「信義停車場」的計時還剩 10 分鐘，超時將以每小時 NT$60 計費，請把握時間續停或移車。\"\n\nThat's good. Maybe offer action to extend. Keep it clean.\n\nFormat: Only JSON, no extra text. The user explicitly says 只回傳 JSON.\n\nFinal:\n{\"s1\":\"停車計時將到期 ⏰\",\"s2\":\"您在「信義停車場」的計時還剩 10 分鐘到期，超時將以每小時 NT$60 計費，請把握時間續停或前往移車。\"}\n\nShould I add emoji in title? It's common in push notifications. I'll keep one emoji at most, or none. Let me keep it simple with one emoji since it's common practice for parking apps to make notifications stand out.\n\nActually, let me reconsider — some might prefer no emoji. A gentle one is fine. I'll include it.\n\nLength check for body: ~55 characters, fine for push notification (truncated at ~120+ chars on iOS anyway).{\"s1\":\"停車計時將到期 ⏰\",\"s2\":\"您在「信義停車場」的計時還剩 10 分鐘到期，超時將以每小時 NT$60 計費，請把握時間續停或前往移車。\"}",
+ "parsed": {
+  "s1": "停車計時將到期 ⏰",
+  "s2": "您在「信義停車場」的計時還剩 10 分鐘到期，超時將以每小時 NT$60 計費，請把握時間續停或前往移車。"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18218,
+ "seconds": 2.1,
+ "raw": "{\"s1\":\"已延誤\",\"s2\":\"颱風影響，預計 10 月 5 日送達\"}",
+ "parsed": {
+  "s1": "已延誤",
+  "s2": "颱風影響，預計 10 月 5 日送達"
+ },
+ "error": ""
+}

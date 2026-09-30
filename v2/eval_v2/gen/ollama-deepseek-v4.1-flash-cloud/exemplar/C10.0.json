@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1688,
+ "seconds": 1.1,
+ "raw": "{\"s1\":\"Uninstall app?\",\"s2\":\"Uninstall\",\"s3\":\"Keep\",\"s4\":\"Removing files…\",\"s5\":\"Can't uninstall: the app is still running. Quit the app, then try again.\"}",
+ "parsed": {
+  "s1": "Uninstall app?",
+  "s2": "Uninstall",
+  "s3": "Keep",
+  "s4": "Removing files…",
+  "s5": "Can't uninstall: the app is still running. Quit the app, then try again."
+ },
+ "error": ""
+}

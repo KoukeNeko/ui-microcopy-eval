@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "skill",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 17091,
+ "seconds": null,
+ "raw": "{\"case_type\":\"換貨\",\"summary\":\"ZX-4 鍵盤空白鍵卡住，換貨。新品寄至原訂單地址，週五以前不送達；故障品須在 10 月 6 日前交給超商。\",\"return_deadline\":\"10 月 6 日\"}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "ZX-4 鍵盤空白鍵卡住，換貨。新品寄至原訂單地址，週五以前不送達；故障品須在 10 月 6 日前交給超商。",
+  "return_deadline": "10 月 6 日"
+ },
+ "error": ""
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15978,
+ "seconds": 1.6,
+ "raw": "{\"s1\":\"120 shares of ACME, current value $4,812.00, down $96.20 (−1.96%) today\",\"s2\":\"cash balance $1,050.33\",\"s3\":\"estimated dividend $38 next month (range $30–$45)\"}",
+ "parsed": {
+  "s1": "120 shares of ACME, current value $4,812.00, down $96.20 (−1.96%) today",
+  "s2": "cash balance $1,050.33",
+  "s3": "estimated dividend $38 next month (range $30–$45)"
+ },
+ "error": ""
+}

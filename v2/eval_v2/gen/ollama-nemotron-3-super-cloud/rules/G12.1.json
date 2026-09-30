@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 985,
+ "seconds": 5.2,
+ "raw": "{\n  \"s1\": \"Bank Transfer Failed\",\n  \"s2\": \"The transfer from your checking account ending in 1842 was declined due to insufficient funds. To proceed, add funds to this account or select a different funding source.\"\n}",
+ "parsed": {
+  "s1": "Bank Transfer Failed",
+  "s2": "The transfer from your checking account ending in 1842 was declined due to insufficient funds. To proceed, add funds to this account or select a different funding source."
+ },
+ "error": ""
+}

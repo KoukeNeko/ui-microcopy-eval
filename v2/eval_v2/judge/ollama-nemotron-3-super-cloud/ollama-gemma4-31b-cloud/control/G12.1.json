@@ -1,0 +1,10 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|G12.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Deposit Failed",
+  "s2": "Your transfer of $2,000 from the account ending in 1842 was rejected due to insufficient funds. Please add money to that account or select a different funding source to try again."
+ }
+}

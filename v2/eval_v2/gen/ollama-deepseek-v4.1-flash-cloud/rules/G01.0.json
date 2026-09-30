@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 729,
+ "seconds": 0.7,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"帳戶扣除總額 新台幣 12,515 元\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "帳戶扣除總額 新台幣 12,515 元"
+ },
+ "error": ""
+}

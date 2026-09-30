@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 157,
+ "seconds": 9.1,
+ "raw": "The user wants a confirmation dialog for a Taiwanese online banking app in Traditional Chinese (Taiwan usage). The user is transferring NT$12,500 to \"王小明\" and once sent, it cannot be canceled. They want:\n- s1: dialog title\n- s2: confirm button\n- s3: cancel/abandon button\n- s4: description text\n\nReturn only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\"}\n\nTaiwanese Traditional Chinese conventions for banking apps:\n- 轉帳\n- NT$12,500\n- 王小明\n- Cannot be canceled after sending: 送出後無法取消 or 轉出後無法取消/撤銷\n\nTitle: something like 「確認轉帳」or 「轉帳確認」\n\nConfirm button: 「確認轉出」or 「確認轉帳」\n\nCancel button: 「取消」or 「放棄交易」— the field is 放棄按鈕, so maybe 「取消」 or 「返回修改」. In Taiwan apps, common: 「取消」. But since it's a dialog, \"取消\" is standard.\n\nDescription: Include recipient name, amount, and warning that it cannot be canceled after sending. E.g., 「您將轉帳 NT$12,500 給王小明。轉帳一旦送出即無法取消，請確認收款人資訊正確無誤。」\n\nUse standard Taiwan phrasing. Also full-width punctuation.\n\nJSON output only.\n\ns1: \"確認轉帳\"\ns2: \"確認轉出\"\ns3: \"取消\"\ns4: \"您即將轉出 NT$12,500 至收款人「王小明」，款項送出後無法取消或退回，請再次確認收款人資訊是否正確。\"\n\nKeep it concise. JSON only.</think>{\"s1\":\"確認轉帳\",\"s2\":\"確認轉出\",\"s3\":\"取消\",\"s4\":\"您即將轉出 NT$12,500 給收款人「王小明」。款項送出後即無法取消或退回，請再次確認收款人資訊正確無誤。\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "確認轉出",
+  "s3": "取消",
+  "s4": "您即將轉出 NT$12,500 給收款人「王小明」。款項送出後即無法取消或退回，請再次確認收款人資訊正確無誤。"
+ },
+ "error": ""
+}

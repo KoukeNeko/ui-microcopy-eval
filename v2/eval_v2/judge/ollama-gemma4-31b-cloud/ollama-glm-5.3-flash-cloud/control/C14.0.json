@@ -1,0 +1,30 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C14.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C14.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "Backup complete! ... are safely stored in the cloud.",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "Backup complete! 2,314 files (1.2 GB) are safely stored in the cloud.",
+  "s2": "Your cloud storage is 95% full. Upgrade your plan or delete files to free up space."
+ }
+}

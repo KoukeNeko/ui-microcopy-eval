@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 169,
+ "seconds": 1.0,
+ "raw": "{\"remark\":\"入睡花48分鐘、醒來3次，睡眠比較淺；今晚睡了6小時20分，比目標少40分鐘，明天早點上床補回來。\"}",
+ "parsed": {
+  "remark": "入睡花48分鐘、醒來3次，睡眠比較淺；今晚睡了6小時20分，比目標少40分鐘，明天早點上床補回來。"
+ },
+ "error": ""
+}

@@ -1,0 +1,10 @@
+{
+ "record": "claude-haiku-rules-in-context|postfilter|C15.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "ingredients": "2 chicken thighs ／ Salt and pepper ／ Oil for cooking ／ 1 lemon ／ Broccoli florets",
+  "note": "Grill chicken, steam broccoli, serve with lemon."
+ }
+}

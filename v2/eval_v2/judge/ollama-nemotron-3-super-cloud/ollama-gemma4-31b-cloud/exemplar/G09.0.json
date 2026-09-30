@@ -1,0 +1,41 @@
+{
+ "record": "ollama-gemma4-31b-cloud|exemplar|G09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|exemplar|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 0,
+    "missing": [
+     "The defective item must be handed to the convenience store by October 6"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "ZX-4 鍵盤空白鍵卡住申請換貨，新品請於週五後送達。",
+  "return_deadline": "2023-10-06"
+ }
+}

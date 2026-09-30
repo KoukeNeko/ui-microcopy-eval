@@ -1,0 +1,41 @@
+{
+ "record": "claude-haiku-rules-in-context|skill2b|C16.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-haiku-rules-in-context|skill2b|C16.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "saved to 筆記備份 folder in 檔案 app"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "匯出中 42%",
+  "s2": "匯出完成：已存至「筆記備份」",
+  "s3": "無法匯出：缺少「檔案」app 的寫入權限。請在系統設定開啟。"
+ }
+}

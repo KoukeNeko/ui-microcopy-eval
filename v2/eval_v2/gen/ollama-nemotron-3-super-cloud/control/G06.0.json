@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 137,
+ "seconds": 6.8,
+ "raw": "{\n  \"s1\": \"建立您的保管庫\",\n  \"s2\": \"開始設定\"\n}",
+ "parsed": {
+  "s1": "建立您的保管庫",
+  "s2": "開始設定"
+ },
+ "error": ""
+}

@@ -1,0 +1,21 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|C09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill2b|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "過去 7 天入睡平均 15 分鐘"
+ }
+}

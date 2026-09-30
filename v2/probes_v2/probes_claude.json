@@ -1,0 +1,148 @@
+[
+  {
+    "id": "C01", "author": "claude", "scenario": "finance", "lang": "zh-TW", "kind": "strings",
+    "task": "你在寫一個台灣的網路銀行 app（繁體中文）。使用者要把 NT$12,500 轉給「王小明」，轉帳送出後無法取消。請寫轉帳前的確認對話框：\ns1：對話框標題\ns2：確認按鈕\ns3：放棄按鈕\ns4：說明文字\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "dialog-title", "must_convey": ["this is a transfer confirmation"]},
+      {"key": "s2", "role": "button", "must_convey": ["pressing it sends the transfer"]},
+      {"key": "s3", "role": "button", "must_convey": ["pressing it abandons the transfer"]},
+      {"key": "s4", "role": "dialog-body", "must_convey": ["amount NT$12,500", "recipient 王小明", "cannot be cancelled after sending"]}
+    ]
+  },
+  {
+    "id": "C02", "author": "claude", "scenario": "ecommerce", "lang": "zh-TW", "kind": "strings",
+    "task": "一個台灣的電商 app（繁體中文）結帳頁需要三段文字：\ns1：付款送出後、等待銀行回應時顯示的狀態文字\ns2：信用卡被發卡行拒絕時的錯誤訊息（要說出原因，並告訴使用者可以做什麼）\ns3：訂單成立後的狀態文字，訂單編號是 A2026093011\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "status", "must_convey": ["payment is in progress"]},
+      {"key": "s2", "role": "error", "must_convey": ["the card was declined by the issuer", "a next step (another card or contact the bank)"]},
+      {"key": "s3", "role": "status", "must_convey": ["order is placed", "order number A2026093011"]}
+    ]
+  },
+  {
+    "id": "C03", "author": "claude", "scenario": "settings", "lang": "zh-TW", "kind": "strings",
+    "task": "一個台灣的停車 app（繁體中文）第一次要求「使用期間」的位置權限。系統對話框由 iOS 顯示，但 app 要自己提供一段用途說明（會出現在系統對話框裡），以及在那之前自己畫面上的兩顆按鈕。\ns1：用途說明（位置只用來找附近停車場，不會儲存）\ns2：同意的按鈕\ns3：不同意的按鈕\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "dialog-body", "must_convey": ["location is used to find nearby parking", "location is not stored"]},
+      {"key": "s2", "role": "button", "must_convey": ["grants permission"]},
+      {"key": "s3", "role": "button", "must_convey": ["declines permission"]}
+    ]
+  },
+  {
+    "id": "C04", "author": "claude", "scenario": "notifications", "lang": "zh-TW", "kind": "strings",
+    "task": "同一個停車 app 要送一則推播：使用者停在「信義停車場」的計時還有 10 分鐘到期，超時每小時 NT$60。\ns1：推播標題\ns2：推播內文\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "title", "must_convey": ["parking is about to expire"]},
+      {"key": "s2", "role": "dialog-body", "must_convey": ["10 minutes left", "信義停車場", "overtime rate NT$60/hour"]}
+    ]
+  },
+  {
+    "id": "C05", "author": "claude", "scenario": "onboarding", "lang": "zh-TW", "kind": "strings",
+    "task": "一個記帳 app（繁體中文）第一次開啟時有三頁導覽，每頁一個標題與一句副標。第一頁：連結銀行帳戶自動匯入交易；第二頁：自動分類支出；第三頁：每月預算提醒。最後一頁有一顆開始使用的按鈕。\n只回傳 JSON：{\"t1\":\"...\",\"b1\":\"...\",\"t2\":\"...\",\"b2\":\"...\",\"t3\":\"...\",\"b3\":\"...\",\"cta\":\"...\"}",
+    "items": [
+      {"key": "t1", "role": "title", "must_convey": ["bank accounts link and import transactions"]},
+      {"key": "b1", "role": "dialog-body", "must_convey": ["transactions are imported automatically"]},
+      {"key": "t2", "role": "title", "must_convey": ["spending is categorised automatically"]},
+      {"key": "b2", "role": "dialog-body", "must_convey": ["categorisation is automatic"]},
+      {"key": "t3", "role": "title", "must_convey": ["monthly budget reminders"]},
+      {"key": "b3", "role": "dialog-body", "must_convey": ["a reminder about the monthly budget"]},
+      {"key": "cta", "role": "button", "must_convey": ["starts using the app"]}
+    ]
+  },
+  {
+    "id": "C06", "author": "claude", "scenario": "forms", "lang": "zh-TW", "kind": "strings",
+    "task": "一個註冊表單（繁體中文）有三種欄位錯誤要顯示在欄位下方：\ns1：電子郵件格式不正確\ns2：密碼少於 8 個字元\ns3：手機號碼是必填但空白\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "error", "must_convey": ["email format is invalid"]},
+      {"key": "s2", "role": "error", "must_convey": ["password needs at least 8 characters"]},
+      {"key": "s3", "role": "error", "must_convey": ["phone number is required"]}
+    ]
+  },
+  {
+    "id": "C07", "author": "claude", "scenario": "a11y", "lang": "zh-TW", "kind": "strings",
+    "task": "一個 app 的工具列有三顆只有圖示的按鈕，需要給螢幕閱讀器唸的無障礙標籤（繁體中文）：叉叉圖示（關閉目前的面板）、放大鏡圖示（開啟搜尋）、三個點的圖示（開啟更多選項選單）。\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "label", "must_convey": ["closes the panel"]},
+      {"key": "s2", "role": "label", "must_convey": ["opens search"]},
+      {"key": "s3", "role": "label", "must_convey": ["opens more options"]}
+    ]
+  },
+  {
+    "id": "C08", "author": "claude", "scenario": "ai-summary", "lang": "zh-TW", "kind": "runtime",
+    "task": "你是一個會議紀錄 app 內的模型。app 會把你回傳的 JSON 直接顯示在畫面上：summary 顯示在頂部，action_items 顯示成清單，note 顯示在清單下方的小字（沒有就不顯示）。\n\n逐字稿（繁體中文）：\n「主持人：這週的重點是把付款頁的錯誤率壓下來。小陳你負責查發卡行拒絕的原因，下週三前給我報告。小林，你把結帳頁的三個 loading 狀態改成一致的樣式。（雜音，約 40 秒聽不清楚）……好，那就這樣，下週三同一時間。」\n\n只回傳 JSON：{\"summary\":\"...\",\"action_items\":[\"...\"],\"note\":\"...\"}",
+    "items": [
+      {"key": "summary", "role": "dialog-body", "must_convey": ["goal: reduce payment page error rate", "next meeting Wednesday"]},
+      {"key": "action_items", "role": "label", "must_convey": ["小陳: investigate issuer declines, report by next Wednesday", "小林: unify the three loading states on checkout"]},
+      {"key": "note", "role": "note", "must_convey": ["about 40 seconds of the recording were inaudible"]}
+    ]
+  },
+  {
+    "id": "C09", "author": "claude", "scenario": "health", "lang": "zh-TW", "kind": "runtime",
+    "task": "你是一個睡眠紀錄 app 內的模型。app 會把你回傳的 remark 直接顯示在今晚睡眠數字的下方（一行）。\n\n今晚資料：在床 7 小時 50 分，睡著 6 小時 20 分，入睡花了 48 分鐘，清醒 3 次；使用者設定的目標是睡著 7 小時。過去 7 天入睡時間平均 15 分鐘。\n\n只回傳 JSON：{\"remark\":\"...\"}",
+    "items": [
+      {"key": "remark", "role": "note", "must_convey": ["sleep fell short of the 7-hour target by about 40 minutes OR sleep onset (48 min) was far above the 7-day average (15 min)"]}
+    ]
+  },
+  {
+    "id": "C10", "author": "claude", "scenario": "installer", "lang": "en", "kind": "strings",
+    "task": "You are writing the strings for a desktop app's uninstaller (English). Provide:\ns1: the title of the dialog that asks whether to uninstall\ns2: the button that performs the uninstall\ns3: the button that keeps the app\ns4: the status line shown while files are being removed\ns5: the error shown when uninstall fails because the app is still running (tell the user what to do)\nReturn only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\",\"s5\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "dialog-title", "must_convey": ["uninstalling the app is the decision"]},
+      {"key": "s2", "role": "button", "must_convey": ["performs the uninstall"]},
+      {"key": "s3", "role": "button", "must_convey": ["keeps the app"]},
+      {"key": "s4", "role": "status", "must_convey": ["files are being removed"]},
+      {"key": "s5", "role": "error", "must_convey": ["uninstall failed because the app is running", "next step: quit the app and retry"]}
+    ]
+  },
+  {
+    "id": "C11", "author": "claude", "scenario": "finance", "lang": "en", "kind": "strings",
+    "task": "An investing app (English) shows a holdings list. Each row has a value string. Write the three value strings:\ns1: 120 shares of ACME, current value $4,812.00, down $96.20 (−1.96%) today\ns2: cash balance $1,050.33\ns3: an estimated dividend of $38 next month (the estimate has a range of $30–$45)\nReturn only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "value", "must_convey": ["120 shares", "$4,812.00", "down $96.20 / 1.96%"]},
+      {"key": "s2", "role": "value", "must_convey": ["$1,050.33 cash"]},
+      {"key": "s3", "role": "value", "must_convey": ["$38 estimated", "range $30–$45"]}
+    ]
+  },
+  {
+    "id": "C12", "author": "claude", "scenario": "ecommerce", "lang": "ja", "kind": "strings",
+    "task": "日本向けのECアプリ（日本語）です。次の文言を書いてください。\ns1：カートが空のときにカート画面に表示する文言（画面下部に「商品を探す」ボタンが既にあります）\ns2：カート内の商品を削除する確認ダイアログのタイトル\ns3：削除を実行するボタン\ns4：削除をやめるボタン\nJSONのみを返してください：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "empty", "must_convey": ["the cart is empty"]},
+      {"key": "s2", "role": "dialog-title", "must_convey": ["removing the item is the decision"]},
+      {"key": "s3", "role": "button", "must_convey": ["removes the item"]},
+      {"key": "s4", "role": "button", "must_convey": ["keeps the item"]}
+    ]
+  },
+  {
+    "id": "C13", "author": "claude", "scenario": "settings", "lang": "ja", "kind": "strings",
+    "task": "設定アプリ（日本語）です。\ns1：ユーザーが通知をオフにした直後に表示する状態の文言\ns2：設定をサーバーに保存できなかったときのエラー文言（原因：サーバーに接続できない。ユーザーができること：後でもう一度試す）\nJSONのみを返してください：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "status", "must_convey": ["notifications are now off"]},
+      {"key": "s2", "role": "error", "must_convey": ["settings could not be saved", "cause: no connection to the server", "next step: try again later"]}
+    ]
+  },
+  {
+    "id": "C14", "author": "claude", "scenario": "notifications", "lang": "en", "kind": "strings",
+    "task": "A cloud backup app (English) shows in-app banners. Write:\ns1: the banner when a backup has finished (2,314 files, 1.2 GB)\ns2: the banner when cloud storage is 95% full (the user can upgrade or delete files)\nReturn only JSON: {\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "status", "must_convey": ["backup finished", "2,314 files", "1.2 GB"]},
+      {"key": "s2", "role": "error", "must_convey": ["storage is 95% full", "next step: upgrade or delete files"]}
+    ]
+  },
+  {
+    "id": "C15", "author": "claude", "scenario": "ai-summary", "lang": "en", "kind": "runtime",
+    "task": "You are the model inside a recipe app. The app renders your JSON: ingredients as a list, and note as a small line under the list (hidden when empty).\n\nPhoto description: a clean white plate with two grilled chicken thighs, a lemon wedge, and a small pile of steamed broccoli. No sauce visible. Nothing else on the plate.\n\nReturn only JSON: {\"ingredients\":[\"...\"],\"note\":\"...\"}",
+    "items": [
+      {"key": "ingredients", "role": "label", "must_convey": ["chicken thighs", "lemon", "broccoli"]},
+      {"key": "note", "role": "note", "must_convey": []}
+    ]
+  },
+  {
+    "id": "C16", "author": "claude", "scenario": "settings", "lang": "zh-TW", "kind": "strings",
+    "task": "一個筆記 app（繁體中文）的「匯出全部資料」功能需要：\ns1：匯出進行中的狀態文字（會顯示百分比，例如 42%）\ns2：匯出完成的狀態文字（檔案已存到「檔案」app 的「筆記備份」資料夾）\ns3：匯出失敗的錯誤訊息（原因：沒有寫入「檔案」app 的權限；使用者可以到系統設定開啟）\n只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {"key": "s1", "role": "status", "must_convey": ["export in progress", "a percentage placeholder"]},
+      {"key": "s2", "role": "status", "must_convey": ["export finished", "saved to 筆記備份 folder in 檔案 app"]},
+      {"key": "s3", "role": "error", "must_convey": ["export failed", "cause: no write permission to 檔案", "next step: enable it in system settings"]}
+    ]
+  }
+]

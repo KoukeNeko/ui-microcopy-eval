@@ -1,0 +1,21 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C09.1",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "且夜醒 3 次，建議維持固定睡前放鬆流程。",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "今晚睡著 6 小時 20 分，離目標少 40 分；入睡花了 48 分，明顯高於近 7 天平均 15 分，且夜醒 3 次，建議維持固定睡前放鬆流程。"
+ }
+}

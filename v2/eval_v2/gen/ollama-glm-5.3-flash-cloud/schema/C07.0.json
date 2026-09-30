@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 208,
+ "seconds": 6.2,
+ "raw": "The user wants accessibility labels in Traditional Chinese for icon-only buttons:\n1. X icon (closes current panel) - max 12 characters\n2. Magnifying glass icon (opens search) - max 12 characters\n3. Three dots icon (opens more options menu) - max 12 characters\n\nStandard a11y labels:\n1. \"關閉\" or \"關閉面板\" - short and clear\n2. \"搜尋\" or \"開啟搜尋\"\n3. \"更多選項\" \n\nLet me count characters:\n- s1: \"關閉面板\" = 4 characters ✓\n- s2: \"開啟搜尋\" = 4 characters ✓\n- s3: \"更多選項\" = 4 characters ✓\n\nAll under 12 characters. These are good, concise labels that screen readers would announce clearly. Common practice is to be concise: \"關閉\", \"搜尋\", \"更多選項\". But adding context helps. Since the button closes the current panel, \"關閉面板\" is good. Search button opens search: \"開啟搜尋\" or just \"搜尋\". Three dots: \"更多選項\".\n\nI should be concise and clear. Screen reader labels typically best when short verb phrases. Let me use:\n- s1: \"關閉面板\"\n- s2: \"開啟搜尋\"\n- s3: \"更多選項\"\n\nEach is 4 characters, within limit. Only return JSON.</think>{\"s1\":\"關閉面板\",\"s2\":\"開啟搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "開啟搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

@@ -1,0 +1,21 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "建議睡前減少螢光，保持規律作息；...明天可嘗試提前上床放鬆。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "入睡花了 48 分鐘，遠高於過去 7 天平均 15 分鐘，建議睡前減少螢光，保持規律作息；今晚實際睡著 6 小時 20 分，未達目標 7 小時，明天可嘗試提前上床放鬆。"
+ }
+}

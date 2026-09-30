@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18213,
+ "seconds": 2.2,
+ "raw": "{\"s1\":\"建立保管庫\",\"s2\":\"繼續設定\"}",
+ "parsed": {
+  "s1": "建立保管庫",
+  "s2": "繼續設定"
+ },
+ "error": ""
+}

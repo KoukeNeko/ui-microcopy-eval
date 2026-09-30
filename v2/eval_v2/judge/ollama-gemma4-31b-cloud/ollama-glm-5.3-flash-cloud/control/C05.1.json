@@ -1,0 +1,68 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，記帳不再需要手動輸入",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，金錢流向一目瞭然",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，輕鬆守住每月開銷",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結您的銀行帳戶",
+  "b1": "自動匯入交易明細，記帳不再需要手動輸入",
+  "t2": "支出自動分類",
+  "b2": "智慧辨識每筆消費，金錢流向一目瞭然",
+  "t3": "每月預算提醒",
+  "b3": "接近預算上限即時通知，輕鬆守住每月開銷",
+  "cta": "開始使用"
+ }
+}

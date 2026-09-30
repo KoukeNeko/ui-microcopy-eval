@@ -1,0 +1,39 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|schema|C03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|schema|C03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "只會在使用期間取用，不會被儲存或分享",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "您的位置資訊僅用於搜尋附近的停車場，只會在使用期間取用，不會被儲存或分享。",
+  "s2": "同意並開啟",
+  "s3": "不同意"
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 22100,
+ "seconds": null,
+ "raw": "{\"remark\":\"入睡花費時間較長，睡眠時間未達目標。\"}",
+ "parsed": {
+  "remark": "入睡花費時間較長，睡眠時間未達目標。"
+ },
+ "error": ""
+}

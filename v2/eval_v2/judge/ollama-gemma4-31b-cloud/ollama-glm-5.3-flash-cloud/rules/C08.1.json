@@ -1,0 +1,39 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|rules|C08.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|rules|C08.1",
+  "items": {
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "該段內容未列入",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本次重點為降低付款頁錯誤率,並指派發卡行拒絕原因調查與結帳頁 loading 狀態統一,下次會議在下週三同一時間",
+  "action_items": "小陳:調查發卡行拒絕原因,下週三前提交報告 ／ 小林:將結帳頁三個 loading 狀態改為一致樣式",
+  "note": "中段 40 秒雜音無法辨識,該段內容未列入"
+ }
+}

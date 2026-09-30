@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 915,
+ "seconds": 5.6,
+ "raw": "{\n  \"case_type\": \"換貨\",\n  \"summary\": \"客戶欲將 ZX-4 鍵盤空白鍵卡住之故障品換貨，故障品須於 10 月 6 日前交超商，新品將寄至原訂單地址，並註記不於週五以前送達。\",\n  \"return_deadline\": \"2024-10-06\"\n}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "客戶欲將 ZX-4 鍵盤空白鍵卡住之故障品換貨，故障品須於 10 月 6 日前交超商，新品將寄至原訂單地址，並註記不於週五以前送達。",
+  "return_deadline": "2024-10-06"
+ },
+ "error": ""
+}

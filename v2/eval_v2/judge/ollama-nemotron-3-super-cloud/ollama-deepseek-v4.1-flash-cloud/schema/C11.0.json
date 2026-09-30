@@ -1,0 +1,11 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|C11.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "ACME $4,812.00 -1.96%",
+  "s2": "Cash $1,050.33",
+  "s3": "Est. div. $30–$45"
+ }
+}

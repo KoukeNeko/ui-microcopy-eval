@@ -1,0 +1,75 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|rules|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|rules|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "免除手動輸入",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "讓預算分析更清晰",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶自動匯入交易",
+  "b1": "讓交易記錄自動同步，免除手動輸入",
+  "t2": "自動分類支出",
+  "b2": "智慧辨識消費類別，讓預算分析更清晰",
+  "t3": "每月預算提醒",
+  "b3": "設定目標後，系統會在接近上限時通知您",
+  "cta": "開始使用"
+ }
+}

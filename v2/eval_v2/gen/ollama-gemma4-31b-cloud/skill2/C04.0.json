@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "skill2",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 17185,
+ "seconds": 2.8,
+ "raw": "```json\n{\"s1\":\"停車計時提醒\",\"s2\":\"信義停車場計時剩 10 分鐘到期，超時每小時 NT$60。\"}\n```",
+ "parsed": {
+  "s1": "停車計時提醒",
+  "s2": "信義停車場計時剩 10 分鐘到期，超時每小時 NT$60。"
+ },
+ "error": ""
+}

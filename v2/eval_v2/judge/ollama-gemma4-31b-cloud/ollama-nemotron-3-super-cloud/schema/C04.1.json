@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|C04.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|C04.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請及時處理以避免額外費用。",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "信義停車場即將到期",
+  "s2": "您的車輛在信義停車場計時還剩 10 分鐘到期，超時後每小時收費 NT$60，請及時處理以避免額外費用。"
+ }
+}

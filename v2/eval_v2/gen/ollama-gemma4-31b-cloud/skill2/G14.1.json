@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill2",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 17226,
+ "seconds": 1.5,
+ "raw": "```json\n{\"s1\":\"バージョン 8.4.1 のインストールが完了しました。\",\"s2\":\"再起動\"}\n```",
+ "parsed": {
+  "s1": "バージョン 8.4.1 のインストールが完了しました。",
+  "s2": "再起動"
+ },
+ "error": ""
+}

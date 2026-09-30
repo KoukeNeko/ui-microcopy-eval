@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C16.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C16.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "隱私與安全性 > 檔案與資料夾",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "匯出進行中... 42%",
+  "s2": "匯出完成：檔案已存至「檔案」app 的「筆記備份」資料夾",
+  "s3": "匯出失敗：沒有寫入「檔案」app 的權限，請至系統設定 > 隱私與安全性 > 檔案與資料夾，開啟此應用程式的寫入權限"
+ }
+}

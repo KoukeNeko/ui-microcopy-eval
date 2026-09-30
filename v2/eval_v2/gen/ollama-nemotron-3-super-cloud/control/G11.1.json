@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 295,
+ "seconds": 3.5,
+ "raw": "{\n  \"s1\": \"Your saved items are empty. Start saving products you love by tapping the heart icon on any product page.\",\n  \"s2\": \"Browse Products\"\n}",
+ "parsed": {
+  "s1": "Your saved items are empty. Start saving products you love by tapping the heart icon on any product page.",
+  "s2": "Browse Products"
+ },
+ "error": ""
+}

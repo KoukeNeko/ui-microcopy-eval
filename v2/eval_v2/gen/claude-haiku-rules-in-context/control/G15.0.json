@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 148,
+ "seconds": null,
+ "raw": "{\"s1\":\"デザインレビュー\",\"s2\":\"10月2日 13:30\"}\n",
+ "parsed": {
+  "s1": "デザインレビュー",
+  "s2": "10月2日 13:30"
+ },
+ "error": ""
+}

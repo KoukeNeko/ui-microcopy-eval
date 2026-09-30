@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 290,
+ "seconds": 3.8,
+ "raw": "{\"kcal\":\"510\",\"remark\":\"一碗飯 + 烤雞胸肉 + 半顆蛋 + 青花菜\"}",
+ "parsed": {
+  "kcal": "510",
+  "remark": "一碗飯 + 烤雞胸肉 + 半顆蛋 + 青花菜"
+ },
+ "error": ""
+}

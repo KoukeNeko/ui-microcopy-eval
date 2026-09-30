@@ -1,0 +1,39 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "我們只會在您使用 App 期間取得您的位置",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "我們只會在您使用 App 期間取得您的位置，用於搜尋附近的停車場，不會儲存您的位置資訊。",
+  "s2": "同意",
+  "s3": "不同意"
+ }
+}

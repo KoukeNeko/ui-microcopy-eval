@@ -1,0 +1,19 @@
+{
+ "probe": "C05",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 181,
+ "seconds": 4.4,
+ "raw": "The user wants me to return JSON only, with onboarding copy for a Traditional Chinese expense tracking app. Three pages:\n1. Link bank accounts to auto-import transactions\n2. Auto-categorize expenses\n3. Monthly budget reminders\nLast page has a CTA button \"開始使用\" (Get started).\n\nThey specified the JSON keys: t1, b1, t2, b2, t3, b3, cta.\n\nI should write concise, friendly Traditional Chinese copy. Each page: title (t) and subtitle (b). CTA: \"開始使用\" or slightly more engaging like \"開始記帳吧\" — but they said the button is \"開始使用\". I can use \"開始使用\" or a variation. Let me write clean copy.\n\nt1: \"連結你的銀行帳戶\" / b1: \"自動匯入每筆交易，記帳從此不用手動輸入\"\nt2: \"支出自動分類\" / b2: \"AI 為每筆消動歸類，消費狀況一目了然\"\nt3: \"每月預算提醒\" / b3: \"設定預算，快超支時即時提醒你\"\ncta: \"開始使用\"\n\nOnly JSON, no other text. Make sure Traditional Chinese characters. Avoid simplified. \"動\" etc. Check: \"消費\" fine. \"一目了然\" fine.\n\nReturn just JSON.</think>{\"t1\":\"連結銀行帳戶\",\"b1\":\"自動匯入每筆交易，記帳不必手動輸入\",\"t2\":\"支出自動分類\",\"b2\":\"每筆消費聰明歸類，花費流向一目了然\",\"t3\":\"每月預算提醒\",\"b3\":\"設定預算目標，快超支時即時通知你\",\"cta\":\"開始使用\"}",
+ "parsed": {
+  "t1": "連結銀行帳戶",
+  "b1": "自動匯入每筆交易，記帳不必手動輸入",
+  "t2": "支出自動分類",
+  "b2": "每筆消費聰明歸類，花費流向一目了然",
+  "t3": "每月預算提醒",
+  "b3": "設定預算目標，快超支時即時通知你",
+  "cta": "開始使用"
+ },
+ "error": ""
+}

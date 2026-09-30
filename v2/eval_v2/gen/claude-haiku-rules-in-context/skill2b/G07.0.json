@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20741,
+ "seconds": null,
+ "raw": "{\"s1\":\"發票日期必須在過去 90 天內。\"}",
+ "parsed": {
+  "s1": "發票日期必須在過去 90 天內。"
+ },
+ "error": ""
+}

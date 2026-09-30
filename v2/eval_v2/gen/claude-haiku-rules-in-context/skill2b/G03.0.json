@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20754,
+ "seconds": null,
+ "raw": "{\"s1\":\"無法安裝\",\"s2\":\"磁碟 /dev/nvme0n1 是唯讀狀態。請解除唯讀狀態後重試。\"}",
+ "parsed": {
+  "s1": "無法安裝",
+  "s2": "磁碟 /dev/nvme0n1 是唯讀狀態。請解除唯讀狀態後重試。"
+ },
+ "error": ""
+}

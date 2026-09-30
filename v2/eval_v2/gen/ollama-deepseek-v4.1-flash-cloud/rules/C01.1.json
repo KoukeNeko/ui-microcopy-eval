@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 751,
+ "seconds": 1.1,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"確認轉帳\",\"s3\":\"取消\",\"s4\":\"轉帳送出後無法取消\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "確認轉帳",
+  "s3": "取消",
+  "s4": "轉帳送出後無法取消"
+ },
+ "error": ""
+}

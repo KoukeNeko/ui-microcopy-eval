@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 22218,
+ "seconds": null,
+ "raw": "{\"summary\":\"降低付款頁錯誤率\",\"action_items\":[\"調查信用卡發卡行拒絕原因，下週三前報告\",\"統一結帳頁面三個 loading 狀態的樣式\"],\"note\":\"會議中約 40 秒音訊不清晰\"}",
+ "parsed": {
+  "summary": "降低付款頁錯誤率",
+  "action_items": [
+   "調查信用卡發卡行拒絕原因，下週三前報告",
+   "統一結帳頁面三個 loading 狀態的樣式"
+  ],
+  "note": "會議中約 40 秒音訊不清晰"
+ },
+ "error": ""
+}

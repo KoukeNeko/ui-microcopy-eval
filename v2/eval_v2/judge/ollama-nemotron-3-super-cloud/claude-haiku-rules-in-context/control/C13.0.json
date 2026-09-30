@@ -1,0 +1,10 @@
+{
+ "record": "claude-haiku-rules-in-context|control|C13.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "通知をオフにしました",
+  "s2": "設定の保存に失敗しました。サーバーに接続できません。後でもう一度お試しください。"
+ }
+}

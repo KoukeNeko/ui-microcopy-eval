@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 131,
+ "seconds": 3.7,
+ "raw": "{\n  \"s1\": \"關閉目前的面板\",\n  \"s2\": \"開啟搜尋\",\n  \"s3\": \"開啟更多選項選單\"\n}",
+ "parsed": {
+  "s1": "關閉目前的面板",
+  "s2": "開啟搜尋",
+  "s3": "開啟更多選項選單"
+ },
+ "error": ""
+}

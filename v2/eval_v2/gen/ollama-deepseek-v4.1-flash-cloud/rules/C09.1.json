@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 763,
+ "seconds": 1.8,
+ "raw": "{\"remark\":\"睡眠 6 小時 20 分，較目標少 40 分；入睡 48 分鐘，近 7 天平均 15 分鐘；夜間清醒 3 次。\"}",
+ "parsed": {
+  "remark": "睡眠 6 小時 20 分，較目標少 40 分；入睡 48 分鐘，近 7 天平均 15 分鐘；夜間清醒 3 次。"
+ },
+ "error": ""
+}

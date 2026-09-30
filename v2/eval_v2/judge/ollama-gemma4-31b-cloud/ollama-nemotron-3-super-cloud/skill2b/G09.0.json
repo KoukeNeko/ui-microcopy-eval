@@ -1,0 +1,41 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill2b|G09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill2b|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "The ZX-4 keyboard spacebar is sticking"
+    ],
+    "surplus": 1,
+    "surplus_quote": "客戶需於 10/6 前將故障鍵盤寄至超商",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "客戶需於 10/6 前將故障鍵盤寄至超商，新品將寄至原訂單地址，且要求避免週五以前送達",
+  "return_deadline": "2024-10-06"
+ }
+}

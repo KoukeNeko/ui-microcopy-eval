@@ -1,0 +1,21 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2|C09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "比平常久",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "入睡花 48 分鐘（近 7 天平均 15 分鐘），比平常久；睡著 6 小時 20 分，比目標少 40 分鐘。"
+ }
+}

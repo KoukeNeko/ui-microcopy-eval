@@ -1,0 +1,41 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|C02.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|control|C02.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "payment is in progress"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "付款失敗，",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "付款成功！",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "訂單處理中，請稍候...",
+  "s2": "付款失敗，信用卡被發卡銀行拒絕。請檢查卡號、有效期或餘額是否正確，或嘗試使用其他支付方式。",
+  "s3": "付款成功！您的訂單已成立，訂單編號為 A2026093011。"
+ }
+}

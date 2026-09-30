@@ -1,0 +1,11 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|C02.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "付款處理中，請稍候，請勿關閉頁面或重複提交。",
+  "s2": "信用卡付款失敗，可能是餘額不足或輸入資訊有誤。請檢查卡片狀態或嘗試更換其他付款方式。",
+  "s3": "付款成功！您的訂單已成立，訂單編號為 A2026093011。"
+ }
+}

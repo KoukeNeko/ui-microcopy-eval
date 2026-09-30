@@ -1,0 +1,9 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|postfilter|C09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "remark": "入睡花48分鐘、醒來3次，睡眠比較淺；今晚睡了6小時20分，比目標少40分鐘，明天早點上床補回來。"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 347,
+ "seconds": 5.9,
+ "raw": "The user wants me to write three value strings for a holdings list in an investing app. They want JSON output only. Let me construct natural, professional app-style strings.\n\ns1: 120 shares of ACME, current value $4,812.00, down $96.20 (−1.96%) today\n- Something like: \"120 shares of ACME · $4,812.00 · −$96.20 (−1.96%) today\"\n- Or a sentence: \"You own 120 shares of ACME, currently worth $4,812.00, down $96.20 (−1.96%) today.\"\n\ns2: cash balance $1,050.33\n- \"Cash balance: $1,050.33\"\n\ns3: an estimated dividend of $38 next month (the estimate has a range of $30–$45)\n- \"Estimated dividend of ~$38 (range $30–$45) next month\"\n- Or \"Est. dividend next month: $38 (range: $30–$45)\"\n\nThey asked to return only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}. So I should output only the JSON object, nothing else.\n\nLet me pick concise, clean strings typical of investing apps:\n\ns1: \"120 shares of ACME — $4,812.00, down $96.20 (−1.96%) today\"\ns2: \"Cash balance: $1,050.33\"\ns3: \"Est. dividend next month: ~$38 (range: $30–$45)\"\n\nNote the minus sign: the prompt uses \"−\" (U+2212). I'll keep consistent with that character or use \"−\". I'll use the unicode minus as given. Also the en dash in range $30–$45.\n\nJSON must be valid — escape nothing needed; dashes fine. The − character is fine in JSON.\n\nOutput only JSON, no code fences? They said \"Return only JSON\". I'll just output raw JSON.</think>{\"s1\":\"120 shares of ACME — $4,812.00, down $96.20 (−1.96%) today\",\"s2\":\"Cash balance: $1,050.33\",\"s3\":\"Est. dividend next month: ~$38 (range: $30–$45)\"}",
+ "parsed": {
+  "s1": "120 shares of ACME — $4,812.00, down $96.20 (−1.96%) today",
+  "s2": "Cash balance: $1,050.33",
+  "s3": "Est. dividend next month: ~$38 (range: $30–$45)"
+ },
+ "error": ""
+}

@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 970,
+ "seconds": 0.5,
+ "raw": "{\"ingredients\":[\"grilled chicken thighs\",\"lemon wedge\",\"steamed broccoli\"],\"note\":\"\"}",
+ "parsed": {
+  "ingredients": [
+   "grilled chicken thighs",
+   "lemon wedge",
+   "steamed broccoli"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

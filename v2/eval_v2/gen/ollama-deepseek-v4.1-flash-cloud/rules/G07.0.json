@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 722,
+ "seconds": 1.3,
+ "raw": "{\"s1\":\"發票日期須為 2026 年 9 月 30 日前 90 天內\"}",
+ "parsed": {
+  "s1": "發票日期須為 2026 年 9 月 30 日前 90 天內"
+ },
+ "error": ""
+}

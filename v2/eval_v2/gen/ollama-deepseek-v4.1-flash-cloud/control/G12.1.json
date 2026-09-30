@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 391,
+ "seconds": 1.1,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"Your $2,000 deposit from the checking account ending in 1842 was rejected because the account has insufficient funds. Add funds to that account or choose another funding source, then try again.\"}",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Your $2,000 deposit from the checking account ending in 1842 was rejected because the account has insufficient funds. Add funds to that account or choose another funding source, then try again."
+ },
+ "error": ""
+}

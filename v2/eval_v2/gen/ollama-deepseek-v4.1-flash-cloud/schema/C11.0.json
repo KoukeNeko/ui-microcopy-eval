@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 424,
+ "seconds": 0.5,
+ "raw": "{\"s1\":\"ACME $4,812.00 -1.96%\",\"s2\":\"Cash $1,050.33\",\"s3\":\"Est. div. $30–$45\"}",
+ "parsed": {
+  "s1": "ACME $4,812.00 -1.96%",
+  "s2": "Cash $1,050.33",
+  "s3": "Est. div. $30–$45"
+ },
+ "error": ""
+}

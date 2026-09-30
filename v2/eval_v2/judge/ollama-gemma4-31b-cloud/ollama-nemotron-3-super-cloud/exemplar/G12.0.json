@@ -1,0 +1,35 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|exemplar|G12.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|exemplar|G12.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The deposit failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The attempted deposit was USD 2,000",
+     "The bank account ends in 1842"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "銀行帳戶餘額不足",
+  "s2": "此筆存款因帳戶餘額不足而被銀行拒絕。請先在該帳戶中加入足夠資金，或選擇其他資金來源後重試。"
+ }
+}

@@ -1,0 +1,21 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|rules|C09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|rules|C09.1",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，入睡時間較過去 7 天平均多 33 分鐘",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "睡眠時間較目標少 40 分鐘，入睡時間較過去 7 天平均多 33 分鐘"
+ }
+}

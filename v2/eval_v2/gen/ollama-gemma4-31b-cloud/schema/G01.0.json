@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 193,
+ "seconds": 3.4,
+ "raw": "```json\n{\"s1\":\"確認轉帳\",\"s2\":\"總扣款金額：NT$ 12,515\"}\n```",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "總扣款金額：NT$ 12,515"
+ },
+ "error": ""
+}

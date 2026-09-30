@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18211,
+ "seconds": 3.3,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"扣款總額 NT$12,515（含手續費 NT$15）\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "扣款總額 NT$12,515（含手續費 NT$15）"
+ },
+ "error": ""
+}

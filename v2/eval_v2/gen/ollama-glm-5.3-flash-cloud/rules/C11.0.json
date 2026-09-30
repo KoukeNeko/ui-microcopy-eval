@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 941,
+ "seconds": 9.7,
+ "raw": "We need answer only JSON. Need produce value strings for holdings app in English,遵守 rules. Need include s1: 120 shares of ACME, current value $4,812.00, down $96.20 (−1.96%) today. s2 cash balance $1,050.33. s3 estimated dividend of $38 next month (estimate range $30–$45). Need no chatty, no explanations, no approximate words on estimates. no \"your\", \"our\". Need concise. Maybe strings:\ns1 \"120 ACME · $4,812.00 · −$96.20 (−1.96%)\"\ns2 \"Cash: $1,050.33\"\ns3 \"Next month dividend: $38 · Range $30–$45\" It is estimated, shouldn't \"estimated dividend of $38 next month\" maybe include estimate? It says s3 an estimated dividend. UI rule: don't add approx since number is estimate. But can label \"Estimated dividend\" perhaps acceptable as field label? The prompt says \"an estimated dividend\"; likely label is \"Estimated dividend\" and next month, range. Value string. \"Next month estimated dividend $38, range $30–$45\" But \"estimated\" is not approx, it's classification. However maybe \"estimated\" in UI could be state. Hmm.\n\nNeed ensure minus sign unicode? They provided −. Use en dash? Good. Need \"today\" maybe optional? s1 asked today down. Include \"Today −$96.20 (−1.96%)\". But label? \"120 ACME shares · $4,812.00 · Today −$96.20 (−1.96%)\". It doesn't need say current value label? \"120 shares ACME · $4,812.00 · Today −$96.20 (−1.96%)\". Maybe no punctuation at labels? Value strings can include.\n\nCould s2 \"Cash balance $1,050.33\" no period.\n\ns3 \"Estimated dividend $38 · Next month · Range $30–$45\" No \"about\". Is \"estimated\" with range fine? Hmm. Could omit estimated because range indicates estimate and user says value is estimated. But prompt says value string for \"an estimated dividend of $38 next month (the estimate has a range...)\" Need maybe \"Dividend next month $38 · Range $30–$45\". Since don't explain how value was produced, but \"estimated\" is okay?</think>{\"s1\":\"120 ACME shares · $4,812.00 · Today −$96.20 (−1.96%)\",\"s2\":\"Cash balance $1,050.33\",\"s3\":\"Dividend next month $38 · Range $30–$45\"}",
+ "parsed": {
+  "s1": "120 ACME shares · $4,812.00 · Today −$96.20 (−1.96%)",
+  "s2": "Cash balance $1,050.33",
+  "s3": "Dividend next month $38 · Range $30–$45"
+ },
+ "error": ""
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 920,
+ "seconds": 4.1,
+ "raw": "{\"owner\":\"佐藤\",\"review_meeting\":\"2023-10-05T11:00\",\"note\":\"料金ページ担当は佐藤\"}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "2023-10-05T11:00",
+  "note": "料金ページ担当は佐藤"
+ },
+ "error": ""
+}

@@ -1,0 +1,47 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|G09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|G09.1",
+  "items": {
+   "case_type": {
+    "facts_present": 0,
+    "missing": [
+     "The customer chose replacement rather than refund"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "The ZX-4 keyboard spacebar is sticking",
+     "A replacement will be sent to the original order address",
+     "The customer does not want delivery before Friday"
+    ],
+    "surplus": 1,
+    "surplus_quote": "請於10月6日前退回故障品",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 0,
+    "missing": [
+     "The defective item must be handed to the convenience store by October 6"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "退換貨處理",
+  "summary": "客戶申請換貨，請於10月6日前退回故障品",
+  "return_deadline": "10月6日"
+ }
+}

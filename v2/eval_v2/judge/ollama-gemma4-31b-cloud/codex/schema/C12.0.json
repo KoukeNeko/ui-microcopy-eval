@@ -1,0 +1,56 @@
+{
+ "record": "codex|schema|C12.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|schema|C12.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "the cart is empty"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "removing the item is the decision"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 0,
+    "missing": [
+     "removes the item"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s4": {
+    "facts_present": 0,
+    "missing": [
+     "keeps the item"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": "",
+  "s3": "",
+  "s4": ""
+ }
+}

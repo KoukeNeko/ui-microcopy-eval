@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C02.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C02.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，請稍候...",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "原因可能為餘額不足、卡片已過期或被凍結。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "！",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "正在處理付款，請稍候...",
+  "s2": "信用卡被發卡行拒絕，原因可能為餘額不足、卡片已過期或被凍結。請檢查卡片資訊或使用其他付款方式重試。",
+  "s3": "訂單已成立！訂單編號：A2026093011"
+ }
+}

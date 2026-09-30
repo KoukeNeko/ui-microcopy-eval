@@ -1,0 +1,11 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G16.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "owner": "佐藤",
+  "review_meeting": "10月5日午前11時",
+  "note": "料金ページ担当は佐藤"
+ }
+}

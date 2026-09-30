@@ -1,0 +1,11 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|C16.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "匯出中…42%",
+  "s2": "已存到「筆記備份」資料夾",
+  "s3": "沒有寫入「檔案」app 的權限，請到系統設定開啟"
+ }
+}

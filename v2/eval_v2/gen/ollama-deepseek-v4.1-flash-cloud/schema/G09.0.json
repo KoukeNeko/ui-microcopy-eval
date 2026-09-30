@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 423,
+ "seconds": 1.9,
+ "raw": "{\"case_type\":\"換貨\",\"summary\":\"ZX-4 空白鍵卡住，換貨，週五後收件\",\"return_deadline\":\"10 月 6 日前\"}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "ZX-4 空白鍵卡住，換貨，週五後收件",
+  "return_deadline": "10 月 6 日前"
+ },
+ "error": ""
+}

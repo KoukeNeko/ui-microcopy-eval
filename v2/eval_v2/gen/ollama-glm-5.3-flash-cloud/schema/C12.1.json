@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 289,
+ "seconds": 14.4,
+ "raw": "The user wants Japanese EC (e-commerce) app copy strings for:\n- s1: Empty cart message (with \"商品を探す\" button already at the bottom) - max 24 characters\n- s2: Confirmation dialog title for deleting item from cart - max 16 characters\n- s3: Button to execute deletion - max 8 characters\n- s4: Button to cancel - max 8 characters\n\nCharacter counting in Japanese: \"字元\" means characters. In Japanese UI, typically 1 character = 1 full-width character. Max counts:\n- s1: up to 24 characters\n- s2: up to 16 characters\n- s3: up to 8 characters\n- s4: up to 8 characters\n\ns1: Empty cart message. Should be friendly. Something like:\n「カートに商品がありません」- count: カ(1)ー(2)ト(3)に(4)商(5)品(6)が(7)あ(8)り(9)ま(10)せ(11)ん(12) = 12 characters. Good, under 24.\n\nMaybe add guidance: 「カートに商品がありません。お好みの商品を追加しましょう」- but button \"商品を探す\" already exists, so text should not duplicate that action too much. Something like:\n「カートは空です。気になる商品を追加してみましょう」- count: カ1 ー2 ト3 は4 空5 で6 す7 。8 気9 に10 な11 る12 商13 品14 を15 追16 加17 し18 て19 み20 ま21 し22 ょ23 う24 = 24 with punctuation. Hmm, punctuation counts? If counting full-width chars including 。, that's 24. Risky. Let me be safer.\n\n「カートに商品が入っていません」= カ1 ー2 ト3 に4 商5 品6 が7 入8 っ9 て10 い11 ま12 せ13 ん14 = 14 characters. \n\nOr with encouragement: 「カートに商品がありません。好きな商品を追加しましょう」= 12 + 1 (。) + 好きな商品を追加しましょう (好1 き2 な3 商4 品5 を6 追7 加8 し9 ま10 し11 ょ12 う13) = 12+1+13 = 26 - too long.\n\n「カートに商品がありません。お気に入りを追加しましょう」= 12 + 1 + お1 気2 に3 入4 り5 を6 追7 加8 し9 ま10 し11 ょ12 う13 = 26. Too long.\n\nKeep it simple: 「カートに商品がありません」(12 chars). Safe. Could also do 「カートの中身がありません」. I'll go with the standard.\n\ns2: Confirmation dialog title for deleting. Max 16 characters.\n「商品を削除しますか？」= 商1 品2 を3 削4 除5 し6 ま7 す8 か9 ？10 = 10 characters. Good.\nOr「カートから削除しますか？」= カ1 ー2 ト3 か4 ら5 削6 除7 し8 ま9 す10 か11 ？12 = 12. Also good. I'll use this since it's specific to cart.\n\ns3: Delete execution button, max 8 chars.\n「削除する」= 4 chars. Good. Common in dialogs.\n\ns4: Cancel button, max 8 chars.\n「キャンセル」= キ1 ャ2 ン3 セ4 ル5 = 5 chars. Good. Or「やめる」or「戻る」. For dialogs, 「キャンセル」 is standard, contrasting with 「削除する」.\n\nCheck consistency: s3 「削除する」 and s4 「キャンセル」— both fine.\n\nAlternatively s4 could be 「閉じる」or「やめる」. The user said \"削除をやめるボタン\" (button to abandon/quit deletion). 「やめる」 is literally. But standard UX is キャンセル. I'll go with キャンセル.\n\nReturn JSON only: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\"}\n\nDouble-check character counts (full-width):\n- s1: 「カートに商品がありません」: カ(1) ー(2) ト(3) に(4) 商(5) 品(6) が(7) あ(8) り(9) ま(10) せ(11) ん(12) → 12 ≤ 24 ✓\n- s2: 「カートから削除しますか？」: カ1 ー2 ト3 か4 ら5 削6 除7 し8 ま9 す10 か11 ？12 → 12 ≤ 16 ✓ (？ is full-width, counts as 1)\n- s3: 「削除する」: 4 ≤ 8 ✓\n- s4: 「キャンセル」: 5 ≤ 8 ✓\n\nReturn JSON only, no markdown fences? The instruction says \"JSONのみを返してください\" - return only JSON. I should output raw JSON without code fences, likely fine either way but safest is just the JSON text. Many such prompts expect no fences. I'll output plain JSON.</think>{\"s1\":\"カートに商品がありません\",\"s2\":\"カートから削除しますか？\",\"s3\":\"削除する\",\"s4\":\"キャンセル\"}",
+ "parsed": {
+  "s1": "カートに商品がありません",
+  "s2": "カートから削除しますか？",
+  "s3": "削除する",
+  "s4": "キャンセル"
+ },
+ "error": ""
+}

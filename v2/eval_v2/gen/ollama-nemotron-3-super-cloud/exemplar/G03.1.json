@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1382,
+ "seconds": 4.5,
+ "raw": "{\n  \"s1\": \"安裝失敗\",\n  \"s2\": \"目標磁碟 /dev/nvme0n1 為唯讀狀態，無法寫入。請先解除唯讀保護，再重新執行安裝。\"\n}",
+ "parsed": {
+  "s1": "安裝失敗",
+  "s2": "目標磁碟 /dev/nvme0n1 為唯讀狀態，無法寫入。請先解除唯讀保護，再重新執行安裝。"
+ },
+ "error": ""
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 15759,
+ "seconds": 2.0,
+ "raw": "{\"s1\":\"請填寫今天或過去 90 天內的發票日期\"}",
+ "parsed": {
+  "s1": "請填寫今天或過去 90 天內的發票日期"
+ },
+ "error": ""
+}

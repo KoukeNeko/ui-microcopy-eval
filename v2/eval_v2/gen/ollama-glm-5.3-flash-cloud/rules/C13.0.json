@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 739,
+ "seconds": 8.0,
+ "raw": "The user wants Japanese UI text for a settings app:\n- s1: text shown right after user turned off notifications (a state message)\n- s2: error message when settings couldn't be saved to server (cause: can't connect to server; user can: try again later)\n\nRules:\n- No chatty phrasing, no apologies or reassurance, no exclamation marks\n- No questions as labels\n- Don't use mainland Chinese terms (this is Japanese, but the Japanese equivalents should be natural Japanese; the rule about Chinese terms applies to Chinese output—but for Japanese, write natural Japanese)\n- Don't add periods at end of labels; this is a status/message, so no 句点 maybe. Keep short.\n- No \"申し訳ございません\" etc., no 安心させる言葉\n- No \"もう一度お試しください\" with apology? \"後でもう一度試す\" is what the user can do—so the error should suggest retrying later. But avoid reassurance. Something like \"サーバーに接続できないため保存できませんでした。後でもう一度お試しください\" — but that says \"お試しください\" which is fine, not chatty. But maybe they want a button \"再試行\"? The user asks for 文言, one string for s2. It should mention can retry later.\n\nAlso avoid \"可能\" hedging? No.\n\ns1: \"通知をオフにしました\" — a state message. Short, no period. That's fine.\n\ns2: \"サーバーに接続できないため保存できませんでした。しばらくしてからもう一度お試しください\" — but \"しばらくしてから\" implies later. Could be \"後でもう一度お試しください\". Avoid apology \"申し訳ありません\" — not used. No exclamation.\n\nShould we avoid \"お試しください\"? It's polite standard, fine. Length minimal: \"サーバーに接続できないため保存できませんでした。後で再試行してください\" maybe. \"再試行\" is concise. Return JSON only.\n\nNo periods at end? Rule says don't add period at end of labels and buttons; these are status messages, but safer to omit 句点 at end. Mid-sentence 。 between two sentences is fine, or combine: \"サーバーに接続できないため保存できませんでした。後でもう一度お試しください\" ends without 句点.\n\ns1: \"通知をオフにしました\" — ends without 句点.</think>{\"s1\":\"通知をオフにしました\",\"s2\":\"サーバーに接続できないため保存できませんでした。後でもう一度お試しください\"}",
+ "parsed": {
+  "s1": "通知をオフにしました",
+  "s2": "サーバーに接続できないため保存できませんでした。後でもう一度お試しください"
+ },
+ "error": ""
+}

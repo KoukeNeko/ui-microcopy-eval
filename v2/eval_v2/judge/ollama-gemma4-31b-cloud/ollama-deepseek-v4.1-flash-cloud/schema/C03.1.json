@@ -1,0 +1,36 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|C03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|C03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "或另作他用",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "位置僅用於尋找附近停車場，不會儲存或另作他用。",
+  "s2": "同意",
+  "s3": "不同意"
+ }
+}

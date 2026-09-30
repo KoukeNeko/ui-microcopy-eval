@@ -1,0 +1,14 @@
+{
+ "probe": "C14",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15879,
+ "seconds": 1.8,
+ "raw": "{\"s1\":\"備份完成：2,314 個檔案，1.2 GB\",\"s2\":\"雲端空間已使用 95%。請升級或刪除檔案。\"}",
+ "parsed": {
+  "s1": "備份完成：2,314 個檔案，1.2 GB",
+  "s2": "雲端空間已使用 95%。請升級或刪除檔案。"
+ },
+ "error": ""
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "exemplar",
+ "channel": "codex",
+ "sample": 1,
+ "prompt_chars": 1410,
+ "seconds": 23.4,
+ "raw": "{\"remark\":\"今晚入睡比過去 7 天平均多花了 33 分鐘。\"}\n",
+ "parsed": {
+  "remark": "今晚入睡比過去 7 天平均多花了 33 分鐘。"
+ },
+ "error": ""
+}

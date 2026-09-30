@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 19663,
+ "seconds": 2.1,
+ "raw": "{\"case_type\":\"換貨\",\"summary\":\"客戶需於 10/6 前將故障鍵盤寄至超商，新品將寄至原訂單地址，且要求避免週五以前送達\",\"return_deadline\":\"2024-10-06\"}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "客戶需於 10/6 前將故障鍵盤寄至超商，新品將寄至原訂單地址，且要求避免週五以前送達",
+  "return_deadline": "2024-10-06"
+ },
+ "error": ""
+}

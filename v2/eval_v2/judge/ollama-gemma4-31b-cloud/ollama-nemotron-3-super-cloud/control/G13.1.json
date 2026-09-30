@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|G13.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|G13.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "the sender will see that you have read it",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "Read Receipts",
+  "s2": "When enabled, contacts can see when you read a message, the sender will see that you have read it. Group chats always send read receipts."
+ }
+}

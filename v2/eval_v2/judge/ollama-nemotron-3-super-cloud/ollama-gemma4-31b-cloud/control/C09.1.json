@@ -1,0 +1,9 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|C09.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "remark": "睡眠時間略少於目標，且入睡時間較平時顯著增加。"
+ }
+}

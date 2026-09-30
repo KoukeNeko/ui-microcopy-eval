@@ -1,0 +1,24 @@
+{
+ "record": "ollama-gemma4-31b-cloud|rules|G07.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|rules|G07.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The entered invoice date is outside the allowed 90-day range",
+     "The form cannot be submitted until a valid date is entered"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期需在 90 天內"
+ }
+}

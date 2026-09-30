@@ -1,0 +1,39 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|C02.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|C02.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "可能原因為額度不足、卡片已停用或交易被風控攔阻",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "訂單已成立！您的訂單編號為 A2026093011，我們已收到您的付款，將盡快為您處理出貨。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "付款處理中，正在等待銀行回應，請稍候並不要關閉頁面…",
+  "s2": "付款失敗：您的信用卡被發卡行拒絕（可能原因為額度不足、卡片已停用或交易被風控攔阻）。請改用其他信用卡，或聯繫您的發卡銀行確認後再試一次。",
+  "s3": "訂單已成立！您的訂單編號為 A2026093011，我們已收到您的付款，將盡快為您處理出貨。"
+ }
+}

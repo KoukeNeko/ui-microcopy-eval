@@ -1,0 +1,10 @@
+{
+ "record": "claude-haiku-rules-in-context|skill|G04.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "位置資訊",
+  "s2": "既有照片不受影響"
+ }
+}

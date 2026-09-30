@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20755,
+ "seconds": null,
+ "raw": "{\"s1\":\"配送延誤\",\"s2\":\"因颱風延後，預計 10 月 5 日送達\"}",
+ "parsed": {
+  "s1": "配送延誤",
+  "s2": "因颱風延後，預計 10 月 5 日送達"
+ },
+ "error": ""
+}

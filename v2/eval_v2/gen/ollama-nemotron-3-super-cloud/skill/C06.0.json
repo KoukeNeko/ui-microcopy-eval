@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 15744,
+ "seconds": 1.0,
+ "raw": "{\"s1\":\"電子郵件格式不正確\",\"s2\":\"密碼少於 8 個字元\",\"s3\":\"手機號碼必填\"}",
+ "parsed": {
+  "s1": "電子郵件格式不正確",
+  "s2": "密碼少於 8 個字元",
+  "s3": "手機號碼必填"
+ },
+ "error": ""
+}

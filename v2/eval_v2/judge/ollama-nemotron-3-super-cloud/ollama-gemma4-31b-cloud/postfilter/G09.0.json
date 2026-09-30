@@ -1,0 +1,11 @@
+{
+ "record": "ollama-gemma4-31b-cloud|postfilter|G09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "客戶 ZX-4 鍵盤空白鍵卡住申請換貨，新品將寄至原地址，並備註希望週五之後才送達。",
+  "return_deadline": "2023-10-06"
+ }
+}

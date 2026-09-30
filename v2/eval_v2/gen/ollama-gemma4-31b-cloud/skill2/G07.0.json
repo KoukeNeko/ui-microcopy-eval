@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 17209,
+ "seconds": 0.9,
+ "raw": "```json\n{\"s1\":\"無法送出：發票日期必須在 90 天內。請重新選擇日期。\"}\n```",
+ "parsed": {
+  "s1": "無法送出：發票日期必須在 90 天內。請重新選擇日期。"
+ },
+ "error": ""
+}

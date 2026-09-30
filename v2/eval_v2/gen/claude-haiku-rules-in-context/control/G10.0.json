@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 225,
+ "seconds": null,
+ "raw": "{\"kcal\":510,\"remark\":\"無法判斷醬汁種類或用量\"}\n",
+ "parsed": {
+  "kcal": 510,
+  "remark": "無法判斷醬汁種類或用量"
+ },
+ "error": ""
+}

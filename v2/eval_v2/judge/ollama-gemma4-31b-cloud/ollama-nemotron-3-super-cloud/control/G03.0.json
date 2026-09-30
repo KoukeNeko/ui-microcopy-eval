@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|G03.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "（例如透過 BIOS/UEFI 設定、硬體開關或磁碟工具）",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "安裝失敗：目標磁碟為唯讀狀態",
+  "s2": "Linux 安裝程式正在寫入目標磁碟 /dev/nvme0n1。安裝失敗，因為該磁碟目前設定為唯讀狀態。請先解除磁碟的唯讀保護（例如透過 BIOS/UEFI 設定、硬體開關或磁碟工具），然後重新執行安裝程式。"
+ }
+}

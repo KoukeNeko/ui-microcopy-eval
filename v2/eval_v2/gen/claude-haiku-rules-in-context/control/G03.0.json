@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 141,
+ "seconds": null,
+ "raw": "{\"s1\":\"磁碟唯讀\",\"s2\":\"目標磁碟 /dev/nvme0n1 目前為唯讀狀態。請先解除唯讀狀態，再重新執行安裝。\"}\n",
+ "parsed": {
+  "s1": "磁碟唯讀",
+  "s2": "目標磁碟 /dev/nvme0n1 目前為唯讀狀態。請先解除唯讀狀態，再重新執行安裝。"
+ },
+ "error": ""
+}

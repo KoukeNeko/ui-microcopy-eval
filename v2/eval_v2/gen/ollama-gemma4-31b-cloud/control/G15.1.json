@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 148,
+ "seconds": 0.9,
+ "raw": "```json\n{\"value\":\"2023-10-02T13:30:00\",\"label\":\"デザインレビュー\"}\n```",
+ "parsed": {
+  "value": "2023-10-02T13:30:00",
+  "label": "デザインレビュー"
+ },
+ "error": ""
+}

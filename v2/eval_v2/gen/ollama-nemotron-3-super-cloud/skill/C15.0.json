@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17146,
+ "seconds": 1.0,
+ "raw": "{\"ingredients\":[\"烤雞腿\",\"檸檬角\",\"蒸西蘭花\"],\"note\":\"\"}",
+ "parsed": {
+  "ingredients": [
+   "烤雞腿",
+   "檸檬角",
+   "蒸西蘭花"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

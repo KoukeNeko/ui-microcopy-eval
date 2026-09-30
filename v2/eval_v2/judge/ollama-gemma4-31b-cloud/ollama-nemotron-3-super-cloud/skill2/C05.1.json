@@ -1,0 +1,75 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill2|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill2|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "免除手動輸入。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "讓您一眼看到花費去向。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "設定預算上限，",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶自動匯入交易",
+  "b1": "匯入您的銀行與信用卡交易，免除手動輸入。",
+  "t2": "自動分類支出",
+  "b2": "交易會依類別自動標記，讓您一眼看到花費去向。",
+  "t3": "每月預算提醒",
+  "b3": "設定預算上限，接近時會主動通知您。",
+  "cta": "開始使用"
+ }
+}

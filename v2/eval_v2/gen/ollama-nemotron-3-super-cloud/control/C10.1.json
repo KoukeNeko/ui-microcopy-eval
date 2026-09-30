@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 447,
+ "seconds": 6.3,
+ "raw": "{\n  \"s1\": \"Confirm Uninstall\",\n  \"s2\": \"Uninstall\",\n  \"s3\": \"Keep App\",\n  \"s4\": \"Removing files...\",\n  \"s5\": \"Uninstall failed: The application is still running. Please close the app and try again.\"\n}",
+ "parsed": {
+  "s1": "Confirm Uninstall",
+  "s2": "Uninstall",
+  "s3": "Keep App",
+  "s4": "Removing files...",
+  "s5": "Uninstall failed: The application is still running. Please close the app and try again."
+ },
+ "error": ""
+}

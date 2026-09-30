@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 135,
+ "seconds": 4.2,
+ "raw": "{\n  \"s1\": \"確認轉帳 12,500 元給王小明（含手續費 15 元）\",\n  \"s2\": \"實際扣除金額：12,515 元\"\n}",
+ "parsed": {
+  "s1": "確認轉帳 12,500 元給王小明（含手續費 15 元）",
+  "s2": "實際扣除金額：12,515 元"
+ },
+ "error": ""
+}

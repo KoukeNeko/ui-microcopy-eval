@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15776,
+ "seconds": 2.6,
+ "raw": "{\"s1\":\"更新已完成\",\"s2\":\"重新開機\"}",
+ "parsed": {
+  "s1": "更新已完成",
+  "s2": "重新開機"
+ },
+ "error": ""
+}

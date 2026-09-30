@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17209,
+ "seconds": 6.9,
+ "raw": "{\"s1\":\"發票日期不可超過 90 天（2026-07-02 以前）。\"}",
+ "parsed": {
+  "s1": "發票日期不可超過 90 天（2026-07-02 以前）。"
+ },
+ "error": ""
+}

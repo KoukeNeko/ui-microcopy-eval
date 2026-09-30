@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "exemplar",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1372,
+ "seconds": 3.8,
+ "raw": "The task: three icon-only buttons need accessibility labels in Traditional Chinese for screen readers:\n1. X icon — close current panel\n2. Magnifying glass icon — open search\n3. Three dots icon — open more options menu\n\nPer the table, 標籤 (labels): 名詞；無障礙標籤寫這個控制項做的事 — examples given: 關閉、搜尋、更多選項.\n\nSo the answers should be:\n- s1: 關閉\n- s2: 搜尋\n- s3: 更多選項\n\nOnly return JSON.\n\nWait — s1 is \"close current panel\". The example in the table literally shows 關閉. Should it be 「關閉面板」? The table says labels for accessibility should describe what the control does (寫這個控制項做的事), and the example is 關閉、搜尋、更多選項. Since these match exactly the three buttons, I'll use 關閉、搜尋、更多選項.{\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

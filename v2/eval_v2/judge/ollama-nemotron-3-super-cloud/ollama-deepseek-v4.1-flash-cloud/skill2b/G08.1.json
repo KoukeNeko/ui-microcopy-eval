@@ -1,0 +1,11 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G08.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "將目前歌曲加入喜愛歌曲",
+  "s2": "開啟播放佇列",
+  "s3": "將音量設為靜音"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 19629,
+ "seconds": 2.6,
+ "raw": "```json\n{\n  \"summary\": \"降低付款頁錯誤率及統一結帳頁 loading 樣式\",\n  \"action_items\": [\n    \"小陳：調查發卡行拒絕原因並於下週三前報告\",\n    \"小林：將結帳頁三個 loading 狀態改為一致樣式\"\n  ],\n  \"note\": \"約 40 秒錄音聽不清楚\"\n}\n```",
+ "parsed": {
+  "summary": "降低付款頁錯誤率及統一結帳頁 loading 樣式",
+  "action_items": [
+   "小陳：調查發卡行拒絕原因並於下週三前報告",
+   "小林：將結帳頁三個 loading 狀態改為一致樣式"
+  ],
+  "note": "約 40 秒錄音聽不清楚"
+ },
+ "error": ""
+}

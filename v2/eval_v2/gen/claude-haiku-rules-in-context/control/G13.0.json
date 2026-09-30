@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 286,
+ "seconds": null,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Contacts can see when you've read their messages. Group chats always send read receipts.\"}\n",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Contacts can see when you've read their messages. Group chats always send read receipts."
+ },
+ "error": ""
+}

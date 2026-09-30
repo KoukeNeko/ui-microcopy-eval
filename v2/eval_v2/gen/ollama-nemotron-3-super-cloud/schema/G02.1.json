@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 201,
+ "seconds": 2.4,
+ "raw": "{\n  \"s1\": \"訂單編號 A89371 物流延遲\",\n  \"s2\": \"因颱風影響，預計送達日為 10 月 5 日\"\n}",
+ "parsed": {
+  "s1": "訂單編號 A89371 物流延遲",
+  "s2": "因颱風影響，預計送達日為 10 月 5 日"
+ },
+ "error": ""
+}

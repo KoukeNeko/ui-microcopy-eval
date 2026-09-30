@@ -1,0 +1,31 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|G12.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|G12.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The attempted deposit was USD 2,000"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "銀行存款失敗",
+  "s2": "帳戶餘額不足，請先將資金存入結算帳戶（結尾 1842），或選擇其他付款方式後重試。"
+ }
+}

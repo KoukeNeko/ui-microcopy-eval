@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 214,
+ "seconds": 1.9,
+ "raw": "{\"remark\":\"睡眠品質尚可，入睡時間較目標稍長，建議放鬆儀式\"}",
+ "parsed": {
+  "remark": "睡眠品質尚可，入睡時間較目標稍長，建議放鬆儀式"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1376,
+ "seconds": 3.9,
+ "raw": "{\"s1\":\"送出轉帳\",\"s2\":\"新台幣 12,515 元（含手續費 15 元）\"}",
+ "parsed": {
+  "s1": "送出轉帳",
+  "s2": "新台幣 12,515 元（含手續費 15 元）"
+ },
+ "error": ""
+}

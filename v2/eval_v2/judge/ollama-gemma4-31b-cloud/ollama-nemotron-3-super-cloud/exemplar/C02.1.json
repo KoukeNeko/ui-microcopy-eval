@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|exemplar|C02.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|exemplar|C02.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "可能是額度不足或卡片未開通國際交易",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "付款中",
+  "s2": "付款失敗：發卡行拒絕交易，可能是額度不足或卡片未開通國際交易。請確認卡片狀態或改用其他付款方式。",
+  "s3": "訂單成立，編號 A2026093011"
+ }
+}

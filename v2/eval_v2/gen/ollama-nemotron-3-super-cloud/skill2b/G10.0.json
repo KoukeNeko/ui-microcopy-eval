@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 19567,
+ "seconds": 2.2,
+ "raw": "{\"kcal\":510,\"remark\":\"烹調油未確認\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "烹調油未確認"
+ },
+ "error": ""
+}

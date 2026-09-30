@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "skill2",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 17472,
+ "seconds": 1.4,
+ "raw": "```json\n{\"s1\":\"Deposit failed\",\"s2\":\"Insufficient funds in checking account ending in 1842. Add funds to this account or choose another funding source.\"}\n```",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Insufficient funds in checking account ending in 1842. Add funds to this account or choose another funding source."
+ },
+ "error": ""
+}

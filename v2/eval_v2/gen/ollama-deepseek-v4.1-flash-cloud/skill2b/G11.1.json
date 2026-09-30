@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18371,
+ "seconds": 5.7,
+ "raw": "{\"s1\":\"No saved items\",\"s2\":\"Browse products\"}",
+ "parsed": {
+  "s1": "No saved items",
+  "s2": "Browse products"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15776,
+ "seconds": null,
+ "raw": "{\"s1\":\"インストール完了\",\"s2\":\"再起動\"}",
+ "parsed": {
+  "s1": "インストール完了",
+  "s2": "再起動"
+ },
+ "error": ""
+}

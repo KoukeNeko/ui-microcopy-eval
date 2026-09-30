@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1382,
+ "seconds": 2.4,
+ "raw": "{\"s1\":\"磁碟目前是唯讀狀態\",\"s2\":\"安裝程式無法寫入 /dev/nvme0n1。請先解除磁碟的唯讀狀態，再重新執行安裝。\"}",
+ "parsed": {
+  "s1": "磁碟目前是唯讀狀態",
+  "s2": "安裝程式無法寫入 /dev/nvme0n1。請先解除磁碟的唯讀狀態，再重新執行安裝。"
+ },
+ "error": ""
+}

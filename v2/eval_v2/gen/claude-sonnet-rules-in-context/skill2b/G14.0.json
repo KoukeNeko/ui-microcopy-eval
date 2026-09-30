@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill2b",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20694,
+ "seconds": null,
+ "raw": "{\"s1\":\"バージョン 8.4.1 のインストールが完了しました。反映には再起動が必要です。\",\"s2\":\"再起動\"}",
+ "parsed": {
+  "s1": "バージョン 8.4.1 のインストールが完了しました。反映には再起動が必要です。",
+  "s2": "再起動"
+ },
+ "error": ""
+}

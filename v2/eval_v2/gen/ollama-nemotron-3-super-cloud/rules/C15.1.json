@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 970,
+ "seconds": 0.9,
+ "raw": "{\"ingredients\":[\"chicken thigh\",\"lemon\",\"broccoli\"],\"note\":\"\"}",
+ "parsed": {
+  "ingredients": [
+   "chicken thigh",
+   "lemon",
+   "broccoli"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

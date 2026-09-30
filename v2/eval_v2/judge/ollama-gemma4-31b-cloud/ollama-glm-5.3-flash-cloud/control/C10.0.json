@@ -1,0 +1,52 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C10.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C10.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "Uninstall this application?",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s4": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "Please wait.",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "s5": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "Uninstall this application?",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files… Please wait.",
+  "s5": "Uninstall failed because the application is still running. Please close the application and click Uninstall again."
+ }
+}

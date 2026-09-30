@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 169,
+ "seconds": 10.2,
+ "raw": "We need answer in Chinese? Need model in sleep app remark displayed below tonight's sleep numbers. Need only JSON. Need craft remark concise one line. Must respect no medical? Can include insight. Data: time in bed 7h50, asleep 6h20, sleep latency 48 min, awakenings 3, target asleep 7h. Last 7 days average sleep onset 15 min. Need comment perhaps \"今晚總睡眠差 40 分鐘未達目標，主要因入睡較慢；請維持固定作息，睡前放鬆\" maybe.\n\nNeed only JSON with remark field. Should be no markdown. Need maybe \"今晚入睡花了 48 分鐘，明顯長於近 7 天平均 15 分鐘，睡著時間也少了 40 分鐘未達 7 小時；睡前可試固定放鬆流程、提早 30 分鐘上床。\" In one line. Must not too long? App displays one line. Need maybe direct.\n\nNeed consider user \"僅回傳 JSON\" maybe we strictly output valid JSON only. Text can be Chinese.\n\nCould say:\n{\"remark\":\"今晚睡著 6 小時 20 分鐘，距目標少 40 分鐘；入睡 48 分鐘較近 7 天平均多，建議維持固定睡前放鬆與作息。\"}\n\nNeed not be advice too much? That's good. Ensure JSON escaped? Chinese okay no escaped. One line. Could include \"夜間醒來 3 次\" maybe. Since data display shows sleep numbers, remark helpful. Mention wakeups maybe: \"深夜醒來3次，...\" Need be careful \"深夜\" no.\n\nOne-line: \"今晚有效睡眠離目標少 40 分鐘，主因入睡花了 48 分鐘（遠高於近 7 天平均 15 分鐘）；夜醒 3 次，可嘗試固定睡前放鬆流程。\"\n\nIs \"主因\" unsupported? Sleep efficiency lost due to long latency, likely. Need maybe not judge. Could include \"今晚睡眠效率稍低\"? Time in bed 470, asleep 380 = 80.9%; goal sleep time 420. If latency typical 15, would gain 33 minutes. 48 vs 15 = +33, still target gap 40; if reduce latency to 15, 6h53 just 7 mins shy. Awakenings 3. Time in bed 7h50 with latency 48 and awakenings? Let's compute: In bed = asleep + latency + wake after onset? Usually time in bed includes sleep latency, sleep duration, wake after sleep onset? In bed 7h50=470. Sleeping 6h20=380. Latency 48. Wakeful after sleep onset = 470-380-48=42min. awakenings 3. Target asleep 7h =420 gap 40.\n\nPast 7 days onset avg 15, tonight much longer.\n\nNeed maybe final JSON only.</think>{\"remark\":\"今晚睡著 6 小時 20 分，離目標少 40 分；入睡花了 48 分，明顯高於近 7 天平均 15 分，且夜醒 3 次，建議維持固定睡前放鬆流程。\"}",
+ "parsed": {
+  "remark": "今晚睡著 6 小時 20 分，離目標少 40 分；入睡花了 48 分，明顯高於近 7 天平均 15 分，且夜醒 3 次，建議維持固定睡前放鬆流程。"
+ },
+ "error": ""
+}

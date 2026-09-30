@@ -1,0 +1,75 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "同步主流銀行與信用卡，交易自動記錄，無需手動輸入",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "AI 自動辨識消費類別，如餐飲、交通、購物，讓支出一目了然",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "設定月度預算，超支即時通知，協助你穩健理財",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行自動匯入",
+  "b1": "同步主流銀行與信用卡，交易自動記錄，無需手動輸入",
+  "t2": "智慧分類支出項目",
+  "b2": "AI 自動辨識消費類別，如餐飲、交通、購物，讓支出一目了然",
+  "t3": "每月預算提醒",
+  "b3": "設定月度預算，超支即時通知，協助你穩健理財",
+  "cta": "開始使用"
+ }
+}

@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G12.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Deposit failed",
+  "s2": "Your $2,000 deposit from the checking account ending in 1842 was rejected because the account has insufficient funds. Add funds to that account or choose another funding source, then try again."
+ }
+}

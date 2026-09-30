@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1437,
+ "seconds": 1.2,
+ "raw": "{\"s1\":\"カートは空です\",\"s2\":\"商品を削除\",\"s3\":\"削除する\",\"s4\":\"削除しない\"}",
+ "parsed": {
+  "s1": "カートは空です",
+  "s2": "商品を削除",
+  "s3": "削除する",
+  "s4": "削除しない"
+ },
+ "error": ""
+}

@@ -1,0 +1,33 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G02.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|G02.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "颱風延誤，預計 10 月 5 日送達",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The delay is caused by a typhoon",
+     "The new estimated delivery date is October 5"
+    ],
+    "surplus": 1,
+    "surplus_quote": "訂單 A89371 原定 10 月 3 日到貨，物流商調整配送時間",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "颱風延誤，預計 10 月 5 日送達",
+  "s2": "訂單 A89371 原定 10 月 3 日到貨，物流商調整配送時間"
+ }
+}

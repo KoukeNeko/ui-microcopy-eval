@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 295,
+ "seconds": null,
+ "raw": "{\"s1\":\"No saved items\",\"s2\":\"Browse products\"}",
+ "parsed": {
+  "s1": "No saved items",
+  "s2": "Browse products"
+ },
+ "error": ""
+}

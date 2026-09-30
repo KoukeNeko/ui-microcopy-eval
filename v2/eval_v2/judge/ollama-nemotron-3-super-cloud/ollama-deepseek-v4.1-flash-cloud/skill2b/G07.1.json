@@ -1,0 +1,21 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G07.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G07.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期超過 90 天：今天是 2026/09/30，僅接受 2026/07/02 之後的日期。"
+ }
+}

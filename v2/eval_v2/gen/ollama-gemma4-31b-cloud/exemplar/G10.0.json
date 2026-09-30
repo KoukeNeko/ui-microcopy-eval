@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "exemplar",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 1466,
+ "seconds": 2.0,
+ "raw": "```json\n{\"kcal\":510,\"remark\":\"醬汁另計\"}\n```",
+ "parsed": {
+  "kcal": 510,
+  "remark": "醬汁另計"
+ },
+ "error": ""
+}

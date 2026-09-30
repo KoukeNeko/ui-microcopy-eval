@@ -1,0 +1,43 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|rules|G16.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|rules|G16.0",
+  "items": {
+   "owner": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "review_meeting": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 0,
+    "missing": [
+     "The pricing page is planned for release on October 8",
+     "Legal review is not yet complete",
+     "The release will be postponed if approval is not obtained by October 6"
+    ],
+    "surplus": 1,
+    "surplus_quote": "料金ページ担当は佐藤",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "owner": "佐藤",
+  "review_meeting": "2023-10-05T11:00",
+  "note": "料金ページ担当は佐藤"
+ }
+}

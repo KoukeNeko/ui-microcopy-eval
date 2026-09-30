@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15735,
+ "seconds": null,
+ "raw": "{\"s1\":\"停車時間即將到期\",\"s2\":\"您在信義停車場的計時還有 10 分鐘到期，超時每小時 NT$60。\"}",
+ "parsed": {
+  "s1": "停車時間即將到期",
+  "s2": "您在信義停車場的計時還有 10 分鐘到期，超時每小時 NT$60。"
+ },
+ "error": ""
+}

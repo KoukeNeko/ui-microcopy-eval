@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15759,
+ "seconds": null,
+ "raw": "{\"s1\":\"發票日期超過 90 天。請輸入最近 90 天內的日期。\"}",
+ "parsed": {
+  "s1": "發票日期超過 90 天。請輸入最近 90 天內的日期。"
+ },
+ "error": ""
+}

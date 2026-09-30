@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 145,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"アプリを再起動する必要があります。\",\"s2\":\"再起動\"}",
+ "parsed": {
+  "s1": "アプリを再起動する必要があります。",
+  "s2": "再起動"
+ },
+ "error": ""
+}

@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 18523,
+ "seconds": 2.7,
+ "raw": "```json\n{\"s1\":\"Uninstall App\",\"s2\":\"Uninstall\",\"s3\":\"Keep App\",\"s4\":\"Removing files…\",\"s5\":\"Can't uninstall: the app is still running. Please close the app and try again.\"}\n```",
+ "parsed": {
+  "s1": "Uninstall App",
+  "s2": "Uninstall",
+  "s3": "Keep App",
+  "s4": "Removing files…",
+  "s5": "Can't uninstall: the app is still running. Please close the app and try again."
+ },
+ "error": ""
+}

@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|G12.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|G12.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "Insufficient Funds",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "Deposit Failed: Insufficient Funds",
+  "s2": "The transfer of USD 2,000 from your checking account ending in 1842 was rejected due to insufficient funds. Please add funds to that account or select another funding source to retry the deposit."
+ }
+}

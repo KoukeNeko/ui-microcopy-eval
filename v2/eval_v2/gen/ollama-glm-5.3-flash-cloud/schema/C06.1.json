@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 190,
+ "seconds": 5.8,
+ "raw": "The user wants JSON output only, with three error messages in Traditional Chinese for a registration form:\n- s1: Email format incorrect\n- s2: Password less than 8 characters\n- s3: Phone number is required but empty\n\nEach string max 64 characters. Let me write appropriate error messages in Traditional Chinese, each under 64 characters.\n\ns1: \"電子郵件格式不正確，請輸入有效的電子郵件地址（例如：name@example.com）\" - let me count characters. Actually let me keep it simpler to be safe.\n\ns1: \"電子郵件格式不正確，請確認後重新輸入。\" — that's fine, well under 64.\ns2: \"密碼長度不足，至少需要 8 個字元。\" \ns3: \"手機號碼為必填欄位，請輸入您的手機號碼。\"\n\nLet me count:\ns1: 電(1)子(2)郵(3)件(4)格(5)式(6)不(7)正(8)確(9)，(10)請(11)確(12)認(13)後(14)重(15)新(16)輸(17)入(18)。(19) = 19 chars, fine.\ns2: 密(1)碼(2)長(3)度(4)不(5)足(6)，(7)至(8)少(9)需(10)要(11) (12)8(13) (14)個(15)字(16)元(17)。(18) = 18 chars.\ns3: 手(1)機(2)號(3)碼(4)為(5)必(6)填(7)欄(8)位(9)，(10)請(11)輸(12)入(13)您(14)的(15)手(16)機(17)號(18)碼(19)。(20) = 20 chars.\n\nAll within 64. Only return JSON.</think>{\"s1\":\"電子郵件格式不正確，請輸入有效的電子郵件地址（例如：name@example.com）。\",\"s2\":\"密碼長度不足，至少需要 8 個字元，請重新設定。\",\"s3\":\"手機號碼為必填欄位，請輸入您的手機號碼。\"}",
+ "parsed": {
+  "s1": "電子郵件格式不正確，請輸入有效的電子郵件地址（例如：name@example.com）。",
+  "s2": "密碼長度不足，至少需要 8 個字元，請重新設定。",
+  "s3": "手機號碼為必填欄位，請輸入您的手機號碼。"
+ },
+ "error": ""
+}

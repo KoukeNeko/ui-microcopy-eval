@@ -1,0 +1,19 @@
+{
+ "probe": "C05",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 330,
+ "seconds": 10.4,
+ "raw": "The user wants a Traditional Chinese onboarding flow for a bookkeeping/budget app with three pages:\n\n1. Page 1: Connect bank accounts to auto-import transactions\n2. Page 2: Auto-categorize expenses\n3. Page 3: Monthly budget reminders + CTA button\n\nFields:\n- t1: max 16 characters\n- b1: max 96 characters\n- t2: max 16 characters\n- b2: max 96 characters\n- t3: max 16 characters\n- b3: max 96 characters\n- cta: max 8 characters\n\nLet me draft in Traditional Chinese (Taiwan style):\n\nt1: \"連結你的銀行帳戶\" - let me count: 連(1)結(2)你(3)的(4)銀(5)行(6)帳(7)戶(8) = 8 characters. Good.\n\nb1: \"安全串聯銀行與信用卡，交易紀錄自動匯入，不用再手動記帳。\" - count: 安全串聯銀行與信用卡，交易紀錄自動匯入，不用再手動記帳。\n安(1)全(2)串(3)聯(4)銀(5)行(6)與(7)信(8)用(9)卡(10)，(11)交(12)易(13)紀(14)錄(15)自(16)動(17)匯(18)入(19)，(20)不(21)用(22)再(23)手(24)動(25)記(26)帳(27)。(28) = 28 characters. Under 96. Good.\n\nt2: \"支出自動分類\" = 支(1)出(2)自(3)動(4)分(5)類(6) = 6 characters. Good.\n\nb2: \"每筆交易自動歸入餐飲、交通等類別，一打開就看清錢花去哪。\" \n每(1)筆(2)交(3)易(4)自(5)動(6)歸(7)入(8)餐(9)飲(10)、(11)交(12)通(13)等(14)類(15)別(16)，(17)一(18)打(19)開(20)就(21)看(22)清(23)錢(24)花(25)去(26)哪(27)。(28) = 28. Good.\n\nt3: \"預算提醒不超支\" = 預(1)算(2)提(3)醒(4)不(5)超(6)支(7) = 7 characters. Good.\n\nb3: \"設定每月預算，快超支前即時提醒，幫你守住錢包月底不透支。\"\n設(1)定(2)每(3)月(4)預(5)算(6)，(7)快(8)超(9)支(10)前(11)即(12)時(13)提(14)醒(15)，(16)幫(17)你(18)守(19)住(20)錢(21)包(22)月(23)底(24)不(25)透(26)支(27)。(28) = 28. Good.\n\ncta: \"開始使用\" = 開(1)始(2)使(3)用(4) = 4 characters. Good.\n\nAll within limits. Only return JSON. The user said 只回傳 JSON (only return JSON), so I should output just the JSON without markdown code fences? Code fences might be acceptable, but \"只回傳 JSON\" suggests pure JSON. I'll output pure JSON without code fences to be safe. Actually, code fences are common but \"只回傳 JSON\" - safest is raw JSON.</think>{\"t1\":\"連結你的銀行帳戶\",\"b1\":\"安全串聯銀行與信用卡，交易紀錄自動匯入，不用再手動記帳。\",\"t2\":\"支出自動分類\",\"b2\":\"每筆交易自動歸入餐飲、交通等類別，一打開就看清錢花去哪。\",\"t3\":\"預算提醒不超支\",\"b3\":\"設定每月預算，快超支前即時提醒，幫你守住錢包月底不透支。\",\"cta\":\"開始使用\"}",
+ "parsed": {
+  "t1": "連結你的銀行帳戶",
+  "b1": "安全串聯銀行與信用卡，交易紀錄自動匯入，不用再手動記帳。",
+  "t2": "支出自動分類",
+  "b2": "每筆交易自動歸入餐飲、交通等類別，一打開就看清錢花去哪。",
+  "t3": "預算提醒不超支",
+  "b3": "設定每月預算，快超支前即時提醒，幫你守住錢包月底不透支。",
+  "cta": "開始使用"
+ },
+ "error": ""
+}

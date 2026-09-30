@@ -1,0 +1,75 @@
+{
+ "record": "codex|control|C05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|control|C05.0",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "省下逐筆輸入的時間",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "輕鬆看懂錢花在哪裡",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "貼心",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "隨時留意每月花費",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "交易自動匯入",
+  "b1": "連結銀行帳戶，省下逐筆輸入的時間。",
+  "t2": "支出自動分類",
+  "b2": "每筆支出自動歸類，輕鬆看懂錢花在哪裡。",
+  "t3": "每月預算貼心提醒",
+  "b3": "透過預算提醒，隨時留意每月花費。",
+  "cta": "開始使用"
+ }
+}

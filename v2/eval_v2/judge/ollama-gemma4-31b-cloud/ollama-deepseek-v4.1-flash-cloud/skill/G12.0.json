@@ -1,0 +1,35 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|G12.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill|G12.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The deposit failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The attempted deposit was USD 2,000",
+     "The bank account ends in 1842"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "存款失敗",
+  "s2": "你的銀行以餘額不足為由拒絕了這筆轉帳。請在該帳戶存入款項後再試，或改用其他付款方式。"
+ }
+}

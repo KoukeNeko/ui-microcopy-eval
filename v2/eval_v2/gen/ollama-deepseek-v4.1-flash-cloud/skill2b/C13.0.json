@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18221,
+ "seconds": 4.0,
+ "raw": "{\"s1\":\"通知已關閉\",\"s2\":\"無法儲存設定：無法連線至伺服器。請稍後再試。\"}",
+ "parsed": {
+  "s1": "通知已關閉",
+  "s2": "無法儲存設定：無法連線至伺服器。請稍後再試。"
+ },
+ "error": ""
+}

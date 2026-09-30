@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18207,
+ "seconds": 2.9,
+ "raw": "{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

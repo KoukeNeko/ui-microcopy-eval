@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 376,
+ "seconds": 1.1,
+ "raw": "{\n  \"ingredients\": [\"chicken thighs\", \"lemon wedge\", \"steamed broccoli\"],\n  \"note\": \"Grilled chicken thighs served with lemon and steamed broccoli — simple, healthy, and flavorful.\"\n}",
+ "parsed": {
+  "ingredients": [
+   "chicken thighs",
+   "lemon wedge",
+   "steamed broccoli"
+  ],
+  "note": "Grilled chicken thighs served with lemon and steamed broccoli — simple, healthy, and flavorful."
+ },
+ "error": ""
+}

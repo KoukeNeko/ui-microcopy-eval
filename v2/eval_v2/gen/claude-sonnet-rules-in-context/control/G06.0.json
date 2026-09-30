@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 137,
+ "seconds": null,
+ "raw": "{\"s1\":\"建立保管庫\",\"s2\":\"繼續設定\"}",
+ "parsed": {
+  "s1": "建立保管庫",
+  "s2": "繼續設定"
+ },
+ "error": ""
+}

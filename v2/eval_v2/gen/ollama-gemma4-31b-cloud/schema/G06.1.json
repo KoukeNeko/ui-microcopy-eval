@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 195,
+ "seconds": 3.7,
+ "raw": "```json\n{\"s1\":\"建立您的保管庫\",\"s2\":\"開始設定\"}\n```",
+ "parsed": {
+  "s1": "建立您的保管庫",
+  "s2": "開始設定"
+ },
+ "error": ""
+}

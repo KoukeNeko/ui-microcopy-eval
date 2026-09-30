@@ -1,0 +1,11 @@
+{
+ "probe": "G01",
+ "arm": "exemplar",
+ "channel": "codex",
+ "sample": 0,
+ "prompt_chars": 1376,
+ "seconds": 11.9,
+ "raw": "",
+ "parsed": null,
+ "error": "codex failed: Reading additional input from stdin...\n2026-09-30T14:44:43.068465Z ERROR codex_models_manager::manager: failed to load models cache: EOF while parsing a value at line 1 column 0\nOpenAI Codex v0.157.0\n--------\nworkdir: /var/folders/r1/x4hpj5810bx3rck_gdvwq5q00000gn/T/microcopy-codex-qul"
+}

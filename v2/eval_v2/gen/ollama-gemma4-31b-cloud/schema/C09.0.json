@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 214,
+ "seconds": 0.6,
+ "raw": "```json\n{\"remark\":\"睡眠不足目標，入睡時間明顯延長\"}\n```",
+ "parsed": {
+  "remark": "睡眠不足目標，入睡時間明顯延長"
+ },
+ "error": ""
+}

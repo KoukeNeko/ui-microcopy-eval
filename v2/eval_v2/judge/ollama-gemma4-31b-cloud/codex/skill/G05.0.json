@@ -1,0 +1,35 @@
+{
+ "record": "codex|skill|G05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|skill|G05.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The package has arrived for pickup"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The pickup location is FamilyMart Douliu Minsheng",
+     "The pickup deadline is October 4 at 23:59"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

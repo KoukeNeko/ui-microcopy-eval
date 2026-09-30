@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 450,
+ "seconds": 2.0,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"Your bank rejected the $2,000 deposit from checking •1842 due to insufficient funds. Add funds or choose another funding source, then try again.\"}",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Your bank rejected the $2,000 deposit from checking •1842 due to insufficient funds. Add funds or choose another funding source, then try again."
+ },
+ "error": ""
+}

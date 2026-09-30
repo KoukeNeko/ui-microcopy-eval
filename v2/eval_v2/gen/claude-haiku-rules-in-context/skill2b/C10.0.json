@@ -1,0 +1,15 @@
+{
+ "probe": "C10",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 21060,
+ "seconds": null,
+ "raw": "{\"s1\":\"Uninstall App\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\"}",
+ "parsed": {
+  "s1": "Uninstall App",
+  "s2": "Uninstall",
+  "s3": "Cancel"
+ },
+ "error": ""
+}

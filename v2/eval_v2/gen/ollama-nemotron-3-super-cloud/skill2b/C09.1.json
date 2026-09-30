@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 19511,
+ "seconds": 7.0,
+ "raw": "{\"remark\":\"入睡花了 48 分鐘，慢於過去 7 天平均 15 分鐘\"}",
+ "parsed": {
+  "remark": "入睡花了 48 分鐘，慢於過去 7 天平均 15 分鐘"
+ },
+ "error": ""
+}

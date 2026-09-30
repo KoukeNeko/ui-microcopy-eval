@@ -1,0 +1,47 @@
+{
+ "record": "ollama-gemma4-31b-cloud|rules|C08.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|rules|C08.0",
+  "items": {
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "goal: reduce payment page error rate",
+     "next meeting Wednesday"
+    ],
+    "surplus": 1,
+    "surplus_quote": "降低付款頁錯誤率",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 0,
+    "missing": [
+     "小陳: investigate issuer declines, report by next Wednesday",
+     "小林: unify the three loading states on checkout"
+    ],
+    "surplus": 1,
+    "surplus_quote": "小陳：調查發卡行拒絕原因並於下週三前提交報告 ／ 小林：統一結帳頁三個 loading 狀態樣式",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 0,
+    "missing": [
+     "about 40 seconds of the recording were inaudible"
+    ],
+    "surplus": 1,
+    "surplus_quote": "逐字稿包含 40 秒雜音",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "降低付款頁錯誤率",
+  "action_items": "小陳：調查發卡行拒絕原因並於下週三前提交報告 ／ 小林：統一結帳頁三個 loading 狀態樣式",
+  "note": "逐字稿包含 40 秒雜音"
+ }
+}

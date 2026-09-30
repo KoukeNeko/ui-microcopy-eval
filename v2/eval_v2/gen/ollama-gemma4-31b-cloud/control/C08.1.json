@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 287,
+ "seconds": 4.3,
+ "raw": "```json\n{\n  \"summary\": \"本週重點為降低付款頁面的錯誤率。\",\n  \"action_items\": [\n    \"小陳：調查發卡行拒絕之原因，並於下週三前提交報告\",\n    \"小林：將結帳頁的三個 loading 狀態修改為一致樣式\"\n  ],\n  \"note\": \"逐字稿中包含約 40 秒雜音，內容不清晰。\"\n}\n```",
+ "parsed": {
+  "summary": "本週重點為降低付款頁面的錯誤率。",
+  "action_items": [
+   "小陳：調查發卡行拒絕之原因，並於下週三前提交報告",
+   "小林：將結帳頁的三個 loading 狀態修改為一致樣式"
+  ],
+  "note": "逐字稿中包含約 40 秒雜音，內容不清晰。"
+ },
+ "error": ""
+}

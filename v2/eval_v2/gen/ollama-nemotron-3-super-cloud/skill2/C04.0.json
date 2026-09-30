@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17185,
+ "seconds": 5.2,
+ "raw": "{\"s1\":\"即將逾期\",\"s2\":\"您在信義停車場的停車將於10分鐘後超時，超時每小時收費NT$60，請即時處理\"}",
+ "parsed": {
+  "s1": "即將逾期",
+  "s2": "您在信義停車場的停車將於10分鐘後超時，超時每小時收費NT$60，請即時處理"
+ },
+ "error": ""
+}

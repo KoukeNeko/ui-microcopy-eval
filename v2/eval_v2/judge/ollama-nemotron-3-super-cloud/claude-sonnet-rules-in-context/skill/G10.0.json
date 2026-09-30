@@ -1,0 +1,33 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G10.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill|G10.0",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce type or amount cannot be determined from the photo",
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "醬汁另計"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 423,
+ "seconds": 10.0,
+ "raw": "```json\n{\"case_type\":\"換貨\",\"summary\":\"ZX-4空白鍵卡住換貨，週五後送達\",\"return_deadline\":\"10月6日\"}\n```",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "ZX-4空白鍵卡住換貨，週五後送達",
+  "return_deadline": "10月6日"
+ },
+ "error": ""
+}

@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C04.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C04.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "！",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請盡快離場或延長停車",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "停車即將到期！",
+  "s2": "您在信義停車場的停車時間僅剩 10 分鐘，超時將按每小時 NT$60 計費，請盡快離場或延長停車。"
+ }
+}

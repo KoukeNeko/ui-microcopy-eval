@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 387,
+ "seconds": 1.6,
+ "raw": "{\"summary\":\"本週重點：降低付款頁錯誤率。小陳查發卡行拒絕原因，下週三前報告；小林統一結帳頁 loading 樣式。\",\"action_items\":[\"小陳：查發卡行拒絕原因，下週三前報告\",\"小林：統一結帳頁 loading 樣式\"],\"note\":\"（雜音約40秒未聽清，會議結束）\"}",
+ "parsed": {
+  "summary": "本週重點：降低付款頁錯誤率。小陳查發卡行拒絕原因，下週三前報告；小林統一結帳頁 loading 樣式。",
+  "action_items": [
+   "小陳：查發卡行拒絕原因，下週三前報告",
+   "小林：統一結帳頁 loading 樣式"
+  ],
+  "note": "（雜音約40秒未聽清，會議結束）"
+ },
+ "error": ""
+}

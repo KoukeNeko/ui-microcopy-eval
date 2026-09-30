@@ -1,0 +1,11 @@
+{
+ "record": "ollama-gemma4-31b-cloud|skill|C02.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "付款處理中",
+  "s2": "付款失敗：信用卡被發卡行拒絕。請檢查卡片資訊或嘗試其他付款方式。",
+  "s3": "訂單已成立，訂單編號 A2026093011。"
+ }
+}

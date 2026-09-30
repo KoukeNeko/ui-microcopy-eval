@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 16939,
+ "seconds": null,
+ "raw": "{\"remark\":\"睡著時間比目標少 40 分鐘，入睡比近 7 天平均多 33 分鐘。\"}",
+ "parsed": {
+  "remark": "睡著時間比目標少 40 分鐘，入睡比近 7 天平均多 33 分鐘。"
+ },
+ "error": ""
+}

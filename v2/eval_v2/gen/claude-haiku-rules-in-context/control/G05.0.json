@@ -1,0 +1,14 @@
+{
+ "probe": "G05",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 119,
+ "seconds": null,
+ "raw": "{\"s1\":\"包裹已送達\",\"s2\":\"全家便利商店斗六民生店，10 月 4 日 23:59 前取件\"}\n",
+ "parsed": {
+  "s1": "包裹已送達",
+  "s2": "全家便利商店斗六民生店，10 月 4 日 23:59 前取件"
+ },
+ "error": ""
+}

@@ -1,0 +1,12 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|C01.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "確認轉帳",
+  "s2": "確認轉帳",
+  "s3": "取消",
+  "s4": "您即將轉帳 NT$12,500 給「王小明」。轉帳送出後將無法取消，請確認收款人與金額是否正確。"
+ }
+}

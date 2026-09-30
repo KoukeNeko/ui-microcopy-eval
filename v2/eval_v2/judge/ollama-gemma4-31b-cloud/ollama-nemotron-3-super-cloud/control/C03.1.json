@@ -1,0 +1,36 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，協助您快速找到適合的停車位，不會儲存、上傳或用於其他用途。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "位置僅用於搜尋您附近的可用停車場，協助您快速找到適合的停車位，不會儲存、上傳或用於其他用途。",
+  "s2": "同意",
+  "s3": "不同意"
+ }
+}

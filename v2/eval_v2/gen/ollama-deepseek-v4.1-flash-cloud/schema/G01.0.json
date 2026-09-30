@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 193,
+ "seconds": 1.2,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"薪資帳戶扣款總額：新台幣 12,515 元\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "薪資帳戶扣款總額：新台幣 12,515 元"
+ },
+ "error": ""
+}

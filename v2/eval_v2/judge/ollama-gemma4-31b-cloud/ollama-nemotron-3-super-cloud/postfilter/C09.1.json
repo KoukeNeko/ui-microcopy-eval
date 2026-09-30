@@ -1,0 +1,21 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|postfilter|C09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|postfilter|C09.1",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "但清醒次數適中，睡著時長接近目標，建議睡前放鬆儀式提前 30 分鐘開始，幫助更快進入夢鄉。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "今晚你入睡用了 48 分鐘，比過去 7 天平均慢了 33 分鐘，但清醒次數適中，睡著時長接近目標，建議睡前放鬆儀式提前 30 分鐘開始，幫助更快進入夢鄉。"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20751,
+ "seconds": null,
+ "raw": "{\"s1\":\"加入喜愛\",\"s2\":\"播放佇列\",\"s3\":\"靜音\"}",
+ "parsed": {
+  "s1": "加入喜愛",
+  "s2": "播放佇列",
+  "s3": "靜音"
+ },
+ "error": ""
+}

@@ -1,0 +1,9 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|G07.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "發票日期超過 90 天，不符公司報帳規定。請輸入 90 天內的日期。"
+ }
+}

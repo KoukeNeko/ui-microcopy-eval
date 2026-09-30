@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 751,
+ "seconds": 3.7,
+ "raw": "{\n  \"s1\": \"確認轉帳\",\n  \"s2\": \"確認\",\n  \"s3\": \"放棄\",\n  \"s4\": \"將 NT$12,500 轉帳至王小明，完成後無法取消。\"\n}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "確認",
+  "s3": "放棄",
+  "s4": "將 NT$12,500 轉帳至王小明，完成後無法取消。"
+ },
+ "error": ""
+}

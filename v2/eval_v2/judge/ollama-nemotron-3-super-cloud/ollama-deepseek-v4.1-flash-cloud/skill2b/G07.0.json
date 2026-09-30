@@ -1,0 +1,23 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G07.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G07.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The entered invoice date is outside the allowed 90-day range"
+    ],
+    "surplus": 1,
+    "surplus_quote": "目前距離今天已 135 天，僅接受 90 天內。",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期不能早於 2026-07-02：目前距離今天已 135 天，僅接受 90 天內。"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 345,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"已讀回條\",\"s2\":\"啟用後，私人聊天會顯示已讀狀態；群組聊天始終顯示\"}",
+ "parsed": {
+  "s1": "已讀回條",
+  "s2": "啟用後，私人聊天會顯示已讀狀態；群組聊天始終顯示"
+ },
+ "error": ""
+}

@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 287,
+ "seconds": null,
+ "raw": "{\"summary\":\"降低付款頁面錯誤率\",\"action_items\":[\"查詢發卡行拒絕的原因（小陳，下週三前）\",\"統一結帳頁三個 loading 狀態的樣式（小林）\"],\"note\":\"會議中間約 40 秒音訊不清楚\"}",
+ "parsed": {
+  "summary": "降低付款頁面錯誤率",
+  "action_items": [
+   "查詢發卡行拒絕的原因（小陳，下週三前）",
+   "統一結帳頁三個 loading 狀態的樣式（小林）"
+  ],
+  "note": "會議中間約 40 秒音訊不清楚"
+ },
+ "error": ""
+}

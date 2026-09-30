@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 17057,
+ "seconds": 1.5,
+ "raw": "{\"summary\":\"本週重點是降低付款頁錯誤率，並統一結帳頁的載入樣式。\",\"action_items\":[\"小陳：調查發卡行拒絕原因，下週三前提交報告\",\"小林：將結帳頁的三個 loading 狀態改成一致的樣式\"],\"note\":\"中段約 40 秒因雜音無法辨識。\"}",
+ "parsed": {
+  "summary": "本週重點是降低付款頁錯誤率，並統一結帳頁的載入樣式。",
+  "action_items": [
+   "小陳：調查發卡行拒絕原因，下週三前提交報告",
+   "小林：將結帳頁的三個 loading 狀態改成一致的樣式"
+  ],
+  "note": "中段約 40 秒因雜音無法辨識。"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 135,
+ "seconds": null,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"NT$12,515\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "NT$12,515"
+ },
+ "error": ""
+}

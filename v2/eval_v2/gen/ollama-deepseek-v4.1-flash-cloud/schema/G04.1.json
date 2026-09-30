@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 181,
+ "seconds": 3.4,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"既有照片的位置資料不會被刪除\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "既有照片的位置資料不會被刪除"
+ },
+ "error": ""
+}

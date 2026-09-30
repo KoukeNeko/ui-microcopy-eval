@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "skill2",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 17222,
+ "seconds": 2.1,
+ "raw": "{\"s1\":\"無法安裝\",\"s2\":\"目標磁碟 /dev/nvme0n1 目前是唯讀狀態。請先解除唯讀，再重新執行安裝程式。\"}",
+ "parsed": {
+  "s1": "無法安裝",
+  "s2": "目標磁碟 /dev/nvme0n1 目前是唯讀狀態。請先解除唯讀，再重新執行安裝程式。"
+ },
+ "error": ""
+}

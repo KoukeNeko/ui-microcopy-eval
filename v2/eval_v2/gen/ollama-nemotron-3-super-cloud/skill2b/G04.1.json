@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 18198,
+ "seconds": 2.7,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"關閉後新拍攝的照片不會寫入 GPS 位置，既有照片的位置資料不會被刪除\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後新拍攝的照片不會寫入 GPS 位置，既有照片的位置資料不會被刪除"
+ },
+ "error": ""
+}

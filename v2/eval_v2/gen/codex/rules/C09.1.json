@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "rules",
+ "channel": "codex",
+ "sample": 1,
+ "prompt_chars": 763,
+ "seconds": 15.4,
+ "raw": "{\"remark\":\"睡眠距目標差 40 分鐘，入睡比過去 7 天平均多花 33 分鐘\"}\n",
+ "parsed": {
+  "remark": "睡眠距目標差 40 分鐘，入睡比過去 7 天平均多花 33 分鐘"
+ },
+ "error": ""
+}

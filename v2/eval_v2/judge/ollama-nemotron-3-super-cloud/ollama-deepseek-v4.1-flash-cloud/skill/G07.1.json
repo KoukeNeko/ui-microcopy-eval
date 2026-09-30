@@ -1,0 +1,9 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|G07.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "發票日期需在最近 90 天內（2026/7/2–2026/9/30）。"
+ }
+}

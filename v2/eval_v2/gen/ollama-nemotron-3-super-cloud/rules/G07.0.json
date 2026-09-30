@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 722,
+ "seconds": 2.2,
+ "raw": "{\"s1\":\"發票日期必須在 2026 年 7 月 2 日至 2026 年 9 月 30 日之間\"}",
+ "parsed": {
+  "s1": "發票日期必須在 2026 年 7 月 2 日至 2026 年 9 月 30 日之間"
+ },
+ "error": ""
+}

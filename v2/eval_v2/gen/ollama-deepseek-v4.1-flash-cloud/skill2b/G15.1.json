@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18224,
+ "seconds": 1.0,
+ "raw": "```json\n{\"s1\":\"13:30\",\"s2\":\"デザインレビュー\"}\n```",
+ "parsed": {
+  "s1": "13:30",
+  "s2": "デザインレビュー"
+ },
+ "error": ""
+}

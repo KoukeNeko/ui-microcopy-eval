@@ -1,0 +1,39 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|C06.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill2b|C06.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "電子郵件格式不正確。",
+  "s2": "密碼至少需 8 個字元。",
+  "s3": "請輸入手機號碼。"
+ }
+}

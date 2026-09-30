@@ -1,0 +1,11 @@
+{
+ "probe": "C12",
+ "arm": "rules",
+ "channel": "codex",
+ "sample": 0,
+ "prompt_chars": 790,
+ "seconds": 9.5,
+ "raw": "",
+ "parsed": null,
+ "error": "codex failed: Reading additional input from stdin...\nOpenAI Codex v0.157.0\n--------\nworkdir: /var/folders/r1/x4hpj5810bx3rck_gdvwq5q00000gn/T/microcopy-codex-dif9ekd_\nmodel: gpt-6-astra\nprovider: openai\napproval: never\nsandbox: read-only\nreasoning effort: none\nreasoning summaries: none\nsession id: 0"
+}

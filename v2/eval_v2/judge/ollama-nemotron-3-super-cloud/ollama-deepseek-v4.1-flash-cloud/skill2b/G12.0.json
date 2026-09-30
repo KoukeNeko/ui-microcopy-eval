@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G12.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "存款失败",
+  "s2": "无法从尾号 1842 的支票账户转入 USD 2,000，该账户余额不足。请先为该账户充值，或选择其他资金来源后重试。"
+ }
+}

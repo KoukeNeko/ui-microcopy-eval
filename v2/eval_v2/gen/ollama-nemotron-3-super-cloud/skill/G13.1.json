@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15917,
+ "seconds": 2.8,
+ "raw": "{\n  \"s1\": \"已讀回執\",\n  \"s2\": \"啟用後，連絡人可看到您已讀取其訊息。群聊始終傳送已讀回執。\"\n}",
+ "parsed": {
+  "s1": "已讀回執",
+  "s2": "啟用後，連絡人可看到您已讀取其訊息。群聊始終傳送已讀回執。"
+ },
+ "error": ""
+}

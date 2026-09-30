@@ -1,0 +1,42 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G16.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill|G16.0",
+  "items": {
+   "owner": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "review_meeting": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 0,
+    "missing": [
+     "The pricing page is planned for release on October 8",
+     "Legal review is not yet complete"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日 11:00",
+  "note": "10 月 6 日までに承認が取れない場合は公開を延期"
+ }
+}

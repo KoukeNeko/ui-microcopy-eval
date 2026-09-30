@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 376,
+ "seconds": null,
+ "raw": "{\"ingredients\":[\"Chicken thighs (2)\",\"Lemon wedge\",\"Broccoli\"],\"note\":\"Seasoning and cooking oil cannot be identified from the photo\"}",
+ "parsed": {
+  "ingredients": [
+   "Chicken thighs (2)",
+   "Lemon wedge",
+   "Broccoli"
+  ],
+  "note": "Seasoning and cooking oil cannot be identified from the photo"
+ },
+ "error": ""
+}

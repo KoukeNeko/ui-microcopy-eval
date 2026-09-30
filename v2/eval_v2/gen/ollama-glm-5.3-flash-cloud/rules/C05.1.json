@@ -1,0 +1,19 @@
+{
+ "probe": "C05",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 775,
+ "seconds": 10.3,
+ "raw": "The user wants onboarding copy for a Traditional Chinese expense-tracking app. Three pages, each with a title (t) and one subtitle (b). Last page has a CTA button \"開始使用\" (start using).\n\nRules:\n- No chatty phrasing as buttons/titles/status\n- No casual variants of 取消/完成\n- No apologies, no exclamation marks in errors\n- No questions as buttons or titles\n- No explaining how numbers computed, no disclaimers\n- No describing unseen stuff\n- Numbers already estimated: no 約/大概 (n/a here)\n- No 我們; avoid 你的/您的 unless needed\n- Don't repeat title in subtitle; don't explain obvious things\n- No PRC terms: 當前、默認、設置、數據、視頻、用戶、緩存、軟件、網絡、信息\n- No periods at end of labels/buttons\n- Keep it short\n\nPage 1: 銀行帳戶連結,自動匯入交易\nPage 2: 自動分類支出\nPage 3: 每月預算提醒, CTA 開始使用\n\nDraft:\n\nt1: 連結銀行帳戶\nb1: 自動匯入交易紀錄\n\nt2: 支出自動分類\nb2: 交易依類別歸位,無需手動整理 — hmm \"無需手動整理\" might be explaining. Keep it simple: 每筆交易自動歸入類別\n\nWait — avoid \"資料\"? 資料 is fine in Traditional Chinese (Taiwan usage). 數據 is banned; 資料 is the Taiwan term.\n\nt3: 每月預算提醒\nb3: 接近上限時通知 — hmm. \"預算即將到期前發送通知\"? Simpler: 超出預算前收到通知. Or 掌握每月預算狀況.\n\ncta: 開始使用\n\nCheck subtitle doesn't repeat title. t1 \"連結銀行帳戶\" b1 \"自動匯入交易紀錄\" — good, no repetition.\n\nt2 \"自動分類支出\" b1... b2 should add something: \"交易自動歸入飲食、交通等類別\" — that uses examples; okay but maybe too long. Keep: b2: \"每筆交易自動歸入對應類別\". Hmm \"對應類別\" fine.\n\nt3 \"每月預算提醒\" b3: \"接近預算上限時通知\" — that's the reminder content, adds value. Good.\n\nCTA: 開始使用 (no period).\n\nAvoid 你的/我們 — none used.\n\nNo PRC terms. 紀錄 vs 記錄: Taiwan often 紀錄 for noun records; both acceptable. Use 交易紀錄.\n\nJSON exactly as requested.{\"t1\":\"連結銀行帳戶\",\"b1\":\"自動匯入交易紀錄\",\"t2\":\"支出自動分類\",\"b2\":\"每筆交易歸入對應類別\",\"t3\":\"每月預算提醒\",\"b3\":\"接近預算上限時通知\",\"cta\":\"開始使用\"}",
+ "parsed": {
+  "t1": "連結銀行帳戶",
+  "b1": "自動匯入交易紀錄",
+  "t2": "支出自動分類",
+  "b2": "每筆交易歸入對應類別",
+  "t3": "每月預算提醒",
+  "b3": "接近預算上限時通知",
+  "cta": "開始使用"
+ },
+ "error": ""
+}

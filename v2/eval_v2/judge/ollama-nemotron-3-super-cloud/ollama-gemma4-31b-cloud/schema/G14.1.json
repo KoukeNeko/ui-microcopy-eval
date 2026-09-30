@@ -1,0 +1,10 @@
+{
+ "record": "ollama-gemma4-31b-cloud|schema|G14.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "v8.4.1の更新が完了しました",
+  "s2": "再起動"
+ }
+}

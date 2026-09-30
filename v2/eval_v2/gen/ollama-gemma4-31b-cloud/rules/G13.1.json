@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 880,
+ "seconds": 9.1,
+ "raw": "```json\n{\"s1\":\"讀取回條\",\"s2\":\"群組聊天將不受此項影響\"}\n```",
+ "parsed": {
+  "s1": "讀取回條",
+  "s2": "群組聊天將不受此項影響"
+ },
+ "error": ""
+}

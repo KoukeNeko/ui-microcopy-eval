@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18204,
+ "seconds": 4.6,
+ "raw": "{\"s1\":\"日期超過 90 天限制，請輸入 2026 年 7 月 1 日之後的日期\"}",
+ "parsed": {
+  "s1": "日期超過 90 天限制，請輸入 2026 年 7 月 1 日之後的日期"
+ },
+ "error": ""
+}

@@ -1,0 +1,20 @@
+{
+ "probe": "C15",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 376,
+ "seconds": null,
+ "raw": "{\"ingredients\":[\"2 chicken thighs\",\"Salt and pepper\",\"Oil for cooking\",\"1 lemon\",\"Broccoli florets\"],\"note\":\"Grill chicken, steam broccoli, serve with lemon.\"}",
+ "parsed": {
+  "ingredients": [
+   "2 chicken thighs",
+   "Salt and pepper",
+   "Oil for cooking",
+   "1 lemon",
+   "Broccoli florets"
+  ],
+  "note": "Grill chicken, steam broccoli, serve with lemon."
+ },
+ "error": ""
+}

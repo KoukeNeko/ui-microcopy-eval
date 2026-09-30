@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 450,
+ "seconds": 2.6,
+ "raw": "```json\n{\"s1\":\"Deposit Failed\",\"s2\":\"Insufficient funds in account 1842. Please add funds or choose another funding source.\"}\n```",
+ "parsed": {
+  "s1": "Deposit Failed",
+  "s2": "Insufficient funds in account 1842. Please add funds or choose another funding source."
+ },
+ "error": ""
+}

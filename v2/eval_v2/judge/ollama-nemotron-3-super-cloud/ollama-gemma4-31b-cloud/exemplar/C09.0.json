@@ -1,0 +1,17 @@
+{
+ "record": "ollama-gemma4-31b-cloud|exemplar|C09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|exemplar|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": []
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "未達目標 40 分鐘，且入睡時間比平均長"
+ }
+}

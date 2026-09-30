@@ -1,0 +1,57 @@
+{
+ "record": "claude-sonnet-rules-in-context|control|C10.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|control|C10.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "Uninstall this app?",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s4": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s5": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "Uninstall this app?",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files…",
+  "s5": "Uninstall failed because the app is still running. Quit the app, then try again."
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 15776,
+ "seconds": 3.5,
+ "raw": "{\"s1\":\"已安裝 8.4.1 版，重新啟動後生效。\",\"s2\":\"重新啟動\"}",
+ "parsed": {
+  "s1": "已安裝 8.4.1 版，重新啟動後生效。",
+  "s2": "重新啟動"
+ },
+ "error": ""
+}

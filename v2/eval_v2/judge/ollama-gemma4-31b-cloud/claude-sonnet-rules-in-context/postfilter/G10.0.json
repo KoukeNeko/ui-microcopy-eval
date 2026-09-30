@@ -1,0 +1,32 @@
+{
+ "record": "claude-sonnet-rules-in-context|postfilter|G10.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|postfilter|G10.0",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "醬汁種類與用量無法從照片判斷"
+ }
+}

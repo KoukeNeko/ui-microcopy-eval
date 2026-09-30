@@ -1,0 +1,75 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|schema|C05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|schema|C05.0",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "不必手動輸入，收支一目了然。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "聰明辨識消費類型，食衣住行自動歸類，省下整理時間。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "接近上限時即時通知，花費不超支。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶",
+  "b1": "自動匯入交易紀錄，不必手動輸入，收支一目了然。",
+  "t2": "自動分類支出",
+  "b2": "聰明辨識消費類型，食衣住行自動歸類，省下整理時間。",
+  "t3": "每月預算提醒",
+  "b3": "設定每月預算，接近上限時即時通知，花費不超支。",
+  "cta": "開始使用"
+ }
+}

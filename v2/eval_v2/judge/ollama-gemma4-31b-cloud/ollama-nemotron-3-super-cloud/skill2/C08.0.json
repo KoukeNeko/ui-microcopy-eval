@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill2|C08.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill2|C08.0",
+  "items": {
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "小陳負責查發卡行拒絕原因，下週三前報告；小林調整結帳頁三個 loading 狀態為一致樣式",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點降低付款頁錯誤率；小陳負責查發卡行拒絕原因，下週三前報告；小林調整結帳頁三個 loading 狀態為一致樣式",
+  "action_items": "小陳：查發卡行拒絕原因，下週三前給報告 ／ 小林：把結帳頁的三個 loading 狀態改成一致的樣式",
+  "note": "約 40 秒聽不清楚"
+ }
+}

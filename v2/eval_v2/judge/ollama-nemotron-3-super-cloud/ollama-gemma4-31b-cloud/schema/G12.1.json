@@ -1,0 +1,10 @@
+{
+ "record": "ollama-gemma4-31b-cloud|schema|G12.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Deposit Failed",
+  "s2": "Insufficient funds in account 1842. Please add funds or choose another funding source."
+ }
+}

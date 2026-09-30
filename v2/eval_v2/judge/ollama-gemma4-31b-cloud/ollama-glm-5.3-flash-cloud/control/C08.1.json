@@ -1,0 +1,39 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C08.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C08.1",
+  "items": {
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "會議中安排由小陳調查發卡行拒絕的原因並在下週三前提交報告，小林則負責將結帳頁的三個 loading 狀態樣式改成一致。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "該段會議內容可能遺漏",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點為降低付款頁的錯誤率。會議中安排由小陳調查發卡行拒絕的原因並在下週三前提交報告，小林則負責將結帳頁的三個 loading 狀態樣式改成一致。下次會議於下週三同一時間舉行。",
+  "action_items": "小陳：調查付款頁遭發卡行拒絕的原因，下週三前提交報告 ／ 小林：將結帳頁的三個 loading 狀態改成一致的樣式",
+  "note": "逐字稿中有約 40 秒因雜音無法辨識，該段會議內容可能遺漏。"
+ }
+}

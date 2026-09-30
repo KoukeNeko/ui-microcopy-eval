@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 447,
+ "seconds": 6.6,
+ "raw": "The user wants strings for a desktop app's uninstaller in English. They want JSON only with the five keys.\n\ns1: Title of dialog asking whether to uninstall — e.g., \"Uninstall MyApp?\" or \"Uninstall {AppName}?\" Since no app name given, I could use a generic placeholder or just \"Uninstall App\". Better to use a placeholder like \"Uninstall {AppName}?\" Actually many localization tasks prefer placeholders. But instruction says \"the title of the dialog that asks whether to uninstall\". I'll use \"Uninstall {AppName}?\" Hmm, but maybe simpler: \"Are you sure you want to uninstall?\" A title is usually short. Options: \"Uninstall App?\" or \"Confirm Uninstall\". Let me think what's most natural: title = \"Uninstall {AppName}?\" with placeholder. But placeholders might be risky if they want plain strings. Without context, a generic but useful title: \"Uninstall App?\" Hmm. Alternatively \"Are you sure you want to uninstall this app?\" — that's more a body line. Titles are short: \"Uninstall App\".\n\ns2: Button performing uninstall: \"Uninstall\"\n\ns3: Button keeps app: \"Cancel\" or \"Keep App\". Since s1 asks whether to uninstall, keep button could be \"Cancel\". \"Keep\" is clearer. I'll use \"Cancel\" — standard. But user said \"button that keeps the app\" — \"Cancel\" effectively keeps it. Could be \"Keep\". I'd go \"Cancel\" as standard dialog nomenclature, though \"Keep App\" is explicit. Hmm. Many uninstallers use \"Cancel\". I'll use \"Cancel\".\n\ns4: Status line while removing files: \"Removing files… Please wait...\" Something like \"Uninstalling… Removing files. This may take a moment.\" Keep concise: \"Removing files…\"\n\ns5: Error when app still running: \"MyApp is still running. Please close it and try again.\" Generic: \"{AppName} is still running. Close the app and try again.\" Use \"The app is still running. Please close it and try again.\" That tells user what to do.\n\nReturn only JSON. Keep concise per instructions. Use ellipsis character.\n\nJSON validity: no comments.\n\nFinal:\n{\"s1\":\"Uninstall App?\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\",\"s4\":\"Removing files…\",\"s5\":\"The app is still running. Please close it and try again.\"}{\"s1\":\"Uninstall App?\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\",\"s4\":\"Removing files…\",\"s5\":\"The app is still running. Please close it and try again.\"}",
+ "parsed": {
+  "s1": "Uninstall App?",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files…",
+  "s5": "The app is still running. Please close it and try again."
+ },
+ "error": ""
+}

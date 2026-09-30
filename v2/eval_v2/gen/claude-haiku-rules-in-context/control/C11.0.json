@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 347,
+ "seconds": null,
+ "raw": "{\"s1\":\"$4,812.00 (−$96.20, −1.96% today)\",\"s2\":\"$1,050.33\",\"s3\":\"Est. $38 next month (range $30–$45)\"}",
+ "parsed": {
+  "s1": "$4,812.00 (−$96.20, −1.96% today)",
+  "s2": "$1,050.33",
+  "s3": "Est. $38 next month (range $30–$45)"
+ },
+ "error": ""
+}

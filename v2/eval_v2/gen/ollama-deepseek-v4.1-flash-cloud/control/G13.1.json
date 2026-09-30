@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 286,
+ "seconds": 3.2,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Contacts can see when you've read their messages. Group chats always send read receipts.\"}",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Contacts can see when you've read their messages. Group chats always send read receipts."
+ },
+ "error": ""
+}

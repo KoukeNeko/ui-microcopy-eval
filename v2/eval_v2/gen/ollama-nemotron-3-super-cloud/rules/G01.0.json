@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 729,
+ "seconds": 3.9,
+ "raw": "{\n  \"s1\": \"確認轉帳\",\n  \"s2\": \"扣除總額：12,515 元\"\n}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "扣除總額：12,515 元"
+ },
+ "error": ""
+}

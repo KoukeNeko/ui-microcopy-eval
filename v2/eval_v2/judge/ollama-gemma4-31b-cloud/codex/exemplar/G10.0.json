@@ -1,0 +1,35 @@
+{
+ "record": "codex|exemplar|G10.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|exemplar|G10.0",
+  "items": {
+   "kcal": {
+    "facts_present": 0,
+    "missing": [
+     "The estimated total is 510 kcal"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce type or amount cannot be determined from the photo",
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "",
+  "remark": ""
+ }
+}

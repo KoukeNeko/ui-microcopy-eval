@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 295,
+ "seconds": 5.3,
+ "raw": "{\"s1\":\"You haven't saved any items yet. Tap the heart on any product to save it here.\",\"s2\":\"Browse Products\"}",
+ "parsed": {
+  "s1": "You haven't saved any items yet. Tap the heart on any product to save it here.",
+  "s2": "Browse Products"
+ },
+ "error": ""
+}

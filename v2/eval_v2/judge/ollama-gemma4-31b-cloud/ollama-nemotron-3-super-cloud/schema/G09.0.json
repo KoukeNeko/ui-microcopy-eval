@@ -1,0 +1,41 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|G09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "A replacement will be sent to the original order address"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "換貨申請",
+  "summary": "客戶申請換貨 ZX-4 鍵盤，空白鍵卡住，希望新品避免週五前送達",
+  "return_deadline": "10 月 6 日"
+ }
+}

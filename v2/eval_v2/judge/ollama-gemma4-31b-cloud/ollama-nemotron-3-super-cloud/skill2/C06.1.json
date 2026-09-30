@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill2|C06.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill2|C06.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，請確認後重新輸入。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，請設定更長的密碼。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，請輸入您的手機號碼。",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "電子郵件格式不正確，請確認後重新輸入。",
+  "s2": "密碼少於 8 個字元，請設定更長的密碼。",
+  "s3": "手機號碼是必填但空白，請輸入您的手機號碼。"
+ }
+}

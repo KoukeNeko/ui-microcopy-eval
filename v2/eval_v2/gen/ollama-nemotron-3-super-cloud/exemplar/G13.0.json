@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1527,
+ "seconds": 2.4,
+ "raw": "{\n  \"s1\": \"已讀回执\",\n  \"s2\": \"群組聊天總是發送已讀回执，不受此設定影響\"\n}",
+ "parsed": {
+  "s1": "已讀回执",
+  "s2": "群組聊天總是發送已讀回执，不受此設定影響"
+ },
+ "error": ""
+}

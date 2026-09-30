@@ -1,0 +1,15 @@
+{
+ "probe": "C02",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 165,
+ "seconds": 7.4,
+ "raw": "The user wants three pieces of Traditional Chinese (Taiwan) e-commerce checkout page text:\n- s1: Status text shown after payment submitted, while waiting for bank response\n- s2: Error message when credit card is declined by issuing bank (should state reason and tell user what to do)\n- s3: Order confirmed status text, order number is A2026093011\n\nThey want only JSON returned: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nI should write natural Traditional Chinese as used in Taiwan e-commerce. Avoid mainland Chinese terms. Use 「信用卡」 etc. For card decline: reason is 發卡行拒絕授權. Tell user to check card info, contact bank, or use another payment method.\n\nLet me draft:\n\ns1: 「付款資訊已送出，正在等待銀行授權，請勿關閉或重新整理此頁面。」\ns2: 「刷卡授權失敗：您的信用卡已被發卡銀行拒絕交易。可能是卡片狀態異常、額度不足或銀行風險控管所致。請重新確認卡片資訊、聯絡發卡銀行，或改用其他付款方式再試一次。」\ns3: 「訂單已完成！您的訂單編號為 A2026093011，確認信已寄至您的電子信箱，可至「訂單查詢」查看最新進度。」\n\nFormatting: Just output JSON as requested. Keep it valid JSON — note the quotes inside s3: use 「」 which is fine in JSON. Avoid double quotes inside strings, or escape them. Chinese corner brackets are fine.\n\nLength: keep concise but complete. s2 needs reason + action.\n\nFormat: plain JSON only, no markdown code fence? They said 只回傳 JSON. I could output raw JSON. Probably best raw JSON without code block, or with code block? \"只回傳 JSON\" — just the JSON. I'll output raw JSON only.{\"s1\":\"付款資料已送出，正在等待銀行授權，請勿關閉或重新整理此頁面。\",\"s2\":\"刷卡授權失敗：發卡銀行拒絕了這筆交易，可能是卡片狀態異常、額度不足或銀行風控擋件所致。請確認卡片資訊後重試，或聯絡發卡銀行、改用其他付款方式。\",\"s3\":\"訂單已成立！您的訂單編號為 A2026093011，確認通知已寄出，可至「訂單查詢」追蹤最新進度。\"}",
+ "parsed": {
+  "s1": "付款資料已送出，正在等待銀行授權，請勿關閉或重新整理此頁面。",
+  "s2": "刷卡授權失敗：發卡銀行拒絕了這筆交易，可能是卡片狀態異常、額度不足或銀行風控擋件所致。請確認卡片資訊後重試，或聯絡發卡銀行、改用其他付款方式。",
+  "s3": "訂單已成立！您的訂單編號為 A2026093011，確認通知已寄出，可至「訂單查詢」追蹤最新進度。"
+ },
+ "error": ""
+}

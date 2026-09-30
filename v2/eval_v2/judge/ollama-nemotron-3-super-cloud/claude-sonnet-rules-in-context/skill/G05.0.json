@@ -1,0 +1,30 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G05.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill|G05.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "TW482910 已送達",
+  "s2": "全家便利商店斗六民生店，取件期限 10 月 4 日 23:59"
+ }
+}

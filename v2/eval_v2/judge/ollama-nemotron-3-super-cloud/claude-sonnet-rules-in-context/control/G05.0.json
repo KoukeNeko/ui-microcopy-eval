@@ -1,0 +1,10 @@
+{
+ "record": "claude-sonnet-rules-in-context|control|G05.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "包裹待取",
+  "s2": "TW482910 已送達全家便利商店斗六民生店，10 月 4 日 23:59 前取件"
+ }
+}

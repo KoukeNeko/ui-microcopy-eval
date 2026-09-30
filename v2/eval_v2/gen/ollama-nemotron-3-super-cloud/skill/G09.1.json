@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 17091,
+ "seconds": 2.6,
+ "raw": "{\n  \"case_type\": \"換貨\",\n  \"summary\": \"客戶需換貨，希望商品避免週五前送達\",\n  \"return_deadline\": \"10/6\"\n}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "客戶需換貨，希望商品避免週五前送達",
+  "return_deadline": "10/6"
+ },
+ "error": ""
+}

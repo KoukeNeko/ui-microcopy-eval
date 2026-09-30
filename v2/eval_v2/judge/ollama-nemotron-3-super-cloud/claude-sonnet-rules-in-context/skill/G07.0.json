@@ -1,0 +1,9 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G07.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "發票日期須在 90 天內。"
+ }
+}

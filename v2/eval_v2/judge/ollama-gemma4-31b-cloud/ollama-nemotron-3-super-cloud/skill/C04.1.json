@@ -1,0 +1,34 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|C04.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|C04.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "，超時費用為每小時 NT$60",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "10 minutes left",
+     "信義停車場",
+     "overtime rate NT$60/hour"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "信義停車場將於 10 分鐘後超時，超時費用為每小時 NT$60",
+  "s2": "請立即離場或延長停車"
+ }
+}

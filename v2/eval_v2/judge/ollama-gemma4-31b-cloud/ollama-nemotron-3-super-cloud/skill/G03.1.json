@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|G03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|G03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "：目標磁碟為唯讀",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "安裝失敗：目標磁碟為唯讀",
+  "s2": "請先解除磁碟唯讀狀態，然後重新執行安裝。"
+ }
+}

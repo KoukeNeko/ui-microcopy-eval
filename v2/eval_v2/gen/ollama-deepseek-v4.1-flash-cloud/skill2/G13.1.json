@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill2",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 17367,
+ "seconds": 1.5,
+ "raw": "{\"s1\":\"已讀取回條\",\"s2\":\"群組訊息一律顯示已讀狀態\"}",
+ "parsed": {
+  "s1": "已讀取回條",
+  "s2": "群組訊息一律顯示已讀狀態"
+ },
+ "error": ""
+}

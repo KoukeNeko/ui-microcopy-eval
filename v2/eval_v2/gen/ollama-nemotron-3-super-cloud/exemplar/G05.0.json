@@ -1,0 +1,14 @@
+{
+ "probe": "G05",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1360,
+ "seconds": 4.2,
+ "raw": "{\"s1\":\"包裹編號 TW482910 已送達\",\"s2\":\"全家便利商店斗六民生店，取件期限是 10 月 4 日 23:59\"}",
+ "parsed": {
+  "s1": "包裹編號 TW482910 已送達",
+  "s2": "全家便利商店斗六民生店，取件期限是 10 月 4 日 23:59"
+ },
+ "error": ""
+}

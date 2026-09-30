@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 353,
+ "seconds": 1.6,
+ "raw": "{\"s1\":\"還沒收藏任何商品\",\"s2\":\"瀏覽商品\"}",
+ "parsed": {
+  "s1": "還沒收藏任何商品",
+  "s2": "瀏覽商品"
+ },
+ "error": ""
+}

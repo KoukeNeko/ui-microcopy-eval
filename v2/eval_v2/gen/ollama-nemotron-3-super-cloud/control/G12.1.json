@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 391,
+ "seconds": 2.4,
+ "raw": "{\n  \"s1\": \"Deposit Failed\",\n  \"s2\": \"Your bank rejected the USD 2,000 deposit due to insufficient funds in your checking account ending in 1842. Please add funds to this account or select another funding source before trying again.\"\n}",
+ "parsed": {
+  "s1": "Deposit Failed",
+  "s2": "Your bank rejected the USD 2,000 deposit due to insufficient funds in your checking account ending in 1842. Please add funds to this account or select another funding source before trying again."
+ },
+ "error": ""
+}

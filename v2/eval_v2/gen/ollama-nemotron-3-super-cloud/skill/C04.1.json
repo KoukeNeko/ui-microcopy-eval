@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15735,
+ "seconds": 13.0,
+ "raw": "{\"s1\":\"信義停車場將於 10 分鐘後超時，超時費用為每小時 NT$60\",\"s2\":\"請立即離場或延長停車\"}",
+ "parsed": {
+  "s1": "信義停車場將於 10 分鐘後超時，超時費用為每小時 NT$60",
+  "s2": "請立即離場或延長停車"
+ },
+ "error": ""
+}

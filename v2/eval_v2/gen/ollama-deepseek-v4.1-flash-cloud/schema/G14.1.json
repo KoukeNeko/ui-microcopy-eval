@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 203,
+ "seconds": 2.2,
+ "raw": "{\"s1\":\"バージョン8.4.1 完了\",\"s2\":\"再起動\"}",
+ "parsed": {
+  "s1": "バージョン8.4.1 完了",
+  "s2": "再起動"
+ },
+ "error": ""
+}

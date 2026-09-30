@@ -1,0 +1,32 @@
+{
+ "record": "claude-haiku-rules-in-context|control|G03.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-haiku-rules-in-context|control|G03.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The installation failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "磁碟唯讀",
+  "s2": "目標磁碟 /dev/nvme0n1 目前為唯讀狀態。請先解除唯讀狀態，再重新執行安裝。"
+ }
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "skill",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 15776,
+ "seconds": 10.2,
+ "raw": "The user wants two UI strings in Japanese for a settings app:\n- s1: text shown right after user turns off notifications\n- s2: error message when settings failed to save to server (cause: can't connect to server; what user can do: try again later)\n\nThey want JSON only: {\"s1\":\"...\",\"s2\":\"...\"}\n\nThe skill is about UI microcopy doctrine. Note the doctrine is in Traditional Chinese / Taiwan conventions, but the requested language is Japanese. The rules about roles apply: status should be closed state (done/verb), error should be state, then cause if known, then recovery step if exists.\n\nFor Japanese:\n- s1: status after turning off notifications off. Closed state. Something like 通知をオフにしました. Should not add reassurance. Keep short conventional. Common Japanese UI: 「通知をオフにしました」.\n- s2: error: state, cause known (can't connect to server), recovery (try again later). Japanese: 「保存できません。サーバーに接続できません。しばらくしてからもう一度お試しください。」 Hmm, keep concise. Typical Japanese error: 「設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。」\n\nDoctrine: error = state, then cause if known, then recovery step if one exists. Reject apologies, affect. No 申し訳ありません.\n\nAlso note: Japanese convention says \"try again later\" — 後でもう一度試す is what the user can do. So include recovery: しばらくしてからもう一度お試しください is standard polite. Or 後でもう一度お試しください.\n\nKeep punctuation: sentence-type error with 。 ending. Status also with ました convention: 「通知をオフにしました」.\n\nShould s1 be just status? \"ユーザーが通知をオフにした直後に表示する状態の文言\" — status text. Yes: 通知をオフにしました。\n\nCould shorter: 通知をオフにしました。 Status closed state, no period needed? The Chinese doctrine says states like 已儲存 no full stop for labels/buttons, but statuses that are sentences take period. In Japanese, 「通知をオフにしました」 typically no trailing period in toasts; but sentenceish status can have . Japanese UI often omits trailing 。 in short status lines. I'll omit period for s1 status, include for s2 error sentence.\n\ns2: 「設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。」\n\nCause phrasing: サーバーに接続できません → cause. Recovery: しばらくしてからもう一度お試しください。\n\nAlternative: 「サーバーに接続できないため、設定を保存できませんでした。後ほどもう一度お試しください。」 That flows: state + cause + recovery. Either fine. State-first per doctrine. I'll go state first.\n\nReturn JSON only.{\"s1\":\"通知をオフにしました\",\"s2\":\"設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。\"}",
+ "parsed": {
+  "s1": "通知をオフにしました",
+  "s2": "設定を保存できませんでした。サーバーに接続できないため、しばらくしてからもう一度お試しください。"
+ },
+ "error": ""
+}

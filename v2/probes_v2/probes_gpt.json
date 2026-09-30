@@ -1,0 +1,417 @@
+[
+  {
+    "id": "G01",
+    "author": "gpt",
+    "scenario": "finance",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "銀行 App 的轉帳確認畫面。使用者準備從「薪資帳戶」轉帳新台幣 12,500 元給「王小明」，銀行將另外收取 15 元手續費。畫面需要一個送出這筆轉帳的按鈕，以及一行顯示實際從帳戶扣除總額的 value。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "button",
+        "must_convey": [
+          "The action submits the transfer"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "value",
+        "must_convey": [
+          "The total amount deducted is TWD 12,515"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G02",
+    "author": "gpt",
+    "scenario": "ecommerce",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "購物 App 的訂單頁面。訂單編號 A89371 原本預計 10 月 3 日送達，但物流商回報包裹因颱風延誤，目前新的預計送達日是 10 月 5 日。畫面需要一個 status，以及 status 下方的一行 note。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "status",
+        "must_convey": [
+          "The shipment is delayed"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "note",
+        "must_convey": [
+          "The delay is caused by a typhoon",
+          "The new estimated delivery date is October 5"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G03",
+    "author": "gpt",
+    "scenario": "installer",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "Linux 安裝程式正在寫入目標磁碟 /dev/nvme0n1。安裝失敗，系統回報該磁碟目前是唯讀狀態；使用者必須先解除唯讀狀態，再重新執行安裝。畫面需要一個 dialog-title 和一段 dialog-body。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "dialog-title",
+        "must_convey": [
+          "The installation failed"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "dialog-body",
+        "must_convey": [
+          "The target disk is read-only",
+          "The user must make the disk writable before retrying the installation"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G04",
+    "author": "gpt",
+    "scenario": "settings/privacy",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "相片 App 的隱私設定。使用者關閉「位置資訊」後，新拍攝的照片不再寫入 GPS 位置，但既有照片中的位置資料不會被刪除。設定頁需要一個 label，以及開關下方的一行 note。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "label",
+        "must_convey": [
+          "The setting controls whether location information is stored"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "note",
+        "must_convey": [
+          "Disabling the setting affects newly captured photos",
+          "Existing location metadata is not deleted"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G05",
+    "author": "gpt",
+    "scenario": "notifications",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "物流 App 要顯示一則系統通知。包裹編號 TW482910 已送達全家便利商店斗六民生店，取件期限是 10 月 4 日 23:59。通知需要 title 和一行 body。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "title",
+        "must_convey": [
+          "The package has arrived for pickup"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "status",
+        "must_convey": [
+          "The pickup location is FamilyMart Douliu Minsheng",
+          "The pickup deadline is October 4 at 23:59"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G06",
+    "author": "gpt",
+    "scenario": "onboarding",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "密碼管理器的首次啟動畫面。使用者尚未建立保管庫；建立保管庫時會在此裝置產生一把復原金鑰，之後若忘記主密碼，必須使用這把復原金鑰才能重新取得保管庫存取權。畫面需要一個 title 和一個繼續設定的 button。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "title",
+        "must_convey": [
+          "The user is setting up a new vault"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "button",
+        "must_convey": [
+          "The action continues vault setup"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G07",
+    "author": "gpt",
+    "scenario": "forms/validation",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "公司報帳表單有一個「發票日期」欄位。公司規則只接受今天往前 90 天內的日期。今天是 2026 年 9 月 30 日，使用者輸入 2026 年 5 月 18 日，因此表單不能送出。欄位下方需要顯示一則 error。只回傳 JSON：{\"s1\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "error",
+        "must_convey": [
+          "The entered invoice date is outside the allowed 90-day range",
+          "The form cannot be submitted until a valid date is entered"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G08",
+    "author": "gpt",
+    "scenario": "a11y",
+    "lang": "zh-TW",
+    "kind": "strings",
+    "task": "音樂播放器有三個只有圖示的按鈕，供螢幕閱讀器使用。第一個按鈕把目前歌曲加入「喜愛歌曲」，第二個按鈕開啟播放佇列，第三個按鈕把音量設為靜音。請提供三個 screen-reader label。只回傳 JSON：{\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "label",
+        "must_convey": [
+          "The button adds the current song to Favorites"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "label",
+        "must_convey": [
+          "The button opens the playback queue"
+        ]
+      },
+      {
+        "key": "s3",
+        "role": "label",
+        "must_convey": [
+          "The button mutes audio"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G09",
+    "author": "gpt",
+    "scenario": "ai-summary",
+    "lang": "zh-TW",
+    "kind": "runtime",
+    "task": "客服系統內建模型會把通話逐字稿整理成 JSON，UI 直接顯示 summary 欄位。逐字稿：「客戶：我昨天收到 ZX-4 鍵盤，但空白鍵會卡住。客服：可以換貨或退款。客戶：我要換貨。客服：好的，新品會寄到原訂單地址；故障品請在 10 月 6 日前交給超商。客戶：另外我週五之後才在家。客服：了解，我會備註。」使用者補充欄位內容是：「希望新品不要在週五以前送到。」請依據逐字稿與補充欄位回傳 case_type、summary、return_deadline；summary 是 UI 顯示的自由文字欄位。只回傳 JSON：{\"case_type\":\"...\",\"summary\":\"...\",\"return_deadline\":\"...\"}",
+    "items": [
+      {
+        "key": "case_type",
+        "role": "value",
+        "must_convey": [
+          "The customer chose replacement rather than refund"
+        ]
+      },
+      {
+        "key": "summary",
+        "role": "note",
+        "must_convey": [
+          "The ZX-4 keyboard spacebar is sticking",
+          "A replacement will be sent to the original order address",
+          "The customer does not want delivery before Friday"
+        ]
+      },
+      {
+        "key": "return_deadline",
+        "role": "value",
+        "must_convey": [
+          "The defective item must be handed to the convenience store by October 6"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G10",
+    "author": "gpt",
+    "scenario": "health",
+    "lang": "zh-TW",
+    "kind": "runtime",
+    "task": "飲食追蹤 App 的內建模型會根據照片估算餐點，UI 直接顯示 remark 欄位。照片內容：白色盤子上有一碗熟白飯、約 120 克烤雞胸肉、半顆水煮蛋和一小份青花菜；雞肉表面有醬汁，但照片無法判斷醬汁種類或用量。使用者補充欄位內容是：「飯大約一碗，雞肉沒有皮。」模型已估算總熱量為 510 kcal。請回傳 kcal 和 remark；remark 是 UI 顯示的一行自由文字。只回傳 JSON：{\"kcal\":0,\"remark\":\"...\"}",
+    "items": [
+      {
+        "key": "kcal",
+        "role": "value",
+        "must_convey": [
+          "The estimated total is 510 kcal"
+        ]
+      },
+      {
+        "key": "remark",
+        "role": "note",
+        "must_convey": [
+          "The sauce type or amount cannot be determined from the photo",
+          "The sauce could affect the calorie estimate"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G11",
+    "author": "gpt",
+    "scenario": "ecommerce",
+    "lang": "en",
+    "kind": "strings",
+    "task": "A shopping app has an empty Saved Items screen. The account currently has zero saved products. Products can be saved from any product page by tapping the heart icon. The screen needs one empty-state message and one button that opens the product catalog. Return JSON only: {\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "empty",
+        "must_convey": [
+          "There are currently no saved products",
+          "Products can be saved from product pages using the heart control"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "button",
+        "must_convey": [
+          "The action opens the product catalog"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G12",
+    "author": "gpt",
+    "scenario": "finance",
+    "lang": "en",
+    "kind": "strings",
+    "task": "An investing app is showing a failed bank deposit. The user attempted to deposit USD 2,000 from checking account ending in 1842. The bank rejected the transfer because the account has insufficient funds. The user can try again after adding funds to that bank account or choose another funding source. The screen needs a dialog title and dialog body. Return JSON only: {\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "dialog-title",
+        "must_convey": [
+          "The deposit failed"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "dialog-body",
+        "must_convey": [
+          "The attempted deposit was USD 2,000",
+          "The bank account ends in 1842",
+          "The bank rejected the transfer because of insufficient funds",
+          "The user can retry after adding funds or choose another funding source"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G13",
+    "author": "gpt",
+    "scenario": "settings/privacy",
+    "lang": "en",
+    "kind": "strings",
+    "task": "A messaging app has a privacy setting for read receipts. When enabled, contacts can see when the user has read their messages. Group chats always send read receipts regardless of this setting. The settings row needs a label and a one-line note. Return JSON only: {\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "label",
+        "must_convey": [
+          "The setting controls read receipts"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "note",
+        "must_convey": [
+          "When enabled, contacts can see when messages have been read",
+          "The setting does not affect group chats"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G14",
+    "author": "gpt",
+    "scenario": "installer",
+    "lang": "ja",
+    "kind": "strings",
+    "task": "デスクトップアプリの更新画面です。バージョン 8.4.1 のインストールが完了しました。更新を反映するにはアプリを再起動する必要があります。画面には status と、アプリを再起動する button が必要です。JSON のみ返してください：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "status",
+        "must_convey": [
+          "Version 8.4.1 has been installed successfully",
+          "A restart is required for the update to take effect"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "button",
+        "must_convey": [
+          "The action restarts the application"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G15",
+    "author": "gpt",
+    "scenario": "notifications",
+    "lang": "ja",
+    "kind": "strings",
+    "task": "カレンダーアプリの通知設定です。会議「デザインレビュー」は 10 月 2 日 14:00 開始で、通知は開始 30 分前に送られます。設定画面には通知時刻を示す value と、その予定名を示す label が必要です。JSON のみ返してください：{\"s1\":\"...\",\"s2\":\"...\"}",
+    "items": [
+      {
+        "key": "s1",
+        "role": "value",
+        "must_convey": [
+          "The notification is scheduled for 30 minutes before the event"
+        ]
+      },
+      {
+        "key": "s2",
+        "role": "label",
+        "must_convey": [
+          "The event is named Design Review",
+          "The event starts on October 2 at 14:00"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "G16",
+    "author": "gpt",
+    "scenario": "ai-summary",
+    "lang": "ja",
+    "kind": "runtime",
+    "task": "会議アプリ内のモデルが議事録を JSON にまとめ、UI は note フィールドをそのまま表示します。入力された発言：「佐藤：新しい料金ページは 10 月 8 日に公開します。田中：法務レビューがまだ終わっていません。佐藤：承認が 10 月 6 日までに取れなければ公開を延期します。田中：次の確認会は 10 月 5 日の午前 11 時です。」自由記入欄には「料金ページ担当は佐藤」とあります。owner、review_meeting、note を返してください。note は UI に表示する自由記述フィールドです。JSON のみ返してください：{\"owner\":\"...\",\"review_meeting\":\"...\",\"note\":\"...\"}",
+    "items": [
+      {
+        "key": "owner",
+        "role": "value",
+        "must_convey": [
+          "Sato owns the pricing page"
+        ]
+      },
+      {
+        "key": "review_meeting",
+        "role": "value",
+        "must_convey": [
+          "The next review meeting is October 5 at 11:00"
+        ]
+      },
+      {
+        "key": "note",
+        "role": "note",
+        "must_convey": [
+          "The pricing page is planned for release on October 8",
+          "Legal review is not yet complete",
+          "The release will be postponed if approval is not obtained by October 6"
+        ]
+      }
+    ]
+  }
+]

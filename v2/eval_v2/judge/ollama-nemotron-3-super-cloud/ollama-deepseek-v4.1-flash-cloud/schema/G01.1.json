@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G01.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "確認轉帳",
+  "s2": "共扣款 12,515 元（含手續費 15 元）"
+ }
+}

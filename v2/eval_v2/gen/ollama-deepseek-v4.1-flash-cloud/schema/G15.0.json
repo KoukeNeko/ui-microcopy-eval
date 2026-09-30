@@ -1,0 +1,14 @@
+{
+ "probe": "G15",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 207,
+ "seconds": 3.0,
+ "raw": "{\"s1\":\"2024-10-02T13:30:00\",\"s2\":\"デザインレビュー\"}",
+ "parsed": {
+  "s1": "2024-10-02T13:30:00",
+  "s2": "デザインレビュー"
+ },
+ "error": ""
+}

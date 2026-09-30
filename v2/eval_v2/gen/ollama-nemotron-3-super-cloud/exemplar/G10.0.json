@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1466,
+ "seconds": 1.9,
+ "raw": "{\"kcal\":510,\"remark\":\"小字備註：醬汁未計入\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "小字備註：醬汁未計入"
+ },
+ "error": ""
+}

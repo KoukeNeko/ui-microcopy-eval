@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18272,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"カートは空です\",\"s2\":\"商品を削除\",\"s3\":\"削除\",\"s4\":\"キャンセル\"}",
+ "parsed": {
+  "s1": "カートは空です",
+  "s2": "商品を削除",
+  "s3": "削除",
+  "s4": "キャンセル"
+ },
+ "error": ""
+}

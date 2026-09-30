@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1410,
+ "seconds": 0.5,
+ "raw": "{\"remark\":\"未達目標 7 小時，少了 40 分鐘；入睡 48 分鐘，比過去 7 天平均多 33 分鐘。\"}",
+ "parsed": {
+  "remark": "未達目標 7 小時，少了 40 分鐘；入睡 48 分鐘，比過去 7 天平均多 33 分鐘。"
+ },
+ "error": ""
+}

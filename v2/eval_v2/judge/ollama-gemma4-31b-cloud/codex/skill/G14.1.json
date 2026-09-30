@@ -1,0 +1,35 @@
+{
+ "record": "codex|skill|G14.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|skill|G14.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "Version 8.4.1 has been installed successfully",
+     "A restart is required for the update to take effect"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The action restarts the application"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

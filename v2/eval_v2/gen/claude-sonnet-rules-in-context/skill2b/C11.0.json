@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "skill2b",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20896,
+ "seconds": null,
+ "raw": "{\"s1\":\"$4,812.00 (−$96.20, −1.96%)\",\"s2\":\"$1,050.33\",\"s3\":\"Est. $38 next month ($30–$45)\"}",
+ "parsed": {
+  "s1": "$4,812.00 (−$96.20, −1.96%)",
+  "s2": "$1,050.33",
+  "s3": "Est. $38 next month ($30–$45)"
+ },
+ "error": ""
+}

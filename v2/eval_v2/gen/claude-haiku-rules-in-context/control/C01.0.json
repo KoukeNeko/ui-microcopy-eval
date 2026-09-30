@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 157,
+ "seconds": null,
+ "raw": "{\"s1\":\"轉帳 NT$12,500 給王小明？\",\"s2\":\"轉帳\",\"s3\":\"取消\",\"s4\":\"交易送出後無法取消\"}",
+ "parsed": {
+  "s1": "轉帳 NT$12,500 給王小明？",
+  "s2": "轉帳",
+  "s3": "取消",
+  "s4": "交易送出後無法取消"
+ },
+ "error": ""
+}

@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 16995,
+ "seconds": null,
+ "raw": "{\"kcal\":510,\"remark\":\"醬汁另計\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "醬汁另計"
+ },
+ "error": ""
+}

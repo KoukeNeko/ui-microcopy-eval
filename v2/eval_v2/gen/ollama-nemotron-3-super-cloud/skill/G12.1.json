@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 16022,
+ "seconds": 2.7,
+ "raw": "{\"s1\":\"存款失敗\",\"s2\":\"您的帳戶餘額不足。請加入資金後重試，或選擇其他來源。\"}",
+ "parsed": {
+  "s1": "存款失敗",
+  "s2": "您的帳戶餘額不足。請加入資金後重試，或選擇其他來源。"
+ },
+ "error": ""
+}

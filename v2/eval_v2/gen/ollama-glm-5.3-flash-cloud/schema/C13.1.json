@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 204,
+ "seconds": 6.9,
+ "raw": "The user wants Japanese copy for a settings app:\n- s1: Text shown immediately after user turns off notifications\n- s2: Error message when settings couldn't be saved to server (cause: can't connect to server. User action: try again later)\n\nConstraints:\n- s1: max 24 characters\n- s2: max 64 characters\n- Return JSON only: {\"s1\":\"...\",\"s2\":\"...\"}\n\nLet me craft natural Japanese.\n\ns1: Something like \"通知をオフにしました\" - let me count characters: 通(1)知(2)を(3)オ(4)フ(5)に(6)し(7)ま(8)し(9)た(10) = 10 characters. Good.\n\nOr \"通知をオフにしました\" - 10 chars. Fine.\n\ns2: Need to convey: couldn't save to server, connection issue, suggest retry later. Max 64 characters.\n\n\"サーバーに接続できないため保存できませんでした。後でもう一度お試しください。\"\n\nCount: サ1ー2バ3ー4に5接6続7で8き9な10い11た12め13保14存15で16き17ま18せ19ん20で21し22た23。24後25で26も27う28一29度30お31試32し33く34だ35さ36い37。38 = about 38 characters. Within 64.\n\nAlternatively \"接続エラーにより設定を保存できませんでした。しばらくしてからもう一度お試しください。\" - longer but still under 64.\n\nLet me pick concise, natural versions:\n\ns1: \"通知をオフにしました\"\ns2: \"サーバーに接続できないため保存できませんでした。後でもう一度お試しください。\"\n\nCheck s2 length again carefully:\nサ(1)ー(2)バ(3)ー(4)に(5)接(6)続(7)で(8)き(9)な(10)い(11)た(12)め(13)保(14)存(15)で(16)き(17)ま(18)せ(19)ん(20)で(21)し(22)た(23)。(24)後(25)で(26)も(27)う(28)一(29)度(30)お(31)試(32)し(33)く(34)だ(35)さ(36)い(37)。(38)\n38 characters ≤ 64. Good.\n\ns1 count: 通(1)知(2)を(3)オ(4)フ(5)に(6)し(7)ま(8)し(9)た(10) = 10 ≤ 24. Good.\n\nReturn JSON only.{\"s1\":\"通知をオフにしました\",\"s2\":\"サーバーに接続できないため保存できませんでした。後でもう一度お試しください。\"}",
+ "parsed": {
+  "s1": "通知をオフにしました",
+  "s2": "サーバーに接続できないため保存できませんでした。後でもう一度お試しください。"
+ },
+ "error": ""
+}

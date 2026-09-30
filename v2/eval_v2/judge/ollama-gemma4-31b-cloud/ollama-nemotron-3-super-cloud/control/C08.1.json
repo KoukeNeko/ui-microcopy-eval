@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C08.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C08.1",
+  "items": {
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "next meeting Wednesday"
+    ],
+    "surplus": 1,
+    "surplus_quote": "，並分配任務給小陳與小林。",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，但核心決策與任務分配已明確。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "主持人指出本週重點是降低付款頁錯誤率，並分配任務給小陳與小林。",
+  "action_items": "小陳：查發卡行拒絕原因，下週三前提交報告 ／ 小林：將結帳頁的三個 loading 狀態統一為一致樣式",
+  "note": "會議中段約 40 秒出現雜音聽不清，但核心決策與任務分配已明確。"
+ }
+}

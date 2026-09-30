@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 163,
+ "seconds": 10.1,
+ "raw": "The user wants a push notification for a parking app. The user is parked at 信義停車場 (Xinyi Parking Lot), and their meter has 10 minutes remaining until expiry. Overtime costs NT$60 per hour.\n\nConstraints:\n- s1: string, max 16 characters\n- s2: string, max 96 characters\n\nLet me draft:\n\ns1 options:\n- \"停車計時提醒\" (6 chars)\n- \"停車即將到期\" (6 chars)\n- \"車位時間快到了\" (7 chars)\n\ns1 should convey urgency. \"停車計時倒數\" = 6 chars. Or \"計時快到期\" = 5 chars.\n\nMaybe \"停車費將到期\" (6) or with the parking lot name? \"信義停車場提醒\" = 7 chars.\n\nLet me count characters carefully (Chinese chars count as 1 each if counting characters; but \"字元\" could mean characters — Chinese characters are 1 character each in most counting).\n\ns1: \"停車計時即將到期\" = 8 chars. Good, under 16.\n\ns2: needs to include: parking at 信義停車場, 10 minutes remaining, overtime NT$60/hour.\n\nDraft s2: \"您的愛車停在信義停車場，計時剩 10 分鐘到期，逾時每小時 NT$60，請留意時間！\" \n\nCount: Let me count carefully.\n\"您的愛車停在信義停車場，計時剩 10 分鐘到期，逾時每小時 NT$60，請留意時間！\"\n\n您(1)的(2)愛(3)車(4)停(5)在(6)信(7)義(8)停(9)車(10)場(11)，(12)計(13)時(14)剩(15) (space)(16)1(17)0(18) (space)(19)分(20)鐘(21)到(22)期(23)，(24)逾(25)時(26)每(27)小(28)時(29) (space)(30)N(31)T(32)$(33)6(34)0(35)，(36)請(37)留(38)意(39)時(40)間(41)！(42)\n\n42 characters. Well under 96. \n\nCould add urgency or suggestion to extend. Actually maybe suggest they can extend via app. But keep simple.\n\nAlternative shorter: \"信義停車場計時剩 10 分鐘，逾時每小時 NT$60，記得準時取車或加時！\"\n\nCount: 信(1)義(2)停(3)車(4)場(5)計(6)時(7)剩(8) (9)1(10)0(11) (12)分(13)鐘(14)，(15)逾(16)時(17)每(18)小(19)時(20) (21)N(22)T(23)$(24)6(25)0(26)，(27)記(28)得(29)準(30)時(31)取(32)車(33)或(34)加(35)時(36)！(37) = 37 chars.\n\nHmm, \"加時\" — extend. Maybe \"可於 App 續停\" would be useful if app supports. But we don't know. Keep to reminding.\n\nLet me finalize:\n\ns1: \"停車即將到期\" (6 chars)\ns2: \"信義停車場計時剩 10 分鐘，逾時每小時 NT$60，請留意取車時間！\"\n\nCount s2: 信1義2停3車4場5計6時7剩8␣9 1(10)0(11)␣12分13鐘14，15逾16時17每18小19時20␣21N22T23$24 6(25)0(26)，27請28留29意30取31車32時33間34！35 = 35 chars.\n\nUnder 96.\n\ns1 could be more urgent: \"計時快到期！\" or \"停車計時倒數中\" (7). \"停車計時提醒\" is neutral. Since it's time-sensitive, maybe \"停車計時快到期\" (7 chars).\n\nI'll go with:\n\n{\"s1\":\"停車計時快到期\",\"s2\":\"信義停車場計時剩 10 分鐘，逾時每小時 NT$60，請留意取車時間！\"}\n\nCheck s1 length: 停1車2計3時4快5到6期7 = 7 ≤ 16. Good.\n\ns2 = 35 ≤ 96. Good.\n\nReturn only JSON.</think>{\"s1\":\"停車計時快到期\",\"s2\":\"信義停車場計時剩 10 分鐘，逾時每小時 NT$60，請留意取車時間！\"}",
+ "parsed": {
+  "s1": "停車計時快到期",
+  "s2": "信義停車場計時剩 10 分鐘，逾時每小時 NT$60，請留意取車時間！"
+ },
+ "error": ""
+}

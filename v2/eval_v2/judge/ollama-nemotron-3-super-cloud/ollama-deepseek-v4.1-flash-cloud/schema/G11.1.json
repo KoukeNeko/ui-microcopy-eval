@@ -1,0 +1,34 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G11.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|G11.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "Products can be saved from product pages using the heart control"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The action opens the product catalog"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "No saved items yet",
+  "s2": "Browse"
+ }
+}

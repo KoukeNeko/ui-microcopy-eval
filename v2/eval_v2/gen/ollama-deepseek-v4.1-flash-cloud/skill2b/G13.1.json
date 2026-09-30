@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18362,
+ "seconds": 4.0,
+ "raw": "{\"s1\":\"Read receipts\",\"s2\":\"Group chats always send read receipts, even when this is off.\"}",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Group chats always send read receipts, even when this is off."
+ },
+ "error": ""
+}

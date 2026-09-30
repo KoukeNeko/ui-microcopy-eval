@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 137,
+ "seconds": null,
+ "raw": "{\"s1\":\"建立您的保管庫\",\"s2\":\"繼續\"}\n",
+ "parsed": {
+  "s1": "建立您的保管庫",
+  "s2": "繼續"
+ },
+ "error": ""
+}

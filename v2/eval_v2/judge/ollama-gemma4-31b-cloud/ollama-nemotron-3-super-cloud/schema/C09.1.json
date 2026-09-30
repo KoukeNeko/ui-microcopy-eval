@@ -1,0 +1,21 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|C09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|C09.1",
+  "items": {
+   "remark": {
+    "facts_present": 0,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "入睡快於平均，但未達7小時目標，明天可早睡10分鐘",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "入睡快於平均，但未達7小時目標，明天可早睡10分鐘"
+ }
+}

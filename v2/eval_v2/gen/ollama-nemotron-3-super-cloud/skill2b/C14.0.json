@@ -1,0 +1,14 @@
+{
+ "probe": "C14",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18324,
+ "seconds": 4.4,
+ "raw": "{\"s1\":\"Backup complete: 2,314 files, 1.2 GB\",\"s2\":\"Cloud storage 95% full: upgrade or delete files\"}",
+ "parsed": {
+  "s1": "Backup complete: 2,314 files, 1.2 GB",
+  "s2": "Cloud storage 95% full: upgrade or delete files"
+ },
+ "error": ""
+}

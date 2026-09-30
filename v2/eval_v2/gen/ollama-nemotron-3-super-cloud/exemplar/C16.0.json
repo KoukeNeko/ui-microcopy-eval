@@ -1,0 +1,15 @@
+{
+ "probe": "C16",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1426,
+ "seconds": 3.8,
+ "raw": "{\"s1\":\"匯出中 42%\",\"s2\":\"匯出完成\",\"s3\":\"無法匯出：沒有寫入「檔案」app 的權限。請至系統設定開啟「檔案」app 的寫入權限。\"}",
+ "parsed": {
+  "s1": "匯出中 42%",
+  "s2": "匯出完成",
+  "s3": "無法匯出：沒有寫入「檔案」app 的權限。請至系統設定開啟「檔案」app 的寫入權限。"
+ },
+ "error": ""
+}

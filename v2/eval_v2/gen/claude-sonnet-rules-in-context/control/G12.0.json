@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 391,
+ "seconds": null,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"The bank rejected the USD 2,000 transfer from checking account ending in 1842 due to insufficient funds. Add funds to that account and try again, or choose another funding source.\"}",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "The bank rejected the USD 2,000 transfer from checking account ending in 1842 due to insufficient funds. Add funds to that account and try again, or choose another funding source."
+ },
+ "error": ""
+}

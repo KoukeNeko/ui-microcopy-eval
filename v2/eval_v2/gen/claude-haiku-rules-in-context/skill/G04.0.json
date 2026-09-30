@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15753,
+ "seconds": null,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"既有照片不受影響\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "既有照片不受影響"
+ },
+ "error": ""
+}

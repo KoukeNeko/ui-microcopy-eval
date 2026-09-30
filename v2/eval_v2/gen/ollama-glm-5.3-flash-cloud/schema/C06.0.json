@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 190,
+ "seconds": 9.6,
+ "raw": "The user wants me to write Traditional Chinese error messages for a registration form with three field errors:\n- s1: email format incorrect\n- s2: password less than 8 characters\n- s3: phone number is required but empty\n\nThey want JSON output only: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nEach field: string, max 64 characters.\n\nLet me write clear Traditional Chinese error messages:\n\n- s1: \"電子郵件格式不正確\" (10 chars)\n- s2: \"密碼長度不足，至少需要 8 個字元\" or \"密碼至少需要 8 個字元\"\n- s3: \"手機號碼為必填欄位\" or \"請輸入手機號碼\"\n\nLet me check character counts:\n- s1: \"電子郵件格式不正確\" = 9 characters, well within 64\n- s2: \"密碼至少需要 8 個字元\" = about 12 characters\n- s3: \"請輸入手機號碼\" = 7 characters\n\nThe instructions say to only return JSON. So I should output just the JSON.\n\nLet me count precisely:\n- s1: 電子郵件格式不正確 = 電(1)子(2)郵(3)件(4)格(5)式(6)不(7)正(8)確(9) = 9 chars ✓\n- s2: 密碼至少需要 8 個字元 = 密(1)碼(2)至(3)少(4)需(5)要(6) (space) 8 (space) 個(7)字(8)元(9) ≈ 12 chars ✓\n- s3: 手機號碼為必填欄位，請輸入手機號碼 = could just be \"請輸入手機號碼，此欄位必填\" or simpler\n\nActually the description says \"手機號碼是必填但空白\" so message could be \"手機號碼為必填，請勿空白\" or \"請輸入手機號碼\".\n\nLet me keep it simple and clear:\n- s1: \"電子郵件格式不正確，請重新輸入\" (14 chars)\n- s2: \"密碼長度不足，至少需要 8 個字元\" (15 chars)\n- s3: \"手機號碼為必填欄位，請勿空白\" (14 chars)\n\nAll well under 64 characters. Return only JSON.</think>{\"s1\":\"電子郵件格式不正確，請重新輸入\",\"s2\":\"密碼長度不足，至少需要 8 個字元\",\"s3\":\"手機號碼為必填欄位，請勿空白\"}",
+ "parsed": {
+  "s1": "電子郵件格式不正確，請重新輸入",
+  "s2": "密碼長度不足，至少需要 8 個字元",
+  "s3": "手機號碼為必填欄位，請勿空白"
+ },
+ "error": ""
+}

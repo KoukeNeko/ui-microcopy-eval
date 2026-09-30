@@ -1,0 +1,14 @@
+{
+ "probe": "C14",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1489,
+ "seconds": 0.7,
+ "raw": "{\"s1\":\"Backup complete: 2,314 files (1.2 GB)\",\"s2\":\"Cloud storage is 95% full. Upgrade your plan or delete files to keep backing up.\"}",
+ "parsed": {
+  "s1": "Backup complete: 2,314 files (1.2 GB)",
+  "s2": "Cloud storage is 95% full. Upgrade your plan or delete files to keep backing up."
+ },
+ "error": ""
+}

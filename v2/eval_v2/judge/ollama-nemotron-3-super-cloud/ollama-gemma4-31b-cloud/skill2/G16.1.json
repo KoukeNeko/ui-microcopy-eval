@@ -1,0 +1,45 @@
+{
+ "record": "ollama-gemma4-31b-cloud|skill2|G16.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|skill2|G16.1",
+  "items": {
+   "owner": {
+    "facts_present": 0,
+    "missing": [
+     "Sato owns the pricing page"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "review_meeting": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 0,
+    "missing": [
+     "The pricing page is planned for release on October 8",
+     "Legal review is not yet complete",
+     "The release will be postponed if approval is not obtained by October 6"
+    ],
+    "surplus": 1,
+    "surplus_quote": "承認が10月6日までに取れなければ公開を延期",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "owner": "佐藤",
+  "review_meeting": "10月5日 11:00",
+  "note": "承認が10月6日までに取れなければ公開を延期"
+ }
+}

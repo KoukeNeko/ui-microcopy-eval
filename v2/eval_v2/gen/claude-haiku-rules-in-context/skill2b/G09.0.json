@@ -1,0 +1,15 @@
+{
+ "probe": "G09",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 22252,
+ "seconds": null,
+ "raw": "{\"case_type\":\"換貨\",\"summary\":\"ZX-4 鍵盤故障（空白鍵卡住），客戶選擇換貨。新品寄至原訂單地址，故障品取回期限 10 月 6 日。客戶備註：新品勿在週五前送達。\",\"return_deadline\":\"10 月 6 日\"}",
+ "parsed": {
+  "case_type": "換貨",
+  "summary": "ZX-4 鍵盤故障（空白鍵卡住），客戶選擇換貨。新品寄至原訂單地址，故障品取回期限 10 月 6 日。客戶備註：新品勿在週五前送達。",
+  "return_deadline": "10 月 6 日"
+ },
+ "error": ""
+}

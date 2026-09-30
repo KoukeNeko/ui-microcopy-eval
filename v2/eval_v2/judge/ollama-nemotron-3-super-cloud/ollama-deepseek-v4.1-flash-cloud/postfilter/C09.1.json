@@ -1,0 +1,9 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|postfilter|C09.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "remark": "入睡花了 48 分鐘，比過去一週平均多 33 分鐘；睡眠 6 小時 20 分，距目標還差 40 分鐘。"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 17057,
+ "seconds": 1.7,
+ "raw": "```json\n{\n  \"summary\": \"降低付款頁錯誤率\",\n  \"action_items\": [\n    \"查明發卡行拒絕原因並於下週三前報告（小陳）\",\n    \"統一結帳頁三個 loading 狀態樣式（小林）\"\n  ],\n  \"note\": \"下週三同一時間開會\"\n}\n```",
+ "parsed": {
+  "summary": "降低付款頁錯誤率",
+  "action_items": [
+   "查明發卡行拒絕原因並於下週三前報告（小陳）",
+   "統一結帳頁三個 loading 狀態樣式（小林）"
+  ],
+  "note": "下週三同一時間開會"
+ },
+ "error": ""
+}

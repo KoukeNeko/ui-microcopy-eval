@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 21004,
+ "seconds": null,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"Insufficient funds in checking account ending 1842. Add funds or choose another funding source.\"}",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Insufficient funds in checking account ending 1842. Add funds or choose another funding source."
+ },
+ "error": ""
+}

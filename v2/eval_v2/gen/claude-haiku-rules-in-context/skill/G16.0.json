@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 17096,
+ "seconds": null,
+ "raw": "{\"owner\":\"佐藤\",\"review_meeting\":\"10月5日 11:00\",\"note\":\"法務レビュー完了待ち。承認は10月6日までに必要、公開は10月8日予定。確認会：10月5日午前11時。\"}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10月5日 11:00",
+  "note": "法務レビュー完了待ち。承認は10月6日までに必要、公開は10月8日予定。確認会：10月5日午前11時。"
+ },
+ "error": ""
+}

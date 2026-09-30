@@ -1,0 +1,21 @@
+{
+ "record": "claude-haiku-rules-in-context|skill|C09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-haiku-rules-in-context|skill|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "睡眠少 40 分鐘。"
+ }
+}

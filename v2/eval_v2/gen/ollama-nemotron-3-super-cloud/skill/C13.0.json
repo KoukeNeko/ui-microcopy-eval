@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 15776,
+ "seconds": 1.2,
+ "raw": "{\"s1\":\"通知已關閉\",\"s2\":\"設定無法保存：伺服器未連線。請稍後再試一次。\"}",
+ "parsed": {
+  "s1": "通知已關閉",
+  "s2": "設定無法保存：伺服器未連線。請稍後再試一次。"
+ },
+ "error": ""
+}

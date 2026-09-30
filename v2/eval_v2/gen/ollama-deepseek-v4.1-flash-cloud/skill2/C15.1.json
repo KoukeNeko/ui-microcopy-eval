@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "skill2",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 18624,
+ "seconds": 2.5,
+ "raw": "{\"ingredients\":[\"烤雞腿\",\"檸檬\",\"蒸花椰菜\"],\"note\":\"\"}",
+ "parsed": {
+  "ingredients": [
+   "烤雞腿",
+   "檸檬",
+   "蒸花椰菜"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

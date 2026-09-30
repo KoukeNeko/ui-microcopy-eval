@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|G10.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|G10.0",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "白飯約1碗（150g）+烤雞胸肉120g（去皮）+水煮蛋半顆+青花菜小份，總熱量約510kcal。",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "估算：白飯約1碗（150g）+烤雞胸肉120g（去皮）+水煮蛋半顆+青花菜小份，醬汁未計入因種類與用量無法判斷，總熱量約510kcal。"
+ }
+}

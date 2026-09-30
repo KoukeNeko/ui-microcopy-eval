@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "skill",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 17096,
+ "seconds": null,
+ "raw": "{\"owner\":\"佐藤\",\"review_meeting\":\"10 月 5 日 11:00\",\"note\":\"10 月 6 日までに承認が取れない場合は公開を延期\"}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日 11:00",
+  "note": "10 月 6 日までに承認が取れない場合は公開を延期"
+ },
+ "error": ""
+}

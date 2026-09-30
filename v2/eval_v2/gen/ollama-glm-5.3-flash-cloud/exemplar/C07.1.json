@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "exemplar",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1372,
+ "seconds": 3.0,
+ "raw": "The user wants accessibility labels in Traditional Chinese for three icon-only buttons:\n1. Close (X) icon — closes current panel\n2. Magnifying glass — opens search\n3. Three dots — opens more options menu\n\nAccording to the guidance: label = noun; accessibility label should state what the control does. Buttons = action name, verb-first, no period.\n\nCommon conventions: 關閉、搜尋、更多選項. These match the examples given in the table's 標籤 row: 熱量、關閉、搜尋、更多選項.\n\nSo:\ns1: 關閉\ns2: 搜尋\ns3: 更多選項\n\nReturn only JSON: {\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}</think>{\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

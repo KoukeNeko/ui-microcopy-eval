@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 196,
+ "seconds": 9.0,
+ "raw": "The user wants Japanese copy for an e-commerce app:\n- s1: Message displayed on cart screen when cart is empty (there's already a \"商品を探す\" button at the bottom)\n- s2: Title of confirmation dialog for deleting an item from cart\n- s3: Button to confirm deletion\n- s4: Button to cancel deletion\n\nLet me write natural Japanese e-commerce copy:\n\ns1: Something like \"カートに商品が入っていません\" or \"カートは空です\" - since there's already a button to find products, the message should convey empty cart. Common phrasing: 「カートに商品がありません」\n\ns2: Confirmation dialog title for deletion: 「商品を削除しますか？」\n\ns3: Delete button: 「削除する」\n\ns4: Cancel button: 「キャンセル」\n\nThese are standard, natural Japanese UI strings. Let me refine:\n\ns1: 「カートに商品がありません」- natural and common. Could also be 「カート内に商品がありません」. I'll go with 「カートに商品がありません」. Since the button exists, no need to add CTA in the message. Maybe add a softer tone? For EC apps, polite forms are common: 「カートに商品が入っていません」。Both are fine. I'll use 「カートに商品が入っていません」.\n\ns2: 「商品を削除しますか？」or 「この商品を削除しますか？」- dialog title. Titles are often noun-phrase style: 「商品の削除」but question form is also common and clear. I'll use 「商品を削除しますか？」\n\ns3: 「削除する」\n\ns4: 「キャンセル」\n\nReturn JSON only.{\"s1\":\"カートに商品が入っていません\",\"s2\":\"商品を削除しますか？\",\"s3\":\"削除する\",\"s4\":\"キャンセル\"}",
+ "parsed": {
+  "s1": "カートに商品が入っていません",
+  "s2": "商品を削除しますか？",
+  "s3": "削除する",
+  "s4": "キャンセル"
+ },
+ "error": ""
+}

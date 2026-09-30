@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "skill2b",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18214,
+ "seconds": 2.2,
+ "raw": "{\n  \"s1\": \"加入喜愛歌曲\",\n  \"s2\": \"開啟播放佇列\",\n  \"s3\": \"設為靜音\"\n}",
+ "parsed": {
+  "s1": "加入喜愛歌曲",
+  "s2": "開啟播放佇列",
+  "s3": "設為靜音"
+ },
+ "error": ""
+}

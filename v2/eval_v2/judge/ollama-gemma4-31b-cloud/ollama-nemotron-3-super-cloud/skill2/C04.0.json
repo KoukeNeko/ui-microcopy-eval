@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill2|C04.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill2|C04.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請即時處理",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "即將逾期",
+  "s2": "您在信義停車場的停車將於10分鐘後超時，超時每小時收費NT$60，請即時處理"
+ }
+}

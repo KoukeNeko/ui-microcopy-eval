@@ -1,0 +1,15 @@
+{
+ "probe": "G16",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 19668,
+ "seconds": 3.7,
+ "raw": "{\"owner\":\"佐藤\",\"review_meeting\":\"10 月 5 日（週一）上午 11 時\",\"note\":\"料金ページ担当は佐藤\"}",
+ "parsed": {
+  "owner": "佐藤",
+  "review_meeting": "10 月 5 日（週一）上午 11 時",
+  "note": "料金ページ担当は佐藤"
+ },
+ "error": ""
+}

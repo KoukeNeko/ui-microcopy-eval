@@ -1,0 +1,41 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|C08.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill|C08.0",
+  "items": {
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "next meeting Wednesday"
+    ],
+    "surplus": 1,
+    "surplus_quote": "並統一結帳頁的載入樣式",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點是降低付款頁錯誤率，並統一結帳頁的載入樣式。",
+  "action_items": "小陳：調查發卡行拒絕原因，下週三前提交報告 ／ 小林：將結帳頁的三個 loading 狀態改成一致的樣式",
+  "note": "中段約 40 秒因雜音無法辨識。"
+ }
+}

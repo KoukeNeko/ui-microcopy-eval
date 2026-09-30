@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 19511,
+ "seconds": 2.3,
+ "raw": "```json\n{\"remark\":\"入睡時間明顯長於平均值，且未達睡眠目標。\"}\n```",
+ "parsed": {
+  "remark": "入睡時間明顯長於平均值，且未達睡眠目標。"
+ },
+ "error": ""
+}

@@ -1,0 +1,39 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|postfilter|G09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|postfilter|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "客服已同意換貨並告知新品將寄至原訂單地址，故障品需於 10 月 6 日前交給超商。客戶補充希望新品不要在週五以前送到，客服已備註了解。",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "返貨與換貨",
+  "summary": "客戶反映昨天收到的 ZX-4 鍵盤空白鍵卡住，申請換貨。客服已同意換貨並告知新品將寄至原訂單地址，故障品需於 10 月 6 日前交給超商。客戶補充希望新品不要在週五以前送到，客服已備註了解。",
+  "return_deadline": "2024-10-06"
+ }
+}

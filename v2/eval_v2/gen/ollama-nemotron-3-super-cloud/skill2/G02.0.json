@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17223,
+ "seconds": 3.2,
+ "raw": "{\n  \"s1\": \"物流延誤，送達延期\",\n  \"s2\": \"新的預計送達日：10 月 5 日\"\n}",
+ "parsed": {
+  "s1": "物流延誤，送達延期",
+  "s2": "新的預計送達日：10 月 5 日"
+ },
+ "error": ""
+}

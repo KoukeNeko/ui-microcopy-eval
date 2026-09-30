@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 184,
+ "seconds": 5.7,
+ "raw": "The user wants a JSON response for a Taiwanese parking app (Traditional Chinese, Taiwan usage). They need:\n\n- s1: Purpose string (location permission purpose explanation) - shown in iOS system dialog. Should say location is only used to find nearby parking lots, not stored.\n- s2: Agree button text\n- s3: Disagree button text\n\nOnly return JSON, no extra text.\n\nLet me write natural Traditional Chinese (Taiwan style):\n\ns1: Something like: 「App 只會在使用期間存取您的位置，用於搜尋附近的停車場。您的位置資訊不會被儲存或分享。」But they said 只用來找附近停車場，不會儲存. Keep it concise since the iOS purpose string has length limits (recommended under ~2-3 lines). Something like:\n\n「我們僅在您使用本 App 時取得位置，用於搜尋附近停車場，不會儲存您的位置資訊。」\n\ns2: 「同意」or 「好，繼續」or 「允許」。Common: 「同意並繼續」or just 「同意」.\n\ns3: 「不同意」or 「暫不使用」or 「不用了」。Common: 「暫不同意」or 「不同意」.\n\nKeep it simple:\n\n{\"s1\":\"我們只會在您使用 App 期間存取您的位置，用來搜尋附近的停車場，不會儲存您的位置資訊。\",\"s2\":\"同意\",\"s3\":\"不同意\"}\n\nMaybe s2 \"同意並繼續\" and s3 \"暫不同意\"? The spec says s2 = agree button, s3 = disagree button. Simple 同意/不同意 is fine. Could be \"好，同意\" / \"不用了\". I'll use 同意 / 暫不同意? \"暫不同意\" implies temporary. Perhaps s3: \"不同意\". Keep clean.\n\nOutput only JSON.</think>{\"s1\":\"我們只會在您使用 App 期間取得您的位置，用於搜尋附近的停車場，不會儲存您的位置資訊。\",\"s2\":\"同意\",\"s3\":\"不同意\"}",
+ "parsed": {
+  "s1": "我們只會在您使用 App 期間取得您的位置，用於搜尋附近的停車場，不會儲存您的位置資訊。",
+  "s2": "同意",
+  "s3": "不同意"
+ },
+ "error": ""
+}

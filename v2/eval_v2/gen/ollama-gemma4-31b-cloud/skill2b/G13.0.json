@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "skill2b",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 18362,
+ "seconds": 1.2,
+ "raw": "```json\n{\"s1\":\"Read receipts\",\"s2\":\"Group chats always send read receipts.\"}\n```",
+ "parsed": {
+  "s1": "Read receipts",
+  "s2": "Group chats always send read receipts."
+ },
+ "error": ""
+}

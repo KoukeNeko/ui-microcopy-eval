@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|C04.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "信義停車場 剩 10 分鐘到期",
+  "s2": "您的停車計時將於 10 分鐘後到期，超時每小時 NT$60，請盡快繳費或離場。"
+ }
+}

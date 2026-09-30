@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 169,
+ "seconds": 2.6,
+ "raw": "{\"s1\":\"發票日期必須為今天起算前90天內，請重新選擇日期。\"}",
+ "parsed": {
+  "s1": "發票日期必須為今天起算前90天內，請重新選擇日期。"
+ },
+ "error": ""
+}

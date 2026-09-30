@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 200,
+ "seconds": 2.5,
+ "raw": "{\n  \"s1\": \"磁碟寫入失敗\",\n  \"s2\": \"目標磁碟 /dev/nvme0n1 目前處於唯讀狀態，無法寫入安裝資料。請先解除磁碟唯讀保護（如檢查硬體開關、BIOS 設定或使用 sudo hdparm -r0 /dev/nvme0n1），然後重新執行安裝程式。\"\n}",
+ "parsed": {
+  "s1": "磁碟寫入失敗",
+  "s2": "目標磁碟 /dev/nvme0n1 目前處於唯讀狀態，無法寫入安裝資料。請先解除磁碟唯讀保護（如檢查硬體開關、BIOS 設定或使用 sudo hdparm -r0 /dev/nvme0n1），然後重新執行安裝程式。"
+ },
+ "error": ""
+}

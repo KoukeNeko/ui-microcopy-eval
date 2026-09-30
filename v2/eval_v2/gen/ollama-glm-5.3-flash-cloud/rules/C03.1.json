@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 778,
+ "seconds": 14.3,
+ "raw": "Let me analyze the task:\n\nA Taiwan parking app (Traditional Chinese) needs to request \"while using\" location permission for the first time. iOS shows the system dialog, but the app provides:\n- s1: purpose string (location used only to find nearby parking, not stored)\n- s2: agree button\n- s3: disagree button\n\nConstraints:\n- No chatty button text\n- 取消 should be 「取消」, not 算了/不用了\n- No apologies, no exclamation marks, no emoji in errors (not relevant here)\n- No questions as buttons/titles\n- No mainland Chinese terms: no 當前、默認、設置、數據、視頻、用戶、緩存、軟件、網絡、信息\n- No periods at end of labels/buttons\n- Keep short\n- Don't use 「我們」; avoid 「你的」「您的」 unless needed\n\ns1: purpose string in the iOS system dialog. Something like: 「使用位置尋找附近停車場,位置資訊不會儲存」\n\nWait — the rule says don't write 資料? No, 資料 is fine (Taiwan usage); 數據 is mainland. So use 資料.\n\ns1: 「用於搜尋附近停車場,位置資訊不會儲存」— that's good. Or 「位置僅用於搜尋附近停車場,不會儲存」. Since \"你的位置\" — avoid 你的. So just say 「用於搜尋附近停車場,不會儲存位置資訊」.\n\nActually iOS purpose strings often appear like \"App would like to use your location for...\" then the purpose string. The purpose string itself: 「用於搜尋附近停車場,位置資訊不會儲存」.\n\nHmm, but \"不會儲存\" — is that fine? Yes.\n\nLength: keep short.\n\ns2: agree button. Options: 「同意」「允許」「好的」(too chatty). 「同意」is good. Or 「允許」. iOS system dialog has its own 允許/不要允許 buttons. The in-app buttons before the dialog: agree button 「同意」 works. Could be 「開啟定位」but that's more an action. The task says 同意的按鈕 different 按鈕. 「同意」is safe and compliant.\n\ns3: disagree button: 「不同意」. 取消 is allowed per the rule (they say don't write 取消 as 算了 etc., implying 取消 is fine). But 不同意 is more precise for a consent pair. Also note: don't use questions, no periods.\n\nShould the buttons avoid duplicated wording? s1 says 用途說明. The buttons: 同意 / 不同意. That's a standard consent pair.\n\nBut wait — the pre-prompt screen buttons: typically 「繼續」and 「取消」or 「同意」and 「不同意」. Since it's consent for permission, 同意/不同意 fits.\n\nAlso avoid 「我們」— not used.\n\nAvoid 「當前」「定位」... 定向? 「定位」is fine in Taiwan. 「位置權限」fine.\n\ns1: 「用於搜尋附近停車場,位置資訊不會儲存」— punctuation: use Traditional Chinese comma 「,」. Full-width. I'll use 「,」.\n\nCheck mainland terms: none. No 數據. 資訊 is Taiwan usage. Good.\n\nOutput only JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nLet me finalize:\ns1: \"用於搜尋附近停車場,位置資訊不會儲存\"\ns2: \"同意\"\ns3: \"不同意\"\n\nLength fine. No periods at label ends. JSON only.</think>{\"s1\":\"用於搜尋附近停車場，位置資訊不會儲存\",\"s2\":\"同意\",\"s3\":\"不同意\"}",
+ "parsed": {
+  "s1": "用於搜尋附近停車場，位置資訊不會儲存",
+  "s2": "同意",
+  "s3": "不同意"
+ },
+ "error": ""
+}

@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 558,
+ "seconds": 3.5,
+ "raw": "{\n  \"s1\": \"Uninstall Application\",\n  \"s2\": \"Uninstall\",\n  \"s3\": \"Keep\",\n  \"s4\": \"Removing files...\",\n  \"s5\": \"Please close the application before uninstalling.\"\n}",
+ "parsed": {
+  "s1": "Uninstall Application",
+  "s2": "Uninstall",
+  "s3": "Keep",
+  "s4": "Removing files...",
+  "s5": "Please close the application before uninstalling."
+ },
+ "error": ""
+}

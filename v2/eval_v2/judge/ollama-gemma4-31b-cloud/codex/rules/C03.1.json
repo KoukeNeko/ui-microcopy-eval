@@ -1,0 +1,39 @@
+{
+ "record": "codex|rules|C03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|rules|C03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "使用 App 期間，位置僅用於尋找附近停車場，不會儲存。",
+  "s2": "使用位置",
+  "s3": "暫不使用"
+ }
+}

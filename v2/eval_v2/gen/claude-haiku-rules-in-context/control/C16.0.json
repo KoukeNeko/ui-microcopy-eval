@@ -1,0 +1,15 @@
+{
+ "probe": "C16",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 185,
+ "seconds": null,
+ "raw": "{\"s1\":\"正在匯出...\",\"s2\":\"匯出完成。檔案已存到「檔案」app 的「筆記備份」資料夾。\",\"s3\":\"沒有「檔案」app 的寫入權限。請到系統設定開啟。\"}",
+ "parsed": {
+  "s1": "正在匯出...",
+  "s2": "匯出完成。檔案已存到「檔案」app 的「筆記備份」資料夾。",
+  "s3": "沒有「檔案」app 的寫入權限。請到系統設定開啟。"
+ },
+ "error": ""
+}

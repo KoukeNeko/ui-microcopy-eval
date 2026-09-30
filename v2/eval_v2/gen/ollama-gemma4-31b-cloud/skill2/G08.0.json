@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "skill2",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 17219,
+ "seconds": 1.3,
+ "raw": "```json\n{\"s1\":\"加入喜愛歌曲\",\"s2\":\"開啟播放佇列\",\"s3\":\"靜音\"}\n```",
+ "parsed": {
+  "s1": "加入喜愛歌曲",
+  "s2": "開啟播放佇列",
+  "s3": "靜音"
+ },
+ "error": ""
+}

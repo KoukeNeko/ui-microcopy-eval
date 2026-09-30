@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 15776,
+ "seconds": 2.7,
+ "raw": "```json\n{\"s1\":\"安裝完成\",\"s2\":\"重新啟動\"}\n```",
+ "parsed": {
+  "s1": "安裝完成",
+  "s2": "重新啟動"
+ },
+ "error": ""
+}

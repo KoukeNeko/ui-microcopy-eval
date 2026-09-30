@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1632,
+ "seconds": 3.0,
+ "raw": "{\"s1\":\"Deposit Failed\",\"s2\":\"The bank rejected the transfer due to insufficient funds in the account ending in 1842. Please add funds to this account or select another funding source and try again.\"}",
+ "parsed": {
+  "s1": "Deposit Failed",
+  "s2": "The bank rejected the transfer due to insufficient funds in the account ending in 1842. Please add funds to this account or select another funding source and try again."
+ },
+ "error": ""
+}

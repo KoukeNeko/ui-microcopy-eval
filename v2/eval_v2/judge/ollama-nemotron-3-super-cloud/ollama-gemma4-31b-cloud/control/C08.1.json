@@ -1,0 +1,11 @@
+{
+ "record": "ollama-gemma4-31b-cloud|control|C08.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "summary": "本週重點為降低付款頁面的錯誤率。",
+  "action_items": "小陳：調查發卡行拒絕之原因，並於下週三前提交報告 ／ 小林：將結帳頁的三個 loading 狀態修改為一致樣式",
+  "note": "逐字稿中包含約 40 秒雜音，內容不清晰。"
+ }
+}

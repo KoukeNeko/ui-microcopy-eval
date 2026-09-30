@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 203,
+ "seconds": 1.2,
+ "raw": "```json\n{\"s1\":\"v8.4.1の更新が完了しました\",\"s2\":\"再起動\"}\n```",
+ "parsed": {
+  "s1": "v8.4.1の更新が完了しました",
+  "s2": "再起動"
+ },
+ "error": ""
+}

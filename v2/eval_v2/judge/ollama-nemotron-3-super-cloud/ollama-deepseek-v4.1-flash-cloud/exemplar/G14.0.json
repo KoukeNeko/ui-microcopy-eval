@@ -1,0 +1,32 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G14.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G14.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "A restart is required for the update to take effect"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "已安裝版本 8.4.1",
+  "s2": "重新啟動"
+ }
+}

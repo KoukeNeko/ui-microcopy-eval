@@ -1,0 +1,30 @@
+{
+ "record": "ollama-gemma4-31b-cloud|exemplar|G12.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|exemplar|G12.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 0
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "存款失敗",
+  "s2": "無法從帳號 1842 存款 USD 2,000：餘額不足。請在銀行帳戶內增加資金後重試，或選擇其他付款來源。"
+ }
+}

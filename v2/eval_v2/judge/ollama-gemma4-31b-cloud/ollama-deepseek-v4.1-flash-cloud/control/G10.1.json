@@ -1,0 +1,30 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|G10.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|G10.1",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "估算約510 kcal：白飯一碗、烤雞胸肉約120克（無皮）、半顆水煮蛋與少量青花菜",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "估算約510 kcal：白飯一碗、烤雞胸肉約120克（無皮）、半顆水煮蛋與少量青花菜；雞肉醬汁種類與用量無法從照片判斷，未計入誤差。"
+ }
+}

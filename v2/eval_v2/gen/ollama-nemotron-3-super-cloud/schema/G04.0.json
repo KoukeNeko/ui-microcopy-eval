@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 181,
+ "seconds": 1.7,
+ "raw": "{\n  \"s1\": \"位置資訊\",\n  \"s2\": \"關閉後新照片不寫入 GPS，既有照片位置資料不受影響\"\n}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後新照片不寫入 GPS，既有照片位置資料不受影響"
+ },
+ "error": ""
+}

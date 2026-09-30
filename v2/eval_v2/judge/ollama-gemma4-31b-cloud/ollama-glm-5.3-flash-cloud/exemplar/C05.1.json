@@ -1,0 +1,68 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|exemplar|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|exemplar|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，不必手動輸入。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "，可以隨時修改。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "接近或超出預算時",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶",
+  "b1": "交易會自動匯入，不必手動輸入。",
+  "t2": "自動分類支出",
+  "b2": "每筆支出會自動歸入分類，可以隨時修改。",
+  "t3": "每月預算提醒",
+  "b3": "接近或超出預算時會收到通知。",
+  "cta": "開始使用"
+ }
+}

@@ -1,0 +1,18 @@
+{
+ "probe": "C15",
+ "arm": "skill2b",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 22243,
+ "seconds": null,
+ "raw": "{\"ingredients\":[\"Grilled chicken thighs (2)\",\"Lemon wedge\",\"Steamed broccoli\"],\"note\":\"\"}",
+ "parsed": {
+  "ingredients": [
+   "Grilled chicken thighs (2)",
+   "Lemon wedge",
+   "Steamed broccoli"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

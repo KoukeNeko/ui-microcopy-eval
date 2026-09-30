@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 1041,
+ "seconds": 1.0,
+ "raw": "```json\n{\"s1\":\"Uninstall Application\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\",\"s4\":\"Removing files...\",\"s5\":\"Application is running. Close the application and try again.\"}\n```",
+ "parsed": {
+  "s1": "Uninstall Application",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files...",
+  "s5": "Application is running. Close the application and try again."
+ },
+ "error": ""
+}

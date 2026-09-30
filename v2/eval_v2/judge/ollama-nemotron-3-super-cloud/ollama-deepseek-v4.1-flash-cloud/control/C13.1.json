@@ -1,0 +1,10 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|C13.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "通知はオフになっています",
+  "s2": "設定を保存できませんでした。サーバーに接続できません。しばらくしてからもう一度お試しください。"
+ }
+}

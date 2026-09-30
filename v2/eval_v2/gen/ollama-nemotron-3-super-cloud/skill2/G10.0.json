@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18473,
+ "seconds": 3.8,
+ "raw": "{\"kcal\":510,\"remark\":\"\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": ""
+ },
+ "error": ""
+}

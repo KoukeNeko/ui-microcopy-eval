@@ -1,0 +1,45 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|rules|C16.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|rules|C16.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "a percentage placeholder"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "export finished"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 0,
+    "missing": [
+     "export failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "匯出中",
+  "s2": "已存到「筆記備份」資料夾",
+  "s3": "沒有寫入「檔案」app 的權限，請在系統設定中開啟"
+ }
+}

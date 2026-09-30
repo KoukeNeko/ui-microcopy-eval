@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 201,
+ "seconds": 2.1,
+ "raw": "```json\n{\"s1\":\"運送延遲\",\"s2\":\"受颱風影響，預計 10/5 送達\"}\n```",
+ "parsed": {
+  "s1": "運送延遲",
+  "s2": "受颱風影響，預計 10/5 送達"
+ },
+ "error": ""
+}

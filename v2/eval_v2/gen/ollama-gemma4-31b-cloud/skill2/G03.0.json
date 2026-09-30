@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "skill2",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 17222,
+ "seconds": 2.6,
+ "raw": "```json\n{\"s1\":\"安裝失敗\",\"s2\":\"目標磁碟 /dev/nvme0n1 目前為唯讀狀態。請解除唯讀狀態後重新執行安裝。\"}\n```",
+ "parsed": {
+  "s1": "安裝失敗",
+  "s2": "目標磁碟 /dev/nvme0n1 目前為唯讀狀態。請解除唯讀狀態後重新執行安裝。"
+ },
+ "error": ""
+}

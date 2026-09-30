@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1527,
+ "seconds": 3.6,
+ "raw": "{\n  \"s1\": \"已讀回覆\",\n  \"s2\": \"聊天群組一律回傳已讀狀態\"\n}",
+ "parsed": {
+  "s1": "已讀回覆",
+  "s2": "聊天群組一律回傳已讀狀態"
+ },
+ "error": ""
+}

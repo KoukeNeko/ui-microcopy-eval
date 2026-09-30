@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 15735,
+ "seconds": 1.8,
+ "raw": "{\"s1\":\"停車將到期\",\"s2\":\"信義停車場 10 分鐘後超時，每小時收費 60 元\"}",
+ "parsed": {
+  "s1": "停車將到期",
+  "s2": "信義停車場 10 分鐘後超時，每小時收費 60 元"
+ },
+ "error": ""
+}

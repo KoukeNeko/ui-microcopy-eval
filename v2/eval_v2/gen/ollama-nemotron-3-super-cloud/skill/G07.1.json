@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 15759,
+ "seconds": 2.5,
+ "raw": "{\"s1\":\"此日期早於允許的範圍\"}",
+ "parsed": {
+  "s1": "此日期早於允許的範圍"
+ },
+ "error": ""
+}

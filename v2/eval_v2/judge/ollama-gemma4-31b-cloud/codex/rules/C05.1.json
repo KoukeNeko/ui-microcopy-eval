@@ -1,0 +1,68 @@
+{
+ "record": "codex|rules|C05.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|rules|C05.1",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "省去逐筆輸入",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "清楚掌握各類花費",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "調整消費安排",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "自動匯入交易",
+  "b1": "連結銀行帳戶，省去逐筆輸入。",
+  "t2": "支出自動分類",
+  "b2": "清楚掌握各類花費。",
+  "t3": "每月預算提醒",
+  "b3": "及時掌握支出進度，調整消費安排。",
+  "cta": "開始使用"
+ }
+}

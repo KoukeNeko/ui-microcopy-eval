@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 208,
+ "seconds": 1.4,
+ "raw": "```json\n{\"s1\":\"關閉\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}\n```",
+ "parsed": {
+  "s1": "關閉",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

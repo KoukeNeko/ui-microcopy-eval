@@ -1,0 +1,39 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|control|C08.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|control|C08.0",
+  "items": {
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "並分配兩項任務：小陳調查發卡行拒絕原因，小林統一結帳頁三個 loading 狀態的樣式。會議約 40 秒雜音內容聽不清楚",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點是降低付款頁錯誤率，並分配兩項任務：小陳調查發卡行拒絕原因，小林統一結帳頁三個 loading 狀態的樣式。會議約 40 秒雜音內容聽不清楚，下次會議為下週三同一時間。",
+  "action_items": "小陳：調查發卡行拒絕的原因，下週三前提交報告 ／ 小林：將結帳頁的三個 loading 狀態改成一致的樣式",
+  "note": "會議中有約 40 秒雜音，該段內容聽不清楚。"
+ }
+}

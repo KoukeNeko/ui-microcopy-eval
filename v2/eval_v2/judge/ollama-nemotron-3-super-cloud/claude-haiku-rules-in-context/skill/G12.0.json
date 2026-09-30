@@ -1,0 +1,10 @@
+{
+ "record": "claude-haiku-rules-in-context|skill|G12.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Deposit failed",
+  "s2": "Account ending in 1842 has insufficient funds. Please add funds or use another account."
+ }
+}

@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 169,
+ "seconds": 1.4,
+ "raw": "```json\n{\"remark\":\"入睡時間較平日顯著增加，睡眠時數稍低於目標。\"}\n```",
+ "parsed": {
+  "remark": "入睡時間較平日顯著增加，睡眠時數稍低於目標。"
+ },
+ "error": ""
+}

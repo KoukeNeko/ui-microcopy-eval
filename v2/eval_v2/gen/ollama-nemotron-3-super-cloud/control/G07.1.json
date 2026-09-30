@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 128,
+ "seconds": 2.4,
+ "raw": "{\n  \"s1\": \"發票日期只能為今天起算過去 90 天內的日期，請重新選擇有效日期。\"\n}",
+ "parsed": {
+  "s1": "發票日期只能為今天起算過去 90 天內的日期，請重新選擇有效日期。"
+ },
+ "error": ""
+}

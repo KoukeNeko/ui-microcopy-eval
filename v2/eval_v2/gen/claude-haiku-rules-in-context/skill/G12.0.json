@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 16022,
+ "seconds": null,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"Account ending in 1842 has insufficient funds. Please add funds or use another account.\"}",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Account ending in 1842 has insufficient funds. Please add funds or use another account."
+ },
+ "error": ""
+}

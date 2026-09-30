@@ -1,0 +1,11 @@
+{
+ "record": "ollama-gemma4-31b-cloud|schema|G16.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "owner": "佐藤",
+  "review_meeting": "10月5日 11:00",
+  "note": "10/8公開予定、10/6迄に承認必須"
+ }
+}

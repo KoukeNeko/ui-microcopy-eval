@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 137,
+ "seconds": 5.3,
+ "raw": "{\n  \"s1\": \"首次啟動密碼管理器 —  — 請建立您的保管庫\",\n  \"s2\": \"開始設定\"\n}",
+ "parsed": {
+  "s1": "首次啟動密碼管理器 —  — 請建立您的保管庫",
+  "s2": "開始設定"
+ },
+ "error": ""
+}

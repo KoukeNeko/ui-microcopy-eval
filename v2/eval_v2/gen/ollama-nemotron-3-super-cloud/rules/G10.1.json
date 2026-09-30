@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 819,
+ "seconds": 1.9,
+ "raw": "{\n  \"kcal\": 510,\n  \"remark\": \"飯一碗，烤雞胸肉約120克，半顆水煮蛋，小份青花菜，雞肉表面有醬汁\"\n}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "飯一碗，烤雞胸肉約120克，半顆水煮蛋，小份青花菜，雞肉表面有醬汁"
+ },
+ "error": ""
+}

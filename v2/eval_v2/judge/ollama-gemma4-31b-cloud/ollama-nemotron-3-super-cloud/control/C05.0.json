@@ -1,0 +1,75 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|C05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|C05.0",
+  "items": {
+   "t1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "安全連結您的帳戶，",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "t2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "智慧辨識交易類型，自動歸類飲食、交通、購物等，讓花錢一目了然。",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "t3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "幫您掌控財務，避免超支。",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "cta": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶自動匯入交易",
+  "b1": "安全連結您的帳戶，交易自動同步，告別手動輸入。",
+  "t2": "自動分類支出",
+  "b2": "智慧辨識交易類型，自動歸類飲食、交通、購物等，讓花錢一目了然。",
+  "t3": "每月預算提醒",
+  "b3": "設定預算上限，接近時主動通知，幫您掌控財務，避免超支。",
+  "cta": "開始使用"
+ }
+}

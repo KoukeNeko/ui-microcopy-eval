@@ -1,0 +1,21 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|control|G07.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|control|G07.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "（2026年6月30日以後），您輸入的 2026年5月18日 已逾期",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期必須為今天起算最近 90 天內（2026年6月30日以後），您輸入的 2026年5月18日 已逾期，請重新選擇有效日期。"
+ }
+}

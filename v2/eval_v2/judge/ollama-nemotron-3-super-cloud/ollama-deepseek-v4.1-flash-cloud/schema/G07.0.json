@@ -1,0 +1,9 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|G07.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "發票日期不可早於 2026-07-02，請重新輸入。"
+ }
+}

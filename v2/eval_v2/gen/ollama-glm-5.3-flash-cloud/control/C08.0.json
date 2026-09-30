@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 287,
+ "seconds": 8.7,
+ "raw": "Let me analyze the transcript:\n\n「主持人：這週的重點是把付款頁的錯誤率壓下來。小陳你負責查發卡行拒絕的原因，下週三前給我報告。小林，你把結帳頁的三個 loading 狀態改成一致的樣式。（雜音，約 40 秒聽不清楚）……好，那就這樣，下週三同一時間。」\n\nKey content:\n- This week's focus: reduce payment page error rate\n- 小陳: investigate card issuer rejection reasons, report by next Wednesday\n- 小林: make the three loading states on checkout page consistent style\n- Then ~40 seconds of inaudible noise\n- Meeting next Wednesday same time\n\nAction items:\n1. 小陳：調查發卡行拒絕原因，下週三前提交報告\n2. 小林：將結帳頁三個 loading 狀態改成一致的樣式\n\nNote: There's about 40 seconds of inaudible noise, so there might be missing content. Should I mention it in the note? The app displays note as small text below the list. It would be helpful to note that a portion was inaudible.\n\nThe user wants only JSON returned. Format: {\"summary\":\"...\",\"action_items\":[\"...\"],\"note\":\"...\"}\n\nSummary: 本週重點為降低付款頁錯誤率；小陳負責調查發卡行拒絕原因並於下週三前提交報告，小林則統一結帳頁三個 loading 狀態的樣式；下次會議為下週三同一時間。\n\nNote: 會議中約 40 秒內容因雜音無法辨識，可能遺漏其他討論或指派事項。\n\nShould return only JSON. In Traditional Chinese.{\"summary\":\"本週重點為降低付款頁錯誤率。會議指派兩項工作：由小陳調查發卡行拒絕交易的原因並於下週三前提交報告；由小林將結帳頁的三個 loading 狀態改成一致的樣式。下次會議訂於下週三同一時間。\",\"action_items\":[\"小陳：調查發卡行拒絕交易的原因，下週三前提交報告\",\"小林：將結帳頁的三個 loading 狀態改成一致的樣式\"],\"note\":\"逐字稿中約有 40 秒因雜音無法辨識，中間可能遺漏其他討論或指派事項。\"}",
+ "parsed": {
+  "summary": "本週重點為降低付款頁錯誤率。會議指派兩項工作：由小陳調查發卡行拒絕交易的原因並於下週三前提交報告；由小林將結帳頁的三個 loading 狀態改成一致的樣式。下次會議訂於下週三同一時間。",
+  "action_items": [
+   "小陳：調查發卡行拒絕交易的原因，下週三前提交報告",
+   "小林：將結帳頁的三個 loading 狀態改成一致的樣式"
+  ],
+  "note": "逐字稿中約有 40 秒因雜音無法辨識，中間可能遺漏其他討論或指派事項。"
+ },
+ "error": ""
+}

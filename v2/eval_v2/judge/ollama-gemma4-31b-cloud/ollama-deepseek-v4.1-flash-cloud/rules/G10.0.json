@@ -1,0 +1,33 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|rules|G10.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|rules|G10.0",
+  "items": {
+   "kcal": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "remark": {
+    "facts_present": 0,
+    "missing": [
+     "The sauce type or amount cannot be determined from the photo",
+     "The sauce could affect the calorie estimate"
+    ],
+    "surplus": 1,
+    "surplus_quote": "白飯一碗、去皮烤雞胸肉 120 克、半顆水煮蛋、青花菜",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "kcal": "510",
+  "remark": "白飯一碗、去皮烤雞胸肉 120 克、半顆水煮蛋、青花菜；醬汁種類與用量不明"
+ }
+}

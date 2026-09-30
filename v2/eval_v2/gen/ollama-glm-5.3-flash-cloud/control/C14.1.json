@@ -1,0 +1,14 @@
+{
+ "probe": "C14",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 248,
+ "seconds": 4.2,
+ "raw": "The user wants two in-app banner messages for a cloud backup app:\n- s1: backup finished successfully — 2,314 files, 1.2 GB\n- s2: storage is 95% full — with options to upgrade or delete files\n\nThese should be concise, friendly, professional UI copy. English. Return only JSON with keys s1 and s2.\n\nFor s1, a success banner: \"Backup complete! 2,314 files (1.2 GB) are safely stored in the cloud.\" Maybe with a checkmark implied. Keep it clean.\n\nFor s2, a warning banner with CTAs: \"Your cloud storage is 95% full. Upgrade your plan or delete files to free up space.\" The banner text itself should mention options. Since banners might have buttons, I can keep the message and imply actions.\n\nLet me write:\n\ns1: \"Backup complete! 2,314 files (1.2 GB) are now safely stored in the cloud.\"\n\ns2: \"Your cloud storage is 95% full. Upgrade your plan or delete files to free up space.\"\n\nReturn only JSON, no markdown. The prompt says \"Return only JSON: {\"s1\":\"...\",\"s2\":\"...\"}\". So output just the JSON object. Should I wrap in code block? \"Return only JSON\" — best to return raw JSON without code fences to be safe. Actually, code fences might be acceptable but \"only JSON\" suggests raw. I'll output raw JSON.{\"s1\":\"Backup complete! 2,314 files (1.2 GB) are now safely stored in the cloud.\",\"s2\":\"Your cloud storage is 95% full. Upgrade your plan or delete files to free up space.\"}",
+ "parsed": {
+  "s1": "Backup complete! 2,314 files (1.2 GB) are now safely stored in the cloud.",
+  "s2": "Your cloud storage is 95% full. Upgrade your plan or delete files to free up space."
+ },
+ "error": ""
+}

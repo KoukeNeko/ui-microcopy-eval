@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20748,
+ "seconds": null,
+ "raw": "{\"s1\":\"確認送出\",\"s2\":\"NT$12,515\"}",
+ "parsed": {
+  "s1": "確認送出",
+  "s2": "NT$12,515"
+ },
+ "error": ""
+}

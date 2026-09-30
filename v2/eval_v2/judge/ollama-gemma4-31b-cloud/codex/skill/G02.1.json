@@ -1,0 +1,35 @@
+{
+ "record": "codex|skill|G02.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|skill|G02.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The shipment is delayed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The delay is caused by a typhoon",
+     "The new estimated delivery date is October 5"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

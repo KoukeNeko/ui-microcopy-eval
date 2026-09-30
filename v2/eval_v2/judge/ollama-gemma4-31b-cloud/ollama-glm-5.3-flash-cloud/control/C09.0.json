@@ -1,0 +1,21 @@
+{
+ "record": "ollama-glm-5.3-flash-cloud|control|C09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-glm-5.3-flash-cloud|control|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "早點放鬆上床試試。",
+    "register": "conversational",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "睡了 6 小時 20 分，離 7 小時目標差 40 分鐘；主因是入睡花了 48 分（比平常 15 分慢），早點放鬆上床試試。"
+ }
+}

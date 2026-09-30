@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 790,
+ "seconds": 11.3,
+ "raw": "Let me analyze what's needed:\n- Japanese EC app copy\n- s1: Empty cart message for cart screen (cart screen already has a \"商品を探す\" button at the bottom) — so the message should not duplicate or repeat that button's meaning, shouldn't say \"商品を探しましょう\" since the button already exists\n- s2: Title for delete confirmation dialog\n- s3: Confirm delete button\n- s4: Cancel button\n\nRules to follow:\n- No chatty/casual phrasing\n- No questions as buttons/titles — so s2 cannot be \"カートから削除しますか？\" (a question). Should be a declarative title like \"カートから削除\" or \"商品を削除\"\n- No apologies, no exclamation marks\n- No \"取消\" written casually — in Japanese, キャンセル is standard\n- Don't repeat what title says\n- Don't use 「我們」 equivalents... In Japanese, \"わたしたち\" etc. — avoid\n- Don't end labels/buttons with period\n- Keep concise\n- No 大陸用語 — this is Japanese anyway\n\ns1: Empty cart. Since there's already a \"商品を探す\" button at the bottom, the message shouldn't repeat \"商品を探す\". Should not be a question. Could be \"カートに商品が入っていません\" — that's standard. Avoid exclamation. Concise.\n\nAlternatively \"カートは空です\". \"カートに商品がありません\". I'll go with \"カートに商品が入っていません\" — standard, polite (です/ます form typical UI copy).\n\ns2: Delete confirmation dialog title. Not a question. \"カートから商品を削除\" or \"商品の削除\". Since deleting from cart: \"カートから削除\". Keep concise: \"商品を削除\".\n\ns3: Execute delete button: \"削除する\" — standard. No period.\n\ns4: Cancel: \"キャンセル\" — standard Japanese UI. Good.\n\nCheck rules:\n- s1: no exclamation, no apology, no repetition of button meaning (button is 商品を探す; message says cart is empty — fine, doesn't say \"探してみましょう\").\n- s2: not a question: \"商品を削除\" — good.\n- s3: \"削除する\" — good.\n- s4: \"キャンセル\" — good.\n\nJSON only: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\",\"s4\":\"...\"}\n\nShould s1 be \"カートに商品が入っていません\" or \"カートは空です\"? \"カートに商品が入っていません\" is more descriptive and standard in EC apps (Amazon: \"カートは空です\" or similar; Rakuten uses \"カートに商品がありません\"). Either works. \"カートに商品がありません\" is concise. I'll use \"カートに商品がありません\"。{\"s1\":\"カートに商品がありません\",\"s2\":\"商品を削除\",\"s3\":\"削除する\",\"s4\":\"キャンセル\"}",
+ "parsed": {
+  "s1": "カートに商品がありません",
+  "s2": "商品を削除",
+  "s3": "削除する",
+  "s4": "キャンセル"
+ },
+ "error": ""
+}

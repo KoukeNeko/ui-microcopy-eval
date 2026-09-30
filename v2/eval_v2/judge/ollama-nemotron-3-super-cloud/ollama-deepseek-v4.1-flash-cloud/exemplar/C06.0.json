@@ -1,0 +1,11 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C06.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "電子郵件格式不正確。請輸入完整的電子郵件地址，例如 name@example.com。",
+  "s2": "密碼少於 8 個字元。請設定至少 8 個字元的密碼。",
+  "s3": "手機號碼是必填欄位。請輸入手機號碼。"
+ }
+}

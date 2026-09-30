@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 135,
+ "seconds": 3.7,
+ "raw": "{\n  \"s1\": \"確認轉帳\",\n  \"s2\": \"實際扣除金額：新台幣 12,515 元\"\n}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "實際扣除金額：新台幣 12,515 元"
+ },
+ "error": ""
+}

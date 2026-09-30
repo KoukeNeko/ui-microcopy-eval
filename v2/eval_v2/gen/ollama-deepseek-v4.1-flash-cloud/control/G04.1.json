@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 122,
+ "seconds": 2.6,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"關閉後，新拍攝的照片將不再寫入 GPS 位置；既有照片中的位置資料不會被刪除。\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後，新拍攝的照片將不再寫入 GPS 位置；既有照片中的位置資料不會被刪除。"
+ },
+ "error": ""
+}

@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 18535,
+ "seconds": 4.5,
+ "raw": "{\"summary\":\"本週重點降低付款頁錯誤率；小陳負責查發卡行拒絕原因，下週三前報告；小林調整結帳頁三個 loading 狀態為一致樣式\",\"action_items\":[\"小陳：查發卡行拒絕原因，下週三前給報告\",\"小林：把結帳頁的三個 loading 狀態改成一致的樣式\"],\"note\":\"約 40 秒聽不清楚\"}",
+ "parsed": {
+  "summary": "本週重點降低付款頁錯誤率；小陳負責查發卡行拒絕原因，下週三前報告；小林調整結帳頁三個 loading 狀態為一致樣式",
+  "action_items": [
+   "小陳：查發卡行拒絕原因，下週三前給報告",
+   "小林：把結帳頁的三個 loading 狀態改成一致的樣式"
+  ],
+  "note": "約 40 秒聽不清楚"
+ },
+ "error": ""
+}

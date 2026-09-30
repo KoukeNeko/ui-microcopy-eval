@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 163,
+ "seconds": 7.5,
+ "raw": "Need JSON: s1 title max 16 chars, s2 body max 96 chars. Traditional Chinese. Parking app push: parking at 信義停車場, meter expires in 10 minutes, overtime NT$60/hour.\n\ns1: \"計時即將到期\" (6 chars) or \"停車計時提醒\" (6). Max 16.\n\ns2: \"「信義停車場」計時約 10 分鐘後到期，超時每小時加收 NT$60，請留意時間。\" Count characters: let's count. 「信義停車場」= 7 chars (including brackets: 「,信,義,停,車,場,」 = 7). 計時約 =3, space? Avoid spaces maybe. \"「信義停車場」計時10分鐘後到期，超時每小時NT$60，請留意。\" Count: 7 + 2(計時)=9 + \"10\"=2 chars=11 + 分鐘後到期=5? 分,鐘,後,到,期=5 →16 +，=17 + 超時每小時=5 →22 + NT$60 = N,T,$,6,0 =5 →27 +，=28 + 請留意。=4 →32. Fine within 96.\n\nMaybe clearer: \"您的愛車停在「信義停車場」，計時約 10 分鐘後到期，超時將以每小時 NT$60 計費，請留意時間。\" That's fine too. Keep concise but informative.\n\ns1 could be \"停車計時提醒\" (6) or \"計時快到期了\". Use \"停車計時提醒\".\n\ns2: \"「信義停車場」的計時約 10 分鐘後到期，超時每小時加收 NT$60，請留意時間。\" Count roughly: 7 + \"的計時約\"=4 →11 + \"10\" →13 + 分鐘後到期=5 →18+，=19+超時每小時加收=7→26+NT$60=5→31+，=32+請留意時間=5→37+。=38. Fine.\n\nSpaces count as characters but still under limit. I could omit spaces for cleanliness. \"「信義停車場」計時約10分鐘後到期，超時每小時NT$60，請留意。\" Keep it.\n\nReturn JSON only.</think>{\"s1\":\"停車計時提醒\",\"s2\":\"「信義停車場」的計時約 10 分鐘後到期，超時每小時加收 NT$60，請留意時間。\"}",
+ "parsed": {
+  "s1": "停車計時提醒",
+  "s2": "「信義停車場」的計時約 10 分鐘後到期，超時每小時加收 NT$60，請留意時間。"
+ },
+ "error": ""
+}

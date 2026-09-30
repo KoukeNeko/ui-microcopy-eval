@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1410,
+ "seconds": 1.6,
+ "raw": "{\"remark\":\"今晚入睡花了 48 分鐘，較過去 7 天平均多 33 分鐘；清醒 3 次，睡著時長 6 小時 20 分，較目標少 40 分。\"}",
+ "parsed": {
+  "remark": "今晚入睡花了 48 分鐘，較過去 7 天平均多 33 分鐘；清醒 3 次，睡著時長 6 小時 20 分，較目標少 40 分。"
+ },
+ "error": ""
+}

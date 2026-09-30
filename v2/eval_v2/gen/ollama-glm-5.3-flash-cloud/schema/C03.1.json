@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 259,
+ "seconds": 10.0,
+ "raw": "The task: A Taiwan parking app in Traditional Chinese, first-time request for \"while using\" location permission. Need to provide:\n- s1: purpose explanation (location only used to find nearby parking lots, not stored)\n- s2: agree button\n- s3: disagree button\n\nConstraints:\n- s1: max 96 characters\n- s2: max 8 characters\n- s3: max 8 characters\n\nOnly return JSON: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nLet me craft Traditional Chinese text for a Taiwan audience.\n\ns1: Something like \"為了搜尋您附近的停車場並導航前往，App 需要使用您的位置資訊。位置資料僅於使用時取得，不會被儲存或分享。\" Let me count characters.\n\nActually let me make it clean: \"我們僅使用您的位置來搜尋附近的停車場。此資訊只在使用期間取得，不會被儲存或與他人共享。\"\n\nCount: 我們僅使用您的位置來搜尋附近的停車場。此資訊只在使用期間取得，不會被儲存或與他人共享。\n\nLet me count: 我(1)們(2)僅(3)使(4)用(5)您(6)的(7)位(8)置(9)來(10)搜(11)尋(12)附(13)近(14)的(15)停(16)車(17)場(18)。(19)此(20)資(21)訊(22)只(23)在(24)使(25)用(26)期(27)間(28)取(29)得(30)，(31)不(32)會(33)被(34)儲(35)存(36)或(37)與(38)他(39)人(40)共(41)享(42)。(43)\n\n43 characters, well under 96. Good.\n\nMaybe make it more informative: \"位置資訊僅用於搜尋您附近的停車場與計算預估路程，只在使用期間取得，不會被儲存、追蹤或分享給第三方。\"\n\nCount: 位(1)置(2)資(3)訊(4)僅(5)用(6)於(7)搜(8)尋(9)您(10)附(11)近(12)的(13)停(14)車(15)場(16)與(17)計(18)算(19)預(20)估(21)路(22)程(23)，(24)只(25)在(26)使(27)用(28)期(29)間(30)取(31)得(32)，(33)不(34)會(35)被(36)儲(37)存(38)、(39)追(40)蹤(41)或(42)分(43)享(44)給(45)第(46)三(47)方(48)。(49)\n\n49 characters. Good, under 96.\n\nHmm, but requirement says \"位置只用來找附近停車場，不會儲存\" — keep it simple. Maybe I shouldn't add \"計算預估路程\" since it says only used to find nearby parking. Keep to spec: \"您的位置資訊僅用於搜尋附近的停車場，只會在使用期間取用，不會被儲存或分享。\"\n\nCount: 您(1)的(2)位(3)置(4)資(5)訊(6)僅(7)用(8)於(9)搜(10)尋(11)附(12)近(13)的(14)停(15)車(16)場(17)，(18)只(19)會(20)在(21)使(22)用(23)期(24)間(25)取(26)用(27)，(28)不(29)會(30)被(31)儲(32)存(33)或(34)分(35)享(36)。(37)\n\n37 characters. Good.\n\ns2: agree button, max 8 chars. Options: \"同意並開啟\" (5), \"好\" (1), \"同意\" (2), \"允許\" (2), \"同意開啟定位\" (6). For Taiwan traditional Chinese: \"同意並授權\" or \"同意並開啟\". 8 char limit. \"同意並開啟\" is 5 chars. Good.\n\ns3: disagree button: \"不同意\" (3), \"暫不要\" (3), \"先不要\" (3), \"取消\" (2). \"不同意\" is clear. Or \"暫不同意\" (4). Keep \"不同意\" or \"先不要\".\n\nFor iOS \"while using\" permission — the buttons before the system dialog: typically one custom alert with 同意/不同意, then system dialog shows. s2 = \"同意繼續\"? Max 8, fine.\n\nI'll pick:\n- s2: \"同意並開啟\" (5 chars)\n- s3: \"不同意\" (3 chars)\n\nReturn only JSON.</think>{\"s1\":\"您的位置資訊僅用於搜尋附近的停車場，只會在使用期間取用，不會被儲存或分享。\",\"s2\":\"同意並開啟\",\"s3\":\"不同意\"}",
+ "parsed": {
+  "s1": "您的位置資訊僅用於搜尋附近的停車場，只會在使用期間取用，不會被儲存或分享。",
+  "s2": "同意並開啟",
+  "s3": "不同意"
+ },
+ "error": ""
+}

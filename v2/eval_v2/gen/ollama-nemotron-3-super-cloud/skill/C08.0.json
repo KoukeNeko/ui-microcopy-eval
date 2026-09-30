@@ -1,0 +1,18 @@
+{
+ "probe": "C08",
+ "arm": "skill",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17057,
+ "seconds": 1.9,
+ "raw": "{\"summary\":\"把付款頁的錯誤率壓下來。\",\"action_items\":[\"小陳：查發卡行拒絕的原因，下週三前給報告\",\"小林：把結帳頁的三個 loading 狀態改成一致的樣式\"],\"note\":\"\"}",
+ "parsed": {
+  "summary": "把付款頁的錯誤率壓下來。",
+  "action_items": [
+   "小陳：查發卡行拒絕的原因，下週三前給報告",
+   "小林：把結帳頁的三個 loading 狀態改成一致的樣式"
+  ],
+  "note": ""
+ },
+ "error": ""
+}

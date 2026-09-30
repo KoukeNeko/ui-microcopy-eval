@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "control",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 225,
+ "seconds": 6.4,
+ "raw": "{\n  \"kcal\": 510,\n  \"remark\": \"一碗白飯、120g烤雞胸肉（無皮）、半顆水煮蛋、少量青花菜，表面有醬汁但種類與用量不明，總熱量估算為510kcal。\"\n}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "一碗白飯、120g烤雞胸肉（無皮）、半顆水煮蛋、少量青花菜，表面有醬汁但種類與用量不明，總熱量估算為510kcal。"
+ },
+ "error": ""
+}

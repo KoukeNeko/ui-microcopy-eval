@@ -1,0 +1,12 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|rules|C01.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "確認轉帳",
+  "s2": "確認轉帳",
+  "s3": "取消",
+  "s4": "轉帳送出後無法取消"
+ }
+}

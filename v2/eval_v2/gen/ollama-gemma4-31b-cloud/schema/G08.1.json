@@ -1,0 +1,15 @@
+{
+ "probe": "G08",
+ "arm": "schema",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 215,
+ "seconds": 3.7,
+ "raw": "```json\n{\"s1\":\"加入喜愛\",\"s2\":\"播放佇列\",\"s3\":\"靜音\"}\n```",
+ "parsed": {
+  "s1": "加入喜愛",
+  "s2": "播放佇列",
+  "s3": "靜音"
+ },
+ "error": ""
+}

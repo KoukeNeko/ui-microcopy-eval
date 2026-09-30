@@ -1,0 +1,21 @@
+{
+ "record": "claude-sonnet-rules-in-context|postfilter|C09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|postfilter|C09.0",
+  "items": {
+   "remark": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "remark": "少於目標 40 分鐘；入睡花了 48 分鐘，近 7 天平均 15 分鐘"
+ }
+}

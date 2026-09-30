@@ -1,0 +1,13 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill|C10.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Uninstall",
+  "s2": "Uninstall",
+  "s3": "Keep",
+  "s4": "Removing files…",
+  "s5": "Cannot uninstall: the app is still running. Quit it and try again."
+ }
+}

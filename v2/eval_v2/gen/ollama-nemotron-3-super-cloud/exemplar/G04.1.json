@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1363,
+ "seconds": 2.4,
+ "raw": "{\n  \"s1\": \"位置資訊\",\n  \"s2\": \"關閉此設定後，新拍攝的照片將不會記錄 GPS 位置。既有照片的位置資料不會受影響。\"\n}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉此設定後，新拍攝的照片將不會記錄 GPS 位置。既有照片的位置資料不會受影響。"
+ },
+ "error": ""
+}

@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1398,
+ "seconds": 1.4,
+ "raw": "{\"s1\":\"轉帳確認\",\"s2\":\"確認轉帳\",\"s3\":\"放棄\",\"s4\":\"轉帳送出後無法取消。\"}",
+ "parsed": {
+  "s1": "轉帳確認",
+  "s2": "確認轉帳",
+  "s3": "放棄",
+  "s4": "轉帳送出後無法取消。"
+ },
+ "error": ""
+}

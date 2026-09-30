@@ -1,0 +1,19 @@
+{
+ "probe": "C05",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 330,
+ "seconds": 7.6,
+ "raw": "The user wants a Traditional Chinese onboarding flow for a bookkeeping/expense tracking app with 3 pages. Each page has a title (≤16 chars) and subtitle (≤96 chars). Page 1: link bank accounts to auto-import transactions. Page 2: auto-categorize expenses. Page 3: monthly budget reminders, plus a CTA button \"開始使用\" (≤8 chars).\n\nLet me write:\n\nt1: \"連結銀行帳戶\" (6 chars) — okay\nb1: \"自動匯入交易紀錄，不必手動輸入，收支一目了然。\" — count characters: 自動匯入交易紀錄，不必手動輸入，收支一目了然。Let me count: 自(1)動(2)匯(3)入(4)交(5)易(6)紀(7)錄(8)，(9)不(10)必(11)手(12)動(13)輸(14)入(15)，(16)收(17)支(18)一(19)目(20)了(21)然(22)。(23) — 23 chars, fine, under 96.\n\nt2: \"自動分類支出\" (6 chars)\nb2: \"系統聰明辨識消費類型，食衣住行自動歸類，省下整理時間。\" — count roughly: 系(1)統(2)聰(3)明(4)辨(5)識(6)消(7)費(8)類(9)型(10)，(11)食(12)衣(13)住(14)行(15)自(16)動(17)歸(18)類(19)，(20)省(21)下(22)整(23)理(24)時(25)間(26)。(27) — 27 chars, fine.\n\nt3: \"每月預算提醒\" (6 chars)\nb3: \"設定每月預算，接近上限時即時通知，掌握花費不超支。\" — count: 設(1)定(2)每(3)月(4)預(5)算(6)，(7)接(8)近(9)上(10)限(11)時(12)及(13)時 (14)通(15)知(16)，(17)掌(18)握(19)花(20)費(21)不(22)超(23)支(24)。(25) — 25 chars, fine.\n\ncta: \"開始使用\" (4 chars) — fine.\n\nAll Traditional Chinese. Return only JSON.{\"t1\":\"連結銀行帳戶\",\"b1\":\"自動匯入交易紀錄，不必手動輸入，收支一目了然。\",\"t2\":\"自動分類支出\",\"b2\":\"聰明辨識消費類型，食衣住行自動歸類，省下整理時間。\",\"t3\":\"每月預算提醒\",\"b3\":\"設定每月預算，接近上限時即時通知，花費不超支。\",\"cta\":\"開始使用\"}",
+ "parsed": {
+  "t1": "連結銀行帳戶",
+  "b1": "自動匯入交易紀錄，不必手動輸入，收支一目了然。",
+  "t2": "自動分類支出",
+  "b2": "聰明辨識消費類型，食衣住行自動歸類，省下整理時間。",
+  "t3": "每月預算提醒",
+  "b3": "設定每月預算，接近上限時即時通知，花費不超支。",
+  "cta": "開始使用"
+ },
+ "error": ""
+}

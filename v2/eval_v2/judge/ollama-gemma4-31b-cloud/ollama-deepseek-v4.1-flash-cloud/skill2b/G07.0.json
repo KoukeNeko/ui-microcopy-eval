@@ -1,0 +1,23 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G07.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|skill2b|G07.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The form cannot be submitted until a valid date is entered"
+    ],
+    "surplus": 1,
+    "surplus_quote": "目前距離今天已 135 天",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "發票日期不能早於 2026-07-02：目前距離今天已 135 天，僅接受 90 天內。"
+ }
+}

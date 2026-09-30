@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 137,
+ "seconds": 0.6,
+ "raw": "```json\n{\"s1\":\"歡迎使用密碼管理器\",\"s2\":\"開始設定保管庫\"}\n```",
+ "parsed": {
+  "s1": "歡迎使用密碼管理器",
+  "s2": "開始設定保管庫"
+ },
+ "error": ""
+}

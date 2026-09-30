@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1369,
+ "seconds": 2.3,
+ "raw": "{\"s1\":\"發票日期超出可報帳範圍：公司只接受今天往前 90 天內的日期。請改用 2026 年 7 月 2 日之後的發票。\"}",
+ "parsed": {
+  "s1": "發票日期超出可報帳範圍：公司只接受今天往前 90 天內的日期。請改用 2026 年 7 月 2 日之後的發票。"
+ },
+ "error": ""
+}

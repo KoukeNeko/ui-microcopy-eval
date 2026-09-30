@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1466,
+ "seconds": 2.5,
+ "raw": "{\"kcal\":510,\"remark\":\"醬汁另計\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "醬汁另計"
+ },
+ "error": ""
+}

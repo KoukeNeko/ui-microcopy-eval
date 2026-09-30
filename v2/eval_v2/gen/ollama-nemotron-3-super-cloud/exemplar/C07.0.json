@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1372,
+ "seconds": 2.8,
+ "raw": "{\n  \"s1\": \"關閉\",\n  \"s2\": \"搜尋\",\n  \"s3\": \"更多選項\"\n}",
+ "parsed": {
+  "s1": "關閉",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

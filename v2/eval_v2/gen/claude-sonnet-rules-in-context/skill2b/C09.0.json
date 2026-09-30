@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill2b",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 22036,
+ "seconds": null,
+ "raw": "{\"remark\":\"過去 7 天入睡平均 15 分鐘\"}",
+ "parsed": {
+  "remark": "過去 7 天入睡平均 15 分鐘"
+ },
+ "error": ""
+}

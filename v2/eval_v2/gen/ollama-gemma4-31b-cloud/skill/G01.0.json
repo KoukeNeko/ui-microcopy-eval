@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 15766,
+ "seconds": 1.6,
+ "raw": "```json\n{\"s1\":\"轉帳\", \"s2\":\"NT$ 12,515\"}\n```",
+ "parsed": {
+  "s1": "轉帳",
+  "s2": "NT$ 12,515"
+ },
+ "error": ""
+}

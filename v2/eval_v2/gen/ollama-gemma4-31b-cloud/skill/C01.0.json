@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 15788,
+ "seconds": 1.3,
+ "raw": "```json\n{\n  \"s1\": \"確認轉帳\",\n  \"s2\": \"確定\",\n  \"s3\": \"取消\",\n  \"s4\": \"轉帳送出後無法取消。\"\n}\n```",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "確定",
+  "s3": "取消",
+  "s4": "轉帳送出後無法取消。"
+ },
+ "error": ""
+}

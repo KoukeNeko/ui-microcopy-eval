@@ -1,0 +1,40 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|G09.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|G09.1",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "The ZX-4 keyboard spacebar is sticking",
+     "A replacement will be sent to the original order address"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "客戶需換貨，希望商品避免週五前送達",
+  "return_deadline": "10/6"
+ }
+}

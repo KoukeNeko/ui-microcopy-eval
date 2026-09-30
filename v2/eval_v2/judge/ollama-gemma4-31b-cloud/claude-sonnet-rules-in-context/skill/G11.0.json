@@ -1,0 +1,31 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill|G11.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-sonnet-rules-in-context|skill|G11.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "Products can be saved from product pages using the heart control"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "No saved items",
+  "s2": "Browse products"
+ }
+}

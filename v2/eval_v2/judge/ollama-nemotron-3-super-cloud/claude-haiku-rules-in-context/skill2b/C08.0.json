@@ -1,0 +1,11 @@
+{
+ "record": "claude-haiku-rules-in-context|skill2b|C08.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "summary": "降低付款頁錯誤率",
+  "action_items": "調查信用卡發卡行拒絕原因，下週三前報告 ／ 統一結帳頁面三個 loading 狀態的樣式",
+  "note": "會議中約 40 秒音訊不清晰"
+ }
+}

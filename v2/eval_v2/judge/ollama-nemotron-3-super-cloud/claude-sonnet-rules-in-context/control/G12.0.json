@@ -1,0 +1,10 @@
+{
+ "record": "claude-sonnet-rules-in-context|control|G12.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "Deposit failed",
+  "s2": "The bank rejected the USD 2,000 transfer from checking account ending in 1842 due to insufficient funds. Add funds to that account and try again, or choose another funding source."
+ }
+}

@@ -1,0 +1,54 @@
+{
+ "record": "claude-haiku-rules-in-context|control|C01.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "claude-haiku-rules-in-context|control|C01.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 0,
+    "missing": [
+     "pressing it abandons the transfer"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s4": {
+    "facts_present": 0,
+    "missing": [
+     "amount NT$12,500",
+     "recipient 王小明",
+     "cannot be cancelled after sending"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "轉帳 NT$12,500 給王小明？",
+  "s2": "轉帳",
+  "s3": "取消",
+  "s4": "交易送出後無法取消"
+ }
+}

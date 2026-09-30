@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 353,
+ "seconds": 3.0,
+ "raw": "{\"s1\":\"No saved items yet\",\"s2\":\"Browse\"}",
+ "parsed": {
+  "s1": "No saved items yet",
+  "s2": "Browse"
+ },
+ "error": ""
+}

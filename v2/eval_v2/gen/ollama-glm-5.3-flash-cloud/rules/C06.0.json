@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 707,
+ "seconds": 3.4,
+ "raw": "The user wants JSON with three field error messages in Traditional Chinese for a registration form:\n- s1: email format incorrect\n- s2: password fewer than 8 characters\n- s3: phone number required but empty\n\nRules:\n- No chatty phrasing\n- No apologies, exclamation marks, emoji\n- No questions\n- No redundancy\n- No mainland China terms (當前、默認、設置、數據、視頻、用戶、緩存、軟件、網絡、信息)\n- No periods at end of labels/buttons\n- Keep concise\n\nOnly return JSON.\n\nDraft:\ns1: \"電子郵件格式不正確\" — that's fine, matches the spec\ns2: \"密碼少於 8 個字元\" — fine\ns3: \"手機號碼為必填\" or \"請填寫手機號碼\" — \"請填寫\" is imperative, fine. But \"請填寫手機號碼\" is common. s3 is required but empty: \"請填寫手機號碼\" works. Or \"手機號碼不得空白\". Keep concise: \"請填寫手機號碼\". No period at end. No exclamation.\n\nOnly return JSON, no extra text.</think>```json\n{\"s1\":\"電子郵件格式不正確\",\"s2\":\"密碼少於 8 個字元\",\"s3\":\"請填寫手機號碼\"}\n```",
+ "parsed": {
+  "s1": "電子郵件格式不正確",
+  "s2": "密碼少於 8 個字元",
+  "s3": "請填寫手機號碼"
+ },
+ "error": ""
+}

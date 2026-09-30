@@ -1,0 +1,14 @@
+{
+ "probe": "G03",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 735,
+ "seconds": 3.0,
+ "raw": "```json\n{\"s1\":\"磁碟唯讀錯誤\",\"s2\":\"目標磁碟 /dev/nvme0n1 目前為唯讀狀態，導致寫入失敗。請解除唯讀狀態後重新執行安裝。\"}\n```",
+ "parsed": {
+  "s1": "磁碟唯讀錯誤",
+  "s2": "目標磁碟 /dev/nvme0n1 目前為唯讀狀態，導致寫入失敗。請解除唯讀狀態後重新執行安裝。"
+ },
+ "error": ""
+}

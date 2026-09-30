@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20735,
+ "seconds": null,
+ "raw": "{\"s1\":\"位置資訊\",\"s2\":\"關閉後新照片不會寫入位置資訊，既有照片位置資料不變。\"}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後新照片不會寫入位置資訊，既有照片位置資料不變。"
+ },
+ "error": ""
+}

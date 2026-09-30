@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20908,
+ "seconds": null,
+ "raw": "{\"s1\":\"No saved items\",\"s2\":\"Start shopping\"}",
+ "parsed": {
+  "s1": "No saved items",
+  "s2": "Start shopping"
+ },
+ "error": ""
+}

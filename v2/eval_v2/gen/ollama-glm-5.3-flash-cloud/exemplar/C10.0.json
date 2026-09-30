@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "exemplar",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1688,
+ "seconds": 7.5,
+ "raw": "The user wants JSON with five strings for a desktop app uninstaller in English.\n\nLet me follow the guidance:\n- s1: dialog title asking whether to uninstall. Title = name of the decision/action, a noun phrase. Something like \"Uninstall App?\" Hmm, the guidance says dialog title = name of this decision or action. Examples in Chinese: 刪除這筆紀錄、轉帳確認. So English equivalent: \"Uninstall this app\" or \"Uninstall App\". Actually example style: \"Uninstall the app\"? Let's keep simple: \"Uninstall app\" — the name of the decision. Maybe \"Uninstall AppName?\" Hmm, title shouldn't necessarily be a question. Chinese examples are not questions. So: \"Uninstall SampleApp\" — but we don't know app name. Use \"Uninstall this app\"? For a desktop uninstaller, app name would be inserted; use a placeholder? The user didn't ask for placeholders. I'll write \"Uninstall app\" or \"Uninstall this app\". Since it's the app's own uninstaller, likely uninstalling itself: \"Uninstall app\". I'll go with \"Uninstall this app\". Hmm, actually maybe better neutral: \"Uninstall app\". Let me think about which is more natural English UI. Titles like \"Uninstall AppName?\" are common. Without a name, \"Uninstall this app\" works. I'll choose \"Uninstall this app\".\n\n- s2: button performing uninstall: \"Uninstall\"\n- s3: button keeping app: \"Keep\"\n- s4: status while files being removed: \"Removing files…\" — with ellipsis. The example: \"Exporting 42%\". Status format: \"Removing files…\". Use the ellipsis character \"…\". Could be \"Removing files…\". Good.\n\n- s5: error when uninstall fails because app still running; tell user what to do. Format: what happened, cause, next step — each a sentence? English example: \"Can't save settings: no connection to the server. Try again later.\" So: \"Can't uninstall: SampleApp is still running. Quit the app and try again.\" Without app name: \"Can't uninstall: the app is still running. Close the app, then try again.\" Hmm \"Quit\" is more desktop-appropriate (macOS), \"Close\" Windows. Either. \"Can't uninstall: the app is still running. Quit it and try again.\" I'd write: \"Can't uninstall: the app is still running. Quit the app, then try again.\"\n\nFull-width punctuation? The instruction says full-width punctuation for zh-tw; English should use normal punctuation. Use normal.\n\nReturn only JSON.```json\n{\"s1\":\"Uninstall this app\",\"s2\":\"Uninstall\",\"s3\":\"Keep\",\"s4\":\"Removing files…\",\"s5\":\"Can't uninstall: the app is still running. Quit the app, then try again.\"}\n```",
+ "parsed": {
+  "s1": "Uninstall this app",
+  "s2": "Uninstall",
+  "s3": "Keep",
+  "s4": "Removing files…",
+  "s5": "Can't uninstall: the app is still running. Quit the app, then try again."
+ },
+ "error": ""
+}

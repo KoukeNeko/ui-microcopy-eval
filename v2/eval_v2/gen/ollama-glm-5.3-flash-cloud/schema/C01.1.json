@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 250,
+ "seconds": 8.8,
+ "raw": "The user wants a confirmation dialog for a Taiwan online banking app in Traditional Chinese. Transfer of NT$12,500 to 王小明, and after sending, it cannot be canceled.\n\nFields:\n- s1: dialog title, max 16 characters\n- s2: confirm button, max 8 characters\n- s3: cancel/give up button, max 8 characters\n- s4: description text, max 96 characters\n\nLet me count characters carefully. In Traditional Chinese, each Chinese character counts as one character. I'll assume \"字元\" means characters (including digits, punctuation). NT$12,500 — N, T, $, 1, 2, ,, 5, 0, 0 = 9 characters. Let me count: \"NT$12,500\" → N(1) T(2) $(3) 1(4) 2(5) ,(6) 5(7) 0(8) 0(9) = 9 characters.\n\ns1: title, max 16. Something like \"轉帳確認\" (4 chars) — good.\n\ns2: confirm button, max 8. \"確認轉帳\" (4 chars) — good.\n\ns3: cancel button, max 8. \"取消\" (2 chars) — good.\n\ns4: description, max 96. Need to include amounts and recipient and the warning that it can't be canceled after sending.\n\nDraft: \"您將轉帳 NT$12,500 給王小明。送出後無法取消，請確認收款人與金額無誤。\"\n\nCount: Let me count carefully.\n\n\"您將轉帳 NT$12,500 給王小明。送出後無法取消，請確認收款人與金額無誤。\"\n\nCharacters:\n您(1) 將(2) 轉(3) 帳(4) [space](5) N(6) T(7) $(8) 1(9) 2(10) ,(11) 5(12) 0(13) 0(14) [space](15) 給(16) 王(17) 小(18) 明(19) 。(20) 送(21) 出(22) 後(23) 無(24) 法(25) 取(26) 消(27) ，(28) 請(29) 確(30) 認(31) 收(32) 款(33) 人(34) 與(35) 金(36) 額(37) 無(38) 誤(39) 。(40)\n\n40 characters, well within 96.\n\nAlternatively, without spaces: \"您將轉帳NT$12,500給王小明，送出後無法取消，請確認收款人與金額無誤。\" That's fine too.\n\nThe instruction says \"轉帳送出後無法取消\" so the warning should be included. Good.\n\nFinal JSON:\n{\"s1\":\"轉帳確認\",\"s2\":\"確認轉帳\",\"s3\":\"取消\",\"s4\":\"您將轉帳 NT$12,500 給王小明。送出後無法取消，請確認收款人與金額無誤。\"}\n\nOnly return JSON as requested. Should I add any explanation? The user said 只回傳 JSON (only return JSON). So just the JSON.</think>{\"s1\":\"轉帳確認\",\"s2\":\"確認轉帳\",\"s3\":\"取消\",\"s4\":\"您將轉帳 NT$12,500 給王小明。送出後無法取消，請確認收款人與金額無誤。\"}",
+ "parsed": {
+  "s1": "轉帳確認",
+  "s2": "確認轉帳",
+  "s3": "取消",
+  "s4": "您將轉帳 NT$12,500 給王小明。送出後無法取消，請確認收款人與金額無誤。"
+ },
+ "error": ""
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "schema",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 190,
+ "seconds": 1.8,
+ "raw": "{\"s1\":\"電子郵件格式不正確\",\"s2\":\"密碼少於 8 個字元\",\"s3\":\"手機號碼是必填但空白\"}",
+ "parsed": {
+  "s1": "電子郵件格式不正確",
+  "s2": "密碼少於 8 個字元",
+  "s3": "手機號碼是必填但空白"
+ },
+ "error": ""
+}

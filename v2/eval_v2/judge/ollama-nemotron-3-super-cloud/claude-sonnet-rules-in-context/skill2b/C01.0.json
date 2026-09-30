@@ -1,0 +1,12 @@
+{
+ "record": "claude-sonnet-rules-in-context|skill2b|C01.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "轉帳確認",
+  "s2": "轉帳",
+  "s3": "取消",
+  "s4": "NT$12,500 將轉給王小明，送出後無法取消。"
+ }
+}

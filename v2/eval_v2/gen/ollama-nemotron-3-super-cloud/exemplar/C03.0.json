@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 1425,
+ "seconds": 1.7,
+ "raw": "{\n  \"s1\": \"位置只用來找附近停車場，不會儲存\",\n  \"s2\": \"同意\",\n  \"s3\": \"不同意\"\n}",
+ "parsed": {
+  "s1": "位置只用來找附近停車場，不會儲存",
+  "s2": "同意",
+  "s3": "不同意"
+ },
+ "error": ""
+}

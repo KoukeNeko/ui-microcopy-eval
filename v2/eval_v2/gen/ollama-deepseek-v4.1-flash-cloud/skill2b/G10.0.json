@@ -1,0 +1,14 @@
+{
+ "probe": "G10",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 19567,
+ "seconds": 2.4,
+ "raw": "{\"kcal\":510,\"remark\":\"醬料種類與用量未確認\"}",
+ "parsed": {
+  "kcal": 510,
+  "remark": "醬料種類與用量未確認"
+ },
+ "error": ""
+}

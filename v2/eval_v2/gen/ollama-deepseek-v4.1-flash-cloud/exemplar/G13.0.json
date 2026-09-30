@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 1527,
+ "seconds": 6.3,
+ "raw": "{\"s1\":\"已讀取回條\",\"s2\":\"開啟後，聯絡人可以看到你讀取訊息的時間；群組聊天一律傳送回條。\"}",
+ "parsed": {
+  "s1": "已讀取回條",
+  "s2": "開啟後，聯絡人可以看到你讀取訊息的時間；群組聊天一律傳送回條。"
+ },
+ "error": ""
+}

@@ -1,0 +1,17 @@
+{
+ "probe": "C10",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 447,
+ "seconds": null,
+ "raw": "{\"s1\":\"Uninstall the application?\",\"s2\":\"Uninstall\",\"s3\":\"Cancel\",\"s4\":\"Removing files...\",\"s5\":\"The application is still running. Please close it and try again.\"}",
+ "parsed": {
+  "s1": "Uninstall the application?",
+  "s2": "Uninstall",
+  "s3": "Cancel",
+  "s4": "Removing files...",
+  "s5": "The application is still running. Please close it and try again."
+ },
+ "error": ""
+}

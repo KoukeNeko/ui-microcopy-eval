@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "skill",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 1,
+ "prompt_chars": 15759,
+ "seconds": 2.5,
+ "raw": "```json\n{\"s1\":\"日期超出範圍：發票日期必須在 90 天內。\"}\n```",
+ "parsed": {
+  "s1": "日期超出範圍：發票日期必須在 90 天內。"
+ },
+ "error": ""
+}

@@ -1,0 +1,96 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C05.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|C05.0",
+  "items": {
+   "t1": {
+    "present": [
+     "bank accounts link and import transactions"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b1": {
+    "present": [
+     "transactions are imported automatically"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "不用手動記帳。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t2": {
+    "present": [
+     "spending is categorised automatically"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b2": {
+    "present": [
+     "categorisation is automatic"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "看圖表就懂錢花在哪。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "t3": {
+    "present": [
+     "monthly budget reminders"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "b3": {
+    "present": [
+     "a reminder about the monthly budget"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 1,
+    "surplus_quote": "別到月底才發現超支。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "cta": {
+    "present": [
+     "starts using the app"
+    ],
+    "missing": [],
+    "facts_present": 1,
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "t1": "連結銀行帳戶",
+  "b1": "自動匯入交易，不用手動記帳。",
+  "t2": "自動分類支出",
+  "b2": "每筆消費自動歸類，看圖表就懂錢花在哪。",
+  "t3": "每月預算提醒",
+  "b3": "接近上限時通知你，別到月底才發現超支。",
+  "cta": "開始使用"
+ }
+}

@@ -1,0 +1,32 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|rules|G12.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|rules|G12.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The deposit failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "conversational",
+    "lang_ok": 0
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "存款失敗",
+  "s2": "從尾號 1842 的支票帳戶轉入 2,000 美元的轉帳遭銀行拒絕，原因為餘額不足。請向該帳戶存入資金後再試，或改用其他付款方式。"
+ }
+}

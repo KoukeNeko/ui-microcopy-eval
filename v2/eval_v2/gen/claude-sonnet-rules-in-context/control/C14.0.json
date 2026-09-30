@@ -1,0 +1,14 @@
+{
+ "probe": "C14",
+ "arm": "control",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 248,
+ "seconds": null,
+ "raw": "{\"s1\":\"Backup complete: 2,314 files, 1.2 GB\",\"s2\":\"Cloud storage is 95% full. Upgrade or delete files to free up space.\"}",
+ "parsed": {
+  "s1": "Backup complete: 2,314 files, 1.2 GB",
+  "s2": "Cloud storage is 95% full. Upgrade or delete files to free up space."
+ },
+ "error": ""
+}

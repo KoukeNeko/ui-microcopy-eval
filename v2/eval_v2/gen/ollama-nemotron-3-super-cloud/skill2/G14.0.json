@@ -1,0 +1,14 @@
+{
+ "probe": "G14",
+ "arm": "skill2",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 0,
+ "prompt_chars": 17226,
+ "seconds": 4.1,
+ "raw": "{\n  \"s1\": \"更新を反映するためにアプリを再起動してください\",\n  \"s2\": \"アプリを再起動する\"\n}",
+ "parsed": {
+  "s1": "更新を反映するためにアプリを再起動してください",
+  "s2": "アプリを再起動する"
+ },
+ "error": ""
+}

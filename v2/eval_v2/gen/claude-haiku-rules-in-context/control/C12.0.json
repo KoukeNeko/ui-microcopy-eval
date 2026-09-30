@@ -1,0 +1,16 @@
+{
+ "probe": "C12",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 196,
+ "seconds": null,
+ "raw": "{\"s1\":\"カートが空です\",\"s2\":\"この商品を削除しますか？\",\"s3\":\"削除\",\"s4\":\"キャンセル\"}",
+ "parsed": {
+  "s1": "カートが空です",
+  "s2": "この商品を削除しますか？",
+  "s3": "削除",
+  "s4": "キャンセル"
+ },
+ "error": ""
+}

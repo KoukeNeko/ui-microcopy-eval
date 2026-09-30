@@ -1,0 +1,14 @@
+{
+ "probe": "C13",
+ "arm": "schema",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 204,
+ "seconds": 8.7,
+ "raw": "The user wants Japanese strings for a settings app.\n\ns1: The text shown immediately after the user turns off notifications. Max 24 characters.\n\ns2: Error message when settings couldn't be saved to the server (cause: cannot connect to server. What the user can do: try again later). Max 64 characters.\n\nLet me think:\n\ns1: \"通知をオフにしました\" - that's 10 characters. Good. Or \"通知をオフにしました\" counts: 通(1)知(2)を(3)オ(4)フ(5)に(6)し(7)ま(8)し(9)た(10) = 10 chars. Under 24. Good.\n\nAlternatively \"通知をオフに設定しました\" = 12 chars. Either works. Simple is better: \"通知をオフにしました\".\n\ns2: Error text about server saving failure, cause: cannot connect, user action: try again later. Max 64 characters.\n\n\"サーバーに接続できないため設定を保存できませんでした。後ほどもう一度お試しください。\"\n\nLet me count: サ(1)ー(2)バ(3)ー(4)に(5)接(6)続(7)で(8)き(9)な(10)い(11)た(12)め(13)設(14)定(15)を(16)保(17)存(18)で(19)き(20)ま(21)せ(22)ん(23)で(24)し(25)た(26)。(27)後(28)ほ(29)ど(30)も(31)う(32)一(33)度(34)お(35)試(36)し(37)く(38)だ(39)さ(40)い(41)。(42) = 42 characters. Under 64. \n\nAlternative shorter: \"サーバーに接続できないため保存できませんでした。後でもう一度お試しください。\" = let's count: サ1ー2バ3ー4に5接6続7で8き9な10い11た12め13保14存15で16き17ま18せ19ん20で21し22た23。24後25で26も27う28一29度30お31試32し33く34だ35さ36い37。38 = 38 chars.\n\nBoth fine. I'll go with \"サーバーに接続できないため設定を保存できませんでした。後ほどもう一度お試しください。\" (42 chars).\n\nNote: \"後ほど\" is more polite than \"後で\". Good.\n\nShould I count characters correctly? Japanese characters count as 1 each typically. 42 ≤ 64. Good.\n\nReturn only JSON. The instruction says JSONのみを返してください. So respond with just the JSON, no markdown code fences? It says JSON only. To be safe, output plain JSON without code fences. Actually code fences might be acceptable but \"JSONのみ\" suggests raw JSON. I'll output raw JSON.</think>{\"s1\":\"通知をオフにしました\",\"s2\":\"サーバーに接続できないため設定を保存できませんでした。後ほどもう一度お試しください。\"}",
+ "parsed": {
+  "s1": "通知をオフにしました",
+  "s2": "サーバーに接続できないため設定を保存できませんでした。後ほどもう一度お試しください。"
+ },
+ "error": ""
+}

@@ -1,0 +1,39 @@
+{
+ "record": "claude-haiku-rules-in-context|skill2b|G09.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "claude-haiku-rules-in-context|skill2b|G09.0",
+  "items": {
+   "case_type": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "summary": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "客戶選擇換貨。新品寄至原訂單地址，故障品取回期限 10 月 6 日。",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "return_deadline": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "ZX-4 鍵盤故障（空白鍵卡住），客戶選擇換貨。新品寄至原訂單地址，故障品取回期限 10 月 6 日。客戶備註：新品勿在週五前送達。",
+  "return_deadline": "10 月 6 日"
+ }
+}

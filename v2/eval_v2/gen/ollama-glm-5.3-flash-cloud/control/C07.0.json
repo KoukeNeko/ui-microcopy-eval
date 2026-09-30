@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 131,
+ "seconds": 8.6,
+ "raw": "The user wants accessibility labels in Traditional Chinese (繁體中文) for screen readers for three icon-only buttons:\n1. X icon (close current panel) - 叉叉圖示, closes the panel\n2. Magnifying glass icon (open search) - 放大鏡圖示, opens search\n3. Three dots icon (open more options menu) - 三個點圖示, opens more options menu\n\nThey want only JSON returned: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nGood accessibility labels should be concise, describe the action, not include the word \"按鈕\" typically (screen readers often add \"button\" automatically). Common conventions in Traditional Chinese:\n\n1. 關閉面板 or 關閉 (close) - \"關閉面板\" or \"關閉目前面板\". A common practice: 關閉. But to be specific: 關閉面板.\n2. 搜尋 (search) - 開啟搜尋 or just 搜尋\n3. 更多選項 (more options) - 開啟更多選項選單 or just 更多選項\n\nTypical guidelines: labels should be short, verb-based actions. Common iOS/Android conventions in zh-TW:\n- 關閉 for close buttons\n- 搜尋 for search\n- 更多 for more\n\nBut the user described the function: 關閉目前的面板, 開啟搜尋, 開啟更多選項選單.\n\nI'll provide:\ns1: 關閉面板\ns2: 搜尋\ns3: 更多選項\n\nHmm, but \"開啟搜尋\" vs \"搜尋\" — screen readers usually announce the button role, so just stating the action is fine. \"搜尋\" is the standard. \"更多選項\" is standard for three dots.\n\nAlternatively, could be more descriptive: \"關閉目前面板\", \"開啟搜尋\", \"開啟更多選項選單\". The user literally gave descriptions; simplest matching their intent but standard conventions favor brevity.\n\nI think最佳實務: 簡短動作詞。I'll go with:\ns1: \"關閉面板\"\ns2: \"搜尋\"\ns3: \"更多選項\"\n\nBut maybe they want to match their descriptions exactly. The prompt says \"需要給螢幕閱讀器唸的無障礙標籤（繁體中文）：叉叉圖示（關閉目前的面板）...\" The parentheses describe the function. Labels should be concise. I'll use 關閉面板 / 搜尋 / 更多選項.\n\nHmm, \"搜尋\" alone might be ambiguous? No, it's clear as an action. Some guidelines prefer \"開啟搜尋\" since it opens a search UI. But \"搜尋\" is the standard convention (e.g., Google Material: \"搜尋\"). For more: \"更多選項\" is standard (Material: \"更多選項\").\n\nI'll return the JSON only as requested.</think>{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

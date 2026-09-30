@@ -1,0 +1,16 @@
+{
+ "probe": "C01",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15788,
+ "seconds": null,
+ "raw": "{\"s1\":\"轉帳給王小明\",\"s2\":\"確認轉帳\",\"s3\":\"取消\",\"s4\":\"轉帳送出後無法取消。\"}",
+ "parsed": {
+  "s1": "轉帳給王小明",
+  "s2": "確認轉帳",
+  "s3": "取消",
+  "s4": "轉帳送出後無法取消。"
+ },
+ "error": ""
+}

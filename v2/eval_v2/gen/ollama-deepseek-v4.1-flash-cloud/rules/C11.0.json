@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 941,
+ "seconds": 1.4,
+ "raw": "{\"s1\":\"ACME · 120 shares · $4,812.00 · −$96.20 (−1.96%) today\",\"s2\":\"Cash balance · $1,050.33\",\"s3\":\"Estimated dividend · $38 next month · range $30–$45\"}",
+ "parsed": {
+  "s1": "ACME · 120 shares · $4,812.00 · −$96.20 (−1.96%) today",
+  "s2": "Cash balance · $1,050.33",
+  "s3": "Estimated dividend · $38 next month · range $30–$45"
+ },
+ "error": ""
+}

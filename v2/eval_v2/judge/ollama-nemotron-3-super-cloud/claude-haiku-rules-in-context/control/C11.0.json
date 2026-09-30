@@ -1,0 +1,11 @@
+{
+ "record": "claude-haiku-rules-in-context|control|C11.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "$4,812.00 (−$96.20, −1.96% today)",
+  "s2": "$1,050.33",
+  "s3": "Est. $38 next month (range $30–$45)"
+ }
+}

@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 424,
+ "seconds": 5.3,
+ "raw": "{\n  \"s1\": \"120 shares of ACME, $4,812.00, -$96.20 (-1.96%)\",\n  \"s2\": \"Cash balance: $1,050.33\",\n  \"s3\": \"Estimated dividend: $38 ($30–$45)\"\n}",
+ "parsed": {
+  "s1": "120 shares of ACME, $4,812.00, -$96.20 (-1.96%)",
+  "s2": "Cash balance: $1,050.33",
+  "s3": "Estimated dividend: $38 ($30–$45)"
+ },
+ "error": ""
+}

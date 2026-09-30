@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "skill2b",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 20797,
+ "seconds": null,
+ "raw": "{\"s1\":\"位置僅用於尋找附近停車場，不會被儲存。\",\"s2\":\"允許\",\"s3\":\"不允許\"}",
+ "parsed": {
+  "s1": "位置僅用於尋找附近停車場，不會被儲存。",
+  "s2": "允許",
+  "s3": "不允許"
+ },
+ "error": ""
+}

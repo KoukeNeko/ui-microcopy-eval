@@ -1,0 +1,14 @@
+{
+ "probe": "C14",
+ "arm": "control",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 248,
+ "seconds": 0.6,
+ "raw": "```json\n{\"s1\":\"Backup complete: 2,314 files (1.2 GB) saved.\",\"s2\":\"Storage almost full (95%). Upgrade your plan or delete files to keep backing up.\"}\n```",
+ "parsed": {
+  "s1": "Backup complete: 2,314 files (1.2 GB) saved.",
+  "s2": "Storage almost full (95%). Upgrade your plan or delete files to keep backing up."
+ },
+ "error": ""
+}

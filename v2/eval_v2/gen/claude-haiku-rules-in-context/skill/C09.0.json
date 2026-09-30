@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 16939,
+ "seconds": null,
+ "raw": "{\"remark\":\"睡眠少 40 分鐘。\"}",
+ "parsed": {
+  "remark": "睡眠少 40 分鐘。"
+ },
+ "error": ""
+}

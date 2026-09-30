@@ -1,0 +1,14 @@
+{
+ "probe": "G02",
+ "arm": "skill",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 15773,
+ "seconds": null,
+ "raw": "{\"s1\":\"已延誤\",\"s2\":\"預計 10 月 5 日送達\"}",
+ "parsed": {
+  "s1": "已延誤",
+  "s2": "預計 10 月 5 日送達"
+ },
+ "error": ""
+}

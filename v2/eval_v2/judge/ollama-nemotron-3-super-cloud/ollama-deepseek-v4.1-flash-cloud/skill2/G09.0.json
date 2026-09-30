@@ -1,0 +1,11 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|skill2|G09.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "case_type": "換貨",
+  "summary": "ZX-4 鍵盤空白鍵卡住，客戶要求換貨；新品寄原訂單地址，故障品 10 月 6 日前交超商。客戶週五之後才在家，希望新品不要在週五以前送到。",
+  "return_deadline": "10 月 6 日"
+ }
+}

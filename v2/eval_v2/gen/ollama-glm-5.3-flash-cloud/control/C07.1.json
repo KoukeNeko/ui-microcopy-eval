@@ -1,0 +1,15 @@
+{
+ "probe": "C07",
+ "arm": "control",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 131,
+ "seconds": 7.6,
+ "raw": "The user wants accessibility labels in Traditional Chinese for a toolbar with three icon-only buttons:\n1. X icon → close current panel\n2. Magnifying glass icon → open search\n3. Three dots icon → open more options menu\n\nThey want only JSON returned: {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nGood Traditional Chinese accessibility labels:\n- s1: 關閉面板 or 關閉目前面板\n- s2: 搜尋 or 開啟搜尋\n- s3: 更多選項\n\nBest practice for accessibility labels: concise, describe the action. Common conventions:\n- \"關閉\" alone is too vague; \"關閉目前面板\" is clearer.\n- \"搜尋\" is standard.\n- \"更多選項\" is standard for kebab menus.\n\nSince the prompt specifies the actions: 關閉目前的面板、開啟搜尋、開啟更多選項選單. I could use those directly or slightly simplified. Screen reader labels should be concise. I'll go with:\n- s1: 關閉目前面板\n- s2: 開啟搜尋 — actually just \"搜尋\" is common, but the description says \"開啟搜尋\". Screen reader labels commonly are like \"搜尋\" because the role \"button\" is announced separately. I'll use concise forms: \"關閉面板\", \"搜尋\", \"更多選項\". But to be safe and match the described actions, maybe \"關閉目前面板\", \"開啟搜尋\", \"開啟更多選項選單\". Hmm.\n\nBest practice: labels shouldn't include \"button\" or the role, and should be concise but descriptive. \"關閉\" + what panel... \"關閉面板\" is fine. For search, \"搜尋\" suffices. For three dots, \"更多選項\" is the convention (Android uses \"更多选项\" / iOS uses \"更多\" sometimes).\n\nI'll return:\n{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}\n\nOr more descriptive: {\"s1\":\"關閉目前面板\",\"s2\":\"開啟搜尋\",\"s3\":\"開啟更多選項選單\"}\n\nThe user explicitly described the functions, so including them is safe. However, overly verbose labels slow screen reader users. A middle ground: \"關閉面板\", \"搜尋\", \"更多選項\". I think concise is better; screen readers prepend \"按鈕\". I'll go concise but unambiguous.\n\nActually, let me reconsider: \"關閉目前面板\" vs \"關閉面板\" — \"目前\" adds little. \"關閉面板\" is fine.\n\nJSON output only.{\"s1\":\"關閉面板\",\"s2\":\"搜尋\",\"s3\":\"更多選項\"}",
+ "parsed": {
+  "s1": "關閉面板",
+  "s2": "搜尋",
+  "s3": "更多選項"
+ },
+ "error": ""
+}

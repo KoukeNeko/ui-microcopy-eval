@@ -1,0 +1,14 @@
+{
+ "probe": "G13",
+ "arm": "schema",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 345,
+ "seconds": 2.6,
+ "raw": "{\n  \"s1\": \"已讀回扣\",\n  \"s2\": \"群組聊天會始終發送已讀回扣\"\n}",
+ "parsed": {
+  "s1": "已讀回扣",
+  "s2": "群組聊天會始終發送已讀回扣"
+ },
+ "error": ""
+}

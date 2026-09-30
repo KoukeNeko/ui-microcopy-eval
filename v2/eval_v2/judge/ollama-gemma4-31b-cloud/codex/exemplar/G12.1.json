@@ -1,0 +1,37 @@
+{
+ "record": "codex|exemplar|G12.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "codex|exemplar|G12.1",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The deposit failed"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The attempted deposit was USD 2,000",
+     "The bank account ends in 1842",
+     "The bank rejected the transfer because of insufficient funds",
+     "The user can retry after adding funds or choose another funding source"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "",
+  "s2": ""
+ }
+}

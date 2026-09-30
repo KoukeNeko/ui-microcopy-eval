@@ -1,0 +1,14 @@
+{
+ "probe": "G11",
+ "arm": "rules",
+ "channel": "ollama-gemma4-31b-cloud",
+ "sample": 0,
+ "prompt_chars": 889,
+ "seconds": 3.3,
+ "raw": "```json\n{\"s1\":\"暫無儲存商品\",\"s2\":\"瀏覽商品\"}\n```",
+ "parsed": {
+  "s1": "暫無儲存商品",
+  "s2": "瀏覽商品"
+ },
+ "error": ""
+}

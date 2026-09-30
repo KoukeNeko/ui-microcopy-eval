@@ -1,0 +1,15 @@
+{
+ "probe": "C06",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 707,
+ "seconds": 1.7,
+ "raw": "{\n  \"s1\": \"電子郵件格式不正確\",\n  \"s2\": \"密碼長度不足 8 個字元\",\n  \"s3\": \"手機號碼為必填欄位，請填寫\"\n}",
+ "parsed": {
+  "s1": "電子郵件格式不正確",
+  "s2": "密碼長度不足 8 個字元",
+  "s3": "手機號碼為必填欄位，請填寫"
+ },
+ "error": ""
+}

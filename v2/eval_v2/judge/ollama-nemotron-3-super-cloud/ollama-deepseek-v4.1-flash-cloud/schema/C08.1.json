@@ -1,0 +1,41 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|C08.1",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|C08.1",
+  "items": {
+   "summary": {
+    "facts_present": 0,
+    "missing": [
+     "next meeting Wednesday"
+    ],
+    "surplus": 1,
+    "surplus_quote": "並指派後續調查與介面調整工作",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "action_items": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "note": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "summary": "本週重點為降低付款頁錯誤率，並指派後續調查與介面調整工作。",
+  "action_items": "小陳查發卡行拒絕原因，週三前報告 ／ 小林統一結帳頁三個 loading 樣式",
+  "note": "約40秒雜音聽不清楚"
+ }
+}

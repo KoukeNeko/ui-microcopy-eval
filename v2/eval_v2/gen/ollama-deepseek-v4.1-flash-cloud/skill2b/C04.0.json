@@ -1,0 +1,14 @@
+{
+ "probe": "C04",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18180,
+ "seconds": 1.0,
+ "raw": "{\"s1\":\"信義停車場剩 10 分鐘\",\"s2\":\"超時每小時 NT$60\"}",
+ "parsed": {
+  "s1": "信義停車場剩 10 分鐘",
+  "s2": "超時每小時 NT$60"
+ },
+ "error": ""
+}

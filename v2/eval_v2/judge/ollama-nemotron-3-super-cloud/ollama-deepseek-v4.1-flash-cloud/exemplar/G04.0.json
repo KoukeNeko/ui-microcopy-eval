@@ -1,0 +1,32 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G04.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|exemplar|G04.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "The setting controls whether location information is stored"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "conversational",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "位置資訊",
+  "s2": "關閉後，新拍攝的照片不再寫入 GPS 位置；既有照片中的位置資料不會被刪除。"
+ }
+}

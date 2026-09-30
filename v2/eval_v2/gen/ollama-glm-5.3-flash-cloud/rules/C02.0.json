@@ -1,0 +1,15 @@
+{
+ "probe": "C02",
+ "arm": "rules",
+ "channel": "ollama-glm-5.3-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 759,
+ "seconds": 14.3,
+ "raw": "The user wants three pieces of Traditional Chinese (Taiwan e-commerce app) UI copy:\n\ns1: Status text shown after payment submitted, while waiting for bank response.\ns2: Error message when credit card declined by issuing bank — state the reason and tell user what to do.\ns3: Order confirmation status text, order number A2026093011.\n\nRules:\n- Traditional Chinese, Taiwan usage (銀行, 信用卡, 訂單)\n- No apologies, no exclamation marks in error states\n- No \"我們\", avoid \"你的/您的\" unless needed\n- No mainland terms: 當前, 默認, 設置, 數據, 視頻, 用戶, 緩存, 軟件, 網絡, 信息\n- Don't repeat titles, keep concise\n- No period at end of labels/buttons — status text can be a sentence though; but keep short\n- Return only JSON {\"s1\":\"...\",\"s2\":\"...\",\"s3\":\"...\"}\n\nDraft:\n\ns1: \"付款資料送出中，請稍候\" — waiting for bank response. Something like \"正在向銀行確認付款，請稍候\" — \"正在\" is fine in Taiwan. Avoid \"當前\". Keep short: \"付款處理中，請稍候\" — but need to reflect waiting for bank. \"正在向銀行確認付款，請勿關閉此頁面\" — maybe concise: \"付款授權處理中，請稍候\". Taiwan usage: \"刷卡進行中\"? Keep: \"付款資料已送出，銀行回應中\" — clean.\n\ns2: Credit card declined by issuing bank. Reason: 發卡行拒絕交易. Tell user what to do: 請確認卡片資訊或改用其他付款方式／聯絡發卡行. Avoid apology, no exclamation. Example: \"交易遭發卡行拒絕，請確認卡片可用額度與狀態，或改用其他付款方式\". That states the reason (declined by issuing bank) and action. Could be more specific cause? The prompt says \"要說出原因\" — the reason is issuing bank declined. So mention it. \"發卡行拒絕此筆交易，請聯絡發卡行或改用其他付款方式\" — 聯絡 is fine in Taiwan (聯絡/聯繫). Good.\n\ns3: Order established, status text with order number. \"訂單已成立，訂單編號 A2026093011\" — that's typical. Avoid \"您的訂單\"? Rule says avoid 「你的」「您的」 unless needed to distinguish whose data — not needed. So: \"訂單已成立，訂單編號 A2026093011\". No period? It's a status text; labels/buttons shouldn't end with period. Status text could be fine, but keep no period for consistency. JSON only.\n\nCheck mainland terms: none used. No exclamation. No apology. No \"我們\". No question. No disclaimers.\n\ns1 alternative: \"付款資料送出中，等待銀行回應\" — concise. Or \"付款處理中，等待銀行授權\" — \"授權\" is banking term in Taiwan (刷卡授權). Good: \"付款授權處理中，請稍候\".\n\nI'll pick:\n\ns1: \"付款資料已送出，等待銀行回應\"\ns2: \"發卡行拒絕此筆交易，請確認卡片狀態與可用額度，或改用其他付款方式\"\ns3: \"訂單已成立，訂單編號 A2026093011\"\n\nOutput only JSON.</think>{\"s1\":\"付款資料已送出，等待銀行回應\",\"s2\":\"發卡行拒絕此筆交易，請確認卡片狀態與可用額度，或改用其他付款方式\",\"s3\":\"訂單已成立，訂單編號 A2026093011\"}",
+ "parsed": {
+  "s1": "付款資料已送出，等待銀行回應",
+  "s2": "發卡行拒絕此筆交易，請確認卡片狀態與可用額度，或改用其他付款方式",
+  "s3": "訂單已成立，訂單編號 A2026093011"
+ },
+ "error": ""
+}

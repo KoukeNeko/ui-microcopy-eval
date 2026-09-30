@@ -1,0 +1,11 @@
+{
+ "record": "claude-haiku-rules-in-context|skill2b|G08.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": null,
+ "raw_missing": true,
+ "strings": {
+  "s1": "加入喜愛",
+  "s2": "播放佇列",
+  "s3": "靜音"
+ }
+}

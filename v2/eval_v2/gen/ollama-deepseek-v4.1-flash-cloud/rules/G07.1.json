@@ -1,0 +1,13 @@
+{
+ "probe": "G07",
+ "arm": "rules",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 722,
+ "seconds": 2.0,
+ "raw": "{\"s1\":\"發票日期超過 90 天\"}",
+ "parsed": {
+  "s1": "發票日期超過 90 天"
+ },
+ "error": ""
+}

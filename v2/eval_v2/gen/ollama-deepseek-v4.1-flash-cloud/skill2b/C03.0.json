@@ -1,0 +1,15 @@
+{
+ "probe": "C03",
+ "arm": "skill2b",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 18260,
+ "seconds": 4.9,
+ "raw": "{\"s1\":\"位置只用來找附近的停車場，不會儲存。\",\"s2\":\"同意\",\"s3\":\"不同意\"}",
+ "parsed": {
+  "s1": "位置只用來找附近的停車場，不會儲存。",
+  "s2": "同意",
+  "s3": "不同意"
+ },
+ "error": ""
+}

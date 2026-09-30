@@ -1,0 +1,14 @@
+{
+ "probe": "G04",
+ "arm": "rules",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 716,
+ "seconds": 4.9,
+ "raw": "{\n  \"s1\": \"位置資訊\",\n  \"s2\": \"關閉後新照片不會儲存位置，既有照片不受影響\"\n}",
+ "parsed": {
+  "s1": "位置資訊",
+  "s2": "關閉後新照片不會儲存位置，既有照片不受影響"
+ },
+ "error": ""
+}

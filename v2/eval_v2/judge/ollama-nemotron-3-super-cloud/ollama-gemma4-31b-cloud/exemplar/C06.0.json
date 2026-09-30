@@ -1,0 +1,39 @@
+{
+ "record": "ollama-gemma4-31b-cloud|exemplar|C06.0",
+ "judge": "ollama-nemotron-3-super-cloud",
+ "verdict": {
+  "record": "ollama-gemma4-31b-cloud|exemplar|C06.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請重新輸入。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請增加字元長度。",
+    "register": "mixed",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "請輸入手機號碼。",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "格式錯誤：電子郵件格式不正確。請重新輸入。",
+  "s2": "長度不足：密碼少於 8 個字元。請增加字元長度。",
+  "s3": "內容空白：手機號碼是必填項目。請輸入手機號碼。"
+ }
+}

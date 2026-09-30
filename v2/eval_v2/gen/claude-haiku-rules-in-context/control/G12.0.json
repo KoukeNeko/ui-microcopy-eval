@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 391,
+ "seconds": null,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"Your checking account ending in 1842 has insufficient funds. Add funds to it or choose another funding source.\"}\n",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Your checking account ending in 1842 has insufficient funds. Add funds to it or choose another funding source."
+ },
+ "error": ""
+}

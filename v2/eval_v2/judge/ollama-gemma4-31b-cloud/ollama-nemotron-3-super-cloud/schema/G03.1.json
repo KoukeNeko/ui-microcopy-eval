@@ -1,0 +1,30 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|schema|G03.1",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|schema|G03.1",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 1,
+    "surplus_quote": "（如檢查硬體開關、BIOS 設定或使用 sudo hdparm -r0 /dev/nvme0n1）",
+    "register": "mixed",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "磁碟寫入失敗",
+  "s2": "目標磁碟 /dev/nvme0n1 目前處於唯讀狀態，無法寫入安裝資料。請先解除磁碟唯讀保護（如檢查硬體開關、BIOS 設定或使用 sudo hdparm -r0 /dev/nvme0n1），然後重新執行安裝程式。"
+ }
+}

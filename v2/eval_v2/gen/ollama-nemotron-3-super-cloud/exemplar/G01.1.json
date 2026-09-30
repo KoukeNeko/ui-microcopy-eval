@@ -1,0 +1,14 @@
+{
+ "probe": "G01",
+ "arm": "exemplar",
+ "channel": "ollama-nemotron-3-super-cloud",
+ "sample": 1,
+ "prompt_chars": 1376,
+ "seconds": 1.9,
+ "raw": "{\"s1\":\"確認轉帳\",\"s2\":\"12,515 元\"}",
+ "parsed": {
+  "s1": "確認轉帳",
+  "s2": "12,515 元"
+ },
+ "error": ""
+}

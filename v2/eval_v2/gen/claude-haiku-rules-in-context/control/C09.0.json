@@ -1,0 +1,13 @@
+{
+ "probe": "C09",
+ "arm": "control",
+ "channel": "claude-haiku-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 169,
+ "seconds": null,
+ "raw": "{\"remark\":\"入睡時間較長，今晚睡眠未達目標。\"}",
+ "parsed": {
+  "remark": "入睡時間較長，今晚睡眠未達目標。"
+ },
+ "error": ""
+}

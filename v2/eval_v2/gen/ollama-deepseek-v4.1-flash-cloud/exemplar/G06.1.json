@@ -1,0 +1,14 @@
+{
+ "probe": "G06",
+ "arm": "exemplar",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 1,
+ "prompt_chars": 1378,
+ "seconds": 1.2,
+ "raw": "{\"s1\":\"建立保管庫\",\"s2\":\"繼續設定\"}",
+ "parsed": {
+  "s1": "建立保管庫",
+  "s2": "繼續設定"
+ },
+ "error": ""
+}

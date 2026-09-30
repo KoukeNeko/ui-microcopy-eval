@@ -1,0 +1,15 @@
+{
+ "probe": "C11",
+ "arm": "control",
+ "channel": "ollama-deepseek-v4.1-flash-cloud",
+ "sample": 0,
+ "prompt_chars": 347,
+ "seconds": 1.0,
+ "raw": "{\"s1\":\"120 shares · $4,812.00 · −$96.20 (−1.96%) today\",\"s2\":\"Cash balance · $1,050.33\",\"s3\":\"Est. dividend next month · $38 ($30–$45)\"}",
+ "parsed": {
+  "s1": "120 shares · $4,812.00 · −$96.20 (−1.96%) today",
+  "s2": "Cash balance · $1,050.33",
+  "s3": "Est. dividend next month · $38 ($30–$45)"
+ },
+ "error": ""
+}

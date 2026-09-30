@@ -1,0 +1,32 @@
+{
+ "record": "ollama-nemotron-3-super-cloud|skill|G05.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-nemotron-3-super-cloud|skill|G05.0",
+  "items": {
+   "s1": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 0,
+    "missing": [
+     "The pickup location is FamilyMart Douliu Minsheng"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "包裹 TW482910 已送達全家斗六民生店",
+  "s2": "請於 10 月 4 日 23:59 前取件"
+ }
+}

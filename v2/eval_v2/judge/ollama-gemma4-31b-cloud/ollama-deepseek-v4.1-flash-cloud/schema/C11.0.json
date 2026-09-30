@@ -1,0 +1,44 @@
+{
+ "record": "ollama-deepseek-v4.1-flash-cloud|schema|C11.0",
+ "judge": "ollama-gemma4-31b-cloud",
+ "verdict": {
+  "record": "ollama-deepseek-v4.1-flash-cloud|schema|C11.0",
+  "items": {
+   "s1": {
+    "facts_present": 0,
+    "missing": [
+     "120 shares",
+     "down $96.20"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s2": {
+    "facts_present": 1,
+    "missing": [],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   },
+   "s3": {
+    "facts_present": 0,
+    "missing": [
+     "$38 estimated"
+    ],
+    "surplus": 0,
+    "surplus_quote": "",
+    "register": "interface",
+    "lang_ok": 1
+   }
+  }
+ },
+ "raw_missing": false,
+ "strings": {
+  "s1": "ACME $4,812.00 -1.96%",
+  "s2": "Cash $1,050.33",
+  "s3": "Est. div. $30–$45"
+ }
+}

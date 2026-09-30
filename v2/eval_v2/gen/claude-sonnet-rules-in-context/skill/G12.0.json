@@ -1,0 +1,14 @@
+{
+ "probe": "G12",
+ "arm": "skill",
+ "channel": "claude-sonnet-rules-in-context",
+ "sample": 0,
+ "prompt_chars": 16022,
+ "seconds": null,
+ "raw": "{\"s1\":\"Deposit failed\",\"s2\":\"Insufficient funds in checking ending in 1842. Add funds or choose another funding source.\"}",
+ "parsed": {
+  "s1": "Deposit failed",
+  "s2": "Insufficient funds in checking ending in 1842. Add funds or choose another funding source."
+ },
+ "error": ""
+}
