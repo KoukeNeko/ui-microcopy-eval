@@ -34,7 +34,8 @@ BIG_EXTRA = """
  ("攝像頭","網路攝影機"),("揚聲器","喇叭"),("充電寶","行動電源"),("數碼","數位"),("短信","簡訊"),("社交媒體","社群媒體"),("博客","部落格"),
  ("點贊","按讚"),("屏蔽","封鎖"),("舉報","檢舉"),
 ])
-INSTRUCT = "所有字串使用台灣的正體中文介面用語，不用中國大陸用語。"
+# The 2026-10-01 run used an older wording of this line with one extra word; see git history.
+INSTRUCT = "所有字串使用台灣的正體中文介面用語，不用中國用語。"
 
 def relevant_rows(p):
     rows = []

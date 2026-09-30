@@ -92,12 +92,12 @@ skill 的第一版由同一模型於同一 session 撰寫、出題與評分。�
 | arm | 字串數 | 含中國用語 | 95% CI | 標準台灣詞 |
 | --- | --- | --- | --- | --- |
 | control（僅題目） | 315 | **0.0%** | 0–1% | 42.9% |
-| 一句否定指示「不用中國大陸用語」 | 333 | **2.4%** | 1–5% | 45.3% |
+| 一句否定指示（不用中國用語） | 333 | **2.4%** | 1–5% | 45.3% |
 | 畫面相關的 1–3 列 | 366 | 0.0% | 0–1% | **65.6%** |
 | 整份 40 列的表 | 354 | 0.0% | 0–1% | 51.1% |
 | 整表加 60 列雜訊 | 360 | 0.3% | 0–2% | 51.9% |
 
-四個模型在 control 條件下無中國用語；唯一出現漏詞的條件為單句否定指示（deepseek 於該題 control 六次寫 解除安裝，加入指示後六次寫 卸載）。標準詞使用率的提升來自畫面相關的列；整表的效果約為其一半。各模型與各題明細見 [`v2/drift/results.md`](v2/drift/results.md)。
+四個模型在 control 條件下無中國用語；唯一出現漏詞的條件為單句否定指示（deepseek 於該題 control 六次寫「解除安裝」，加入指示後六次寫「卸載」）。標準詞使用率的提升來自畫面相關的列；整表的效果約為其一半。各模型與各題明細見 [`v2/drift/results.md`](v2/drift/results.md)。
 
 ## 執行
 
@@ -120,6 +120,7 @@ python3 v2/eval_v2.py judge --judge ollama:nemotron-3-super:cloud
 python3 v2/eval_v2.py sample-for-human --n 40          # 產生盲評表與解答檔
 python3 v2/eval_v2.py human --rated human_sample.rated.md --key human_sample.key.json
 python3 v2/eval_v2.py report                            # 配對表、語言洩漏、非空率、κ
+python3 v2/final_numbers.py > v2/final_tables.md        # v1 與 v2 同組模型的表 A–D
 
 # 人工驅動的管道（agent 或人）
 python3 v2/eval_v2.py dry --channel-label claude-sonnet-rules-in-context --arms control,skill2b
@@ -162,6 +163,8 @@ v2/
     gen/<channel>/<arm>/           2,016 筆生成
     judge/<judge>/<channel>/<arm>/ 2,746 筆判定
     report.md                      完整表格
+  final_numbers.py                 v1 與 v2 同組模型的配對表（表 A–D）
+  final_tables.md                  其輸出
     human_calibration.md           兩批盲評與 κ
     human_sample1.rated.md, human_sample2.rated.md
   drift/

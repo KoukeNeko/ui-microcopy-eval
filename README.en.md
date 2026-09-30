@@ -120,13 +120,13 @@ differs from the criterion the person who requested it applies. Details in
 | arm | strings | any China term | 95% CI | canonical Taiwan term |
 | --- | --- | --- | --- | --- |
 | control (brief only) | 315 | **0.0%** | 0–1% | 42.9% |
-| one negative line 「不用中國大陸用語」 | 333 | **2.4%** | 1–5% | 45.3% |
+| one negative line (不用中國用語) | 333 | **2.4%** | 1–5% | 45.3% |
 | the 1–3 rows relevant to the screen | 366 | 0.0% | 0–1% | **65.6%** |
 | the whole 40-row table | 354 | 0.0% | 0–1% | 51.1% |
 | the table plus 60 noise rows | 360 | 0.3% | 0–2% | 51.9% |
 
 Under control, four models produced no China terms; the only condition with leaks was the single
-negative line (on one brief deepseek wrote 解除安裝 six times under control and 卸載 six times with
+negative line (on one brief deepseek wrote 「解除安裝」 six times under control and 「卸載」 six times with
 the line). The rise in canonical-term use comes from the rows relevant to the screen; the whole
 table achieves about half the effect. Per-model and per-brief tables in
 [`v2/drift/results.md`](v2/drift/results.md).
@@ -155,6 +155,7 @@ python3 v2/eval_v2.py judge --judge ollama:nemotron-3-super:cloud
 python3 v2/eval_v2.py sample-for-human --n 40          # writes a blind sheet and a key
 python3 v2/eval_v2.py human --rated human_sample.rated.md --key human_sample.key.json
 python3 v2/eval_v2.py report                            # paired tables, leak, emptiness, κ
+python3 v2/final_numbers.py > v2/final_tables.md        # matched-channel Tables A–D
 
 # a hand-driven channel (an agent or a person)
 python3 v2/eval_v2.py dry --channel-label claude-sonnet-rules-in-context --arms control,skill2b
@@ -209,6 +210,8 @@ v2/
     gen/<channel>/<arm>/           2,016 generations
     judge/<judge>/<channel>/<arm>/ 2,746 verdicts
     report.md                      full tables
+  final_numbers.py                 matched-channel tables for v1 vs v2 (Tables A–D)
+  final_tables.md                  its output
     human_calibration.md           both blind batches, with κ
     human_sample1.rated.md, human_sample2.rated.md
   drift/
