@@ -1,0 +1,23 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "來源：deepseek-v4.1-flash 估計",
+  "ok": false,
+  "problems": [
+    "s1 缺少必要內容 /估算/：'來源：deepseek-v4.1-flash 估計'"
+  ],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "來源：deepseek-v4.1-flash 估計",
+      "match": "來源：deepseek-v",
+      "message": "25 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "```json\n{\"s1\": \"來源：deepseek-v4.1-flash 估計\"}\n```"
+}

@@ -1,0 +1,24 @@
+The task: write three UI strings in Traditional Chinese (Taiwan), only return JSON.
+
+Let me apply the skill rules:
+
+**s1: 清除圖片暫存資料的那顆按鈕的文字** — Button role. Form: imperative verb phrase, no person, no question, no full stop. The button clears the image cache. Taiwan lexicon: 快取 not 緩存. So: 「清除圖片快取」 or 「清除快取」. The description says 清除圖片暫存資料 — the button's action is clearing image cache data. Button form: 動詞片語. 「清除圖片快取」 is good and precise. Maybe 「清除圖片快取」 — clean imperative. Could be shorter 「清除快取」 but the spec says 圖片 specifically. 「清除圖片快取」 is the right button label.
+
+**s2: 設定已經寫入完成後，畫面上顯示的狀態文字** — Status role. Closed state: 已＋動詞. 「已儲存」 is the conventional status in Taiwan UI (per the lexicon's 既有慣例: 狀態：已儲存、已同步…). Setting written to disk → 「已儲存」. Not 「設定完成」? Hmm. The setting has been written/completed. Statuses in the convention list include 已儲存. 「已儲存」 is the standard. Could be 「設定已儲存」 — but status form should be closed state 已＋動詞. 「已儲存」 is fine and is the canonical example. Keep it minimal: 「已儲存」.
+
+**s3: 說明「這個 app 會把手機上的照片上傳到伺服器做辨識」的那段說明文字** — This is an explanatory text on the settings page — a note/description role. The user explicitly requests this string exists (they want the explanation). So it exists. It should be one clause, one fact, no affect, no 「我們」, no defensive filler. It describes data behavior — like a privacy disclosure: 照片會上傳至伺服器進行辨識。 Hmm, form: this is a description/note under a setting. Should it have a full stop? 句子型的 status 與 error 加句號 — punctuation rules: buttons/labels/titles no full stop; sentence-type status and error take full stops. This is a description sentence — a full sentence, so period is appropriate. Actually the punctuation section says 按鈕、標籤、標題不加句號；句子型的 status 與 error 加句號。 It doesn't explicitly mention descriptions, but a full-sentence note reads fine with a period. Notes like 「醬汁另計」 have no period (short clause). For a sentence-length description, a period is natural in Taiwan UI. Let me write: 「照片會上傳至伺服器進行辨識。」 
+
+Should it mention 「手機上的」? The screen context — user is in the app, photos from the phone. 「照片會上傳至伺服器進行辨識。」 conveys: the app uploads photos to a server for recognition. Do we need 「這個 App 會」? The screen already shows the app; deletion test: naming the app adds nothing. 「手機上的」 — the user knows the photos are on their phone; visible/context. Delete. Keep the consequence: uploading to server + recognition. That's the fact that changes behavior understanding (privacy implication).
+
+Could be 「使用照片辨識時，照片會上傳至伺服器。」 Hmm. The user's spec: 說明會把手機上的照片上傳到伺服器做辨識. So: 「照片會上傳至伺服器進行辨識。」 — one sentence, subject 照片 (system voice, third person, no 我們). Good.
+
+Alternatively 「拍攝或選擇的照片會上傳至伺服器進行辨識。」 — too long. Keep minimal.
+
+Word choice: 伺服器, 上傳, 辨識 — all Taiwan usage. 資料? Not needed.
+
+s1 again: 「清除圖片快取」 — imperative, no full stop, no person. Good. Some might write 「清除圖片快取資料」 — 資料 adds nothing; 快取 already means cached data. Deletion test passes for 清除圖片快取.
+
+Final JSON:
+{"s1": "清除圖片快取", "s2": "已儲存", "s3": "照片會上傳至伺服器進行辨識。"}```json
+{"s1": "清除圖片快取", "s2": "已儲存", "s3": "照片會上傳至伺服器進行辨識。"}
+```

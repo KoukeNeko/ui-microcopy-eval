@@ -1,0 +1,45 @@
+The user wants three lines of text for a nutrition detail page in a health app. The data:
+
+- 鉀: this food has 214 mg, daily goal 3,000 mg
+- 熱量: estimated 104 kcal, range 90–120 kcal
+- 膳食纖維: 5 g, daily goal 25 g
+
+They want display text for each line, returning JSON only: {"s1": "鉀那行", "s2": "熱量那行", "s3": "膳食纖維那行"}
+
+This seems like a copywriting task. Likely they want something like:
+
+- 鉀: 214 mg（每日目標 3,000 mg，約 7%）
+- 熱量: 估計 104 kcal（範圍 90–120 kcal）
+- 膳食纖維: 5 g（每日目標 25 g，約 20%）
+
+Let me compute percentages:
+- 214/3000 = 7.13% ≈ 7%
+- 104 within 90–120, so "符合範圍" maybe
+- 5/25 = 20%
+
+The user says the numbers are already computed, so maybe just format nicely. Perhaps they want percent of daily value included? They said numbers already computed—"只回傳 JSON". Probably they just want the display strings. Adding computed percentages could be helpful but might be "calculating" extra numbers. Percentages are trivial derivations but they said numbers are computed, so safer to just present the given numbers cleanly.
+
+Possible formats:
+
+s1: "鉀 214 mg / 每日目標 3,000 mg"
+s2: "熱量 估計 104 kcal（範圍 90–120 kcal）"
+s3: "膳食纖維 5 g / 每日目標 25 g"
+
+Or maybe:
+s1: "鉀：214 mg（每日 3,000 mg）"
+s2: "熱量：估計 104 kcal（90–120 kcal）"
+s3: "膳食纖維：5 g（每日 25 g）"
+
+A simple, clean approach consistent across lines. I'll return JSON only. No extra text allowed? They said "只回傳 JSON" — only return JSON. So my entire response should be the JSON object.
+
+I'll produce:
+
+{"s1": "鉀：214 mg（每日目標 3,000 mg，7%）", "s2": "...", "s3": "..."}
+
+Hmm, including 7% requires computing a percentage; they said numbers already computed, implying don't compute. Better to keep only given numbers.
+
+Final:
+
+{"s1": "鉀：214 mg（每日目標 3,000 mg）", "s2": "熱量：估計 104 kcal（範圍 90–120 kcal）", "s3": "膳食纖維：5 g（每日目標 25 g）"}
+
+That's clean and consistent. Return just the JSON. No code block? They said return JSON only. I can return raw JSON text. Probably fine either way; "只回傳 JSON" suggests raw JSON without extra commentary. I'll output just the JSON object, no markdown fences to be safe? Fences might be acceptable, but to strictly comply, raw JSON. I'll go with raw JSON.</think>{"s1": "鉀：214 mg（每日目標 3,000 mg）", "s2": "熱量：估計 104 kcal（範圍 90–120 kcal）", "s3": "膳食纖維：5 g（每日目標 25 g）"}

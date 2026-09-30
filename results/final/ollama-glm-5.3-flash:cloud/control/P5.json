@@ -1,0 +1,44 @@
+{
+  "probe": "P5",
+  "kind": "strings",
+  "text": "鉀：214 mg（每日目標 3,000 mg）\n熱量：估計 104 kcal（範圍 90–120 kcal）\n膳食纖維：5 g（每日目標 25 g）",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /約\\s*\\d|上限|目標|大概|僅供參考/：'鉀：214 mg（每日目標 3,000 mg）'",
+    "s3 出現禁止樣式 /約\\s*\\d|上限|目標|大概|僅供參考/：'膳食纖維：5 g（每日目標 25 g）'"
+  ],
+  "findings": [
+    {
+      "rule": "redundant-qualifier",
+      "severity": "warn",
+      "role": "value",
+      "text": "鉀：214 mg（每日目標 3,000 mg）",
+      "match": "目標",
+      "message": "Says in words what the layout already says.",
+      "hint": "The second number after the slash is the target: 「128 / 2,400 mg」.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "value",
+      "text": "熱量：估計 104 kcal（範圍 90–120 kcal）",
+      "match": "熱量：估計 104 kcal（範圍 90–120 ",
+      "message": "30 characters for a value, which reads as two strings.",
+      "hint": "Split or delete down to about 24.",
+      "where": ""
+    },
+    {
+      "rule": "redundant-qualifier",
+      "severity": "warn",
+      "role": "value",
+      "text": "膳食纖維：5 g（每日目標 25 g）",
+      "match": "目標",
+      "message": "Says in words what the layout already says.",
+      "hint": "The second number after the slash is the target: 「128 / 2,400 mg」.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "The user wants three lines of text for a nutrition detail page in a health app. The data:\n\n- 鉀: this food has 214 mg, daily goal 3,000 mg\n- 熱量: estimated 104 kcal, range 90–120 kcal\n- 膳食纖維: 5 g, daily goal 25 g\n\nThey want display text for each line, returning JSON only: {\"s1\": \"鉀那行\", \"s2\": \"熱量那行\", \"s3\": \"膳食纖維那行\"}\n\nThis seems like a copywriting task. Likely they want something like:\n\n- 鉀: 214 mg（每日目標 3,000 mg，約 7%）\n- 熱量: 估計 104 kcal（範圍 90–120 kcal）\n- 膳食纖維: 5 g（每日目標 25 g，約 20%）\n\nLet me compute percentages:\n- 214/3000 = 7.13% ≈ 7%\n- 104 within 90–120, so \"符合範圍\" maybe\n- 5/25 = 20%\n\nThe user says the numbers are already computed, so maybe just format nicely. Perhaps they want percent of daily value included? They said numbers already computed—\"只回傳 JSON\". Probably they just want the display strings. Adding computed percentages could be helpful but might be \"calculating\" extra numbers. Percentages are trivial derivations but they said numbers are computed, so safer to just present the given numbers cleanly.\n\nPossible formats:\n\ns1: \"鉀 214 mg / 每日目標 3,000 mg\"\ns2: \"熱量 估計 104 kcal（範圍 90–120 kcal）\"\ns3: \"膳食纖維 5 g / 每日目標 25 g\"\n\nOr maybe:\ns1: \"鉀：214 mg（每日 3,000 mg）\"\ns2: \"熱量：估計 104 kcal（90–120 kcal）\"\ns3: \"膳食纖維：5 g（每日 25 g）\"\n\nA simple, clean approach consistent across lines. I'll return JSON only. No extra text allowed? They said \"只回傳 JSON\" — only return JSON. So my entire response should be the JSON object.\n\nI'll produce:\n\n{\"s1\": \"鉀：214 mg（每日目標 3,000 mg，7%）\", \"s2\": \"...\", \"s3\": \"...\"}\n\nHmm, including 7% requires computing a percentage; they said numbers already computed, implying don't compute. Better to keep only given numbers.\n\nFinal:\n\n{\"s1\": \"鉀：214 mg（每日目標 3,000 mg）\", \"s2\": \"熱量：估計 104 kcal（範圍 90–120 kcal）\", \"s3\": \"膳食纖維：5 g（每日目標 25 g）\"}\n\nThat's clean and consistent. Return just the JSON. No code block? They said return JSON only. I can return raw JSON text. Probably fine either way; \"只回傳 JSON\" suggests raw JSON without extra commentary. I'll output just the JSON object, no markdown fences to be safe? Fences might be acceptable, but to strictly comply, raw JSON. I'll go with raw JSON.</think>{\"s1\": \"鉀：214 mg（每日目標 3,000 mg）\", \"s2\": \"熱量：估計 104 kcal（範圍 90–120 kcal）\", \"s3\": \"膳食纖維：5 g（每日目標 25 g）\"}"
+}

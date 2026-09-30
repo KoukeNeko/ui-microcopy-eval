@@ -1,0 +1,3 @@
+```json
+{"items":[{"name":"蘋果切片","amount":"150 g (130–170 g)","kcal":78,"protein_g":0.4,"carb_g":20.6,"fat_g":0.3,"fibre_g":3.6}],"notes":[]}
+```

@@ -1,0 +1,10 @@
+{
+  "probe": "P5",
+  "kind": "strings",
+  "text": "214 / 3,000 mg\n估計 104 kcal（90–120 kcal）\n5 / 25 g",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\": \"214 / 3,000 mg\", \"s2\": \"估計 104 kcal（90–120 kcal）\", \"s3\": \"5 / 25 g\"}"
+}

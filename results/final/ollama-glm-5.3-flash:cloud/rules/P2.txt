@@ -1,0 +1,52 @@
+Let me analyze this task.
+
+The original text is:
+「第 0 顆 83 MiB 這台機器正從它開機，不能裝」
+
+This is a disk list in an installer. Disk 0 is the machine's current boot disk. The explanation needs to convey: this disk cannot be used for installation because it is the current boot disk.
+
+UI microcopy rules to follow:
+- Labels, titles, subtitles, chips, statuses and empty states are nouns or short states
+- No repetition of what's already visible (disk 0, 83 MiB are likely already shown in the list)
+- Short and precise
+- No personality, no exclamation
+- The reason should be stated: it's the current boot disk, so cannot install
+
+The list item likely already shows: disk number 0, size 83 MiB. So the status/ explanation should just say why it can't be installed: 「目前的開機磁碟」 or「開機中，無法安裝」.
+
+The key info to retain: cannot install because it's the current boot disk.
+
+Possible rewrites:
+- 「目前的開機磁碟，無法安裝」
+- 「開機磁碟，無法安裝」
+- 「這是目前的開機磁碟，無法安裝」
+
+Since the rule says drop 「你的」/「這台機器」 when not disambiguating... Actually 「這台機器正從它開機」 - the phrase "this machine boots from it" - we could simplify to 「目前的開機磁碟」.
+
+A short status: 「目前的開機磁碟，無法安裝」— this states the reason (boot disk) and consequence (cannot install).
+
+Even shorter: 「開機中，無法安裝」— but "開機中" implies currently booting from it. Hmm, "目前的開機磁碟" is clearer about which disk it is.
+
+Actually the original mentions 「第 0 顆 83 MiB」 which is probably redundant with the list row (the row already shows disk 0 and its size). So the explanation should drop that.
+
+Best: 「目前的開機磁碟，無法安裝」
+
+Or even: 「無法安裝：目前的開機磁碟」— but the noun-first form reads better as status.
+
+The rule says statuses are nouns or short states. 「目前的開機磁碟，無法安裝」 fits: noun phrase + consequence.
+
+Could it be even more concise? 「開機磁碟，無法安裝」— "boot disk, cannot install". Missing "current" — but in context of installing, saying it's the boot disk implies it's the current one. Actually every machine has a boot disk; saying 開機磁碟 alone might be ambiguous (could the installer be installed to a boot disk of another OS in dual-boot?). The original says 「這台機器正從它開機」 = the machine is currently booting from it. 「目前的開機磁碟」 captures that.
+
+I'll go with 「目前的開機磁碟，無法安裝」.
+
+Length: original 18 chars (excluding punctuation), new is shorter and drops redundant disk info (which the list row already shows — the disk index 0 and size 83 MiB are already visible in the row).
+
+JSON output: {"s1": "目前的開機磁碟，無法安裝"}
+
+Should I include the full-width comma or use 「，」? The original uses 「，」. Fine.
+
+Alternative: 「正在開機的磁碟，無法安裝」— longer. Stick with the first.
+
+One more consideration: should the consequence "無法安裝" be included, or is it implied (the row is disabled)? The rule: "Each string must add a state, consequence, recovery step, or action not already visible nearby." If the row is visibly disabled, then just 「目前的開機磁碟」 might suffice. But we don't know if the UI disables it. The instruction says info to retain: "這顆磁碟不能安裝，因為它是目前的開機磁碟" — both parts must be kept. So include both.
+
+Final: {"s1": "目前的開機磁碟，無法安裝"}</think>{"s1": "目前的開機磁碟，無法安裝"}

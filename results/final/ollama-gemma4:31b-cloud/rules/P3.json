@@ -1,0 +1,10 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "未確認是否添加糖或醬料。",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "```json\n{\n  \"items\": [\n    {\n      \"name\": \"蘋果\",\n      \"amount\": \"150g\",\n      \"kcal\": 78,\n      \"protein_g\": 0.4,\n      \"carb_g\": 20.0,\n      \"fat_g\": 0.3,\n      \"fibre_g\": 3.6\n    }\n  ],\n  \"notes\": [\n    \"未確認是否添加糖或醬料。\"\n  ]\n}\n```"
+}

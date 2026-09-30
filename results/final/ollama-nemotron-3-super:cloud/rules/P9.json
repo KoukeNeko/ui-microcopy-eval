@@ -1,0 +1,10 @@
+{
+  "probe": "P9",
+  "kind": "strings",
+  "text": "清除快取\n設定已儲存\n此 app 會將手機相片上傳至伺服器進行辨識",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\n  \"s1\": \"清除快取\",\n  \"s2\": \"設定已儲存\",\n  \"s3\": \"此 app 會將手機相片上傳至伺服器進行辨識\"\n}"
+}

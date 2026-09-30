@@ -1,0 +1,25 @@
+{
+  "probe": "P7",
+  "kind": "strings",
+  "text": "刪除這筆紀錄？\n刪除\n取消\n照片也會一併刪除，且無法復原。",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /確定要|您確定|真的要|嗎|？|\\?/：'刪除這筆紀錄？'"
+  ],
+  "findings": [
+    {
+      "rule": "question-label",
+      "severity": "error",
+      "role": "dialog-title",
+      "text": "刪除這筆紀錄？",
+      "match": "？",
+      "message": "A control asks a question instead of naming an action.",
+      "hint": "Label it with the action: 「刪除」, not 「確定要刪除嗎？」.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "question-label"
+  ],
+  "raw": "{\"s1\":\"刪除這筆紀錄？\",\"s2\":\"刪除\",\"s3\":\"取消\",\"s4\":\"照片也會一併刪除，且無法復原。\"}\n"
+}

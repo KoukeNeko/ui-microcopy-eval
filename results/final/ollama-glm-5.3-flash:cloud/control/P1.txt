@@ -1,0 +1,43 @@
+The user is writing screen text for a Linux distribution installer called ZenKern, terminal interface. Disk selection page. Traditional Chinese (Taiwan).
+
+They want four pieces of text:
+- s1: the text of a button the user presses when deciding not to continue installation. Wait — but the described page says there are two buttons (reboot, re-scan disks). Hmm, s1 asks for a button when the user decides not to continue installing. Actually the prompt says the current page is the disk selection page with two buttons. But s1 asks for an "abort/cancel installation" button. Maybe it's an additional consideration — perhaps the installer has a cancel/exit option. The user just wants the text. Something like「取消安裝」or 離開安裝程式「中止安裝」. In Taiwan zh-TW, common terms: 「安裝」 = 安裝, cancel = 取消, abort installation = 放棄安裝 / 中止安裝 / 取消安裝. Probably 「取消安裝」is most natural.
+
+But wait — maybe s1 could also be interpreted as exiting the installer: 「離開安裝程式」. The instruction: 使用者決定不要繼續安裝時，按的那顆按鈕的文字。A button whose text is the action. 「取消安裝」 fits well.
+
+- s2: status text at bottom of screen when installation finished successfully. Something like 「安裝完成！您可以重新開機進入新系統。」 But it's a status text, terminal UI at bottom. Could be「安裝成功，即將重新開機」? They said 安裝成功結束時畫面底部顯示的狀態文字. Keep it concise: 「安裝完成。」or 「安裝成功完成。」 Maybe include hint: 「安裝完成，您可以重新開機。」Status text should be short. 「安裝完成。」is fine, but maybe include success. Let's write: 「安裝完成，您可以重新開機以使用新系統。」 That might be longer than a status line but okay.
+
+Considering terminal status lines are often short. I'll go with「安裝完成！」or「安裝成功，磁碟已寫入完畢。」Hmm. Simplest: 「安裝完成。」 But to be helpful: 「安裝成功完成，可重新開機。」I'll choose「安裝完成，請重新開機以使用新系統。」Hmm, "請" might be too imperative. The page has a reboot button. Status: 「安裝完成，您可以重新開機。」
+
+- s3: error message when installation fails because the target disk cannot be written to; must state reason and next step. Something like: 「安裝失敗：無法寫入目標磁碟 /dev/sdX。請確認磁碟未被其他程式占用後，再重試或更換磁碟。」 Since we don't know device name, generic: 「安裝失敗：無法寫入目標磁碟（可能是磁碟寫入保護或硬體故障）。請檢查磁碟狀態後重試，或選擇其他磁碟。」 Next step suggestion: retry or choose another disk. Better generic: 「安裝失敗：無法寫入目標磁碟。請確認磁碟沒有防寫保護且連接正常，然後重試安裝或選擇其他磁碟。」
+
+- s4: description text for a disk with no partition table in the list. Something like: 「未分割的磁碟（無分割表）」 or 「空白磁碟：沒有分割表，整顆磁碟尚未使用」。In list format, likely like: 「沒有分割表（空白磁碟）」. Keep it as a disk description line. For example: 磁碟 250GB「無分割表的空白磁碟」. I'd write: 「沒有分割表（整顆磁碟為空白，可安全使用）」? Hmm, careful not to overpromise. A disk with no partition table may still contain data (raw). But typical installer says "未分割" or "no partition table found". In Calamares, it shows "New partition table"? For description text in list: 「無分割表（空白磁碟）」or 「尚未建立分割表」. I'd write: 「尚未建立分割表的空白磁碟」. That reads naturally.
+
+Terminology in Taiwan: 分割表, 磁碟, 分割區. "無法寫入" etc.
+
+Output JSON only, with keys s1..s4. No extra text. Ensure valid JSON: double quotes, escaped characters if any. Chinese fine.
+
+Let me craft:
+
+s1: "取消安裝"
+s2: "安裝完成，您可以重新開機進入新系統。" Hmm, status at bottom; maybe shorter: "安裝完成。" with maybe checkmark. I'll go "安裝完成，您可以重新開機進入新系統。" Actually a bottom status line typically like statusbar: 「狀態：安裝完成」. They just want the status text. I'll produce: "安裝完成。" too short maybe; include guidance. I'll go with "安裝完成，您可以重新開機。"
+
+Hmm, balance. Terminal status line can contain a sentence. I'll use: "安裝完成，可重新開機進入新系統。"
+
+s3: "錯誤：無法寫入目標磁碟，安裝已中止。請確認磁碟沒有防寫保護且連接正常，然後重試或選擇其他磁碟。" Should mention 原因: 磁碟無法寫入; 下一步: 重試或換磁碟。Good.
+
+Maybe include device placeholder? Generic is safer.
+
+s4: "未建立分割表（空白磁碟）" or "沒有分割表，整顆磁碟尚未使用。" As description in a list, e.g., line under disk name: "沒有分割表（空白磁碟）" 。I'll write: "沒有分割表的空白磁碟（未建立任何分割區）" — maybe too long. "尚未建立分割表的空白磁碟"。
+
+Final JSON:
+
+{"s1": "取消安裝", "s2": "安裝完成，可重新開機進入新系統。", "s3": "安裝失敗：無法寫入目標磁碟，安裝已中止。請確認磁碟未啟用防寫保護且連接正常，再重試安裝或選擇其他磁碟。", "s4": "尚未建立分割表的空白磁碟"}
+
+Check zh-TW: 防寫保護 (write protect) — Taiwan usage: 「防寫保護」 or 「寫入保護」. Both used; 防寫 is common in Taiwan (軟碟防寫). OK.
+
+"重新開機" matches button label. Good.
+
+One nuance: s1 — the page described only has two buttons, but s1 asks for the cancel button; maybe it's a hypothetical additional one; just answer.
+
+JSON only — no markdown code fences. The instruction: 只回傳 JSON，不要任何其他文字. So output raw JSON. Should I ensure it's on one line? Fine either way; I'll do compact single line to be safe.</think>{"s1": "取消安裝", "s2": "安裝完成，可重新開機進入新系統。", "s3": "安裝失敗：無法寫入目標磁碟，安裝已中止。請確認磁碟未啟用防寫保護且連接正常，然後重試安裝或選擇其他磁碟。", "s4": "尚未建立分割表的空白磁碟"}

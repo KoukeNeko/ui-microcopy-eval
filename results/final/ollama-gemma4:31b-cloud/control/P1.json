@@ -1,0 +1,35 @@
+{
+  "probe": "P1",
+  "kind": "strings",
+  "text": "重新開機\n安裝成功！請重新啟動電腦以進入 ZenKern。\n錯誤：目標磁碟無法寫入。請檢查磁碟是否為唯讀模式或已損毀，並嘗試更換磁碟後重試。\n未偵測到分割表（空白磁碟）",
+  "ok": false,
+  "problems": [
+    "s1 缺少必要內容 /取消|放棄|離開|退出/：'重新開機'"
+  ],
+  "findings": [
+    {
+      "rule": "exclamation-emoji",
+      "severity": "error",
+      "role": "status",
+      "text": "安裝成功！請重新啟動電腦以進入 ZenKern。",
+      "match": "！",
+      "message": "Tone no routine, error or destructive state should carry.",
+      "hint": "Delete it. State the change.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "未偵測到分割表（空白磁碟）",
+      "match": "未偵測到分割表（空白磁碟）",
+      "message": "13 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "exclamation-emoji"
+  ],
+  "raw": "```json\n{\"s1\": \"重新開機\", \"s2\": \"安裝成功！請重新啟動電腦以進入 ZenKern。\", \"s3\": \"錯誤：目標磁碟無法寫入。請檢查磁碟是否為唯讀模式或已損毀，並嘗試更換磁碟後重試。\", \"s4\": \"未偵測到分割表（空白磁碟）\"}\n```"
+}

@@ -1,0 +1,21 @@
+The user wants a JSON response describing apple slices in a glass bowl. Let me think about the nutrition facts.
+
+Photo: glass bowl with 8-10 apple slices, with skin, fork in bowl, slightly oxidized surface. No sugar or sauce visible.
+
+Estimate: 8-10 apple slices. An apple slice (with skin) - depends on size. A typical apple cut into 8-10 slices means one whole apple roughly. So assume one medium apple (~180-200g total), edible portion ~150-200g. Apple with skin: per 100g is about 52 kcal, 0.3g protein, 14g carb, 0.2g fat, 2.4g fiber.
+
+If ~180g: kcal ~94, protein ~0.5, carb ~25, fat ~0.4, fibre ~4.3.
+
+Let me settle: amount "約 1 個中型蘋果（8–10 片）", ~180g.
+
+kcal: 95, protein 0.5, carb 25, fat 0.3, fibre 4.
+
+notes: Facts that change how numbers are read. "帶皮提供較多膳食纖維" - hmm, is that a fact that changes how numbers are read? Maybe. Or something like "表面氧化為切片後接觸空氣所致，不影響營養" — that could be argued... The rules say notes only for facts that change how the numbers are read. Oxidation doesn't change nutrition significantly. Skin vs no skin changes fiber — the fiber number already accounts for skin since we assume with skin. Maybe notes should be empty since can't see sugar or sauce? But "未見額外添加糖、鹽或醬料" is explicitly forbidden.
+
+Maybe a note like "蘋果帶皮" — does that change how numbers are read? Perhaps "纖維值以帶皮計算" — that's a fact that changes how numbers are read. That seems acceptable: it tells the reader that fibre includes skin contribution. It's a fact, one item, about how to read the number. I think that fits the "正例" style like ["醬汁另計"] — stating a fact about the numbers.
+
+So notes: ["纖維數值以帶皮計算"].
+
+name: "帶皮蘋果切片" or "蘋果切片（帶皮）". amount: "碗內 8–10 片，約 1 個中型蘋果".
+
+Only JSON output.</think>{"items":[{"name":"帶皮蘋果切片","amount":"8–10 片（約 1 個中型蘋果，約 180 克）","kcal":95,"protein_g":0.5,"carb_g":25,"fat_g":0.3,"fibre_g":4.3}],"notes":["纖維數值以帶皮計算"]}

@@ -1,0 +1,10 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "```json\n{\"items\":[{\"name\":\"蘋果\",\"amount\":\"150g\",\"kcal\":78,\"protein_g\":0.4,\"carb_g\":21.0,\"fat_g\":0.3,\"fibre_g\":3.6}],\"notes\":[]}\n```"
+}

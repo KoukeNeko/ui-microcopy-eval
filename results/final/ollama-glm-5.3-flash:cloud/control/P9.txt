@@ -1,0 +1,23 @@
+The user wants Traditional Chinese (Taiwan) strings for a settings page:
+- s1: Text for a button that clears image cache data
+- s2: Status text shown after settings have been saved successfully
+- s3: Explanation text saying "this app uploads photos from the phone to a server for recognition"
+
+Only return JSON: {"s1": "...", "s2": "...", "s3": "..."}
+
+Let me write natural Taiwan-style Traditional Chinese:
+
+s1: "清除圖片快取" — in Taiwan, "快取" is the standard term for cache (vs. mainland "缓存"). "清除圖片快取" is natural for a button. Could also be "清除圖片暫存" but 快取 is more standard in Taiwan tech UI.
+
+s2: "設定已完成" or "設定已儲存" — "已儲存設定" or "設定已寫入". Natural: "設定已儲存" or "設定完成". The user said "設定已经写入完成后..." — status text like "設定已儲存" works well. Taiwan UI commonly says "設定已儲存" or "已儲存設定".
+
+s3: Something like "本應用程式會將您手機上的照片上傳至伺服器進行辨識。" Taiwan wording: "應用程式" or "此 App". Natural: "本 App 會將您手機中的照片上傳至伺服器進行辨識。" Or "這個應用程式會將手機上的照片上傳到伺服器進行影像辨識。"
+
+Let me refine:
+- s1: "清除圖片快取"
+- s2: "設定已儲存"
+- s3: "本應用程式會將您手機上的照片上傳至伺服器進行辨識，僅用於辨識用途。"
+
+The user said s3 is the explanation that "this app uploads photos on the phone to a server for recognition" — keep it concise: "本應用程式會將您手機上的照片上傳至伺服器進行辨識。"
+
+Only return JSON. No extra text.</think>{"s1": "清除圖片快取", "s2": "設定已儲存", "s3": "本應用程式會將您手機上的照片上傳至伺服器進行辨識。"}

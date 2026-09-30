@@ -1,0 +1,21 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "估算自 deepseek-v4.1-flash",
+  "ok": true,
+  "problems": [],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "估算自 deepseek-v4.1-flash",
+      "match": "估算自 deepseek-",
+      "message": "23 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"s1\": \"估算自 deepseek-v4.1-flash\"}"
+}

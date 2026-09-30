@@ -1,0 +1,21 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "Ollama Cloud / deepseek-v4.1-flash 估算",
+  "ok": true,
+  "problems": [],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "Ollama Cloud / deepseek-v4.1-flash 估算",
+      "match": "Ollama Cloud ",
+      "message": "37 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"s1\": \"Ollama Cloud / deepseek-v4.1-flash 估算\"}"
+}

@@ -1,0 +1,1 @@
+{"items":[{"name":"蘋果切片","amount":"8–10 片（含皮）","kcal":104,"protein_g":0.5,"carb_g":27.6,"fat_g":0.3,"fibre_g":4.4}],"notes":[]}

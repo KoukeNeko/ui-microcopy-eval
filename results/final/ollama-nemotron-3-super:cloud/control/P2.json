@@ -1,0 +1,10 @@
+{
+  "probe": "P2",
+  "kind": "strings",
+  "text": "第 0 顆 83 MiB 為目前開機磁碟，無法安裝",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\": \"第 0 顆 83 MiB 為目前開機磁碟，無法安裝\"}"
+}

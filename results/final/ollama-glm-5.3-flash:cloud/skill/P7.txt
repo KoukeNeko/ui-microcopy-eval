@@ -1,0 +1,50 @@
+The task: an app deletes a diet record (along with its photo). Dialog needs four strings:
+
+- s1: dialog title
+- s2: confirm button
+- s3: cancel button
+- s4: body text (consequence)
+
+Following the skill:
+
+- `dialog-title`: names the act, noun or verb phrase, no question mark → 「刪除這筆紀錄」 (the accepted example in roles.md is exactly 刪除這筆紀錄). But we might mention the photo? The act is deleting the record. Title could be 「刪除這筆紀錄」.
+- `button` confirm: imperative verb → 「刪除」
+- `button` cancel: 「取消」
+- `dialog-body`: only the consequence not already visible; one sentence → the photo will also be deleted. 「這筆紀錄與它的照片會一併刪除。」 — the accepted example is exactly that. Actually, since the title already names the act (刪除紀錄), the body should carry only the non-obvious consequence: the photo goes with it, possibly irreversible. The roles example: 「這筆紀錄與它的照片會一併刪除。」 But if title already says 刪除這筆紀錄, then the body could be 「照片會一併刪除，且無法復原。」 Hmm. The skill's dialog-body example is 「這筆紀錄與它的照片會一併刪除。」 Given the title already says the delete act, repeating might be slightly redundant but the roles table lists this as the accepted dialog-body. Alternatively: 「紀錄與照片會一併刪除，且無法復原。」 Does 「無法復原」 add info? Yes — irreversibility is a consequence that changes what the reader does. But rejected example: 「此動作無法復原，請務必小心喔！」 is rejected due to affect/pleading, not the irreversibility fact itself. Hmm, is 「無法復原」 a real consequence? Yes — it changes what the user understands. The skill's dialog-body accepted example doesn't include it though. The deletion test: does 無法復原 change what the reader understands or does? Yes, it's a genuine consequence. But also, is it already visible? No.
+
+However the roles example dialog-body is 「這筆紀錄與它的照片會一併刪除。」 I could write 「紀錄與照片會一併刪除。」 to avoid duplicating 這筆... Actually since title is 刪除這筆紀錄, the body saying 這筆紀錄 repeats. Better: 「照片會一併刪除，紀錄無法復原。」 Hmm, one sentence. Let me think about what's the minimal consequence not already visible:
+
+- The record will be deleted — visible from title + button.
+- The photo attached goes with it — not visible elsewhere; this is the key consequence the prompt asks to explain.
+- Irreversible — genuine consequence.
+
+Option: 「照片會一併刪除，刪除後無法復原。」 That's one sentence, states two consequences. Is 無法復原 rejected anywhere? FM6 affect — no, it's neutral. The rejected example was the pleading 請務必小心喔. I think including 無法復原 is fine and adds value. But careful — deletion test: would deleting 無法復原 make the reader lose something? Mildly; it's a genuine destructive-action fact. Many would keep it. But the doctrine favors minimalism: the skill's canonical example body is just the photo consequence. The user's s4 explicitly asks "說明這個動作的後果" — the consequence. The photo deletion is the stated consequence, and irreversibility too. I'll write: 「紀錄與照片會一併刪除，此動作無法復原。」 Hmm wait "此動作" is fine? The rejected was 「此動作無法復原，請務必小心喔！」 — rejected for the trailing plea. 「此動作無法復原。」 alone would be acceptable but "此動作" is slightly stiff; Taiwan usage fine.
+
+Given title already says 刪除這筆紀錄, body repeating 紀錄 is mild duplication. But the canonical example does exactly that. Alternatively make title just 「刪除紀錄」? dialog-title accepted: 刪除這筆紀錄. I'll use 刪除這筆紀錄.
+
+Body: 「照片會一併刪除，刪除後無法復原。」 — this avoids repeating 紀錄 from title, states photo consequence and irreversibility. One sentence. Passes tests: deletion test on 無法復原 — real consequence; on 照片一併刪除 — the key fact. No affect, no question, full stop (dialog-body is sentence type, add 句號). 
+
+Hmm, but "刪除後" — maybe 「照片會一併刪除，且無法復原。」 Simpler. Actually should the photo be the only subject? The record itself is deleted too but title covers it. The body could be 「紀錄會連同照片一併刪除，無法復原。」 That repeats 紀錄. I'll go with 「照片會一併刪除，且無法復原。」 Hmm, "一併" implies together with the record — fine.
+
+Actually, let me reconsider 無法復原: the skill's dialog-body rejected example includes 無法復原 only as part of a longer plea. The accepted example doesn't include it. Deletion test: if removed, does reader lose something that changes what they do? Arguably yes for a destructive action. I'll keep it. But keep it tight: 「紀錄與照片會一併刪除，且無法復原。」
+
+Hmm, two candidate bodies:
+A: 「這筆紀錄與它的照片會一併刪除。」 (canonical example)
+B: 「紀錄與照片會一併刪除，且無法復原。」
+
+Since title already states the delete act, the body's job is the non-visible consequence. B adds irreversibility. I think B is good. But wait — is irreversibility "already known" conventionally? No, it's a real consequence. Keep.
+
+Actually, minimal: 「照片會一併刪除，且無法復原。」 The word 一併 presupposes the record deletion which the title gives. This is tightest. I'll go with this. Or even simpler 「紀錄與照片都會刪除，無法復原。」 Hmm.
+
+Let me check the linter rules I can infer: apparatus-disclaimer, zh-tw vocabulary. No mainland terms here. Full-width punctuation. Button no full stop. Title no question mark. 
+
+s1: 刪除這筆紀錄
+s2: 刪除
+s3: 取消
+s4: 照片會一併刪除，且無法復原。
+
+Hmm — should s4 also be more explicit that 永久? "無法復原" covers it. I think done.
+
+Wait, one nuance: confirm button during a destructive confirmation — conventions: 確定/取消 or 刪除/取消. Control test: names the action the control performs → 「刪除」 names the action; 「確定」 doesn't. Roles: button imperative verb; accepted list includes 刪除, 取消. So s2 = 刪除, s3 = 取消.
+
+Output only JSON.{"s1": "刪除這筆紀錄", "s2": "刪除", "s3": "取消", "s4": "照片會一併刪除，且無法復原。"}

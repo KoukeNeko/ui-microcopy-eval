@@ -1,0 +1,10 @@
+{
+  "probe": "P8",
+  "kind": "strings",
+  "text": "已超出 320 kcal，蛋白質還差 40 g。",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\":\"已超出 320 kcal，蛋白質還差 40 g。\"}"
+}

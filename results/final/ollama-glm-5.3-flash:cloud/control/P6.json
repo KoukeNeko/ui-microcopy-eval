@@ -1,0 +1,26 @@
+{
+  "probe": "P6",
+  "kind": "strings",
+  "text": "今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /我們|你的|你可以|試試看|一起|吧[。！!]|喔|囉|！|!|？|\\?/：'今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！'",
+    "s1 出現禁止樣式 /點右下角|點一下|點擊|按下|這裡會顯示|隨時/：'今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！'"
+  ],
+  "findings": [
+    {
+      "rule": "exclamation-emoji",
+      "severity": "error",
+      "role": "empty",
+      "text": "今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！",
+      "match": "！",
+      "message": "Tone no routine, error or destructive state should carry.",
+      "hint": "Delete it. State the change.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "exclamation-emoji"
+  ],
+  "raw": "The user wants text for an empty state in a \"Today\" page of a logging/journaling app. When the user has no entries today, in place of the list, show a message. There's a \"+\" button at the bottom right.\n\nThey want just JSON: {\"s1\": \"...\"}.\n\nThe empty state text should be friendly, encourage the user to make their first entry today. Language: Traditional Chinese (the question is in Traditional Chinese).\n\nSomething like: \"今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！\"\n\nKeep it concise, mention the FAB. Return only JSON.</think>{\"s1\": \"今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！\"}"
+}

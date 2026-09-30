@@ -1,0 +1,43 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /請核對|請自行|僅供參考|保證|絕對/：'估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。'"
+  ],
+  "findings": [
+    {
+      "rule": "boilerplate-disclaimer",
+      "severity": "warn",
+      "role": "label",
+      "text": "估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。",
+      "match": "僅供參考",
+      "message": "Boilerplate caution that every screen could carry, so none of it informs.",
+      "hint": "Keep it only if this one value can mislead; otherwise delete.",
+      "where": ""
+    },
+    {
+      "rule": "trailing-period",
+      "severity": "warn",
+      "role": "label",
+      "text": "估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。",
+      "match": "。",
+      "message": "A label is a phrase, not a sentence.",
+      "hint": "Drop the full stop: 「安裝完成」 stands as the whole string.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。",
+      "match": "估算值 · 由 Ollam",
+      "message": "54 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"s1\": \"估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。\"}"
+}

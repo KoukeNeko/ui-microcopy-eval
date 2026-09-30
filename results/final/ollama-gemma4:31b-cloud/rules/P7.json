@@ -1,0 +1,25 @@
+{
+  "probe": "P7",
+  "kind": "strings",
+  "text": "刪除紀錄？\n刪除\n取消\n紀錄與照片將被永久刪除。",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /確定要|您確定|真的要|嗎|？|\\?/：'刪除紀錄？'"
+  ],
+  "findings": [
+    {
+      "rule": "question-label",
+      "severity": "error",
+      "role": "dialog-title",
+      "text": "刪除紀錄？",
+      "match": "？",
+      "message": "A control asks a question instead of naming an action.",
+      "hint": "Label it with the action: 「刪除」, not 「確定要刪除嗎？」.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "question-label"
+  ],
+  "raw": "```json\n{\"s1\": \"刪除紀錄？\", \"s2\": \"刪除\", \"s3\": \"取消\", \"s4\": \"紀錄與照片將被永久刪除。\"}\n```"
+}

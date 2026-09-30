@@ -1,0 +1,3 @@
+{
+  "s1": "此數值為 Ollama Cloud / deepseek-v4.1-flash 從照片所估算，僅供參考，請以實際標示或專業評估為準。"
+}

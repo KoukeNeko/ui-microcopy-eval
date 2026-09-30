@@ -1,0 +1,44 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "切片已略微氧化，實際擺放時間與氧化程度無法從照片判斷。；無法判斷是否加糖、蜂蜜或醬料，熱量可能高於估計值。；品種與單片厚度未明，份量以常見帶皮蘋果估算。",
+  "ok": false,
+  "problems": [
+    "出現禁止樣式 /未見|沒看到|看不到|未觀察到|未發現|沒有發現|無法(判斷|確認|辨識|得知)|不確定(是否|有沒有)/",
+    "出現禁止樣式 /氧化|視覺|份量以|以.{0,8}估算|估算方法|未計入|額外添加/"
+  ],
+  "findings": [
+    {
+      "rule": "absence-disclaimer",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "切片已略微氧化，實際擺放時間與氧化程度無法從照片判斷。；無法判斷是否加糖、蜂蜜或醬料，熱量可能高於估計值。；品種與單片厚度未明，份量以常見帶皮蘋果估算。",
+      "match": "無法判斷",
+      "message": "Reports what was not seen; an interface states what is there.",
+      "hint": "Delete, or state the fact that changes the number: 「醬汁另計」.",
+      "where": ""
+    },
+    {
+      "rule": "method-filler",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "切片已略微氧化，實際擺放時間與氧化程度無法從照片判斷。；無法判斷是否加糖、蜂蜜或醬料，熱量可能高於估計值。；品種與單片厚度未明，份量以常見帶皮蘋果估算。",
+      "match": "份量以常見帶皮蘋果估算",
+      "message": "Describes the method inside a note that is read as a result.",
+      "hint": "A method belongs in help text, once, not beside every estimate.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "切片已略微氧化，實際擺放時間與氧化程度無法從照片判斷。；無法判斷是否加糖、蜂蜜或醬料，熱量可能高於估計值。；品種與單片厚度未明，份量以常見帶皮蘋果估算。",
+      "match": "切片已略微氧化，實際擺放時間與氧化程度無法從照片判斷。；無法判斷是",
+      "message": "76 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"items\":[{\"name\":\"蘋果切片\",\"amount\":\"8–10 片（約 150 g）\",\"kcal\":78,\"protein_g\":0.4,\"carb_g\":21,\"fat_g\":0.3,\"fibre_g\":3.6}],\"notes\":[\"切片已略微氧化，實際擺放時間與氧化程度無法從照片判斷。\",\"無法判斷是否加糖、蜂蜜或醬料，熱量可能高於估計值。\",\"品種與單片厚度未明，份量以常見帶皮蘋果估算。\"]}"
+}

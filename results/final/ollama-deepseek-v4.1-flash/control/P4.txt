@@ -1,0 +1,1 @@
+{"s1": "估算值 · 由 Ollama Cloud 的 deepseek-v4.1-flash 依照片推估，僅供參考。"}

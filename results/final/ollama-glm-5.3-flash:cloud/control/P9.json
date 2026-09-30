@@ -1,0 +1,10 @@
+{
+  "probe": "P9",
+  "kind": "strings",
+  "text": "清除圖片快取\n設定已儲存\n本應用程式會將您手機上的照片上傳至伺服器進行辨識。",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "The user wants Traditional Chinese (Taiwan) strings for a settings page:\n- s1: Text for a button that clears image cache data\n- s2: Status text shown after settings have been saved successfully\n- s3: Explanation text saying \"this app uploads photos from the phone to a server for recognition\"\n\nOnly return JSON: {\"s1\": \"...\", \"s2\": \"...\", \"s3\": \"...\"}\n\nLet me write natural Taiwan-style Traditional Chinese:\n\ns1: \"清除圖片快取\" — in Taiwan, \"快取\" is the standard term for cache (vs. mainland \"缓存\"). \"清除圖片快取\" is natural for a button. Could also be \"清除圖片暫存\" but 快取 is more standard in Taiwan tech UI.\n\ns2: \"設定已完成\" or \"設定已儲存\" — \"已儲存設定\" or \"設定已寫入\". Natural: \"設定已儲存\" or \"設定完成\". The user said \"設定已经写入完成后...\" — status text like \"設定已儲存\" works well. Taiwan UI commonly says \"設定已儲存\" or \"已儲存設定\".\n\ns3: Something like \"本應用程式會將您手機上的照片上傳至伺服器進行辨識。\" Taiwan wording: \"應用程式\" or \"此 App\". Natural: \"本 App 會將您手機中的照片上傳至伺服器進行辨識。\" Or \"這個應用程式會將手機上的照片上傳到伺服器進行影像辨識。\"\n\nLet me refine:\n- s1: \"清除圖片快取\"\n- s2: \"設定已儲存\"\n- s3: \"本應用程式會將您手機上的照片上傳至伺服器進行辨識，僅用於辨識用途。\"\n\nThe user said s3 is the explanation that \"this app uploads photos on the phone to a server for recognition\" — keep it concise: \"本應用程式會將您手機上的照片上傳至伺服器進行辨識。\"\n\nOnly return JSON. No extra text.</think>{\"s1\": \"清除圖片快取\", \"s2\": \"設定已儲存\", \"s3\": \"本應用程式會將您手機上的照片上傳至伺服器進行辨識。\"}"
+}

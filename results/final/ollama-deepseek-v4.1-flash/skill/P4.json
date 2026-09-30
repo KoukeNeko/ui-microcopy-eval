@@ -1,0 +1,10 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "Claude 估算",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\": \"Claude 估算\"}"
+}

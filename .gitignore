@@ -1,0 +1,5 @@
+__pycache__/
+.DS_Store
+# Per-run working output; only the merged run is kept in the repo.
+results/*
+!results/final/

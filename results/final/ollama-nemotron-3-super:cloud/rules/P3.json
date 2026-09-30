@@ -1,0 +1,34 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "照片無法確認是否加糖或醬料；切片表面有輕微氧化，可能影響維生素C含量；蘋果重量與密度會影響實際熱量",
+  "ok": false,
+  "problems": [
+    "出現禁止樣式 /未見|沒看到|看不到|未觀察到|未發現|沒有發現|無法(判斷|確認|辨識|得知)|不確定(是否|有沒有)/",
+    "出現禁止樣式 /氧化|視覺|份量以|以.{0,8}估算|估算方法|未計入|額外添加/"
+  ],
+  "findings": [
+    {
+      "rule": "absence-disclaimer",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "照片無法確認是否加糖或醬料；切片表面有輕微氧化，可能影響維生素C含量；蘋果重量與密度會影響實際熱量",
+      "match": "無法確認",
+      "message": "Reports what was not seen; an interface states what is there.",
+      "hint": "Delete, or state the fact that changes the number: 「醬汁另計」.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "照片無法確認是否加糖或醬料；切片表面有輕微氧化，可能影響維生素C含量；蘋果重量與密度會影響實際熱量",
+      "match": "照片無法確認是否加糖或醬料；切片表面有輕微氧化，可能影響維生素C含",
+      "message": "49 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"items\":[{\"name\":\"帶皮蘋果切片\",\"amount\":\"9 片\",\"kcal\":45,\"protein_g\":0.4,\"carb_g\":12,\"fat_g\":0.2,\"fibre_g\":2.2}],\"notes\":[\"照片無法確認是否加糖或醬料\",\"切片表面有輕微氧化，可能影響維生素C含量\",\"蘋果重量與密度會影響實際熱量\"]}"
+}

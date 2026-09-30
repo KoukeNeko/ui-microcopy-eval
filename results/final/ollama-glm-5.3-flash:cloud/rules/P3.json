@@ -1,0 +1,45 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "無法確認是否加糖或醬料，數值以原味水果計算。；份量以切片總重 180 克估算，切片較厚或數量較多時各項會等比例增加。；切片氧化只影響外觀，不影響營養數值。",
+  "ok": false,
+  "problems": [
+    "出現禁止樣式 /不計入|不列入|不納入|不算|不影響|不包含/",
+    "出現禁止樣式 /未見|沒看到|看不到|未觀察到|未發現|沒有發現|無法(判斷|確認|辨識|得知)|不確定(是否|有沒有)/",
+    "出現禁止樣式 /氧化|視覺|份量以|以.{0,8}估算|估算方法|未計入|額外添加/"
+  ],
+  "findings": [
+    {
+      "rule": "absence-disclaimer",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "無法確認是否加糖或醬料，數值以原味水果計算。；份量以切片總重 180 克估算，切片較厚或數量較多時各項會等比例增加。；切片氧化只影響外觀，不影響營養數值。",
+      "match": "無法確認",
+      "message": "Reports what was not seen; an interface states what is there.",
+      "hint": "Delete, or state the fact that changes the number: 「醬汁另計」.",
+      "where": ""
+    },
+    {
+      "rule": "method-filler",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "無法確認是否加糖或醬料，數值以原味水果計算。；份量以切片總重 180 克估算，切片較厚或數量較多時各項會等比例增加。；切片氧化只影響外觀，不影響營養數值。",
+      "match": "份量以切片總重 180 克估",
+      "message": "Describes the method inside a note that is read as a result.",
+      "hint": "A method belongs in help text, once, not beside every estimate.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "無法確認是否加糖或醬料，數值以原味水果計算。；份量以切片總重 180 克估算，切片較厚或數量較多時各項會等比例增加。；切片氧化只影響外觀，不影響營養數值。",
+      "match": "無法確認是否加糖或醬料，數值以原味水果計算。；份量以切片總重 18",
+      "message": "77 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "The user wants me to analyze a food photo and return JSON in a specific format. The photo shows:\n- A glass bowl with 8-10 apple slices with skin\n- A fork in the bowl\n- Slices slightly oxidized\n- Can't tell if sugar or sauce added\n\nI need to return JSON in this format:\n{\"items\":[{\"name\":\"品名\",\"amount\":\"估計份量\",\"kcal\":數字,\"protein_g\":數字,\"carb_g\":數字,\"fat_g\":數字,\"fibre_g\":數字}],\"notes\":[\"...\"]}\n\nNotes max 3 sentences, one thing per sentence.\n\nAlso I need to follow the UI Microcopy rules:\n- No 「約」 before estimated numbers\n- No qualifiers repeated\n- Notes should be concise, no exclamation marks, no emoji\n- Traditional Chinese\n\nApple nutrition (with skin, per 100g): ~52-54 kcal, protein 0.3g, carbs 13.8g, fat 0.2g, fibre 2.4g\n\nEstimate: 8-10 apple slices. A medium apple (~180g edible) cut into 8 slices would be about 8-10 slices ≈ 1 medium apple, maybe a bit more. Let's say 8-10 slices ≈ 150-180g.\n\nLet's estimate: one medium apple ~180g. 8-10 slices could be about 1 medium apple (if 8 slices per apple) or slightly more. I'll estimate ~1顆中型蘋果（約180克)... but no 「約」 per rules? Actually the rule says no 「約」 before an estimated or worked-out number in UI text. Hmm, but this is a JSON field that gets displayed. The rule: \"no 「約」 before an estimated or worked-out number (「140 kcal」, not 「約 140 kcal」)\". So in the amount field, avoid 「約」. Also qualifier said once (「估計」, never 「估計，非實測」).\n\nThe amount field is \"估計份量\" — so the value... Should I use a tag like short tag. Maybe amount: \"8–10 片（1 個中型蘋果）\" or \"1 個中型蘋果\". \n\nNumbers: 180g apple: kcal 94 (52 kcal/100g × 180 = 93.6 ≈ 94), protein 0.5g, carb 24.6 ≈ 25g, fat 0.3g, fibre 4.4g.\n\nActually with slightly oxidized, no sugar/sauce visible assumed plain.\n\nkcal: 94, protein 0.5, carb 25, fat 0.3, fibre 4. Maybe round: 95 kcal.\n\nLet me compute precisely for 180g (edible portion):\n- kcal: 180 × 0.52 = 93.6 → 94\n- protein: 180 × 0.003 = 0.54 → 0.5\n- carb: 180 × 0.138 = 24.84 → 25\n- fat: 180 × 0.002 = 0.36 → 0.4 (or 0.3)\n- fibre: 180 × 0.024 = 4.32 → 4.3\n\nNotes (max 3, one thing each):\n1. Cannot determine if sugar/syrup added — if coated, carbs and kcal higher.\n2. Slight oxidation doesn't change nutrition significantly? Or the amount depends on slice thickness.\n3. Portion assumed 1 medium apple ~180g.\n\nPer rules: notes should state what affects the numbers that photo can't show. No exclamation, no emoji, no coaching. Short sentences.\n\nNotes:\n1. \"表面無明顯糖漿或醬料，數值以原味計算。\" — actually photo can't tell, so: \"無法確認是否加糖或醬料，數值以原味水果計算。\"\n2. \"切片氧化僅影響外觀，不改變營養數值。\" — is this useful? It's one thing. Maybe better: \"份量以 1 個中型蘋果（180 克）估算，切片較厚或較多時數值會再增加。\" Hmm one sentence one thing.\n3. Maybe: \"若切片總重大於一個中型蘋果，各項數值需等比例上調。\"\n\nMax 3 sentences. Let me do:\n\n1. 無法確認是否加糖或醬料，數值以原味計算。\n2. 份量以 1 個中型蘋果（180 克）估算；切片數較多時數值會略高。 — hmm, \"略\" fine.\n\nActually rule: no 「約」 before estimated numbers. \"180 克\" without 約 — good since it's an assumption stated in notes? The rule is about UI text like \"約 140 kcal\" → \"140 kcal\". Here in amount field: \"1 個中型蘋果（180 克）\" is fine without 約.\n\nAmount: \"1 個中型蘋果（8–10 片）\"\n\nName: \"蘋果切片（帶皮）\" or \"帶皮蘋果\". Follow: name \"蘋果（帶皮切片）\".\n\nNumbers as digits, no units in JSON number fields (they're just numbers).\n\nFinal JSON:\n\n{\"items\":[{\"name\":\"蘋果切片（帶皮）\",\"amount\":\"1 個中型蘋果（8–10 片）\",\"kcal\":94,\"protein_g\":0.5,\"carb_g\":25,\"fat_g\":0.4,\"fibre_g\":4.3}],\"notes\":[\"無法確認是否加糖或醬料，數值以原味計算。\",\"份量以切片重量 180 克估算，切片較厚或數量較多時會再增加。\",\"切片氧化只影響外觀，不影響營養數值。\"]}\n\nCheck notes: 3 sentences, each one thing. Good.\n\nWait — \"數值以原味計算\" and \"數值\" repetition is fine.\n\nShould the response be only JSON, no markdown fence? \"只回傳 JSON\" — return only JSON. I'll output raw JSON with no code fence? Probably safer to output just the JSON text. The instruction says only return JSON. I'll output plain JSON.\n\nTraditional Chinese quotes 「」 inside JSON strings are fine.\n\nDouble-check fat: 0.4g round. protein 0.5. fibre 4.3. carb 25. kcal 94.\n\nOutput only JSON.</think>{\"items\":[{\"name\":\"蘋果切片（帶皮）\",\"amount\":\"1 個中型蘋果（8–10 片）\",\"kcal\":94,\"protein_g\":0.5,\"carb_g\":25,\"fat_g\":0.4,\"fibre_g\":4.3}],\"notes\":[\"無法確認是否加糖或醬料，數值以原味水果計算。\",\"份量以切片總重 180 克估算，切片較厚或數量較多時各項會等比例增加。\",\"切片氧化只影響外觀，不影響營養數值。\"]}"
+}

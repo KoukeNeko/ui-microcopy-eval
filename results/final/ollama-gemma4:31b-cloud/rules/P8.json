@@ -1,0 +1,10 @@
+{
+  "probe": "P8",
+  "kind": "strings",
+  "text": "熱量已超出 320 kcal，蛋白質尚缺 40 g",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "```json\n{\"s1\": \"熱量已超出 320 kcal，蛋白質尚缺 40 g\"}\n```"
+}

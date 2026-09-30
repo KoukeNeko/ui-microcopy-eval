@@ -1,0 +1,10 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"items\":[{\"name\":\"帶皮蘋果切片\",\"amount\":\"約180克\",\"kcal\":94,\"protein_g\":0.5,\"carb_g\":24.9,\"fat_g\":0.3,\"fibre_g\":4.3}],\"notes\":[]}\n"
+}

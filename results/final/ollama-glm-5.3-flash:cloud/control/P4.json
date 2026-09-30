@@ -1,0 +1,53 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /請核對|請自行|僅供參考|保證|絕對/：'營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。'"
+  ],
+  "findings": [
+    {
+      "rule": "boilerplate-disclaimer",
+      "severity": "warn",
+      "role": "label",
+      "text": "營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。",
+      "match": "請自行核對",
+      "message": "Boilerplate caution that every screen could carry, so none of it informs.",
+      "hint": "Keep it only if this one value can mislead; otherwise delete.",
+      "where": ""
+    },
+    {
+      "rule": "trailing-period",
+      "severity": "warn",
+      "role": "label",
+      "text": "營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。",
+      "match": "。",
+      "message": "A label is a phrase, not a sentence.",
+      "hint": "Drop the full stop: 「安裝完成」 stands as the whole string.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。",
+      "match": "營養數值由 AI 依照片估",
+      "message": "61 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    },
+    {
+      "rule": "zh-tw-vocabulary",
+      "severity": "warn",
+      "role": "label",
+      "text": "營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。",
+      "match": "數據",
+      "message": "「數據」 is mainland usage.",
+      "hint": "Taiwan writes 資料.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "The user wants a UI caption line for an app that estimates nutrition from photos using AI. The line should indicate the source of the number (which model, whether it's an estimate or measured). The original text was:\n\n「數字是 Ollama Cloud / deepseek-v4.1-flash 從照片的估算，請核對。」\n\nThey want it rewritten to meet UI text requirements. UI text guidelines typically: concise, clear, neutral tone, avoid jargon-y phrasing, active and readable, proper punctuation, avoid redundancy. They want only JSON returned: {\"s1\": \"...\"}\n\nWhat are UI text requirements? Likely:\n- 簡短精煉 (concise)\n- 句式穩定、名詞置前 (front-load key info)\n- 避免口語贅詞\n- 標示來源與性質（估算）\n- 動作指引\n\nA typical app store/disclaimer microcopy in Traditional Chinese: 「營養數值由 AI（deepseek-v4.1-flash，Ollama Cloud）根據照片估算，僅供參考。」\n\nShould keep both model info and the estimate nature. Original: \"數字是 Ollama Cloud / deepseek-v4.1-flash 從照片的估算，請核對。\"\n\nIssues with original:\n- 「數字是...的估算」 — slightly awkward: number is an estimate; \"數字\" vague; better \"營養數值\".\n- 「數字是」口語。\n- Order: model provider/model name.\n- 「請核對」 abrupt; could be 「僅供參考」 or 「請自行確認」 — but user may want to keep the \"please verify\" element. UI text often uses 「僅供參考」. But requirement: 標示來源與是估算還是實測. The verify instruction is optional. Keeping a short verification hint is fine.\n\nUI text requirements possibly from their guidelines: 一行小字, 簡潔、資訊階層清楚（來源 → 推論方式 → 使用建議）、避免把「數字」當主語? Perhaps: 「營養數值由 AI 模型根據照片估算，非實測數據；模型：deepseek-v4.1-flash（Ollama Cloud）。」\n\nModel name should be prominent. Perhaps: 「本數值由 Ollama Cloud 的 deepseek-v4.1-flash 依照片估算，非實測，請自行核對。」\n\nHmm. Let me think about what a clean line would be:\n\n「營養數值由 AI 依照片估算（deepseek-v4.1-flash，Ollama Cloud），非實測數據，僅供參考。」\n\nThat includes: source (model), nature (估算, 非實測), and usage advice. Length reasonable for caption.\n\nAlternatively keep 請核對: 「營養數值由 AI 依照片估算（Ollama Cloud / deepseek-v4.1-flash），非實測，請自行核對。」\n\nOne line, concise. I think including 「非實測」or「估算值」 addresses \"是估算還是實測\". Maybe say 「AI 估算值（模型：deepseek-v4.1-flash，經 Ollama Cloud 服務），非實測數據，請自行核對。」\n\nBut a 小字 caption shouldn't be too long. Let's craft:\n\n「營養數值係 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測，請自行核對。」\n\nHmm \"係\" is a bit formal/legal. Could use 「為」: 「營養數值為 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。」\n\nThat reads well. Length: about 40 chars — acceptable for a caption? Slightly long but fine as a footnote line.\n\nSimplify: 「營養值由 AI 估算自照片（deepseek-v4.1-flash／Ollama Cloud），非實測，請核對。」 Hmm \"估算自照片\" awkward. 「由照片估算」 better.\n\nFinal: 「營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。」\n\nOr keep 僅供參考 instead of 請核對? Original had 請核對, keep it to preserve intent.\n\nThey asked: 只回傳 JSON：{\"s1\": \"...\"}. So respond with only JSON, no extra text.\n\nFormat: JSON only. Ensure valid JSON with double quotes; the value contains full-width slash ／ fine.\n\nMaybe provide just one candidate. Yes, just s1.\n\nI'll go with: {\"s1\": \"營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。\"}</think>{\"s1\": \"營養數值由 AI 依照片估算（Ollama Cloud／deepseek-v4.1-flash），非實測數據，請自行核對。\"}"
+}

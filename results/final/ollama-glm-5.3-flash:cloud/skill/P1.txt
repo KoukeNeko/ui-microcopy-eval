@@ -1,0 +1,124 @@
+Let me work through each of the four strings carefully, following the ui-microcopy skill.
+
+The context: ZenKern, a terminal-UI Linux distro installer, disk selection page. The list shows each disk; below are two buttons (重新開機, 重看一次磁碟). The screen is Traditional Chinese (Taiwan).
+
+**s1: The button the user presses when they decide not to continue installation.**
+
+Role: `button`. Form: imperative verb phrase, no person, no question, no full stop.
+
+The user decides not to continue installing. What does the button do? It aborts/exits the installer — possibly reboots the machine to leave the installer environment (a live USB installer often exits by rebooting). The existing buttons are 「重新開機」 and 「重看一次磁碟」. The new button is for abandoning installation.
+
+Wait — what does the button actually do? The user decides not to continue. The button names the action the control performs. Options:
+
+- 「取消安裝」 — names the act: cancelling the installation. This is a control that names what it does.
+- 「放棄安裝」 — also names it, but 「放棄」 carries affect (gives up), slightly judgmental.
+- 「退出安裝」 — quitting the installer.
+- 「結束安裝」 — ending the installation.
+- 「中斷安裝」 — the skill itself uses this as a dialog-title example! In references/roles.md: `dialog-title` accepted examples include 「刪除這筆紀錄、中斷安裝」. So 「中斷安裝」 is the canonical form this skill endorses for naming the act of aborting installation.
+
+Hmm, but that's listed as a dialog-title. The user here says "s1：使用者決定不要繼續安裝時，按的那顆按鈕的文字" — the button pressed when the user decides not to continue. Is there a dialog? The user didn't specify a confirmation dialog. The task just says the button text. So the button label.
+
+Button form: imperative verb phrase. 「中斷安裝」 works as a button too — it's a verb phrase naming the action. 「取消」 alone could be ambiguous (cancel what? cancel disk selection?). On a screen whose purpose is "choose a disk to install", a button for backing out could be 「離開安裝程式」 or 「中斷安裝」.
+
+Actually, what does the button perform? If the user decides not to install, from an installer live environment, the likely actions: exit the installer and reboot (since the machine booted from USB), or just exit. The screen already has a 「重新開機」 button. So the abandon button probably exits the installer (maybe back to a shell or reboots). Since I don't know exactly, the safest naming is the act itself: 中斷安裝.
+
+「取消安裝」 vs 「中斷安裝」: 「取消」 is in the accepted conventions list (取消 is a standard button). But 「取消安裝」 could suggest cancelling an install in progress; here we're at disk selection, before install begins. 「中斷安裝」 is the skill's own example for this act. I'll go with 「中斷安裝」.
+
+Wait — is installing even in progress at disk selection? The flow: disk selection page is before actual writing. If the user decides not to continue, they're aborting the installation process entirely. 「中斷安裝」 fits regardless. Also 「結束安裝程式」 if they exit the program. Without more specificity, 中斷安裝 is the cleanest per the skill's own lexicon.
+
+Rejected examples: 「算了」「我不要了」「確定要刪除嗎？」 — so avoid 「算了」, avoid question forms, avoid first-person decision phrasing.
+
+s1 = 「中斷安裝」
+
+**s2: Status text at the bottom of the screen when installation completes successfully.**
+
+Role: `status`. Form: closed state — 已＋動詞、動詞＋完成、無法＋動詞、動詞＋中.
+
+The skill's own examples: 「安裝完成」 appears in both roles table (status accepted) and the zh-tw conventions (狀態：…安裝完成…). So s2 = 「安裝完成」.
+
+Rejected: 「裝好了」 (FM1). No affect, no cheer. Should it be longer — e.g., 「安裝完成，請重新開機」? The user says "安裝成功結束時，畫面底部顯示的狀態文字" — just the status. The screen has a 重新開機 button elsewhere (on disk selection page at least; presumably after install there's a reboot option). Deletion test: adding 「請重新開機」 — does it add a recovery step? Possibly, but s2 asks for the status line. If reboot instruction is needed, it would be an action prompt, and the interface presumably has a button. Keep it clean: 「安裝完成」. That's the closed state.
+
+Hmm, but consider: "安裝成功結束時" — maybe 「安裝完成」 suffices; 「安裝成功」 is also a closed state but 「完成」 is the canonical form. Go with 「安裝完成」.
+
+**s3: Error message when installation fails because the target disk cannot be written. Must state the cause and the next step.**
+
+Role: `error`. Form: state, then the cause if known, then the recovery step if one exists. Example given in the skill: 「無法安裝：這是目前的開機磁碟。請選擇其他磁碟。」
+
+So follow the pattern: 「無法安裝：」 + cause + recovery instruction.
+
+Cause: target disk cannot be written (無法寫入). Why can't it be written? Reasons could be: read-only media, hardware write protection, the disk is in use. But we only know "無法寫入". The system knows the disk cannot be written.
+
+State: 無法安裝
+Cause: 目標磁碟無法寫入 — but maybe give the fuller name: 「無法寫入目標磁碟」.
+
+Sentence structure options:
+
+- 「無法安裝：目標磁碟無法寫入。請選擇其他磁碟。」
+- 「無法寫入目標磁碟。請選擇其他磁碟，或關閉寫入保護後重試。」
+
+Hmm, do I know the recovery step? Next step for the user: choose another disk, or fix the write protection and retry. The task says "要說出原因，並告訴使用者下一步". So the recovery step must be present. What is the next step? Presumably: pick a different disk, or re-check the disk/retry. The screen has 「重看一次磁碟」 (re-scan disks) and 「重新開機」buttons. A plausible recovery: 選擇其他磁碟，或重新檢查磁碟狀態.
+
+But careful with deletion test: only include a recovery step that reflects an available action. The list presumably remains on screen, so "choose another disk" is directly actionable. Retrying might also be possible (via 重看一次磁碟?). Actually "重看一次磁碟" re-scans disks — after re-scan the disk might appear writable again? That's speculative.
+
+The skill's error template: state, cause, recovery if one exists. The cleanest: 「無法安裝：目標磁碟無法寫入。請選擇其他磁碟。」 That mirrors the skill's own worked example exactly in structure. Does it need the retry? If the write failure is transient (e.g., disk busy), retrying with the same disk could work. But the task only says "目標磁碟無法寫入" as the cause. Hmm.
+
+Actually, let me think about what's known: "安裝失敗，原因是目標磁碟無法寫入". The cause as given: 目標磁碟無法寫入. The next step: choose another disk is the primary one. Could also add 「或重新檢查磁碟」 to reference the exists-on-screen 重看一次磁碟 action? That string exists as a button on this page type. But adding it might over-specify. 
+
+The error role's accepted example is exactly: 「無法安裝：這是目前的開機磁碟。請選擇其他磁碟。」 Two sentences: state+cause, then recovery. Mine: 「無法安裝：目標磁碟無法寫入。請選擇其他磁碟。」 — clean, parallel, states cause, gives next step. Full stops: sentence-type status and error take full stops (全形). Good.
+
+Alternative: 「無法寫入目標磁碟，安裝中止。」 — but state-first per template is 無法安裝：… Let me keep the canonical template.
+
+Should punctuation be 。 at ends. Yes.
+
+s3 = 「無法安裝：目標磁碟無法寫入。請選擇其他磁碟。」
+
+Wait — is "請選擇其他磁碟" the right next step? If the disk can't be written, maybe the user should remove write protection. But "選擇其他磁碟" is the immediate actionable step on this screen; the skill's own example uses it. Also the error shouldn't promise a retry "請再試一次" is a rejected example (with affect). I'll keep 「請選擇其他磁碟」.
+
+Hmm, one nuance: "無法安裝" vs "安裝失敗". The skill's template state form: 無法＋動詞. 「無法安裝」 matches. Good.
+
+**s4: Description text for a disk in the list that has no partition table.**
+
+Role: This is a label/description inside a list item — the per-disk description. Form: it's essentially an `empty`/state descriptor for that disk: noun or state. Examples: 「沒有紀錄」「尚未設定體重目標」. Rejected: 「這裡會顯示你的紀錄」 (explaining the app), coaching.
+
+For a disk with no partition table, the description states the disc's state: 「沒有分割表」 or 「無分割表」 or 「尚未建立分割表」.
+
+Also relevant: an installer might note that the disk will be partitioned/erased. But the string asked: "清單裡一顆沒有分割表的磁碟，它的說明文字" — the description text for that disk row. State: no partition table.
+
+Which wording? Taiwan usage: 分割表 (partition table) — Taiwanese usage is 「分割表」 (GPT/MBR 分割表). Yes, 「磁碟分割」 is Taiwanese terminology.
+
+Options:
+- 「沒有分割表」 — plain noun state.
+- 「無分割表」 — also fine.
+- 「尚未建立分割表」 — 「尚未」 form like 「尚未設定」.
+- 「無分割表，將重新分割」 — adds consequence; too much? The consequence (data will be erased / will be partitioned during install) might change what the user concludes. Hmm.
+
+Deletion test: does 「將在安裝時進行分割」 change what the reader does? Maybe — user knows the disk will be initialized. But that's about the install flow, not this disk's description; and we don't know the installer's behavior (maybe it prompts later). The string is a per-row description; keep it the state.
+
+Between 「沒有分割表」 and 「無分割表」: conventions list has 「沒有資料」 with 「沒有」, and 「無法連線」 with 「無法」. For a plain absence state, 「沒有分割表」 reads naturally and matches the 空狀態 form 「沒有紀錄」. 
+
+But wait — in a disk list, each row typically shows: model, size, and a description line. For a disk with partition table, description might show existing partitions; for one without, 「沒有分割表」 or 「空白磁碟」? 「空白磁碟」 is a different claim (blank disk) — partition table absence is the fact. Stick with the fact: 「沒有分割表」.
+
+Or 「尚未分割」? That means "not yet partitioned" — slightly different from "no partition table" but implies. Actually a disk could have a partition table with no partitions. The task says 沒有分割表 — stick to that fact.
+
+Hmm, should it be 「未建立分割表」? 「尚未」 implies a future action someone will take — fine but adds an expectation. 「沒有分割表」 is the neutral state. I'll go with 「沒有分割表」.
+
+Wait, one more consideration: could the description need to say the disk will be erased? In installers, a disk without a partition table is typically shown as "unallocated space" or "empty disk". Its description stating "沒有分割表" tells the user the state. Any next-step? The empty role's contract: "the action lives on the button" — here selection is the action. So no added instruction. Good.
+
+Also check zh-tw lexicon: 分割表 not 分區表; 磁碟 not 硬盤. Good.
+
+Now, punctuation/format check:
+
+- s1 button: 「中斷安裝」 — no full stop, verb phrase, no person. ✓
+- s2 status: 「安裝完成」 — closed state. ✓
+- s3 error: 「無法安裝：目標磁碟無法寫入。請選擇其他磁碟。」 — colons full-width, full stops. ✓ Spacing: no mixed English/numbers, no space issues.
+- s4: 「沒有分割表」 — noun state, no trailing stop. ✓
+
+Double-check s1: is 「中斷安裝」 the action the button performs? The button's action is to discontinue the installation. Yes. Alternatives: 「退出安裝程式」 names quitting the program; 「結束安裝」 — similar. 「中斷安裝」 is in the skill's own accepted dialog-title list, so it's the endorsed naming for this act. Keep.
+
+One concern: does the user "decide not to continue installing" mean canceling before any install started? Then 「中斷安裝」 could still be right — interrupting the installer flow. Alternatively 「離開安裝程式」 if it exits the program to shell. But the skill example backs 中斷安裝. Go.
+
+JSON output only. Keys s1–s4. Use full-width punctuation inside strings (JSON escaping fine — full-width chars don't need escaping).
+
+Final:
+
+{"s1": "中斷安裝", "s2": "安裝完成", "s3": "無法安裝：目標磁碟無法寫入。請選擇其他磁碟。", "s4": "沒有分割表"}</think>{"s1": "中斷安裝", "s2": "安裝完成", "s3": "無法安裝：目標磁碟無法寫入。請選擇其他磁碟。", "s4": "沒有分割表"}

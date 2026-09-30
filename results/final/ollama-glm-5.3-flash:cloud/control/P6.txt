@@ -1,0 +1,9 @@
+The user wants text for an empty state in a "Today" page of a logging/journaling app. When the user has no entries today, in place of the list, show a message. There's a "+" button at the bottom right.
+
+They want just JSON: {"s1": "..."}.
+
+The empty state text should be friendly, encourage the user to make their first entry today. Language: Traditional Chinese (the question is in Traditional Chinese).
+
+Something like: "今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！"
+
+Keep it concise, mention the FAB. Return only JSON.</think>{"s1": "今天還沒有任何紀錄，按下右下角的 ＋ 開始記下第一筆吧！"}

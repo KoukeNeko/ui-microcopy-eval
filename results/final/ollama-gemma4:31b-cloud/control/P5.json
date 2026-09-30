@@ -1,0 +1,55 @@
+{
+  "probe": "P5",
+  "kind": "strings",
+  "text": "鉀：214 mg / 每日目標 3,000 mg\n熱量：約 104 kcal (範圍 90–120 kcal)\n膳食纖維：5 g / 每日目標 25 g",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /約\\s*\\d|上限|目標|大概|僅供參考/：'鉀：214 mg / 每日目標 3,000 mg'",
+    "s2 出現禁止樣式 /約\\s*\\d|上限|目標|大概|僅供參考|非實測/：'熱量：約 104 kcal (範圍 90–120 kcal)'",
+    "s3 出現禁止樣式 /約\\s*\\d|上限|目標|大概|僅供參考/：'膳食纖維：5 g / 每日目標 25 g'"
+  ],
+  "findings": [
+    {
+      "rule": "redundant-qualifier",
+      "severity": "warn",
+      "role": "value",
+      "text": "鉀：214 mg / 每日目標 3,000 mg",
+      "match": "目標",
+      "message": "Says in words what the layout already says.",
+      "hint": "The second number after the slash is the target: 「128 / 2,400 mg」.",
+      "where": ""
+    },
+    {
+      "rule": "hedge-duplication",
+      "severity": "warn",
+      "role": "value",
+      "text": "熱量：約 104 kcal (範圍 90–120 kcal)",
+      "match": "約 1",
+      "message": "A number that is already an estimate is hedged again in words.",
+      "hint": "The figure carries it: 「200 g（170–230 g）」, not 「約 200 g」.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "value",
+      "text": "熱量：約 104 kcal (範圍 90–120 kcal)",
+      "match": "熱量：約 104 kcal (範圍 90–120 ",
+      "message": "30 characters for a value, which reads as two strings.",
+      "hint": "Split or delete down to about 24.",
+      "where": ""
+    },
+    {
+      "rule": "redundant-qualifier",
+      "severity": "warn",
+      "role": "value",
+      "text": "膳食纖維：5 g / 每日目標 25 g",
+      "match": "目標",
+      "message": "Says in words what the layout already says.",
+      "hint": "The second number after the slash is the target: 「128 / 2,400 mg」.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "```json\n{\"s1\": \"鉀：214 mg / 每日目標 3,000 mg\", \"s2\": \"熱量：約 104 kcal (範圍 90–120 kcal)\", \"s3\": \"膳食纖維：5 g / 每日目標 25 g\"}\n```"
+}

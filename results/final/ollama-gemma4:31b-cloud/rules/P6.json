@@ -1,0 +1,10 @@
+{
+  "probe": "P6",
+  "kind": "strings",
+  "text": "沒有紀錄",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "```json\n{\"s1\": \"沒有紀錄\"}\n```"
+}

@@ -1,0 +1,10 @@
+{
+  "probe": "P5",
+  "kind": "strings",
+  "text": "鉀：214 / 3,000 mg\n熱量：104 kcal（90–120 kcal）\n膳食纖維：5 / 25 g",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\":\"鉀：214 / 3,000 mg\",\"s2\":\"熱量：104 kcal（90–120 kcal）\",\"s3\":\"膳食纖維：5 / 25 g\"}\n"
+}

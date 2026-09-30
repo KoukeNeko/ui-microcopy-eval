@@ -1,0 +1,10 @@
+{
+  "probe": "P6",
+  "kind": "strings",
+  "text": "還沒有任何紀錄",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\": \"還沒有任何紀錄\"}"
+}

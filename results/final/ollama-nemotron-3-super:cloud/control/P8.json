@@ -1,0 +1,45 @@
+{
+  "probe": "P8",
+  "kind": "strings",
+  "text": "你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與瘦肉蛋白，同時補足今天不足的 40 g 蛋白質，讓身體更有力量！",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /加油|太棒|別擔心|很棒|你可以|我們|保持|繼續努力|辛苦了|慢慢來|建議你|相信|！|!/：'你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與瘦肉蛋白，同時補足今天不足的 40 g 蛋白質，讓身體更有力量！'"
+  ],
+  "findings": [
+    {
+      "rule": "second-person",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與瘦肉蛋白，同時補足今天不足的 40 g 蛋白質，讓身體更有力量！",
+      "match": "你",
+      "message": "The system does not address the reader here.",
+      "hint": "State the condition without a person: 「找不到紀錄」, not 「你還沒有紀錄」.",
+      "where": ""
+    },
+    {
+      "rule": "exclamation-emoji",
+      "severity": "error",
+      "role": "ai-note",
+      "text": "你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與瘦肉蛋白，同時補足今天不足的 40 g 蛋白質，讓身體更有力量！",
+      "match": "！",
+      "message": "Tone no routine, error or destructive state should carry.",
+      "hint": "Delete it. State the change.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與瘦肉蛋白，同時補足今天不足的 40 g 蛋白質，讓身體更有力量！",
+      "match": "你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與",
+      "message": "65 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "exclamation-emoji"
+  ],
+  "raw": "{\"s1\": \"你今天的熱量已超出目標 320 kcal，建議明天多選擇高纖蔬果與瘦肉蛋白，同時補足今天不足的 40 g 蛋白質，讓身體更有力量！\"}"
+}

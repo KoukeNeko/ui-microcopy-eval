@@ -1,0 +1,44 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "照片無法確認實際重量，份量以 180 公克估算。；照片無法確認是否加糖或醬料，數值以未添加估算。",
+  "ok": false,
+  "problems": [
+    "出現禁止樣式 /未見|沒看到|看不到|未觀察到|未發現|沒有發現|無法(判斷|確認|辨識|得知)|不確定(是否|有沒有)/",
+    "出現禁止樣式 /氧化|視覺|份量以|以.{0,8}估算|估算方法|未計入|額外添加/"
+  ],
+  "findings": [
+    {
+      "rule": "absence-disclaimer",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "照片無法確認實際重量，份量以 180 公克估算。；照片無法確認是否加糖或醬料，數值以未添加估算。",
+      "match": "無法確認",
+      "message": "Reports what was not seen; an interface states what is there.",
+      "hint": "Delete, or state the fact that changes the number: 「醬汁另計」.",
+      "where": ""
+    },
+    {
+      "rule": "method-filler",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "照片無法確認實際重量，份量以 180 公克估算。；照片無法確認是否加糖或醬料，數值以未添加估算。",
+      "match": "份量以 180 公克估算",
+      "message": "Describes the method inside a note that is read as a result.",
+      "hint": "A method belongs in help text, once, not beside every estimate.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "照片無法確認實際重量，份量以 180 公克估算。；照片無法確認是否加糖或醬料，數值以未添加估算。",
+      "match": "照片無法確認實際重量，份量以 180 公克估算。；照片無法確認是否",
+      "message": "48 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"items\":[{\"name\":\"帶皮蘋果切片\",\"amount\":\"約 8–10 片，估計 180 公克\",\"kcal\":94,\"protein_g\":0.5,\"carb_g\":24.9,\"fat_g\":0.3,\"fibre_g\":4.3}],\"notes\":[\"照片無法確認實際重量，份量以 180 公克估算。\",\"照片無法確認是否加糖或醬料，數值以未添加估算。\"]}\n"
+}

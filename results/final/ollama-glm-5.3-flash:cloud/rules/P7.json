@@ -1,0 +1,25 @@
+{
+  "probe": "P7",
+  "kind": "strings",
+  "text": "刪除這筆紀錄？\n刪除\n取消\n這筆紀錄和它的照片會一併刪除，無法復原。",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /確定要|您確定|真的要|嗎|？|\\?/：'刪除這筆紀錄？'"
+  ],
+  "findings": [
+    {
+      "rule": "question-label",
+      "severity": "error",
+      "role": "dialog-title",
+      "text": "刪除這筆紀錄？",
+      "match": "？",
+      "message": "A control asks a question instead of naming an action.",
+      "hint": "Label it with the action: 「刪除」, not 「確定要刪除嗎？」.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "question-label"
+  ],
+  "raw": "The task: app deletes a food/diet record along with its photo. Dialog needs four strings: s1 title, s2 confirm button, s3 cancel button, s4 explanation text (consequence).\n\nFollowing the rules:\n- Destructive confirmations name the action; buttons answer the title (「刪除這筆紀錄？」 → 「刪除」「取消」).\n- Buttons name the specific action: 「刪除」「取消」.\n- s4 should state the consequence: deleting removes the record and its photo, and this can't be undone. But keep it concise, no repeated heading, no personality, no exclamation.\n\nThe title: 「刪除這筆紀錄？」— but here the record has a photo. Title stays simple. Maybe 「刪除這筆紀錄？」 since the dialog is triggered from a specific record. The explanation should add consequence not in the title: photo deleted too, irreversible.\n\ns4: 「紀錄和它的照片會一併刪除，刪除後無法復原。」 or 「這筆紀錄和照片會永久刪除，無法復原。」\n\nAvoid 「你的」. Keep it plain. Maybe: 「這筆紀錄和它的照片會一併刪除，無法復原。」\n\nActually \"一併\" conveys both removed together; \"無法復原\" is the consequence/recovery absence. Good.\n\nTitle: 「刪除這筆紀錄？」— standard. Confirm: 「刪除」. Cancel: 「取消」.\n\nJSON only.</think>{\"s1\": \"刪除這筆紀錄？\", \"s2\": \"刪除\", \"s3\": \"取消\", \"s4\": \"這筆紀錄和它的照片會一併刪除，無法復原。\"}"
+}

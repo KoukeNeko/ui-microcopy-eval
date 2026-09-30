@@ -1,0 +1,18 @@
+The task: app deletes a food/diet record along with its photo. Dialog needs four strings: s1 title, s2 confirm button, s3 cancel button, s4 explanation text (consequence).
+
+Following the rules:
+- Destructive confirmations name the action; buttons answer the title (「刪除這筆紀錄？」 → 「刪除」「取消」).
+- Buttons name the specific action: 「刪除」「取消」.
+- s4 should state the consequence: deleting removes the record and its photo, and this can't be undone. But keep it concise, no repeated heading, no personality, no exclamation.
+
+The title: 「刪除這筆紀錄？」— but here the record has a photo. Title stays simple. Maybe 「刪除這筆紀錄？」 since the dialog is triggered from a specific record. The explanation should add consequence not in the title: photo deleted too, irreversible.
+
+s4: 「紀錄和它的照片會一併刪除，刪除後無法復原。」 or 「這筆紀錄和照片會永久刪除，無法復原。」
+
+Avoid 「你的」. Keep it plain. Maybe: 「這筆紀錄和它的照片會一併刪除，無法復原。」
+
+Actually "一併" conveys both removed together; "無法復原" is the consequence/recovery absence. Good.
+
+Title: 「刪除這筆紀錄？」— standard. Confirm: 「刪除」. Cancel: 「取消」.
+
+JSON only.</think>{"s1": "刪除這筆紀錄？", "s2": "刪除", "s3": "取消", "s4": "這筆紀錄和它的照片會一併刪除，無法復原。"}

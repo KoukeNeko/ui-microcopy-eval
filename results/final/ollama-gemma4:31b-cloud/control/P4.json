@@ -1,0 +1,33 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "估算來源：Ollama Cloud (deepseek-v4.1-flash)，請核對",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /請核對|請自行|僅供參考|保證|絕對/：'估算來源：Ollama Cloud (deepseek-v4.1-flash)，請核對'"
+  ],
+  "findings": [
+    {
+      "rule": "boilerplate-disclaimer",
+      "severity": "warn",
+      "role": "label",
+      "text": "估算來源：Ollama Cloud (deepseek-v4.1-flash)，請核對",
+      "match": "請核對",
+      "message": "Boilerplate caution that every screen could carry, so none of it informs.",
+      "hint": "Keep it only if this one value can mislead; otherwise delete.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "估算來源：Ollama Cloud (deepseek-v4.1-flash)，請核對",
+      "match": "估算來源：Ollama C",
+      "message": "43 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "```json\n{\"s1\": \"估算來源：Ollama Cloud (deepseek-v4.1-flash)，請核對\"}\n```"
+}

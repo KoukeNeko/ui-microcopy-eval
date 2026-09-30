@@ -1,0 +1,1 @@
+{"s1":"照片估算（非實測）｜Ollama Cloud / deepseek-v4.1-flash"}

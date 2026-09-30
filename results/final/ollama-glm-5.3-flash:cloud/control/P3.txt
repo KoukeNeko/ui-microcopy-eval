@@ -1,0 +1,35 @@
+The user wants me to analyze a photo of food and return JSON. The photo shows: a glass bowl with 8-10 apple slices with skin on, a fork in the bowl, slices slightly oxidized. Can't tell if sugar or sauce added.
+
+The user's supplementary field is empty.
+
+I need to return JSON in the specified format:
+{"items":[{"name":"","amount":"","kcal":number,"protein_g":number,"carb_g":number,"fat_g":number,"fibre_g":number}],"notes":["..."]}
+
+notes max three sentences, one thing per sentence.
+
+Let me estimate: 8-10 apple slices with skin. A medium apple (~180g) yields maybe 8-10 slices. So roughly one medium apple, ~180g.
+
+Apple with skin per 100g: ~52 kcal, protein 0.3g, carbs 13.8g, fat 0.2g, fiber 2.4g.
+
+For 180g: kcal ~94, protein ~0.5g, carbs ~25g, fat ~0.3g, fiber ~4.3g.
+
+Let me use 8-10 slices ≈ one medium apple about 180g, so:
+- kcal: 94
+- protein_g: 0.5
+- carb_g: 25
+- fat_g: 0.3
+- fibre_g: 4.3
+
+Notes (max 3, one thing each):
+1. 無法判斷是否加糖或淋醬，若有的話熱量與碳水會增加
+2. 切片略微氧化屬正常褐變，對營養數字影響很小
+3. 份量以一台灣中等大小蘋果約8-10片估計,實際大小會影響數字
+
+Actually let me be careful — notes max three sentences, one thing per sentence. Let me write in Traditional Chinese since the user wrote in Traditional Chinese.
+
+Notes:
+1. "是否添加糖、蜂蜜或檸檬汁等調味無法從照片確認，若有額外調味熱量與碳水會更高。"
+2. "切片氧化褐變屬自然現象，對營養數值影響可忽略。"
+3. "份量以中型蘋果一顆（約180克）估算，蘋果實際大小差異會改變所有數字。"
+
+Only return JSON, no extra text.</think>{"items":[{"name":"蘋果切片（帶皮）","amount":"8–10 片（約 1 顆中型蘋果，180g）","kcal":94,"protein_g":0.5,"carb_g":25,"fat_g":0.3,"fibre_g":4.3}],"notes":["照片無法確認是否加了糖、蜂蜜或醬料，若有額外調味熱量與碳水會再增加。","切片表面略微氧化屬自然褐變，對營養數值影響可忽略。","份量以一顆中型蘋果約 180 克估算，蘋果實際大小會影響全部數字。"]}

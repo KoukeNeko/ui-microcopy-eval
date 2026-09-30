@@ -1,0 +1,36 @@
+{
+  "probe": "P6",
+  "kind": "strings",
+  "text": "今天還沒有紀錄，點擊右下角開始記錄吧！",
+  "ok": false,
+  "problems": [
+    "s1 出現禁止樣式 /我們|你的|你可以|試試看|一起|吧[。！!]|喔|囉|！|!|？|\\?/：'今天還沒有紀錄，點擊右下角開始記錄吧！'",
+    "s1 出現禁止樣式 /點右下角|點一下|點擊|按下|這裡會顯示|隨時/：'今天還沒有紀錄，點擊右下角開始記錄吧！'"
+  ],
+  "findings": [
+    {
+      "rule": "exclamation-emoji",
+      "severity": "error",
+      "role": "empty",
+      "text": "今天還沒有紀錄，點擊右下角開始記錄吧！",
+      "match": "！",
+      "message": "Tone no routine, error or destructive state should carry.",
+      "hint": "Delete it. State the change.",
+      "where": ""
+    },
+    {
+      "rule": "zh-tw-vocabulary",
+      "severity": "warn",
+      "role": "empty",
+      "text": "今天還沒有紀錄，點擊右下角開始記錄吧！",
+      "match": "點擊",
+      "message": "「點擊」 is mainland usage.",
+      "hint": "Taiwan writes 點選、點一下.",
+      "where": ""
+    }
+  ],
+  "error_rules": [
+    "exclamation-emoji"
+  ],
+  "raw": "```json\n{\"s1\": \"今天還沒有紀錄，點擊右下角開始記錄吧！\"}\n```"
+}

@@ -1,0 +1,36 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "看不出是否有加糖或醬料，若有會顯著增加熱量與碳水；表面略微氧化不影響營養素數值，僅代表時間較久；碗中見叉子，代表可能已食用部分，但無法判斷實際攝入量",
+  "ok": false,
+  "problems": [
+    "出現禁止樣式 /碗|叉子|餐具|湯匙|筷子|容器/",
+    "出現禁止樣式 /不計入|不列入|不納入|不算|不影響|不包含/",
+    "出現禁止樣式 /未見|沒看到|看不到|未觀察到|未發現|沒有發現|無法(判斷|確認|辨識|得知)|不確定(是否|有沒有)/",
+    "出現禁止樣式 /氧化|視覺|份量以|以.{0,8}估算|估算方法|未計入|額外添加/"
+  ],
+  "findings": [
+    {
+      "rule": "absence-disclaimer",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "看不出是否有加糖或醬料，若有會顯著增加熱量與碳水；表面略微氧化不影響營養素數值，僅代表時間較久；碗中見叉子，代表可能已食用部分，但無法判斷實際攝入量",
+      "match": "無法判斷",
+      "message": "Reports what was not seen; an interface states what is there.",
+      "hint": "Delete, or state the fact that changes the number: 「醬汁另計」.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "看不出是否有加糖或醬料，若有會顯著增加熱量與碳水；表面略微氧化不影響營養素數值，僅代表時間較久；碗中見叉子，代表可能已食用部分，但無法判斷實際攝入量",
+      "match": "看不出是否有加糖或醬料，若有會顯著增加熱量與碳水；表面略微氧化不影",
+      "message": "74 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\n  \"items\": [\n    {\n      \"name\": \"蘋果切片（帶皮）\",\n      \"amount\": \"8–10 片（約 150–180g）\",\n      \"kcal\": 85,\n      \"protein_g\": 0.4,\n      \"carb_g\": 22.5,\n      \"fat_g\": 0.3,\n      \"fibre_g\": 4.4\n    }\n  ],\n  \"notes\": [\n    \"看不出是否有加糖或醬料，若有會顯著增加熱量與碳水\",\n    \"表面略微氧化不影響營養素數值，僅代表時間較久\",\n    \"碗中見叉子，代表可能已食用部分，但無法判斷實際攝入量\"\n  ]\n}"
+}

@@ -1,0 +1,54 @@
+The user wants me to rewrite a UI text description. The original text is:
+
+「第 0 顆 83 MiB 這台機器正從它開機，不能裝」
+
+This is describing in a disk list that disk 0 is the current boot disk, so it cannot be used for installation.
+
+Requirements:
+- Keep the information: this disk cannot be installed to because it's the current boot disk
+- Can be more concise
+- Must conform to UI text requirements (介面文字要求) - meaning concise, clear UI text
+- Return only JSON: {"s1": "..."}
+
+The context: "同一支安裝程式，磁碟清單裡第 0 顆磁碟是這台機器目前的開機磁碟" - In the same installer, in the disk list, disk 0 is the machine's current boot disk.
+
+The original: 「第 0 顆 83 MiB 這台機器正從它開機，不能裝」
+
+UI text should be concise, clear. Let me think about good Chinese UI text for this.
+
+Something like:
+- 「第 0 顆（83 MiB）：目前的開機磁碟，無法安裝」
+- 「第 0 顆 83 MiB：目前開機磁碟，不可安裝」
+- 「第 0 顆（83 MiB）目前開機磁碟，無法安裝」
+
+The information to keep:
+1. Disk 0 (第 0 顆)
+2. Size 83 MiB (probably should keep since it identifies the disk)
+3. It's the current boot disk (目前的開機磁碟)
+4. Cannot install (不能安裝 / 無法安裝)
+
+A concise UI version: 「第 0 顆 83 MiB：目前開機磁碟，無法安裝」
+
+Or maybe: 「第 0 顆（83 MiB）為目前開機磁碟，無法安裝」
+
+The original is a bit awkward: "這台機器正從它開機" is verbose. The reason it can't be installed is because it's the boot disk. So the logic: as the current boot disk, it can't be the install target.
+
+Simplified: 「第 0 顆 83 MiB：目前的開機磁碟，無法安裝」
+
+Even simpler: 「第 0 顆 83 MiB 為目前開機磁碟，不可安裝」
+
+I think a good UI-style version would use a colon or consistent delimiter. Let me pick:
+
+「第 0 顆 83 MiB：目前開機磁碟，無法安裝」
+
+That's concise and keeps all info. The phrase "這台機器正從它開機" is replaced by "目前開機磁碟" (current boot disk), which implies exactly that.
+
+Return only JSON: {"s1": "..."}
+
+Should the JSON use escaped quotes? The string contains Chinese quotes 「」? No, I'll just put the text directly. Since JSON value contains no double quotes, it's fine.
+
+Final: {"s1": "第 0 顆 83 MiB：目前開機磁碟，無法安裝"}
+
+Note "MiB" and "0 顆" — keep. Use full-width colon and comma for Chinese UI. The original used full-width comma，so keep that.
+
+The user said "只回傳 JSON" - only return JSON. So my response should be just the JSON.{"s1": "第 0 顆 83 MiB：目前開機磁碟，無法安裝"}

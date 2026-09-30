@@ -1,0 +1,48 @@
+Let me think about this task.
+
+The app is a logging/tracking app (紀錄類 app) in Traditional Chinese (Taiwan usage, given 「新增紀錄」). The "今天" (Today) page has a list area. When there are no records today, the list area shows a piece of text (empty state). There's already an add button at the bottom right (FAB).
+
+Per the UI microcopy rules:
+- Empty states are nouns or short states (「未設定」「沒有紀錄」「已暫停」), never questions, never coaching.
+- No 「這裡會顯示…」 promises in empty states.
+- First decide whether the text is needed. The button already conveys the next action (add). The empty state should convey the state: no records today.
+- Don't repeat heading in body — actually the empty state replaces the list content. The heading is 「今天」. So the empty state should say something like 「還沒有紀錄」 or 「沒有紀錄」.
+- The rule example literally lists 「沒有紀錄」 as a good short state.
+
+Should it mention today? The page is 「今天」, so saying 「今天還沒有紀錄」 might be redundant with the heading. But the empty state is inside the list on the 今天 page; the heading 「今天」 already conveys the day. Hmm, but "今天" heading + "沒有紀錄" — is that clear? Yes. Could also be 「還沒有紀錄」. The rules say short states like 「沒有紀錄」. Given the heading is 今天, the simplest is 「今天還沒有紀錄」 or just 「沒有紀錄」.
+
+Consider: the rule "Do not repeat the heading in the body." The heading is 「今天」. If empty state says 「今天沒有紀錄」, it repeats 「今天」. But the rule about repeating headings targets body text duplicating headings; an empty state within the section could still include the day for clarity. However, since the page is exclusively 今天, the day is unambiguous. So 「還沒有紀錄」 suffices.
+
+Also, no coaching like 「點右下角按鈕開始記錄」 — that's a gesture hint / coaching. The FAB already conveys the action. No 「這裡會顯示…」 promises.
+
+So the best answer: 「還沒有紀錄」.
+
+Wait — but should it be 沒有紀錄 vs 還沒有紀錄? 「還沒有」 adds "yet" nuance which implies future possibility — slightly. The rule example literally gives 「沒有紀錄」. For "today" specifically, 「還沒有紀錄」 reads naturally because today isn't over — there may be later records. Actually in Chinese, "還沒有" implies "not yet," which fits "today" since the day continues. 「沒有紀錄」 is a starker state. The glossary example uses 「沒有紀錄」. Hmm.
+
+Given the rule explicitly lists 「沒有紀錄」 as a valid empty state, and the heading 今天 already scopes it, either works. I'd choose 「還沒有紀錄」 because for a "today" page, "not yet" is accurate — records can still be added during the day. But is 還 adding unnecessary nuance? The rule says short states. Both are short. 「還沒有紀錄」 is natural Taiwan Mandarin.
+
+Hmm, let me weigh: The example glossary 「沒有紀錄」 — I could just use that exactly to follow the established voice. The instruction says "find how the project already words the same UI role... and follow it. Do not invent a new product voice." We don't have examples from the actual project other than 新增紀錄 for adding. So the closest precedent is the rules' own example 「沒有紀錄」.
+
+I'll go with 「還沒有紀錄」? Or 「沒有紀錄」?
+
+Actually, rethink: on a Today page, 「還沒有紀錄」 conveys that the day isn't over and you can still add — but that's implication, not coaching. It's a common, neutral phrasing. However, simpler is 「沒有紀錄」. Both fine. The rule example literally recommends 「沒有紀錄」. To minimize invention, use 「沒有紀錄」.
+
+But wait — is the empty state on the 今天 page. If the app also has other list pages (e.g., 歷史), 「沒有紀錄」 would be reused everywhere — consistent. That supports 「沒有紀錄」.
+
+Actually, let me reconsider 「今天沒有紀錄」: the empty state might appear under a date heading within the page; if the app shows 今天 as a sticky header, then 「沒有紀錄」 directly under it reads fine. Also on future-dated views, reuse. I'll pick 「還沒有紀錄」... no, decide: 「沒有紀錄」.
+
+Hmm, one more consideration: 「還沒有紀錄」 is extremely common in Taiwan apps' empty states and feels natural when the timeframe is ongoing (today). 「沒有紀錄」 can feel like a completed absence. For a "today" page, 「還沒有紀錄」 subtly signals "you can still add today." But that's personality. The rules favor plain states and give 「沒有紀錄」 explicitly.
+
+Given the system's own example list includes 「沒有紀錄」 as the canonical empty-state string, and consistency across pages favors it, I'll answer 「沒有紀錄」.
+
+Should there be a second line? The rules: no coaching, no 「這裡會顯示」, button already exists. One string only. s1 only.
+
+JSON: {"s1": "還沒有紀錄"} or {"s1": "沒有紀錄"}.
+
+Final decision: 「還沒有紀錄」 — hmm I keep flip-flopping. Let me settle with a rationale:
+
+1. Heading 「今天」 already establishes the timeframe → don't repeat 「今天」.
+2. Empty states: nouns or short states → 「沒有紀錄」 fits exactly the documented example.
+3. 「還」 adds a temporal nuance ("not yet") that for an ongoing day is accurate, but it's not required; the plain state is the documented pattern, and plainer is safer and reusable across pages.
+
+Answer: {"s1": "沒有紀錄"}</think>{"s1": "沒有紀錄"}

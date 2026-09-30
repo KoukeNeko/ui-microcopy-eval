@@ -1,0 +1,21 @@
+{
+  "probe": "P5",
+  "kind": "strings",
+  "text": "鉀 214 mg / 3,000 mg\n熱量 104 kcal / 90–120 kcal\n膳食纖維 5 g / 25 g",
+  "ok": true,
+  "problems": [],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "value",
+      "text": "熱量 104 kcal / 90–120 kcal",
+      "match": "熱量 104 kcal / 90–120 kcal",
+      "message": "25 characters for a value, which reads as two strings.",
+      "hint": "Split or delete down to about 24.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\n  \"s1\": \"鉀 214 mg / 3,000 mg\",\n  \"s2\": \"熱量 104 kcal / 90–120 kcal\",\n  \"s3\": \"膳食纖維 5 g / 25 g\"\n}"
+}

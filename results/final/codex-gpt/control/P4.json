@@ -1,0 +1,21 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "照片估算（非實測）｜Ollama Cloud / deepseek-v4.1-flash",
+  "ok": true,
+  "problems": [],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "照片估算（非實測）｜Ollama Cloud / deepseek-v4.1-flash",
+      "match": "照片估算（非實測）｜Oll",
+      "message": "44 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"s1\":\"照片估算（非實測）｜Ollama Cloud / deepseek-v4.1-flash\"}\n"
+}

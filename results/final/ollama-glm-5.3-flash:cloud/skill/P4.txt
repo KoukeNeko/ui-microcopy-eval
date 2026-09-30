@@ -1,0 +1,44 @@
+The task: A nutrition app uses AI to estimate nutrition from photos. Below the number there needs to be a small line of text indicating the source of this figure (which model, whether it's an estimate or measured). Originally written as:
+
+「數字是 Ollama Cloud / deepseek-v4.1-flash 從照片的估算，請核對。」
+
+Write this label line so it meets interface text requirements. Only return JSON: {"s1": "..."}
+
+Let me apply the ui-microcopy skill. This is a `note` / `ai-note` role — actually, it's a source/provenance label. Looking at FM4 — Provenance meta-commentary:
+
+- Reality: a source label reading 「數字直接來自 Claude Code 與 Codex，不是推測」; in the app, 「數字是 $provider（$model）從照片的估算，請核對。」
+- Fix: a source name, once, in the place reserved for it: 「Claude 估算」. The negation 「不是推測」 adds nothing the source name did not.
+
+So the fix for this exact case is quoted in FM4. The original string「數字是 Ollama Cloud / deepseek-v4.1-flash 從照片的估算，請核對。」is literally the example of the failure mode. The fix per FM4: 「a source name, once, in the place reserved for it」— e.g. 「Claude 估算」→ so ours would be something like 「deepseek-v4.1-flash 估算」or "Ollama Cloud · deepseek-v4.1-flash 估算".
+
+Wait — the requirement says the small line must indicate: which model, and whether it's an estimate or measured. So the line must carry: model name + 估算 (it's an estimate, not measured). The delete pass: remove 「數字是...請核對」 framing (the instruction "請核對" — is that an action that changes behaviour? Hmm. Actually "請核對" (please verify) is an instruction. Does it pass the Deletion test? It asks the user to cross-check the figures against reality. In FM4, the worked fix was 「Claude 估算」 — dropping 「請核對」 too? The FM4 reality quote includes 「請核對。」and the fix shown is just「Claude 估算」. So yes, drop the negation and drop the plea.
+
+Also the role table for `note`/`ai-note`: "one clause, one fact that changes how the figure is read; absent when there is none. Rejected: ... 份量以碗中視覺大小估算". Hmm — "份量以碗中視覺大小估算" is rejected because it's method disclosure. But here the requirement explicitly says the line must state the source (which model) and whether it's estimated or measured. This is a provenance label — the user requirement (product decision) is that provenance must be shown. The skill's FM4 fix is exactly to name the source once, in compact form: 「Claude 估算」. So our answer follows the same pattern.
+
+What should the model name be? "Ollama Cloud / deepseek-v4.1-flash". The fix pattern 「Claude 估算」 names the shortest identifiable source. Should we keep both provider and model? The requirement from the product: 標示這個數字的來源（哪個模型、是估算還是實測). So they want which model — deepseek-v4.1-flash — and estimated vs measured. The provider (Ollama Cloud) is arguably not needed; "哪個模型" asks for the model. But the original includes provider. Deletion test: does dropping "Ollama Cloud" lose anything the reader needs? The model name is the identifier; the provider is an apparatus detail. FM4's fix used just "Claude" for what was presumably "Claude Code 與 Codex" — it shortened to a single name. I'd write 「deepseek-v4.1-flash 估算」.
+
+Hmm, but maybe keep some balance: 「deepseek-v4.1-flash 估算」 — noun form, no period, no hedging, no pleading. That matches: value note / source label: source name once + 估算/實測 marker.
+
+Spacing between numbers/latin words and Chinese:「中英之間...留一個半形空格」. So "deepseek-v4.1-flash 估算" has a space before 估算. Good.
+
+Should there be a space or separator if we include provider? Like 「Ollama Cloud · deepseek-v4.1-flash 估算」? That's longer. The deletion test: provider doesn't change what the reader concludes. Model suffices. Keep it minimal: 「deepseek-v4.1-flash 估算」.
+
+But wait — could "估算" alone be ambiguous vs 實測? The requirement says indicate estimated vs measured. The word 「估算」 does that. If it were measured, the line might read 「使用者輸入」 or 「實測」. Here it's estimated: 「估算」.
+
+Alternatively 「deepseek-v4.1-flash 照片估算」? The original said 從照片. Is "從照片" needed? The screen context: the user just photographed the meal; the screen is the photo estimate. Visible test — the screen already shows it came from the photo (the photo is right there). FM4's fix 「Claude 估算」 didn't include "from the photo". Delete first. So 「deepseek-v4.1-flash 估算」.
+
+Should I use uppercase "DeepSeek-V4.1-Flash"? The user wrote "deepseek-v4.1-flash" — keep the user's identifier as-is. Model IDs are typically lowercase in APIs; that's the model name. Keep it.
+
+Note: the label is under the number — like a figure/source tag. Noun form, no trailing stop. 「deepseek-v41-flash 估算」 — no period. Good.
+
+Hmm, one consideration: is dropping "Ollama Cloud" losing info? The requirement says "哪個模型" — model only. Provider could matter for debugging, but interface readers need the model identity. Also, FM4's canonical fix is shortest name. I'll go with just the model.
+
+Also could write 「deepseek-v4.1-flash 估算」 vs 「估算：deepseek-v4.1-flash」. The former reads like a compact tag. FM4 pattern: 「Claude 估算」 → 「deepseek-v4.1-flash 估算」. Go with that.
+
+JSON output only: {"s1": "deepseek-v4.1-flash 估算"}
+
+Space between latin and Chinese per spacing rule — half-width space. Yes.
+
+No period, no 「請核對」, no 「不是推測」, no 「從照片的」.
+
+Final: {"s1": "deepseek-v4.1-flash 估算"}{"s1": "deepseek-v4.1-flash 估算"}

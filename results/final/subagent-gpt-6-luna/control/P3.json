@@ -1,0 +1,10 @@
+{
+  "probe": "P3",
+  "kind": "runtime",
+  "text": "照片無法判斷是否加糖或醬料，營養數值未計入額外添加物。",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"items\":[{\"name\":\"帶皮蘋果切片\",\"amount\":\"約 1 顆中型蘋果（約 150 g）\",\"kcal\":78,\"protein_g\":0.4,\"carb_g\":21,\"fat_g\":0.3,\"fibre_g\":3.6}],\"notes\":[\"照片無法判斷是否加糖或醬料，營養數值未計入額外添加物。\"]}"
+}

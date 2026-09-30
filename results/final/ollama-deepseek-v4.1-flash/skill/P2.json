@@ -1,0 +1,10 @@
+{
+  "probe": "P2",
+  "kind": "strings",
+  "text": "無法安裝：這是目前的開機磁碟。請選擇其他磁碟。",
+  "ok": true,
+  "problems": [],
+  "findings": [],
+  "error_rules": [],
+  "raw": "{\"s1\": \"無法安裝：這是目前的開機磁碟。請選擇其他磁碟。\"}"
+}

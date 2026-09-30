@@ -1,0 +1,21 @@
+{
+  "probe": "P8",
+  "kind": "strings",
+  "text": "今日熱量已超出目標 320 kcal，蛋白質距離目標尚差 40 g。",
+  "ok": true,
+  "problems": [],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "ai-note",
+      "text": "今日熱量已超出目標 320 kcal，蛋白質距離目標尚差 40 g。",
+      "match": "今日熱量已超出目標 320 kcal，蛋白質距離目標尚差 40 g",
+      "message": "34 characters for a ai-note, which reads as two strings.",
+      "hint": "Split or delete down to about 32.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"s1\":\"今日熱量已超出目標 320 kcal，蛋白質距離目標尚差 40 g。\"}\n"
+}

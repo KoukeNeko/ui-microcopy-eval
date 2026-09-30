@@ -1,0 +1,23 @@
+{
+  "probe": "P4",
+  "kind": "strings",
+  "text": "照片估計 · Ollama Cloud / deepseek-v4.1-flash",
+  "ok": false,
+  "problems": [
+    "s1 缺少必要內容 /估算/：'照片估計 · Ollama Cloud / deepseek-v4.1-flash'"
+  ],
+  "findings": [
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "照片估計 · Ollama Cloud / deepseek-v4.1-flash",
+      "match": "照片估計 · Ollama",
+      "message": "41 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\"s1\":\"照片估計 · Ollama Cloud / deepseek-v4.1-flash\"}\n"
+}

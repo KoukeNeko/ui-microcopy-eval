@@ -1,0 +1,1 @@
+{"items":[{"name":"蘋果切片","amount":"約 8–10 片（150 g）","kcal":78,"protein_g":0.4,"carb_g":21,"fat_g":0.3,"fibre_g":3.6}],"notes":[]}

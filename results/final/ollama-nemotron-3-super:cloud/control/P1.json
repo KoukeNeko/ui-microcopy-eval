@@ -1,0 +1,33 @@
+{
+  "probe": "P1",
+  "kind": "strings",
+  "text": "重新開機\n安裝成功完成，請移除安裝介面並重新開機。\n安裝失敗：目標磁碟無法寫入。請確認磁碟未被寫保護、未被其他程式佔用，或嘗試選擇其他磁碟。\n此磁碟尚未建立分割表，將無法安裝系統。請先使用分割工具建立分割表，或選擇其他已分割的磁碟。",
+  "ok": false,
+  "problems": [
+    "s1 缺少必要內容 /取消|放棄|離開|退出/：'重新開機'"
+  ],
+  "findings": [
+    {
+      "rule": "trailing-period",
+      "severity": "warn",
+      "role": "label",
+      "text": "此磁碟尚未建立分割表，將無法安裝系統。請先使用分割工具建立分割表，或選擇其他已分割的磁碟。",
+      "match": "。",
+      "message": "A label is a phrase, not a sentence.",
+      "hint": "Drop the full stop: 「安裝完成」 stands as the whole string.",
+      "where": ""
+    },
+    {
+      "rule": "role-length",
+      "severity": "warn",
+      "role": "label",
+      "text": "此磁碟尚未建立分割表，將無法安裝系統。請先使用分割工具建立分割表，或選擇其他已分割的磁碟。",
+      "match": "此磁碟尚未建立分割表，將無",
+      "message": "45 characters for a label, which reads as two strings.",
+      "hint": "Split or delete down to about 12.",
+      "where": ""
+    }
+  ],
+  "error_rules": [],
+  "raw": "{\n  \"s1\": \"重新開機\",\n  \"s2\": \"安裝成功完成，請移除安裝介面並重新開機。\",\n  \"s3\": \"安裝失敗：目標磁碟無法寫入。請確認磁碟未被寫保護、未被其他程式佔用，或嘗試選擇其他磁碟。\",\n  \"s4\": \"此磁碟尚未建立分割表，將無法安裝系統。請先使用分割工具建立分割表，或選擇其他已分割的磁碟。\"\n}"
+}

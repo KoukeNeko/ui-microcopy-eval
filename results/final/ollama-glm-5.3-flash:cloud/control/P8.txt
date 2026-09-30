@@ -1,0 +1,37 @@
+The user wants a health app message in Traditional Chinese (Taiwan) for someone who has exceeded their daily calorie goal (2,000 kcal target, currently 2,320 kcal, over by 320 kcal), and is still short 40g protein.
+
+They want only JSON returned: {"s1": "..."}
+
+So I need to write a single sentence (one prompt/notice) that:
+- Is in Traditional Chinese, Taiwan usage
+- Acknowledges they exceeded calorie goal by 320 kcal
+- Notes protein is still 40g short
+- Should be encouraging/AI-written tone, probably supportive not shaming
+
+The format is strict: only return JSON {"s1": "..."}. So my response should be just that JSON, nothing else.
+
+Let me craft a good sentence in Taiwan Traditional Chinese:
+
+Something like: 「今天熱量已超出目標 320 kcal，蛋白質還差 40 g，明天可以多補充雞胸肉或豆漿，別太在意，慢慢調整就好！」
+
+Tone should be gentle, encouraging. Taiwan style would use 熱量, 蛋白質, kcal maybe 大卡 or kcal. Taiwan often uses 大卡 for calorie. The target says 2,000 kcal. I can keep kcal or use 大卡.
+
+Keep it one sentence-ish but natural. The s1 is one message.
+
+Possible: 「今天熱量比目標多了 320 大卡，別太自責！蛋白質還缺 40 g，明天早餐加顆茶葉蛋或一杯無糖豆漿，輕鬆補回來 💪」
+
+Should I include emoji? Health apps often do. Keep it simple.
+
+Ensure valid JSON with escaped quotes — no double quotes inside, use 「」 if needed.
+
+Final: {"s1": "今天熱量已超出目標 320 大卡，蛋白質還差 40 g，晚點若還餓，建議選無糖豆漿或茶葉蛋補蛋白，明天一起繼續加油！"}
+
+Hmm, "晚點" — if they already exceeded calories, eating more isn't ideal but protein matters. Actually a good tip: prioritize protein without much extra calories. 無糖豆漿、茶葉蛋、雞胸肉 are good.
+
+Let me write it warmly and concisely:
+
+「今天的熱量超出目標 320 大卡了，別太在意偶爾的起伏；蛋白質還差 40 g，可以喝杯無糖豆漿或補顆茶葉蛋，明天我們一起回到正軌！」
+
+That's good Taiwan tone: 別太在意、一起回到正軌.
+
+Return only JSON.</think>{"s1": "今天熱量已超出目標 320 大卡，別太在意偶爾的起伏；蛋白質還差 40 g，想補充的話可以選無糖豆漿或茶葉蛋，明天我們一起回到正軌！"}
