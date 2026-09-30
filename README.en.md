@@ -1,8 +1,8 @@
 <h1 align="center">ui-microcopy-eval</h1>
 
 <p align="center">
-  <strong>The measurement behind the <a href="https://github.com/KoukeNeko/ui-microcopy">ui-microcopy</a> skill.</strong><br>
-  Held-out briefs from two authors, seven model channels, judges from other model families, paired analysis — and every generation and verdict, checked in.
+  <strong>The evaluation harness and measurement record for the <a href="https://github.com/KoukeNeko/ui-microcopy">ui-microcopy</a> skill.</strong><br>
+  Held-out briefs from two authors, seven model channels, judges from other model families, paired analysis; every generation and verdict is checked in.
 </p>
 
 <p align="center">
@@ -16,15 +16,15 @@
 </p>
 
 <p align="center">
-  <a href="#what-is-measured">What is measured</a>
+  <a href="#design">Design</a>
   · <a href="#results">Results</a>
-  · <a href="#running-it">Running it</a>
-  · <a href="#reading-a-result-honestly">Reading a result</a>
+  · <a href="#running">Running</a>
+  · <a href="#interpretation">Interpretation</a>
   · <a href="#repository-layout">Layout</a>
 </p>
 
 ```sh
-python3 v2/eval_v2.py contamination --skill-dir ~/.claude/skills/ui-microcopy          # both ways
+python3 v2/eval_v2.py contamination --skill-dir ~/.claude/skills/ui-microcopy          # both directions
 python3 v2/eval_v2.py generate --channel ollama:gemma4:31b-cloud --arms control,skill --samples 2
 python3 v2/eval_v2.py judge --judge ollama:nemotron-3-super:cloud
 python3 v2/eval_v2.py report
@@ -36,54 +36,54 @@ python3 v2/eval_v2.py report
 | nemotron | all    | skill v2 | 271   | 36 | 14 | +8%   | +1% … +15%       | +1.1%   |
 ```
 
-The first version of the skill was written, probed and graded by one model in one session, and it
-looked excellent — until an audit showed that three quarters of the grader's forbidden strings were
-sitting in the skill text and two probes quoted the skill's own sentences. A skill that grades
-itself measures obedience, not generalisation. This repository is the harness built to replace that
-number with one that can be wrong.
+## Overview
 
-**Nothing here has seen the skill.** The 32 briefs were written by two authors from different model
-families, neither shown the skill or its strings; a two-way grep confirms no string crosses from
-skill to probe or back. The judges are models from families that wrote none of the skill, scoring
-two axes from a rubric that names the element and the required facts but never the doctrine.
+The first version of the skill was written, probed and graded by one model in one session. An
+audit found three quarters of the grader's forbidden strings in the skill body and two probes
+quoting the skill's sentences. Such an evaluation measures compliance, not generalisation. This
+repository is the harness built to replace it, on two principles.
 
-**Every number is paired.** An arm is compared with control on the same model, the same brief, the
-same sample and the same field, with McNemar's b/c counts and a bootstrap confidence interval
-clustered by brief. The absolute pass rates are in the report too, but they are not the claim.
+- **Neither the briefs nor the judges have seen the skill.** The 32 briefs were written by authors
+  from two model families, neither given the skill or its strings; a two-way grep confirms that no
+  string crosses between skill and briefs. The judges are models from families that did not write
+  the skill, scoring from a rubric that names the element and the required facts and omits the
+  doctrine.
+- **Every figure is a paired comparison.** An arm is compared with control on the same model,
+  brief, sample and field, with McNemar's b/c counts and a brief-clustered bootstrap confidence
+  interval. Absolute pass rates appear in the report for description only.
 
-## What is measured
+## Design
 
 ### Held-out evaluation (`v2/`)
 
 | | |
 | --- | --- |
-| **Briefs** | 32 in `v2/probes_v2/` — 16 Claude-written, 16 GPT-written; ten product scenarios, ten element types; zh-TW 20, en 6, ja 6. Each string's required facts (`must_convey`) come from the brief's author. |
-| **Arms** | `control` (brief only) · `rules` (a negative list, each "don't" with its replacement) · `exemplar` (element → form → example, no prohibitions) · `schema` (per-field length and emptiness only) · `skill` (v1) · `skill2` / `skill2b` (v2 drafts) · `postfilter` (control output through the linter's patterns, runtime briefs only) |
-| **Channels** | `ollama:<model>` (deepseek, gemma4, nemotron, glm), `codex` (GPT-6 in an isolated `CODEX_HOME`), `cloakgpt:<session>`, `dry` + `ingest` for a hand-driven agent. Claude runs come from subagents that carry the user's rule file and are labelled *rules-in-context*, never control. |
-| **Judges** | gemma4 and nemotron. Each string gets `facts_present` and `surplus`, 0/1; records are shuffled across arms and judged in batches with the arm label removed; a judge never scores its own family in the headline numbers. |
-| **Human calibration** | 108 strings blind-rated by the person who raised the complaint — one random stratified batch, one stratified by judge verdict. |
-| **Objective measures** | Language leak (CJK in an English answer, a Simplified-only character in a zh-TW answer, kanji-only in a Japanese one), note emptiness, string length — read straight from the generations, no judge. |
+| **Briefs** | 32 in `v2/probes_v2/`: 16 Claude-written, 16 GPT-written; ten product scenarios, ten element types; zh-TW 20, en 6, ja 6. Each string's required facts (`must_convey`) are listed by the brief's author. |
+| **Arms** | `control` (brief only) · `rules` (a negative list, each item with its replacement) · `exemplar` (element → form → example, no prohibitions) · `schema` (per-field length and emptiness only) · `skill` (v1) · `skill2` / `skill2b` (v2 drafts) · `postfilter` (control output through the linter's patterns, runtime briefs only) |
+| **Channels** | `ollama:<model>` (deepseek, gemma4, nemotron, glm), `codex` (GPT-6 in an isolated `CODEX_HOME`), `cloakgpt:<session>`, `dry` + `ingest` for a hand-driven agent. Claude results come from subagents carrying the user's rule file and are labelled *rules-in-context*, not control. |
+| **Judges** | gemma4 and nemotron. Each string receives `facts_present` and `surplus` (0/1); records are shuffled across arms and judged in batches with the arm label removed; headline figures exclude a judge's verdicts on its own family. |
+| **Human calibration** | 108 strings blind-rated by the person who raised the issue: one random stratified batch, one stratified by judge verdict. |
+| **Objective measures** | Language leak (CJK in an English answer, a Simplified-only character in a zh-TW answer, kanji only in a Japanese one), note emptiness, string length; computed from the generations directly. |
 
 ### Lexicon delivery (`v2/drift/`)
 
-Sixteen zh-TW briefs written to invite China terms without naming them (「app 為了加快載入而暫存在
-裝置上的資料」, not 快取), five ways of handing the model the term table, four models, two samples
-each, 640 generations, scored by the skill's linter rules alone.
+Sixteen zh-TW briefs describing a screen without naming the target term (「app 為了加快載入而暫存在
+裝置上的資料」, not 快取); five ways of supplying the term table, four models, two samples each,
+640 generations; scored by the skill's linter rules only.
 
 ### The first harness (`run_eval.py`, `fixtures.json`, `results/`)
 
-Nine probes, four arms, scored by the linter plus each probe's require/forbid patterns. Kept as the
-record of what was measured first and why it did not count: the probes and the grader share text
-with the skill they were grading. Its results are development evidence; the tables below do not
-rest on them.
+Nine probes, four arms, scored by the linter and each probe's require/forbid patterns. Retained as
+the record of the first measurement; its probes and grader share text with the skill under test,
+so its results are development evidence and the tables below do not rest on them.
 
 ## Results
 
 ### Skill against control, matched channels
 
-Net pass Δ = (b − c)/n where pass is *no surplus and every required fact present*; CI is a
-brief-clustered bootstrap. Channels present in both v1 and v2 (Claude Haiku and Sonnet, deepseek,
-gemma, nemotron); judges never score their own family.
+Net pass Δ = (b − c)/n, where pass means no surplus and every required fact present; CI is a
+brief-clustered bootstrap. Only channels present in both v1 and v2 are counted (Claude Haiku and
+Sonnet, deepseek, gemma, nemotron); a judge never scores its own family.
 
 | judge | briefs | rules | exemplar | schema | skill v1 | skill v2 |
 | --- | --- | --- | --- | --- | --- | --- |
@@ -94,25 +94,25 @@ gemma, nemotron); judges never score their own family.
 | nemotron | Claude-written | +9 [−13, +29] | +4 [−11, +19] | −4 [−19, +14] | +2 [−11, +14] | +14 [+5, +21] |
 | nemotron | GPT-written | −12 [−26, −1] | −7 [−23, +6] | −11 [−24, +1] | −8 [−22, +5] | +1 [−8, +9] |
 
-Δ required-facts (gemma): rules −6.5, exemplar −8.3, schema −11.6, skill v1 −6.5, skill v2 −3.4;
-under nemotron −9.7, −2.2, −11.6, −7.9, **+1.1**. On the GPT-written half, v1 lost 15.7 points of
-required facts; v2 lost 8.8 (gemma) and 1.7 (nemotron). Every intervention that taught deletion
-deleted facts; v2 is the one that put facts and language ahead of deletion.
+Δ required facts (gemma): rules −6.5, exemplar −8.3, schema −11.6, skill v1 −6.5, skill v2 −3.4;
+nemotron: −9.7, −2.2, −11.6, −7.9, **+1.1**. On the GPT-written half, v1 lost 15.7 points of
+required facts; v2 lost 8.8 (gemma) and 1.7 (nemotron). Every deletion-first intervention lost
+facts; v2 places facts and language before deletion.
 
-Objective measures: strings containing Chinese on English briefs — deepseek 53% → 15%, gemma
-41% → 0%, nemotron 82% → 0% (v1 → v2); notes whose brief listed no facts filled 88% by control,
-12% by v1, 0% by v2; the linter as a post-filter −1 pp [−3, 0] with Δ facts −4.0. Judge agreement
-on surplus, gemma vs nemotron: κ 0.45 on 1,276 shared strings.
+Objective measures: answers to English briefs containing Chinese, deepseek 53% → 15%, gemma
+41% → 0%, nemotron 82% → 0% (v1 → v2); notes whose brief listed no facts, filled 88% by control,
+12% by v1, 0% by v2; the linter as a post-filter, −1 pp [−3, 0] with Δ facts −4.0. Judge agreement
+on surplus (gemma vs nemotron): κ 0.45, n = 1,276.
 
-### What the human saw
+### Human calibration
 
 108 blind ratings: 4 strings marked surplus (3.7%), 0 marked missing information; all 25 control
-strings clean. Of 27 strings the judge had flagged, the rater agreed with one — judge precision 5%,
-κ ≈ 0. What the rater objected to was an invented claim (「不會儲存**或追蹤**」 where the brief said
-only *not stored*) and one over-instruction; what the judge flagged and the rater let pass was
+strings clean. Of 27 strings flagged by the judge, the rater agreed with one; judge precision 5%,
+κ ≈ 0. The rater's flags were an invented claim (「不會儲存**或追蹤**」 where the brief stated only
+"not stored") and one surplus instruction; items flagged by the judge and not by the rater were
 "successfully", a purpose clause, an onboarding benefit clause, an example inside an error and an
-exclamation mark on a confirmation. The judge measures strict compliance with the doctrine; the
-person who asked for the doctrine does not apply it that strictly. Details in
+exclamation mark on a confirmation. The judge measures strict compliance with the doctrine, which
+differs from the criterion the person who requested it applies. Details in
 [`v2/eval_v2/human_calibration.md`](v2/eval_v2/human_calibration.md).
 
 ### Lexicon delivery
@@ -125,38 +125,40 @@ person who asked for the doctrine does not apply it that strictly. Details in
 | the whole 40-row table | 354 | 0.0% | 0–1% | 51.1% |
 | the table plus 60 noise rows | 360 | 0.3% | 0–2% | 51.9% |
 
-Four models leak no China terms on their own; the only condition that leaked was the lone negative
-line (deepseek wrote 卸載 six times where control wrote 解除安裝 six times); the rows relevant to the
-screen are what raise use of the canonical term, and the whole table does about half as well.
-Per-model and per-brief tables in [`v2/drift/results.md`](v2/drift/results.md).
+Under control, four models produced no China terms; the only condition with leaks was the single
+negative line (on one brief deepseek wrote 解除安裝 six times under control and 卸載 six times with
+the line). The rise in canonical-term use comes from the rows relevant to the screen; the whole
+table achieves about half the effect. Per-model and per-brief tables in
+[`v2/drift/results.md`](v2/drift/results.md).
 
-## Running it
+## Running
 
-Python 3, no dependencies. Generation needs a model channel: an Ollama daemon on `localhost:11434`
-for `ollama:<model>`, the Codex CLI for `codex`, a CloakGPT session for `cloakgpt:<id>`. The skill
-under test is read from `~/.claude/skills/ui-microcopy` (or a `skill_v2/` folder beside the script).
+Requirements: Python 3, no dependencies. Generation needs a model channel: an Ollama daemon on
+`localhost:11434` for `ollama:<model>`, the Codex CLI for `codex`, a CloakGPT session for
+`cloakgpt:<id>`. The skill under test is read from `~/.claude/skills/ui-microcopy` (or a
+`skill_v2/` folder beside the script).
 
 ```sh
-# 1. prove the briefs and the skill share no strings, in both directions
+# 1. contamination check: no shared strings between briefs and skill, both directions
 python3 v2/eval_v2.py contamination --skill-dir ~/.claude/skills/ui-microcopy
 python3 v2/eval_v2.py contamination --skill-dir ~/.claude/skills/ui-microcopy --reverse
 
-# 2. generate — one channel at a time, two samples per brief × arm
+# 2. generation: one channel per run, two samples per brief × arm
 python3 v2/eval_v2.py generate --channel ollama:deepseek-v4.1-flash:cloud --arms control,rules,exemplar,schema,skill,skill2b --samples 2
 python3 v2/eval_v2.py generate --channel codex --arms control,skill --samples 2
 
-# 3. judge with a model from another family than the subjects it scores
+# 3. judging: a judge from a model family other than the subjects
 python3 v2/eval_v2.py judge --judge ollama:gemma4:31b-cloud
 python3 v2/eval_v2.py judge --judge ollama:nemotron-3-super:cloud
 
-# 4. calibrate against a person, then report
-python3 v2/eval_v2.py sample-for-human --n 40          # writes a blind sheet + a key
+# 4. human calibration and report
+python3 v2/eval_v2.py sample-for-human --n 40          # writes a blind sheet and a key
 python3 v2/eval_v2.py human --rated human_sample.rated.md --key human_sample.key.json
 python3 v2/eval_v2.py report                            # paired tables, leak, emptiness, κ
 
-# a channel driven by hand (an agent, a person)
+# a hand-driven channel (an agent or a person)
 python3 v2/eval_v2.py dry --channel-label claude-sonnet-rules-in-context --arms control,skill2b
-#   ... fill eval_v2/pending/<channel>/<arm>/<probe>.<k>.txt ...
+#   fill eval_v2/pending/<channel>/<arm>/<probe>.<k>.txt
 python3 v2/eval_v2.py ingest --channel-label claude-sonnet-rules-in-context
 
 # lexicon delivery
@@ -168,28 +170,28 @@ python3 run_eval.py --channel ollama:glm-5.3:cloud --arms control,rules,skill
 python3 run_eval.py --score results/final
 ```
 
-Records land in `v2/eval_v2/gen/<channel>/<arm>/<probe>.<k>.json` and
-`v2/eval_v2/judge/<judge>/<channel>/<arm>/<probe>.<k>.json`; `report` reads whatever is there.
-Anything that changes the skill's examples is followed by the contamination check; anything that
-changes the rubric is followed by a new human sample.
+Record paths: `v2/eval_v2/gen/<channel>/<arm>/<probe>.<k>.json` and
+`v2/eval_v2/judge/<judge>/<channel>/<arm>/<probe>.<k>.json`; `report` reads all existing records.
+A change to the skill's examples requires a new contamination check; a change to the rubric
+requires a new human sample.
 
-## Reading a result honestly
+## Interpretation
 
-- **Pair within a channel.** `control → skill` on the same model, brief, sample and field is the
-  effect of the skill. Absolute pass rates mix channels with different coverage and are descriptive
-  only.
-- **Two judges, or none.** gemma and nemotron disagreed about v1 (+8 versus −2) and agreed about v2.
-  A number from one judge is a number from one judge.
-- **The judge is stricter than the user.** κ with the human was near zero in both batches. Between-arm
-  differences say how closely an arm follows the strict reading of the doctrine, not how much a
-  person would mind.
-- **Watch the facts axis.** An arm that raises "no surplus" while lowering "facts present" has taught
-  deletion. The pass definition requires both.
+- **Pair within a channel.** The skill's effect is the `control → skill` difference on the same
+  model, brief, sample and field. Absolute pass rates mix channels with different coverage and are
+  descriptive.
+- **Two judges.** gemma and nemotron disagreed on v1 (+8 and −2) and agreed on v2. A figure from
+  one judge is not a conclusion.
+- **The judge's criterion is stricter than the user's.** κ with the human rater was near zero in
+  both batches. Between-arm differences reflect compliance with the strict reading of the doctrine,
+  not user acceptance.
+- **Read the facts axis.** An arm that raises "no surplus" while lowering "facts present" has the
+  effect of deletion. The pass definition requires both.
 - **Claude channels are not controls.** Subagents on this machine carry the user's rule file; their
-  rows answer "does the skill add anything over the rules already in context?"
-- **Development, not confirmatory.** The v2 language fix was made after seeing draft-1 results on
-  these briefs, and the shipped skill has two later edits (example scrub, note slots) that were not
-  re-measured. A confirmatory run needs a frozen skill and briefs nobody has seen.
+  rows answer whether the skill adds anything over the rules already in context.
+- **Development evidence.** The v2 language fix followed the first draft's results on these briefs;
+  the shipped skill has two later edits (example scrub, note slots) that were not re-measured. A
+  confirmatory run requires a frozen skill and unused briefs.
 
 ## Repository layout
 
@@ -200,13 +202,13 @@ v2/
     probes_claude.json             16 briefs, Claude-written
     probes_gpt.json                16 briefs, GPT-written
     SCHEMA.md                      brief format
-    judge_rubric.md                the two-axis rubric the judges see
+    judge_rubric.md                the two-axis rubric given to the judges
     arms/rules_only.md             the negative-list arm
     arms/exemplar_only.md          the positive-example arm
   eval_v2/
     gen/<channel>/<arm>/           2,016 generations
     judge/<judge>/<channel>/<arm>/ 2,746 verdicts
-    report.md                      the full tables the README summarises
+    report.md                      full tables
     human_calibration.md           both blind batches, with κ
     human_sample1.rated.md, human_sample2.rated.md
   drift/
@@ -218,11 +220,13 @@ run_eval.py, fixtures.json, results/   the first harness and its runs
 
 ## Limits
 
-- 32 briefs, two samples each, 32 cluster units: effects of ten points or more are visible, finer ones
-  are not. A confirmatory design needs on the order of 120–390 briefs.
-- One human rater, who is also the complainant; this is calibration, not inter-rater reliability.
-- GPT-6 has no v2 run (Codex quota exhausted mid-run); glm ran only the Claude-written half.
+- 32 briefs, two samples each, 32 cluster units: effects of ten points or more are detectable; a
+  confirmatory design needs on the order of 120–390 briefs.
+- One human rater, who is the person who raised the issue; this is calibration, not inter-rater
+  reliability.
+- GPT-6 has no v2 run (the Codex quota was exhausted during the run); glm ran only the
+  Claude-written half.
 - The judges' surplus criterion and the skill's doctrine share a taxonomy; a pass rate is not a
   measure of interface quality.
-- The drift experiment covers four open models and 16 briefs; "canonical Taiwan term" is a narrow
-  definition (「暫存資料」 for 快取 counts as neither a hit nor an error).
+- The lexicon experiment covers four open models and 16 briefs; "canonical Taiwan term" is a narrow
+  definition (「暫存資料」 counts neither as 快取 nor as an error).
