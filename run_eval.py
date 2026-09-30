@@ -151,6 +151,8 @@ def run_codex(prompt: str) -> str:
         if auth.exists():
             shutil.copy(auth, home / "auth.json")
         env = {**os.environ, "CODEX_HOME": str(home)}
+        # The prompt goes through stdin: past a few thousand characters as an
+        # argument, codex switches to reading stdin and then gets nothing.
         proc = subprocess.run(
             [
                 "codex",
@@ -160,8 +162,9 @@ def run_codex(prompt: str) -> str:
                 "read-only",
                 "-C",
                 tmp,
-                prompt,
+                "-",
             ],
+            input=prompt,
             capture_output=True,
             text=True,
             env=env,
