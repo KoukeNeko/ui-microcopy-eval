@@ -590,7 +590,7 @@ def cmd_report(_: argparse.Namespace) -> int:
     out.append("")
 
     # language: the judge's lang_ok flag (zh-TW vocabulary / script, natural ja/en)
-    out.append("## 語言正確率（judge 的 lang_ok；zh-TW 題含簡體字或大陸用語即 0）")
+    out.append("## 語言正確率（judge 的 lang_ok；zh-TW 題含簡體字或中國用語即 0）")
     out.append("")
     out.append("| lang | channel | arm | n | lang_ok |")
     out.append("| --- | --- | --- | --- | --- |")
